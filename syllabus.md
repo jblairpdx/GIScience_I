@@ -1,5 +1,5 @@
 ---
-title: GIScience I Syllabus
+title: Syllabus
 ---
 
 # GIScience I: Spring 2017
