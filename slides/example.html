@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title</title>
+    <title>Example Slide</title>
     <meta charset="utf-8">
     <style>
       @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
@@ -17,24 +17,57 @@
     </style>
   </head>
   <body>
-    <textarea id="source">
+<textarea id="source">
 
-name: Agenda
-class: center, middle
-
-# {{name}}
-
-1. Introduction
-2. Deep-dive
+name: agenda
+# Agenda
+1. [Markdown Examples](#markdown-examples)
+2. [Property Examples](#property-examples)
 3. ...
+
+???
+
+# Agenda Notes
 
 ---
 
-# Slide 2
+name: markdown-examples
+# Markdown Examples
 
-This is slide 2
+- bullet 1
+- bullet 2
+Simple paragraph.
+```python
+for i in range(10):
+    print("i={}".format(i))
+```
 
-    </textarea>
+???
+
+# Markdown Notes
+
+---
+
+name: property-examples
+/* layout: true */
+/* class: left, center, right, top, middle, bottom */
+/* background-image: url(image.jpg) */
+/* background-position: center; */
+/* background-repeat: no-repeat; */
+/* background-size: contain; */  /* applied using JavaScript only if background-image is larger than slide */
+/* count: false */
+/* exclude: true */
+/* template: markdown-examples
+
+# Property Examples
+
+.footnote[.red.bold[*] Important footnote]
+
+???
+
+# Property Notes
+
+</textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
     </script>
     <script>
