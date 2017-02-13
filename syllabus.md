@@ -1,8 +1,8 @@
 ---
 title: GIScience I - Syllabus
 ---
+# Syllabus
 
-# {{page.title}}
 ### Description
 
 ### Objectives
