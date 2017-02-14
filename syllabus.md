@@ -3,8 +3,8 @@ title: GIScience I - Syllabus
 ---
 # Syllabus
 
-### Description
-### Objectives
+#### Description
+#### Objectives
 
 ## Resources
 
