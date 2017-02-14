@@ -3,13 +3,14 @@ title: GIScience I - Syllabus
 ---
 # Syllabus
 
-#### Description
-#### Objectives
+###### Description
+TBA
+
+###### Objectives
 
 ## Resources
 
-**Instructors**
-
+###### Instructors
 * *Course/lecture:* Jacob Blair
     - Office hours: Time & location TBA
     - Email: jblair@uoregon.edu
@@ -20,14 +21,16 @@ title: GIScience I - Syllabus
     - Office hours: Time & location TBA
     - Email: TBA
 
-**Textbook**
-
+###### Texts
 *Geographic Information Science and Systems*, Fourth Edition (2015), by Longley, et al.
 
-**Classrooms**
-* *Lecture:* TBA
+###### Locations
 
-**Where to Get Help**
+* *Lecture:* TBA
+* *Lab:* Social Sciences Instructional Laboratory (SSIL), 442 McKenzie
+
+###### Where to Get Help
+
 
 ## Student Responsibilities
 Previous knowledge
