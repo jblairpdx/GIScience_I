@@ -9,6 +9,7 @@ title: GIScience I - Syllabus
 ## Resources
 
 **Instructors**
+
 * *Course/lecture:* Jacob Blair
     - Office hours: Time & location TBA
     - Email: jblair@uoregon.edu
