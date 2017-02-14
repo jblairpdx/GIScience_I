@@ -9,6 +9,7 @@ title: GIScience I - Syllabus
 
 ## Resources
 ### Instructors
+
 * *Course/lecture:* Jacob Blair
     - Office hours: Time & location TBA
     - Email: jblair@uoregon.edu
@@ -19,7 +20,8 @@ title: GIScience I - Syllabus
     - Office hours: Time & location TBA
     - Email: TBA
 
-** Textbook
+### Textbook
+
 *Geographic Information Science and Systems*, Fourth Edition (2015), by Longley, et al.
 
 ###### Classrooms
