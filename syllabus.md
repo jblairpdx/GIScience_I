@@ -4,6 +4,7 @@ title: GIScience I - Syllabus
 # Syllabus
 
 ##### Description
+
 This class is an introduction to concepts behind organizing, analyzing, and visually presenting geospatial information. This class addresses three major questions:
 1. How can one sense and represent the variation in the world around us?
 2. How to record, recall, and analyze this information?
@@ -12,6 +13,7 @@ This class is an introduction to concepts behind organizing, analyzing, and visu
 GIScience I explores these questions though the applied use of software designed to facilitate the collection, analysis, symbolization, and communication of information about the world; that is to turn observations of the real world into information useful for acting in the real world. This is often doen with maps, and much of ther work will involve the creation of maps.
 
 ##### Objectives
+
 After completing this course, students should be able to:
 
 * Plan and execute a spatial analysis using basic functionality of GIS applications.
@@ -26,6 +28,7 @@ After completing this course, students should be able to:
 ## Resources
 
 ##### Instructors
+
 * *Course/lecture:* Jacob Blair
     - Office hours: Time & location TBA
     - Email: jblair@uoregon.edu
@@ -37,10 +40,12 @@ After completing this course, students should be able to:
     - Email: TBA
 
 ##### Texts
-*Geographic Information Science and Systems*, Fourth Edition (2015), by Longley, et al.
-*Supplemental texts will be made available via Canvas.
+
+* *Geographic Information Science and Systems*, Fourth Edition (2015), by Longley, et al.
+* *Supplemental texts will be made available via Canvas.
 
 ##### Locations
+
 * *Lecture:* [101 Knight Library](https://library.uoregon.edu/classrooms/101LIB) [(map)](https://map.uoregon.edu/5980f3a0b)
 * *Lab:* [Social Sciences Instructional Laboratory (SSIL), 442 McKenzie](https://ssil.uoregon.edu/) [(map)](https://map.uoregon.edu/e11e8713c)
 
