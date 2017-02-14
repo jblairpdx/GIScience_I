@@ -4,9 +4,24 @@ title: GIScience I - Syllabus
 # Syllabus
 
 ##### Description
-TBA
+This class is an introduction to concepts behind organizing, analyzing, and visually presenting geospatial information. This class addresses three major questions:
+1. How can one sense and represent the variation in the world around us?
+2. How to record, recall, and analyze this information?
+3. How to communicate and discuss this information with others?
+
+GIScience I explores these questions though the applied use of software designed to facilitate the collection, analysis, symbolization, and communication of information about the world; that is to turn observations of the real world into information useful for acting in the real world. This is often doen with maps, and much of ther work will involve the creation of maps.
 
 ##### Objectives
+After completing this course, students should be able to:
+
+* Plan and execute a spatial analysis using basic functionality of GIS applications.
+* Communicate the results of an analysis through language and visualizations.
+* Identify significant events in the development of GIScience.
+* Articulate the characteristics of and differences between data representations.
+* Identify and critique the choices that were made in map design.
+* Critically evaluate geospatial arguments in popular media.
+* Develop skills in information-seeking.
+
 
 ## Resources
 
@@ -23,11 +38,11 @@ TBA
 
 ##### Texts
 *Geographic Information Science and Systems*, Fourth Edition (2015), by Longley, et al.
+*Supplemental texts will be made available via Canvas.
 
 ##### Locations
-
-* *Lecture:* TBA
-* *Lab:* Social Sciences Instructional Laboratory (SSIL), 442 McKenzie
+* *Lecture:* [101 Knight Library](https://library.uoregon.edu/classrooms/101LIB) [(map)](https://map.uoregon.edu/5980f3a0b)
+* *Lab:* [Social Sciences Instructional Laboratory (SSIL), 442 McKenzie](https://ssil.uoregon.edu/) [(map)](https://map.uoregon.edu/e11e8713c)
 
 ##### Where to Get Help
 
@@ -38,6 +53,36 @@ Estimated workload
 Conduct & academic honesty
 Students with disabilities
 
+
 ## Grading
 
+##### Undergraduates (481)
+
+##### Graduates (581)
+
+
 ## Schedule & Assignments
+
+##### Week 1
+Lecture 1.1: Geographic information science; types of maps.
+Lecture 1.2: History of GIScience and cartography; map properties; data models and objects.
+Lab: Introduction to SSIL; introduction to geospatial data.
+
+##### Week 2
+
+##### Week 3
+
+##### Week 4
+
+##### Week 5
+
+##### Week 6
+
+##### Week 7
+
+##### Week 8
+
+##### Week 9
+
+##### Week 10
+
