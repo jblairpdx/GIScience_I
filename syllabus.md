@@ -20,22 +20,21 @@ title: GIScience I - Syllabus
     - Office hours: Time & location TBA
     - Email: TBA
 
-### Textbook
+**Textbook**
 
 *Geographic Information Science and Systems*, Fourth Edition (2015), by Longley, et al.
 
-###### Classrooms
+**Classrooms**
 * *Lecture:* TBA
 
+**Where to Get Help**
 
-Where to get help
-
-#### Student Responsibilities
+## Student Responsibilities
 Previous knowledge
 Estimated workload
 Conduct & academic honesty
 Students with disabilities
 
-#### Grading
+## Grading
 
-#### Schedule & Assignments
+## Schedule & Assignments
