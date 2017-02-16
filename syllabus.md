@@ -16,11 +16,11 @@ GIScience I explores these questions though the applied use of software designed
 
 After completing this course, students should be able to:
 
-* Plan and execute a spatial analysis using basic functionality of GIS applications.
-* Communicate the results of an analysis through language and visualizations.
+* Plan and execute basic GIS analysis using a software framework.
+* Communicate the results of an analysis through language and graphics.
 * Identify significant events in the development of GIScience.
 * Articulate the characteristics of and differences between data representations.
-* Identify and critique the choices that were made in map design.
+* Identify and critique choices that made in map design.
 * Critically evaluate geospatial arguments in popular media.
 * Develop skills in information-seeking.
 
@@ -66,7 +66,13 @@ Students with disabilities
 ##### Graduates (581)
 
 
-## Schedule & Assignments
+## Schedule
+
+##### Overview
+
+* Week 1:  Introduction - What is GIS?
+* Week 2: Geospatial data.
+*
 
 ##### Week 1
 Lecture 1.1: Geographic information science; types of maps.
