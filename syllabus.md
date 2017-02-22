@@ -30,19 +30,19 @@ After completing this course, students should be able to:
 ##### Instructors
 
 * *Course/lecture:* Jacob Blair
+    - Email: jblair3@uoregon.edu
     - Office hours: Time & location TBA
-    - Email: jblair@uoregon.edu
 * *Lab:* Dean Olson
-    - Office hours: Time & location TBA
     - Email: deano@uoregon.edu
-* *Lab:* TBA
     - Office hours: Time & location TBA
-    - Email: TBA
+* *Lab:* William Chang
+    - Email: cchang3@uoregon.edu
+    - Office hours: Time & location TBA
 
 ##### Texts
 
 * *Geographic Information Science and Systems*, Fourth Edition (2015), by Longley, et al.
-* *Supplemental texts will be made available via Canvas.
+* *Supplemental reading will be made available via Canvas.
 
 ##### Locations
 
@@ -53,11 +53,11 @@ After completing this course, students should be able to:
 
 
 ## Student Responsibilities
+
 Previous knowledge
 Estimated workload
 Conduct & academic honesty
 Students with disabilities
-
 
 ## Grading
 
@@ -75,15 +75,19 @@ Students with disabilities
 *
 
 ##### Week 1
-Lecture 1.1: Geographic information science; types of maps.
-Lecture 1.2: History of GIScience and cartography; map properties; data models and objects.
-Lab: Introduction to SSIL; introduction to geospatial data.
+Lecture 1: Class introduction; syllabus.
+Lecture 2: Components of a GIS; GIS case studies.
 
 ##### Week 2
+Lecture 3: Modeling the Earth; coordinate systems.
+Lecture 4: Projections.
 
 ##### Week 3
+Lecture 5: Geospatial data models; attribute data.
+Lecture 6: Data types and Databases
 
 ##### Week 4
+Quiz 1
 
 ##### Week 5
 
