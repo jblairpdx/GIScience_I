@@ -42,7 +42,7 @@ After completing this course, students should be able to:
 ##### Texts
 
 * *Geographic Information Science and Systems*, Fourth Edition (2015), by Longley, et al.
-* *Supplemental reading will be made available via Canvas.
+* *Supplemental reading will be made available via Canvas.*
 
 ##### Locations
 
