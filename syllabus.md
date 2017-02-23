@@ -42,28 +42,12 @@ After completing this course, students should be able to:
 ##### Texts
 
 * *Geographic Information Science and Systems*, Fourth Edition (2015), by Longley, et al.
-* *Supplemental reading will be made available via Canvas.*
+* *Supplemental reading will be available via links in schedule or Canvas.*
 
 ##### Locations
 
 * *Lecture:* [101 Knight Library](https://library.uoregon.edu/classrooms/101LIB) [(map)](https://map.uoregon.edu/5980f3a0b)
 * *Lab:* [Social Sciences Instructional Laboratory (SSIL), 442 McKenzie](https://ssil.uoregon.edu/) [(map)](https://map.uoregon.edu/e11e8713c)
-
-##### Where to Get Help
-
-
-## Student Responsibilities
-
-Previous knowledge
-Estimated workload
-Conduct & academic honesty
-Students with disabilities
-
-## Grading
-
-##### Undergraduates (481)
-
-##### Graduates (581)
 
 
 ## Schedule
@@ -74,15 +58,15 @@ Students with disabilities
 * Week 2: Geospatial data.
 *
 
-##### Week 1
+#### Week 1
 Lecture 1: Class introduction; syllabus.
 Lecture 2: Components of a GIS; GIS case studies.
 
-##### Week 2
+#### Week 2
 Lecture 3: Modeling the Earth; coordinate systems.
 Lecture 4: Projections.
 
-##### Week 3
+#### Week 3
 Lecture 5: Geospatial data models; attribute data.
 Lecture 6: Data types and Databases
 
@@ -101,3 +85,19 @@ Quiz 1
 
 ##### Week 10
 
+
+##### Where to Get Help
+
+
+## Student Responsibilities
+
+Previous knowledge
+Estimated workload
+Conduct & academic honesty
+Students with disabilities
+
+## Grading
+
+##### Undergraduates (481)
+
+##### Graduates (581)
