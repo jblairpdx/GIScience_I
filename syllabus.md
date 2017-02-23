@@ -58,22 +58,42 @@ After completing this course, students should be able to:
 * Week 2: Geospatial data.
 *
 
-#### Week 1
+##### Week 1
+
+Readings: Longley et al Chapters 1 & 2.
 Lecture 1: Class introduction; syllabus.
 Lecture 2: Components of a GIS; GIS case studies.
+Lab 1: Using GIS with ArcMap and SSIL.
 
-#### Week 2
-Lecture 3: Modeling the Earth; coordinate systems.
+##### Week 2
+
+Readings: Longley et al Chapters 2 & 3; *projection supplemental*.
+Lecture 3: Modeling the Earth; reference/coordinate systems.
 Lecture 4: Projections.
+Lab 2: All About Projections.
 
-#### Week 3
-Lecture 5: Geospatial data models; attribute data.
-Lecture 6: Data types and Databases
+##### Week 3
+
+Readings: Longley et al Chapter 7; *attribute data supplemenal*; *where clause query suppliemental*
+Lecture 5: Geospatial data models; dataset formats.
+Lecture 6: Attribute data: types & selection.
+Lab 3: Spatial Data Types.
+
+*do we want a data collection (Chapter 8) lecture piece?*
 
 ##### Week 4
+
+Readings: Longley et al Chapter 13.
 Quiz 1
+Lecture 7: Data Analysis: tools and techniques.
+Lab 4: Spatial Selection and Attribute Queries.
 
 ##### Week 5
+
+Readings: Longley et al Chapter 14; *double-check on this chapter*; Chapter 15.
+Lecture 8: Spatial analysis; raster vs. vector.
+Lecture 9: Process models.
+Lab 5: Siting Food Relief Centers.
 
 ##### Week 6
 
