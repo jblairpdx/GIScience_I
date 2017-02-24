@@ -1,7 +1,7 @@
 ---
 title: GIScience I - Syllabus
 ---
-# Syllabus
+# GIScience I: Syllabus
 
 ##### Description
 
@@ -92,19 +92,42 @@ Lab 4: Spatial Selection and Attribute Queries.
 
 Readings: Longley et al Chapter 14; *double-check on this chapter*; Chapter 15.
 Lecture 8: Spatial analysis; raster vs. vector.
-Lecture 9: Process models.
+Lecture 9: GIS models.
 Lab 5: Siting Food Relief Centers.
 
 ##### Week 6
 
+Readings: Longley et al Chapter 11; *cartography supplemental(s)*
+Lecture 10: Maps: elements, symbolization, classification.
+Lecture 11: Maps II: visualization & design.
+Lab 6: Plotting Elevation.
+
 ##### Week 7
+
+Reading: *project design supplemental(s)*
+Quiz 2
+Lecture 12: GIS project design; introducing the final project.
+Lab 7: Ecology Report
 
 ##### Week 8
 
+Reading:
+Lecture 13: *walk through a GIS project*
+Lecture 14: Data collection, quality; geo-computation.
+Continue Lab 7.
+
 ##### Week 9
+
+Memorial Day
+Lecture 15: Examples of 
+Work on final project.
 
 ##### Week 10
 
+Reading: Longley et al Chapter 19
+Lecture 16: The geographic citizen: GIScience in work and life.
+Lecture 17: Graduate student presentations.
+Work on final project.
 
 ##### Where to Get Help
 
