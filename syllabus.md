@@ -52,18 +52,12 @@ After completing this course, students should be able to:
 
 ## Schedule
 
-##### Overview
-
-* Week 1:  Introduction - What is GIS?
-* Week 2: Geospatial data.
-*
-
 ##### Week 1
 
-Readings: Longley et al Chapters 1 & 2.
-Lecture 1: Class introduction; syllabus.
-Lecture 2: Components of a GIS; GIS case studies.
-Lab 1: Using GIS with ArcMap and SSIL.
+* Readings: Longley et al Chapters 1 & 2.
+* Lecture 1: Class introduction; syllabus.
+* Lecture 2: Components of a GIS; GIS case studies.
+* Lab 1: Using GIS with ArcMap and SSIL.
 
 ##### Week 2
 
