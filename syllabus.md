@@ -54,74 +54,75 @@ After completing this course, students should be able to:
 
 ##### Week 1
 
-* Readings: Longley et al Chapters 1 & 2.
-* Lecture 1: Class introduction; syllabus.
-* Lecture 2: Components of a GIS; GIS case studies.
+* Reading: Longley et al Chapters 1 & 2.
+* Mon (04/03) Lecture 1: Class introduction; syllabus.
+* Wed (04/05) Lecture 2: Components of a GIS; GIS case studies.
 * Lab 1: Using GIS with ArcMap and SSIL.
 
 ##### Week 2
 
-Readings: Longley et al Chapters 2 & 3; *projection supplemental*.
-Lecture 3: Modeling the Earth; reference/coordinate systems.
-Lecture 4: Projections.
-Lab 2: All About Projections.
+* Reading: Longley et al Chapters 2 & 3; *TODO: projection supplemental*.
+* Mon (04/10) Lecture 3: Modeling the Earth; reference/coordinate systems.
+* Wed (04/12) Lecture 4: Projections.
+* Lab 2: All About Projections.
 
 ##### Week 3
 
-Readings: Longley et al Chapter 7; *attribute data supplemenal*; *where clause query suppliemental*
-Lecture 5: Geospatial data models; dataset formats.
-Lecture 6: Attribute data: types & selection.
-Lab 3: Spatial Data Types.
-
-*do we want a data collection (Chapter 8) lecture piece?*
+* Reading: Longley et al Chapter 7; *TODO: attribute data supplemenal*; *TODO: where clause query suppliemental*.
+* Mon (04/17) Lecture 5: Geospatial data models; dataset formats.
+* Wed (04/19) Lecture 6: Attribute data: types & selection.
+* Lab 3: Spatial Data Types and Querying Values.
 
 ##### Week 4
 
-Readings: Longley et al Chapter 13.
-Quiz 1
-Lecture 7: Data Analysis: tools and techniques.
-Lab 4: Spatial Selection and Attribute Queries.
+* Reading: Longley et al Chapter 13.
+* Mon (04/24) Test 1.
+* Wed (04/26) Lecture 7: Data Analysis: tools and techniques.
+* Lab 4: Spatial Selection and Attribute Queries.
 
 ##### Week 5
 
-Readings: Longley et al Chapter 14; *double-check on this chapter*; Chapter 15.
-Lecture 8: Spatial analysis; raster vs. vector.
-Lecture 9: GIS models.
-Lab 5: Siting Food Relief Centers.
+* Reading: Longley et al Chapter 14 (*TODO: double-check on this chapter*); Chapter 15.
+* Mon (05/01) Lecture 8: Spatial analysis; raster vs. vector.
+* Wed (05/3) Lecture 9: GIS models.
+* Lab 5: Siting Food Relief Centers.
 
 ##### Week 6
 
-Readings: Longley et al Chapter 11; *cartography supplemental(s)*
-Lecture 10: Maps: elements, symbolization, classification.
-Lecture 11: Maps II: visualization & design.
-Lab 6: Plotting Elevation.
+* Reading: Longley et al Chapter 11; *TODO: cartography supplemental(s)*.
+* Mon (05/08) Lecture 10: Maps: elements, symbolization, classification.
+* Wed (05/10) Lecture 11: Maps II: visualization & design.
+* Lab 6: Plotting Elevation.
 
 ##### Week 7
 
-Reading: *project design supplemental(s)*
-Quiz 2
-Lecture 12: GIS project design; introducing the final project.
-Lab 7: Ecology Report
+* Reading: *TODO: project design supplemental(s)*.
+* Mon (05/15) Test 2.
+* Web (05/17) Lecture 12: GIS project design; introducing the final project.
+* Lab 7: Ecology Report.
 
 ##### Week 8
 
-Reading:
-Lecture 13: *walk through a GIS project*
-Lecture 14: Data collection, quality; geo-computation.
-Continue Lab 7.
+* Reading: Longley et al Chapter 8; *TODO: geo-computation supplemental*.
+* Mon (05/22) Lecture 13: *TODO: walk through a GIS project*; *TODO: alt: guest speaker about decision making with GIS*.
+* Wed (05/24) Lecture 14: Data collection, quality; geo-computation.
+* Continue Lab 7.
+
+*TODO: do we really want to make geo-computation a thing?*
 
 ##### Week 9
 
-Memorial Day
-Lecture 15: Examples of 
-Work on final project.
+* Reading: *TODO: do we need a reading?*.
+* Mon (05/29) Memorial Day, no lecture.
+* Wed (05/31) Lecture 15: *TODO*. *TODO: alt: the geographic citizen*.
+* Work on final project in lab.
 
 ##### Week 10
 
-Reading: Longley et al Chapter 19
-Lecture 16: The geographic citizen: GIScience in work and life.
-Lecture 17: Graduate student presentations.
-Work on final project.
+* Reading: Longley et al Chapter 19.
+* Mon (06/05) Lecture 16: The geographic citizen: GIScience in work and life. *TODO: alt: grad presentations*.
+* Wed (06/07) Lecture 17: Graduate student presentations. *TODO: alt: Test 3.
+* Work on final project in lab.
 
 ##### Where to Get Help
 
