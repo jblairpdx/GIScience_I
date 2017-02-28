@@ -108,8 +108,6 @@ After completing this course, students should be able to:
 * Wed (05/24) Lecture 14: Data collection, quality; geo-computation.
 * Continue Lab 7.
 
-*TODO: do we really want to make geo-computation a thing?*
-
 ##### Week 9
 
 * Reading: *TODO: do we need a reading?*.
@@ -124,18 +122,33 @@ After completing this course, students should be able to:
 * Wed (06/07) Lecture 17: Graduate student presentations. *TODO: alt: Test 3.
 * Work on final project in lab.
 
-##### Where to Get Help
+
+## Grading
+
+* 10% - In-class activities.
+* 40% - Lab exercises: Due at the start of the lab on their assigned due date. Lab assignments may often require extra work outside normal lab hours to complete.
+* 30% - Tests: Three will be conducted, in-class.
+* 20% - Final project.
+
+**Late work will be reduced in value by 10% per day late. No late tests or final projects accepted.**
+
+##### Lab Sections
+
+There are two lab sections for the course. Lab assignments will be given during the scheduled lab time. During the lab section you have registered for, the SSIL computer lab is reserved for your use and a GTF will be available to present material and answer questions.
+
+If there is space available in the other sections---and the GTF for it gives their permission---you may sit in as a guest. Please understand that the GTF must prioritize the students registered for that section.
+
+Plan ahead, and **save often** while working; computers and software can be unpredictable and crash when one least expects (or wants). Please save your lab files to your student folder on the SSIL server. Feel free to save copies elsewhere.
+
+You may turn in your work digitally via Canvas. Be sure to turn them in before or within the first ten minutes of the lab on their assigned due date.
+
+##### Graduate Students
+
+Graduate students will have two additional components to their final project. The first is a description of the analysis you did (5-10 pages). Be sure to provide citations and reasoning for your methodology. The second is to present your project briefly in the last week of class.
 
 
 ## Student Responsibilities
 
-Previous knowledge
-Estimated workload
-Conduct & academic honesty
-Students with disabilities
+##### Conduct
 
-## Grading
-
-##### Undergraduates (481)
-
-##### Graduates (581)
+The University Student Conduct Code (available at conduct.uoregon.edu) defines academic misconduct. Students are prohibited from committing or attempting to commit any act that constitutes academic misconduct. By way of example, students should not give or receive (or attempt to give or receive) unauthorized help on assignments or examinations without express permission from the instructor. Students should properly acknowledge and document all sources of information (e.g. quotations, paraphrases, ideas) and use only the sources and resources authorized by the instructor. If there is any question about whether an act constitutes academic misconduct, it is the students’ obligation to clarify the question with the instructor before committing or attempting to commit the act. Additional information about a common form of academic misconduct, plagiarism, is available at researchguides.uoregon.edu/citing-plagiarism.  
