@@ -3,7 +3,7 @@ title: GIScience I - Syllabus
 ---
 # GIScience I: Syllabus
 
-##### Description
+#### Description
 
 This class is an introduction to concepts behind organizing, analyzing, and visually presenting geospatial information. This class addresses three major questions:
 1. How can one sense and represent the variation in the world around us?
@@ -12,7 +12,7 @@ This class is an introduction to concepts behind organizing, analyzing, and visu
 
 GIScience I explores these questions though the applied use of software designed to facilitate the collection, analysis, symbolization, and communication of information about the world; that is to turn observations of the real world into information useful for acting in the real world. This is often doen with maps, and much of ther work will involve the creation of maps.
 
-##### Objectives
+#### Objectives
 
 After completing this course, students should be able to:
 
