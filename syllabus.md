@@ -27,7 +27,7 @@ After completing this course, students should be able to:
 
 ## Resources
 
-##### Instructors
+#### Instructors
 
 * *Course/lecture:* Jacob Blair
     - Email: jblair3@uoregon.edu
@@ -39,12 +39,12 @@ After completing this course, students should be able to:
     - Email: cchang3@uoregon.edu
     - Office hours: Time & location TBA
 
-##### Texts
+#### Texts
 
 * *Geographic Information Science and Systems*, Fourth Edition (2015), by Longley, et al.
 * *Supplemental reading will be available via links in schedule or Canvas.*
 
-##### Locations
+#### Locations
 
 * *Lecture:* [101 Knight Library](https://library.uoregon.edu/classrooms/101LIB) [(map)](https://map.uoregon.edu/5980f3a0b)
 * *Lab:* [Social Sciences Instructional Laboratory (SSIL), 442 McKenzie](https://ssil.uoregon.edu/) [(map)](https://map.uoregon.edu/e11e8713c)
@@ -52,70 +52,70 @@ After completing this course, students should be able to:
 
 ## Schedule
 
-##### Week 1
+#### Week 1
 
 * Reading: Longley et al Chapters 1 & 2.
 * Mon (04/03) Lecture 1: Class introduction; syllabus.
 * Wed (04/05) Lecture 2: Components of a GIS; GIS case studies.
 * Lab 1: Using GIS with ArcMap and SSIL.
 
-##### Week 2
+#### Week 2
 
 * Reading: Longley et al Chapters 2 & 3; *TODO: projection supplemental*.
 * Mon (04/10) Lecture 3: Modeling the Earth; reference/coordinate systems.
 * Wed (04/12) Lecture 4: Projections.
 * Lab 2: All About Projections.
 
-##### Week 3
+#### Week 3
 
 * Reading: Longley et al Chapter 7; *TODO: attribute data supplemenal*; *TODO: where clause query suppliemental*.
 * Mon (04/17) Lecture 5: Geospatial data models; dataset formats.
 * Wed (04/19) Lecture 6: Attribute data: types & selection.
 * Lab 3: Spatial Data Types and Querying Values.
 
-##### Week 4
+#### Week 4
 
 * Reading: Longley et al Chapter 13.
 * Mon (04/24) Test 1.
 * Wed (04/26) Lecture 7: Data Analysis: tools and techniques.
 * Lab 4: Spatial Selection and Attribute Queries.
 
-##### Week 5
+#### Week 5
 
 * Reading: Longley et al Chapter 14 (*TODO: double-check on this chapter*); Chapter 15.
 * Mon (05/01) Lecture 8: Spatial analysis; raster vs. vector.
 * Wed (05/3) Lecture 9: GIS models.
 * Lab 5: Siting Food Relief Centers.
 
-##### Week 6
+#### Week 6
 
 * Reading: Longley et al Chapter 11; *TODO: cartography supplemental(s)*.
 * Mon (05/08) Lecture 10: Maps: elements, symbolization, classification.
 * Wed (05/10) Lecture 11: Maps II: visualization & design.
 * Lab 6: Plotting Elevation.
 
-##### Week 7
+#### Week 7
 
 * Reading: *TODO: project design supplemental(s)*.
 * Mon (05/15) Test 2.
 * Web (05/17) Lecture 12: GIS project design; introducing the final project.
 * Lab 7: Ecology Report.
 
-##### Week 8
+#### Week 8
 
 * Reading: Longley et al Chapter 8; *TODO: geo-computation supplemental*.
 * Mon (05/22) Lecture 13: *TODO: walk through a GIS project*; *TODO: alt: guest speaker about decision making with GIS*.
 * Wed (05/24) Lecture 14: Data collection, quality; geo-computation.
 * Continue Lab 7.
 
-##### Week 9
+#### Week 9
 
 * Reading: *TODO: do we need a reading?*.
 * Mon (05/29) Memorial Day, no lecture.
 * Wed (05/31) Lecture 15: *TODO*. *TODO: alt: the geographic citizen*.
 * Work on final project in lab.
 
-##### Week 10
+#### Week 10
 
 * Reading: Longley et al Chapter 19.
 * Mon (06/05) Lecture 16: The geographic citizen: GIScience in work and life. *TODO: alt: grad presentations*.
@@ -132,7 +132,7 @@ After completing this course, students should be able to:
 
 **Late work will be reduced in value by 10% per day late. No late tests or final projects accepted.**
 
-##### Lab Sections
+#### Lab Sections
 
 There are two lab sections for the course. Lab assignments will be given during the scheduled lab time. During the lab section you have registered for, the SSIL computer lab is reserved for your use and a GTF will be available to present material and answer questions.
 
@@ -142,13 +142,13 @@ Plan ahead, and **save often** while working; computers and software can be unpr
 
 You may turn in your work digitally via Canvas. Be sure to turn them in before or within the first ten minutes of the lab on their assigned due date.
 
-##### Graduate Students
+#### Graduate Students
 
 Graduate students will have two additional components to their final project. The first is a description of the analysis you did (5-10 pages). Be sure to provide citations and reasoning for your methodology. The second is to present your project briefly in the last week of class.
 
 
 ## Student Responsibilities
 
-##### Conduct
+#### Conduct
 
 The University Student Conduct Code (available at conduct.uoregon.edu) defines academic misconduct. Students are prohibited from committing or attempting to commit any act that constitutes academic misconduct. By way of example, students should not give or receive (or attempt to give or receive) unauthorized help on assignments or examinations without express permission from the instructor. Students should properly acknowledge and document all sources of information (e.g. quotations, paraphrases, ideas) and use only the sources and resources authorized by the instructor. If there is any question about whether an act constitutes academic misconduct, it is the students’ obligation to clarify the question with the instructor before committing or attempting to commit the act. Additional information about a common form of academic misconduct, plagiarism, is available at researchguides.uoregon.edu/citing-plagiarism.  
