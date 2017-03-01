@@ -126,7 +126,7 @@ After completing this course, students should be able to:
 ## Grading
 
 * 10% - In-class activities.
-* 40% - Lab exercises: Due at the start of the lab on their assigned due date. Lab assignments may often require extra work outside normal lab hours to complete.
+* 40% - Lab assignments: Due at the start of the lab on their assigned due date. Lab assignments may often require extra work outside normal lab hours to complete.
 * 30% - Tests: Three will be conducted, in-class.
 * 20% - Final project.
 
@@ -140,7 +140,11 @@ If there is space available in the other sections---and the GTF for it gives the
 
 Plan ahead, and **save often** while working; computers and software can be unpredictable and crash when one least expects (or wants). Please save your lab files to your student folder on the SSIL server. Feel free to save copies elsewhere.
 
-You may turn in your work digitally via Canvas. Be sure to turn them in before or within the first ten minutes of the lab on their assigned due date.
+Most lab assignments will be due at the start of the lab the next week. The exception for this is Lab 7, which will be due in two weeks (this due-week also includes Memorial Day; if your lab is that day, please consider the next school day the due date). You will turn in your lab work digitally via Canvas. Be sure to turn them in before or within the first ten minutes of the lab on their assigned due date.
+
+Assignments may often require extra work outside normal lab hours to complete. Be proactive in ensuring you have access to the tools required to complete it on time, whether that be extra SSIL time or software, VPN, and Canvas access when required.
+
+Lab 7 is twice as much of your grade as the other labs are. Doing the math, Labs 1-6 are 5% each of your class grade; Lab 7 is 10%.
 
 #### Graduate Students
 
