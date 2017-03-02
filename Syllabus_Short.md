@@ -31,20 +31,12 @@ After completing this course, students should be able to:
 
 * *Course/lecture:* Jacob Blair
     - Email: jblair3@uoregon.edu
-    - Office hours: Time & location TBA
 * *Lab:* Dean Olson
     - Email: deano@uoregon.edu
-    - Office hours: Time & location TBA
 * *Lab:* William Chang
     - Email: cchang3@uoregon.edu
-    - Office hours: Time & location TBA
 
 #### Texts
 
 * *Geographic Information Science and Systems*, Fourth Edition (2015), by Longley, et al.
 * *Supplemental reading will be available via links in schedule or the Canvas class site.*
-
-#### Locations
-
-* *Lecture:* [101 Knight Library](https://library.uoregon.edu/classrooms/101LIB) [(map)](https://map.uoregon.edu/5980f3a0b)
-* *Lab:* [Social Sciences Instructional Laboratory (SSIL), 442 McKenzie](https://ssil.uoregon.edu/) [(map)](https://map.uoregon.edu/e11e8713c)
