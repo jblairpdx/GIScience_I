@@ -24,9 +24,6 @@ After completing this course, students should be able to:
 * Critically evaluate geospatial arguments in popular media.
 * Develop skills in information-seeking.
 
-
-## Resources
-
 #### Instructors
 
 * *Course/lecture:* Jacob Blair
