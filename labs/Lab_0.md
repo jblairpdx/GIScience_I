@@ -39,7 +39,7 @@ Nothing: lab is for reference only.
 
 From the Windows Start Menu, type "explorer" and choose from the pick-list *Windows Explorer*. You can also click the folder icon on the menu bar.
 
-Note: You can open a second window of the application using the keyboard shortcut Ctrl+N (meaning hold the Ctrl-button and press the N-button). A second window can be useful when moving files between folders.
+Note: You can open a second window of the application using the keyboard shortcut `Ctrl+N` (meaning hold the Ctrl-button and press the N-button). A second window can be useful when moving files between folders.
 
 ### 2 - View the filesystem
 
@@ -50,7 +50,7 @@ The main display in *Windows Explorer* shows a list of the files in the current 
 The computers in the SSIL labs are configured to provide you with connections to the SSIL file server from the start. The file system is mapped to the R: drive. If you are working on a computer that has not already been connected, you will need to map the drive to the network location.
 
 1. Open *Windows Explorer*. Make sure you are on 'Computer' in the folder tree.
-2. Click the button labeled 'Map Network Drive'.
+2. Click the button labeled `Map Network Drive`.
 3. Enter the server address: `\\cs-fs2\CAS-Labs\Classes`.
 
 For additional information, see the [SSIL Network Drives and Connecting Remotely page](https://ssil.uoregon.edu/ssil/ssil-network-drives-and-connecting-remotely/)
@@ -66,3 +66,40 @@ Once connected to the R: drive, you should see a folder named 'GEOG481'. Within 
 * R:\GEOG481\Student_Data: Will contain a subfolder with your Duck ID (among others). This will be referred to regularly as your 'student folder'.
 
 **IMPORTANT: Be sure to save your work to your student folder on the R: drive.** The SSIL computers will allow you to save files to the local computer's drives; however files on these drives are deleted regularly, and you should not count on them beyond the immediate time on that computer.
+
+### 4 - Create folders
+
+To create a new folder on the filesystem:
+
+1. Open *Windows Explorer*.
+2. Navigate to your student folder.
+3. Right-click with the mouse in a blank area of the window.
+4. Select `New->Folder` from the context menu that appears.
+5. A folder will appear in the window. Type the name of the folder.
+
+For each lab, you will create a new subfolder within your student folder. Name the new folder with the word 'Lab' followed by the lab number (e.g. Lab1); no spaces.
+
+### 5 - Select, copy, move, delete, and rename
+
+To select files or folders, you just need to single-click on them. To select more than one, you can:
+
+* Click on one item, hold the shift key, then click on another. The two items plus any between them will be selected.
+* Click on one item, hold the Ctrl key, and click on any others you wish to select. All clicked items will stay selected.
+* Click and hold in a blank spot in the window, then drag across the items you wish to select.
+
+Initiate copying selectd items using the menu item `Edit->Copy`, or use the keyoard shortcut `Ctrl+C`. Place the copies somewhere using `Edit->Paste` or keyboard shortcut `Ctrl-V`. Be sure to have the window set to the location you want to place the copies in.
+
+To move selected items, drag and drop the icon(s) into the destination folder as represented in the same window, the folder tree, or another window altogether. Alternatively, use the menu item `Edit->Cut` of keyboard shortcut `Crtl-X` to initiate a move, then paste it with the same process as copying used.
+
+To delete a selected item, you can: drag and drop it into the Recycle Bin icon; right-click the item and choose `Delete` from the context menu; or press the delete key.
+
+**WARNING:** Non-local files (e.g. on the SSIL server) are permanently deleted when put in the Recycle Bin. This action cannot be undone.
+
+### 6- Extract files from an archive (zipfile)
+
+Large files and collections of files available on the internet are often combined into a single file and compressed to save space. Once donwloaded, the file will need to be unpacked before its contents can be used. To extract the contents:
+
+1. Open *Windows Explorer*.
+2. Navigate to the location of the archive file.
+3. Right-click on the filename, and select `Extract to Folder` from the context menu.
+4. Type the name of the folder to create & unpack to when prompted, and click `OK`.
