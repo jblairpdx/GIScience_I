@@ -95,7 +95,7 @@ To delete a selected item, you can: drag and drop it into the Recycle Bin icon; 
 
 **WARNING:** Non-local files (e.g. on the SSIL server) are permanently deleted when put in the Recycle Bin. This action cannot be undone.
 
-### 6- Extract files from an archive (zipfile)
+### 6 - Extract files from an archive (zipfile)
 
 Large files and collections of files available on the internet are often combined into a single file and compressed to save space. Once donwloaded, the file will need to be unpacked before its contents can be used. To extract the contents:
 
