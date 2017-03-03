@@ -55,7 +55,7 @@ The computers in the SSIL labs are configured to provide you with connections to
 
 For additional information, see the [SSIL Network Drives and Connecting Remotely page](https://ssil.uoregon.edu/ssil/ssil-network-drives-and-connecting-remotely/)
 
-Note: To connect to the server from off-campus, you will first need to connect to the UO VIrtual Private Network (VPN). Software and instructions for the VPN are available from the UO IT website (https://it.uoregon.edu/vpn).
+Note: To connect to the server from off-campus, you will first need to connect to the UO VIrtual Private Network (VPN). Software and instructions for the VPN are available from the UO IT website: https://it.uoregon.edu/vpn
 
 ### 3 - Explore class-related server locations
 
