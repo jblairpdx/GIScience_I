@@ -49,7 +49,7 @@ Note: The questions to answer in this lab relate to the process you complete in 
 
 ###### Create a Lab1 folder in your student folder.
 
-###### Download spatial datasets.
+##### Download spatial datasets.
 
 1. Open a web browser, and navigate to the [Oregon Spatial Data Library](http://spatialdata.oregonexplorer.info/geoportal/).
 2. Browse or search for the following datasets:
@@ -59,7 +59,7 @@ Note: The questions to answer in this lab relate to the process you complete in 
 4. Make a note of the data source. (Spatial) data has value, and you will want to give credit where due when creating maps or other documents. The data sources should be listed on every map you create.
 5. Extract the dataset files from within the zipfiles for each dataset you downloaded.
 
-###### Create a new ArcMap document (.mxd).
+##### Create a new ArcMap document (.mxd).
 
 1. Open ArcMap from the *Windows Start Menu* (either by finding in the *Start Menu* folders, or by typing the name in the search bar).
 2. Select *New Blank Map* from the *Getting Started* window that appears. Alternately, you can just close this window: it achieves the same thing.
