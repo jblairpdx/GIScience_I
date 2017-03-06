@@ -45,9 +45,9 @@ Note: The questions to answer in this lab relate to the process you complete in 
 
 ### 1 - Map Instructions
 
-###### Read [*A Quick Tour of ArcMap*](https://desktop.arcgis.com/en/arcmap/latest/get-started/introduction/a-quick-tour-of-arcmap.htm) from the ArcMap documentation site.
+##### Read [*A Quick Tour of ArcMap*](https://desktop.arcgis.com/en/arcmap/latest/get-started/introduction/a-quick-tour-of-arcmap.htm) from the ArcMap documentation site.
 
-###### Create a Lab1 folder in your student folder.
+##### Create a Lab1 folder in your student folder.
 
 ##### Download spatial datasets.
 
@@ -65,7 +65,7 @@ Note: The questions to answer in this lab relate to the process you complete in 
 2. Select *New Blank Map* from the *Getting Started* window that appears. Alternately, you can just close this window: it achieves the same thing.
 3. Right away, save the document: from the top menus, select *File->Save As*, navigate to your Lab1 folder, and save as **Lab1.Oregon.mxd**.
 
-###### Add data to the map.
+##### Add data to the map.
 
 When you create a new map document, ArcMap automatically creates one data frame. The data frames are used to organize the map's layout. Each data frame is shown in the layout as a rectangular element. In this lab we will work with a single data frame.
 
