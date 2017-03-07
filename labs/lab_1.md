@@ -95,7 +95,7 @@ Now that the those shapefile datasets have been added, they're now listed as *la
   2. Select a preferred color.
     - ArcMap provides a set of preset area symbols (fill and outline) on the left side of the *Symbol Selector* window.
     - You can also individually set *Fill Color*, *Outline Color*, and *Outline Width* on the right. Opening these will display a color palette you may choose from.
-    - If you're still not satisfied, you may choose `More Colors` nat the bottom of each palette to opens a *Color Selector*, which will allow you to manipulate individual color components.
+    - If you're still not satisfied, you may choose `More Colors` at the bottom of each palette to opens a *Color Selector*, which will allow you to manipulate individual color components.
   4. Color the counties a subtle color; the cities a bold & contrasting color. Use your judgment; feel free to experiment, and try a number of combinations.
 3. Rename the layers to something better for display.
   1. When a dataset is added as a layer, it usually defaults to a version of the file name for the layer name. These can be obtuse for having on maps, so renaming them is a common step.
