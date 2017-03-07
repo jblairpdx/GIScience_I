@@ -63,11 +63,15 @@ Note: The questions to answer in this lab relate to the process you complete in 
 
 1. Open ArcMap from the *Windows Start Menu* (either by finding in the *Start Menu* folders, or by typing the name in the search bar).
 2. Select *New Blank Map* from the *Getting Started* window that appears. Alternately, you can just close this window: it achieves the same thing.
-3. Right away, save the document: from the top menus, select *File->Save As*, navigate to your Lab1 folder, and save as **Lab1.Oregon.mxd**.
+3. Right away, save the document: from the top menus, select `File->Save As`, navigate to your Lab1 folder, and save as **Lab1.Oregon.mxd**.
 
 ##### Add data to the map.
 
 When you create a new map document, ArcMap automatically creates an initial data frame. Data frames are used to organize the map's layout. Each data frame is shown in the layout as a rectangular element. In this lab we will work with a single data frame.
 
 1. Tell ArcMap where to find the data.
-  1. Click
+  1. If not open already, open the *Catalog* panel from the menu `Windows->Catalog`.
+    - Note: ArcMap panels can float over the main window or be docked along some edge of it. To move or dock the panel, grab the title part of the panel and move it to where you want it to float/dock. 
+  2. Click the `Connect to Folder` button at the top of the panel (looks like a folder with a + over it).
+  3. Navigate the filesystem and select the Lab1 folder within your student folder, then click `OK`.
+  4. Add city limits to the map.
