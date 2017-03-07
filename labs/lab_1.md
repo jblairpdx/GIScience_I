@@ -81,7 +81,7 @@ When you create a new map document, ArcMap automatically creates an initial data
   1. In the *Catalog* display, navigate to the county shapefile you downloaded.
   2. Drag the shapefile and drop it onto the map window.
 4. Observe the difference between how the shapefiles are represented between *Windows Explorer* and the *Catalog* panel.
-5. Save your map document.
+5. Be sure to save your map document.
 
 ##### Organize and symbolize data.
 
@@ -100,23 +100,64 @@ Now that the those shapefile datasets have been added, they're now listed as *la
 3. Rename the layers to something better for display.
   1. When a dataset is added as a layer, it usually defaults to a version of the file name for the layer name. These can be obtuse for having on maps, so renaming them is a common step.
   2. Open the layer properties (see above), and select the *General* tab.
-  3. Write your preferred name in the *Layer Name* section.
-
-
-
-. Save your map document.
+  3. Write your improved name in the *Layer Name* section.
+4. Be sure to save your map document.
 
 ##### Create a layout.
 
-. Save your map document.
+1. Open the page settings from the menu `File->Page and Print Setup`.
+  1. Set the size.
+    - Choose the paper size *Letter*.
+    - Choose a matching print size: either type the dimensions to match, or check *Use Printer Paper Settings*.
+  2. Choose the page orientation *Landscape* or *Portrait* to suit your intended design by clicking the associated button.
+  3. Click `OK` to save these settings.
+2. Switch to *Layout View* using the menu item `View->Layout View`. Alternatively, there is two buttons in the lower-left corner of the map area to switch between *Layout View* and *Data View* (what you were in).
+3. Adjust the size & position of the map by clicking on the map data frame and dragging the handles (the 'knobs' that appear on the outer boundary of the rectangle).
+4. Adjust the display of the data frame so it is centered on Oregon using the *Pan* tool. This is the hand button on the *Tools* toolbar.
+5. Use the *Zoom* tools to get the entire state of Oregon with a margin on all sides. These tools are the magnifying glass buttons on the *Tools* toolbar.
+  - Clicking on the map after activating the *Zoom* tool will center the map and zoom in/out some.
+  - Holding a click and dragging away from that spot will draw a rectangle which the data frame will zoom and center on.
+6. You'll notice that when you switched to *Layout View* that a new toolbar appeared. This is the *Layout* toolbar. The buttons on it are strikingly similar to the ones on the *Tools* toolbar. This is because they perform the same functions, but affecting the view of the page in the layout, and not the view of the data in the frame. Much grief will come from confusing the two.
+7. Add standard map elements:
+  1. A title using the menu item `Insert->Title`.
+  2. A text element with the author, or cartographer (your name): `Insert->Text`.
+  3. A text element with the data source.
+  4. A north arrow: `Insert->North Arrow`.
+  5. A scale bar: `Insert->Scale Bar`. After adding it to the map, adjust the size so that the labels for the total length & subdivisions are whole numbers.
+  6. Adjust the size and position of these elements to improve the look & readability of your map.
+    - Click on an element to select it.
+    - Drag a handle to resize the element.
+    - Drag inside the borders to move it without resizing. You can also use the arrow keys to move the element after selecting.
+    - Properties of an element can be viewed & modified by double-clicking on the element.
+8. Be sure to save your map document.
 
 ##### Make PDF copy of your map.
 
-. Save your map document.
+ArcMap map documents (MXD files) are not particularly portable documents; they not only require a not-very-common application to view, they also require the underlying datasets to be reachable by whoever opens them. For that reason, a number of formats are available for converting the layout into.
+
+1. Open the file export dialog: `File->Export`.
+2. Set the output file type: `PDF`.
+3. Set the outout filename: `Lab1.Oregon.pdf`, and click `OK`.
+4. Take a look at your exported PDF through a PDF viewing application or a web browser. **Always look at your output!** Both common and unusual errors slip past creators when they don't look at their outputs.
 
 
-### Part 2 - Map Challenges
+### Part 3 - Write-up
 
+**Note:** Some of the questions in the write-up relate to the actions you take in making your map; you may find it helpful to answer those questions as you go, rather than waiting until after completion.
+
+##### Instructions
+
+1. Copy & paste the questions below into a document in your preferred word processor/text editor.
+  - Be sure to use a commonly-viewable document format, e.g. Word, rich text, markdown.
+2. Compose your answers for each question in the document following each question.
+
+##### Questions
+
+1. How many files were contained in the downloaded file *citylim_2016.zip*?
+2. What types of files were contained in the downloaded file *citylim_2016* and what data does each one contain? Hint: look at the file extensions and do a web search, e.g., Google or Wikipedia, to find out what they mean.
+3. Looking at your final map, what pattern(s) do you notice in the data? How might these perceived patterns change if you plotted cities as points rather than showing the city limits? (1-2 sentences)
+4. What changes would you make in a future version of the map to make it easier to read or interpret? (1-2 sentences; there are always changes that can be made, take some time to think and be creative)
+5. What happens to files that are saved on the C:\\ drive when you log out of the computers in SSIL?
 
 TODO: ?s
 about multiple ways to do something.
@@ -126,4 +167,5 @@ Check if downloads have line+poly.
 ArcMap default (annotate).
   Catalog panel.
   Standard toolbar.
-  Table of Contents
+  Table of Contents.
+  Data View/Layout View buttons.
