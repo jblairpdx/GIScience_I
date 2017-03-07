@@ -20,13 +20,13 @@ You should have basic familiarity with using a personal computer; logging in, vi
 #### References & Links
 
 * SSIL website.
-  - [https://ssil.uoregon.edu/]
+  - [https://ssil.uoregon.edu/](https://ssil.uoregon.edu/)
 * SSIL: GIS.
-  - [https://ssil.uoregon.edu/arcgis-software/]
+  - [https://ssil.uoregon.edu/arcgis-software/](https://ssil.uoregon.edu/arcgis-software/)
 * ArcGIS Desktop: A Quick Tour of ArcMap.
-  - [https://desktop.arcgis.com/en/arcmap/latest/get-started/introduction/a-quick-tour-of-arcmap.htm]
+  - [https://desktop.arcgis.com/en/arcmap/latest/get-started/introduction/a-quick-tour-of-arcmap.htm](https://desktop.arcgis.com/en/arcmap/latest/get-started/introduction/a-quick-tour-of-arcmap.htm)
 * Oregon Spatial Data Library.
-  - [http://spatialdata.oregonexplorer.info/geoportal/]
+  - [http://spatialdata.oregonexplorer.info/geoportal/](http://spatialdata.oregonexplorer.info/geoportal/)
 
 
 #### To Turn In
