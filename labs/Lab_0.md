@@ -18,7 +18,7 @@ To connect to the SSIL server, you will need your Duck ID & password, and be enr
 #### References & Links
 
 * SSIL Network Drives and Connecting Remotely.
-  - https://ssil.uoregon.edu/ssil/ssil-network-drives-and-connecting-remotely/
+  - [https://ssil.uoregon.edu/ssil/ssil-network-drives-and-connecting-remotely/])https://ssil.uoregon.edu/ssil/ssil-network-drives-and-connecting-remotely/)
 
 
 #### To Turn In
