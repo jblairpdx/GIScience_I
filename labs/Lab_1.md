@@ -20,13 +20,13 @@ You should have basic familiarity with using a personal computer; logging in, vi
 #### References & Links
 
 * SSIL website.
-  - https://ssil.uoregon.edu/
+  - [https://ssil.uoregon.edu/]
 * SSIL: GIS.
-  - https://ssil.uoregon.edu/arcgis-software/
+  - [https://ssil.uoregon.edu/arcgis-software/]
 * ArcGIS Desktop: A Quick Tour of ArcMap.
-  - https://desktop.arcgis.com/en/arcmap/latest/get-started/introduction/a-quick-tour-of-arcmap.htm
+  - [https://desktop.arcgis.com/en/arcmap/latest/get-started/introduction/a-quick-tour-of-arcmap.htm]
 * Oregon Spatial Data Library.
-  - http://spatialdata.oregonexplorer.info/geoportal/
+  - [http://spatialdata.oregonexplorer.info/geoportal/]
 
 
 #### To Turn In
@@ -67,6 +67,7 @@ Note: The questions to answer in this lab relate to the process you complete in 
 
 ##### Add data to the map.
 
-When you create a new map document, ArcMap automatically creates one data frame. The data frames are used to organize the map's layout. Each data frame is shown in the layout as a rectangular element. In this lab we will work with a single data frame.
+When you create a new map document, ArcMap automatically creates an initial data frame. Data frames are used to organize the map's layout. Each data frame is shown in the layout as a rectangular element. In this lab we will work with a single data frame.
 
-1. G
+1. Tell ArcMap where to find the data.
+  1. Click
