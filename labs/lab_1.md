@@ -90,12 +90,12 @@ Now that the those shapefile datasets have been added, they're now listed as *la
 1. While in the *List By Draw Order* version of the *Table of Contents* panel, drag the layers around to have the city limits draw on top of the county boundaries.
 2. Set the colors for each layer.
   1. Open the *Symbol Selector* window for one layer.
-    - Click on the mini-symbol in the *Table of Contents*.
-    - Alternatively, open the layer properties (double-click on the name or right-click the name and choose `Properties`); then open the `Symbology` tab, then click on the symbol there.
+    1. Click on the mini-symbol in the *Table of Contents*.
+    2. Alternatively, open the layer properties (double-click on the name or right-click the name and choose `Properties`); then open the `Symbology` tab, then click on the symbol there.
   2. Select a preferred color.
-    - ArcMap provides a set of preset area symbols (fill and outline) on the left side of the *Symbol Selector* window.
-    - You can also individually set *Fill Color*, *Outline Color*, and *Outline Width* on the right. Opening these will display a color palette you may choose from.
-    - If you're still not satisfied, you may choose `More Colors` at the bottom of each palette to opens a *Color Selector*, which will allow you to manipulate individual color components.
+    1. ArcMap provides a set of preset area symbols (fill and outline) on the left side of the *Symbol Selector* window.
+    2. You can also individually set *Fill Color*, *Outline Color*, and *Outline Width* on the right. Opening these will display a color palette you may choose from.
+    3. If you're still not satisfied, you may choose `More Colors` at the bottom of each palette to opens a *Color Selector*, which will allow you to manipulate individual color components.
   4. Color the counties a subtle color; the cities a bold & contrasting color. Use your judgment; feel free to experiment, and try a number of combinations.
 3. Rename the layers to something better for display.
   1. When a dataset is added as a layer, it usually defaults to a version of the file name for the layer name. These can be obtuse for having on maps, so renaming them is a common step.
@@ -107,16 +107,16 @@ Now that the those shapefile datasets have been added, they're now listed as *la
 
 1. Open the page settings from the menu `File->Page and Print Setup`.
   1. Set the size.
-    - Choose the paper size *Letter*.
-    - Choose a matching print size: either type the dimensions to match, or check *Use Printer Paper Settings*.
+    1. Choose the paper size *Letter*.
+    2. Choose a matching print size: either type the dimensions to match, or check *Use Printer Paper Settings*.
   2. Choose the page orientation *Landscape* or *Portrait* to suit your intended design by clicking the associated button.
   3. Click `OK` to save these settings.
 2. Switch to *Layout View* using the menu item `View->Layout View`. Alternatively, there is two buttons in the lower-left corner of the map area to switch between *Layout View* and *Data View* (what you were in).
 3. Adjust the size & position of the map by clicking on the map data frame and dragging the handles (the 'knobs' that appear on the outer boundary of the rectangle).
 4. Adjust the display of the data frame so it is centered on Oregon using the *Pan* tool. This is the hand button on the *Tools* toolbar.
 5. Use the *Zoom* tools to get the entire state of Oregon with a margin on all sides. These tools are the magnifying glass buttons on the *Tools* toolbar.
-  - Clicking on the map after activating the *Zoom* tool will center the map and zoom in/out some.
-  - Holding a click and dragging away from that spot will draw a rectangle which the data frame will zoom and center on.
+  1. Clicking on the map after activating the *Zoom* tool will center the map and zoom in/out some.
+  2. Holding a click and dragging away from that spot will draw a rectangle which the data frame will zoom and center on.
 6. You'll notice that when you switched to *Layout View* that a new toolbar appeared. This is the *Layout* toolbar. The buttons on it are strikingly similar to the ones on the *Tools* toolbar. This is because they perform the same functions, but affecting the view of the page in the layout, and not the view of the data in the frame. Much grief will come from confusing the two.
 7. Add standard map elements:
   1. A title using the menu item `Insert->Title`.
