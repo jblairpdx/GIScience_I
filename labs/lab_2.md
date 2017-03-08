@@ -114,6 +114,6 @@ TODO: OVERWRITE WRITE-UP WITH NEW QUESTIONS
 4. What changes would you make in a future version of the map to make it easier to read or interpret? (1-2 sentences; there are always changes that can be made, take some time to think and be creative)
 5. What happens to files that are saved on the C:\\ drive when you log out of the computers in SSIL?
 
-
+TODO: This may be handy for Lab1 or here: https://desktop.arcgis.com/en/arcmap/latest/map/working-with-arcmap/quick-ways-to-navigate-data-frames-and-layouts.htm
 TODO: Image & references for: 
 Data Frame Properties - Coordinate System tab.
