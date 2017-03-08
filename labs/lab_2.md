@@ -37,6 +37,8 @@ Note: The questions to answer in this lab relate to the process you complete in 
 
 ### Part 1 - Map Instructions
 
+Reminder: Save often! it is a good idea to save frequently. You may even want to Save As and give sequential filelenames so that you could revert to a previous version if you make a mistake that you cannot undo or if the ArcMap document gets corrupted.
+
 ##### Read [*Using data frames*](https://desktop.arcgis.com/en/arcmap/latest/map/working-with-arcmap/using-data-frames.htm]) from the ArcMap documentation site.
 
 ##### Create a Lab2 folder in your student folder.
@@ -56,80 +58,42 @@ Discover and download the datasets via the link provided. Be sure to note the da
 
 Name it Lab2_Projections.mxd and put it in your Lab2 folder.
 
-##### Add data to the map.
+##### Set up the layour page.
 
-When you create a new map document, ArcMap automatically creates an initial data frame. Data frames are used to organize the map's layout. Each data frame is shown in the layout as a rectangular element. In this lab we will work with a single data frame.
-
-1. Tell ArcMap where to find the data.
-  1. If not open already, open the *Catalog* panel from the menu `Windows->Catalog`.
-    - Note: ArcMap panels can float over the main window or be docked along some edge of it. To move or dock the panel, grab the title part of the panel and move it to where you want it to float/dock. 
-  2. Click the `Connect to Folder` button at the top of the panel (has a yellow folder with a + over it).
-  3. Navigate the filesystem and select the Lab1 folder within your student folder, then click `OK`.
-2. Add city limits to the map.
-  1. Click the `Add Data` button from the *Standard* toolbar (has a yellow diamond with a + over it).
-  2. Navigate the connected folders and select the city limits shapefile you downloaded, and clik `OK` (or just double-click on the file).
-3. Add county boundaries to the map.
-  1. In the *Catalog* display, navigate to the county shapefile you downloaded.
-  2. Drag the shapefile and drop it onto the map window.
-4. Observe the difference between how the shapefiles are represented between *Windows Explorer* and the *Catalog* panel.
-5. Be sure to save your map document.
-
-##### Organize and symbolize data.
-
-Now that the those shapefile datasets have been added, they're now listed as *layers* in the *Table of Contents* panel (by default on the left of the screen). Under the title of the panel, there are five buttons, of which the first four control how the panel lists layers. Hover your cursor over any button to see its name, and a description of how it lists the layers. It's worth a moment to view these and understand what their purpose is.
-
-1. While in the *List By Draw Order* version of the *Table of Contents* panel, drag the layers around to have the city limits draw on top of the county boundaries.
-2. Set the colors for each layer.
-  1. Open the *Symbol Selector* window for one layer.
-    1. Click on the mini-symbol in the *Table of Contents*.
-    2. Alternatively, open the layer properties (double-click on the name or right-click the name and choose `Properties`); then open the `Symbology` tab, then click on the symbol there.
-  2. Select a preferred color.
-    1. ArcMap provides a set of preset area symbols (fill and outline) on the left side of the *Symbol Selector* window.
-    2. You can also individually set *Fill Color*, *Outline Color*, and *Outline Width* on the right. Opening these will display a color palette you may choose from.
-    3. If you're still not satisfied, you may choose `More Colors` at the bottom of each palette to opens a *Color Selector*, which will allow you to manipulate individual color components.
-  4. Color the counties a subtle color; the cities a bold & contrasting color. Use your judgment; feel free to experiment, and try a number of combinations.
-3. Rename the layers to something better for display.
-  1. When a dataset is added as a layer, it usually defaults to a version of the file name for the layer name. These can be obtuse for having on maps, so renaming them is a common step.
-  2. Open the layer properties (see above), and select the *General* tab.
-  3. Write your improved name in the *Layer Name* section.
+1. Open the page settings with the menu item `File->Page and Print Setup`.
+2. Make sure these sett paper size to *Letter*, and set the map page size to match or use the printer paper settings.
+3. Set the orientation to *Portrait*.
 4. Be sure to save your map document.
 
-##### Create a layout.
+##### Create a data frame of the state of Oregon.
 
-1. Open the page settings from the menu `File->Page and Print Setup`.
-  1. Set the size.
-    1. Choose the paper size *Letter*.
-    2. Choose a matching print size: either type the dimensions to match, or check *Use Printer Paper Settings*.
-  2. Choose the page orientation *Landscape* or *Portrait* to suit your intended design by clicking the associated button.
-  3. Click `OK` to save these settings.
-2. Switch to *Layout View* using the menu item `View->Layout View`. Alternatively, there is two buttons in the lower-left corner of the map area to switch between *Layout View* and *Data View* (what you were in).
-3. Adjust the size & position of the map by clicking on the map data frame and dragging the handles (the 'knobs' that appear on the outer boundary of the rectangle).
-4. Adjust the display of the data frame so it is centered on Oregon using the *Pan* tool. This is the hand button on the *Tools* toolbar.
-5. Use the *Zoom* tools to get the entire state of Oregon with a margin on all sides. These tools are the magnifying glass buttons on the *Tools* toolbar.
-  1. Clicking on the map after activating the *Zoom* tool will center the map and zoom in/out some.
-  2. Holding a click and dragging away from that spot will draw a rectangle which the data frame will zoom and center on.
-6. You'll notice that when you switched to *Layout View* that a new toolbar appeared. This is the *Layout* toolbar. The buttons on it are strikingly similar to the ones on the *Tools* toolbar. This is because they perform the same functions, but affecting the view of the page in the layout, and not the view of the data in the frame. Much grief will come from confusing the two.
-7. Add standard map elements:
-  1. A title using the menu item `Insert->Title`.
-  2. A text element with the author, or cartographer (your name): `Insert->Text`.
-  3. A text element with the data source.
-  4. A north arrow: `Insert->North Arrow`.
-  5. A scale bar: `Insert->Scale Bar`. After adding it to the map, adjust the size so that the labels for the total length & subdivisions are whole numbers.
-  6. Adjust the size and position of these elements to improve the look & readability of your map.
-    - Click on an element to select it.
-    - Drag a handle to resize the element.
-    - Drag inside the borders to move it without resizing. You can also use the arrow keys to move the element after selecting.
-    - Properties of an element can be viewed & modified by double-clicking on the element.
-8. Be sure to save your map document.
+1. Add the state boundaries you downloaded to the map. Remember, SSIL doesn't save your application settings, so you'll need to use the `Connect to Folder` button in ArcCatalog to add your Lab2 folder.
+2. Choose a color to symbolize the states with.
+3. Rename the data frame.
+  1. Open the *Data Frame Properties* dialog window: double-click the data frame's name in the Table of Contents, or right-click and choose `Properties`.
+  2. In the *General* tab, the name is listed at the top. Change it to 'Oregon - GCS', then click `OK` to set the new properties.
+4. View the coordinate system of the data frame, under the *Coordinate System* tab of the *Properties* dialog window. Note that the data frame is set to display the unprojected *Geographic Coordinate System*.
+5. Be sure to save your map document.
 
-##### Make PDF copy of your map.
+When first created, a data frame does not have a projection or coordinate system. It will automatically set itself to the first spatial dataset that is added.
 
-ArcMap map documents (MXD files) are not particularly portable documents; they not only require a not-very-common application to view, they also require the underlying datasets to be reachable by whoever opens them. For that reason, a number of formats are available for converting the layout into.
+##### Create a data frame of the world's countries.
 
-1. Open the file export dialog: `File->Export`.
-2. Set the output file type: `PDF`.
-3. Set the outout filename: `Lab1_Oregon.pdf`, and click `OK`.
-4. Take a look at your exported PDF through a PDF viewing application or a web browser. **Always look at your output!** Both common and unusual errors slip past creators when they don't look at their outputs.
+When in the *Data View* (not *Layout View*), adding a new data frame will cause the area displaying the active data frame (the main body of the application window) to go blank. This is because only the **active** data frame is displayed in *Data View*. ArcMap automatically switches the active data frame to the new one after adding it. To activate an inactive data frame, right-click on its name and choose `Activate`.
+
+1. Create a new data frame with the menu item `Insert->Data Frame`.
+2. Add the country boundaries you downloaded to the map.
+3. Choose a color to symbolize the countries with.
+4. Rename the data frame to 'World - GCS'.
+5. View the coordinate system of the data frame; note that it is set to display the unprojected *Geographic Coordinate System*.
+
+
+
+TODO: FINISH MAP INSTRUCTIONS.
+TODO: OVERWRITE WRITE-UP WITH NEW QUESTIONS
+
+
+
 
 
 ### Part 3 - Write-up
@@ -150,13 +114,6 @@ ArcMap map documents (MXD files) are not particularly portable documents; they n
 4. What changes would you make in a future version of the map to make it easier to read or interpret? (1-2 sentences; there are always changes that can be made, take some time to think and be creative)
 5. What happens to files that are saved on the C:\\ drive when you log out of the computers in SSIL?
 
-TODO: ?s
-about multiple ways to do something.
 
 TODO: Image & references for: 
-Check if downloads have line+poly.
-ArcMap default (annotate).
-  Catalog panel.
-  Standard toolbar.
-  Table of Contents.
-  Data View/Layout View buttons.
+Data Frame Properties - Coordinate System tab.
