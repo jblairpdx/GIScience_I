@@ -8,26 +8,18 @@ title: GEOG 4/581 - Lab 2
 
 #### Purpose
 
-Understanding projections and spatial data types, and how they are handled in ArcMap)
+Understanding projections and spatial data types, and how they are handled in ArcMap.
 
 
 #### Prerequisites
 
-To connect to the SSIL server, you will need your Duck ID & password, and be enrolled in the GEOG 4/581 course. If for some reason your student folder has not been set up please see the SSIL lab attendant or your lab's Graduate Employee Teaching Assistant (GE).
-
-You should have basic familiarity with using a personal computer; logging in, viewing files, and browsing the web. See the "Lab 0" document reference for navigating the Windows filesystem and SSIL servers for reference.
+This excercise builds on skills practiced in Lab 1, inlcuding basic knowledge of how to create an ArcMap document, how to add data and other elements to it, and how to create a shareable document to turn in.
 
 
 #### References & Links
 
-* SSIL website.
-  - [https://ssil.uoregon.edu/](https://ssil.uoregon.edu/)
-* SSIL: GIS.
-  - [https://ssil.uoregon.edu/arcgis-software/](https://ssil.uoregon.edu/arcgis-software/)
-* ArcGIS Desktop: A Quick Tour of ArcMap.
-  - [https://desktop.arcgis.com/en/arcmap/latest/get-started/introduction/a-quick-tour-of-arcmap.htm](https://desktop.arcgis.com/en/arcmap/latest/get-started/introduction/a-quick-tour-of-arcmap.htm)
-* Oregon Spatial Data Library.
-  - [http://spatialdata.oregonexplorer.info/geoportal/](http://spatialdata.oregonexplorer.info/geoportal/)
+* ArcGIS Desktop: Using data frames.
+  - [https://desktop.arcgis.com/en/arcmap/latest/map/working-with-arcmap/using-data-frames.htm](https://desktop.arcgis.com/en/arcmap/latest/map/working-with-arcmap/using-data-frames.htm)
 
 
 #### To Turn In
@@ -35,7 +27,7 @@ You should have basic familiarity with using a personal computer; logging in, vi
 * Single-page map in Portable Document Format (PDF).
 * Written document with lab questions in a commonly-accessible format (Microsoft Word, rich text, markdown, etc.)
 
-Submit the documents to the class Canvas page as listed under the lab assignment within the first ten minutes of the start of the next lab.
+Submit the documents to the class Canvas page as listed under the lab assignment at your earliest convenience before the start of the next lab.
 
 
 #### Steps
@@ -46,25 +38,24 @@ Note: The questions to answer in this lab relate to the process you complete in 
 
 ### Part 1 - Map Instructions
 
-##### Read [*A Quick Tour of ArcMap*](https://desktop.arcgis.com/en/arcmap/latest/get-started/introduction/a-quick-tour-of-arcmap.htm) from the ArcMap documentation site.
+##### Read [*Using data frames*](https://desktop.arcgis.com/en/arcmap/latest/map/working-with-arcmap/using-data-frames.htm]) from the ArcMap documentation site.
 
-##### Create a Lab1 folder in your student folder.
+##### Create a Lab2 folder in your student folder.
 
 ##### Download spatial datasets.
 
-1. Open a web browser, and navigate to the [Oregon Spatial Data Library](http://spatialdata.oregonexplorer.info/geoportal/).
-2. Browse or search for the following datasets:
-  - *Oregon City Limits (2016)*: citylim_2016.zip.
-  - *Oregon Counties - 2015*: orcnty2015.zip.
-3. Download the files and save them in your student folder's newly-created Lab1 folder (e.g. R:\GEOG481\<Duck ID>\Lab1\Data\orcnty2015.zip).
-4. Make a note of the data source. (Spatial) data has value, and you will want to give credit where due when creating maps or other documents. The data sources should be listed on every map you create.
-5. Extract the dataset files from within the zipfiles for each dataset you downloaded.
+Discover and download the datasets via the link provided. Be sure to note the data source, in order to provide citations on your map.
 
-##### Create a new ArcMap document (.mxd).
+* States 2015 (1:5,000,000).
+  - Link: [https://www.census.gov/geo/maps-data/data/tiger-cart-boundary.html](https://www.census.gov/geo/maps-data/data/tiger-cart-boundary.html)
+  - Filename: cb_2015_us_state_5m.zip.
+* Countries (without boundary lakes).
+  - Link: [http://www.naturalearthdata.com/downloads/110m-cultural-vectors/](http://www.naturalearthdata.com/downloads/110m-cultural-vectors/)
+  - Filename: ne_110m_admin_0_countries.zip.
 
-1. Open ArcMap from the *Windows Start Menu* (either by finding in the *Start Menu* folders, or by typing the name in the search bar).
-2. Select *New Blank Map* from the *Getting Started* window that appears. Alternately, you can just close this window: it achieves the same thing.
-3. Right away, save the document: from the top menus, select `File->Save As`, navigate to your Lab1 folder, and save as **Lab1.Oregon.mxd**.
+##### Create a new ArcMap document.
+
+Name it Lab2_Projections.mxd and put it in your Lab2 folder.
 
 ##### Add data to the map.
 
@@ -138,7 +129,7 @@ ArcMap map documents (MXD files) are not particularly portable documents; they n
 
 1. Open the file export dialog: `File->Export`.
 2. Set the output file type: `PDF`.
-3. Set the outout filename: `Lab1.Oregon.pdf`, and click `OK`.
+3. Set the outout filename: `Lab1_Oregon.pdf`, and click `OK`.
 4. Take a look at your exported PDF through a PDF viewing application or a web browser. **Always look at your output!** Both common and unusual errors slip past creators when they don't look at their outputs.
 
 
