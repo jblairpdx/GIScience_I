@@ -37,11 +37,11 @@ Note: The questions to answer in this lab relate to the process you complete in 
 
 ### Part 1 - Map Instructions
 
-#### Read [*Using data frames*](https://desktop.arcgis.com/en/arcmap/latest/map/working-with-arcmap/using-data-frames.htm]) from the ArcMap documentation site.
+##### Read [*Using data frames*](https://desktop.arcgis.com/en/arcmap/latest/map/working-with-arcmap/using-data-frames.htm]) from the ArcMap documentation site.
 
-#### Create a Lab2 folder in your student folder.
+##### Create a Lab2 folder in your student folder.
 
-#### Download spatial datasets.
+##### Download spatial datasets.
 
 Discover and download the datasets via the link provided. Be sure to note the data source, in order to provide citations on your map.
 
@@ -52,11 +52,11 @@ Discover and download the datasets via the link provided. Be sure to note the da
   - Link: [http://www.naturalearthdata.com/downloads/110m-cultural-vectors/](http://www.naturalearthdata.com/downloads/110m-cultural-vectors/)
   - Filename: ne_110m_admin_0_countries.zip.
 
-#### Create a new ArcMap document.
+##### Create a new ArcMap document.
 
 Name it Lab2_Projections.mxd and put it in your Lab2 folder.
 
-#### Add data to the map.
+##### Add data to the map.
 
 When you create a new map document, ArcMap automatically creates an initial data frame. Data frames are used to organize the map's layout. Each data frame is shown in the layout as a rectangular element. In this lab we will work with a single data frame.
 
