@@ -63,7 +63,7 @@ Note: The questions to answer in this lab relate to the process you complete in 
 
 1. Open ArcMap from the *Windows Start Menu* (either by finding in the *Start Menu* folders, or by typing the name in the search bar).
 2. Select *New Blank Map* from the *Getting Started* window that appears. Alternately, you can just close this window: it achieves the same thing.
-3. Right away, save the document: from the top menus, select `File->Save As`, navigate to your Lab1 folder, and save as **Lab1.Oregon.mxd**.
+3. Right away, save the document: from the top menus, select `File->Save As`, navigate to your Lab1 folder, and save as **Lab1_Oregon.mxd**.
 
 ##### Add data to the map.
 
