@@ -169,3 +169,6 @@ ArcMap default (annotate).
   Standard toolbar.
   Table of Contents.
   Data View/Layout View buttons.
+
+TODO: Other
+Download files to class folder, in case of internet hell.
