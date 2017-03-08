@@ -34,7 +34,7 @@ You should have basic familiarity with using a personal computer; logging in, vi
 * Single-page map in Portable Document Format (PDF).
 * Written document with lab questions in a commonly-accessible format (Microsoft Word, rich text, markdown, etc.)
 
-Submit the documents to the class Canvas page as listed under the lab assignment within the first ten minutes of the start of the next lab.
+Submit the documents to the class Canvas page as listed under the lab assignment at your earliest convenience before the start of the next lab.
 
 
 #### Steps
