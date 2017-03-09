@@ -54,17 +54,17 @@ After completing this course, students should be able to:
 
 #### Week 1
 
-* **Reading:** Longley et al Chapters 1 & 2.
-* **Mon (04/03) Lecture 1:** Class introduction; syllabus.
-* **Wed (04/05) Lecture 2:** Components of a GIS; GIS case studies.
-* **Lab 1:** Using GIS with ArcMap and SSIL.
+* **Reading**: Longley et al Chapters 1 & 2.
+* **Lecture 1** (Mon 04/03): Class introduction; syllabus.
+* **Lecture 2** (Wed 04/05): Components of a GIS; GIS case studies.
+* **Lab 1**: Using GIS with ArcMap and SSIL.
 
 #### Week 2
 
-* **Reading:** Longley et al Chapters 3 & 4; *TODO: projection supplemental*.
-* **Mon (04/10) Lecture 3:** Representing the Earth; reference/coordinate systems.
-* **Wed (04/12) Lecture 4:** Projections.
-* **Lab 2:** Projections.
+* **Reading**: Longley et al Chapters 3 & 4; *TODO: projection supplemental*.
+* **Lecture 3** (Mon (04/10): Representing the Earth; reference/coordinate systems.
+* **Lecture 4** (Wed (04/12): Projections.
+* **Lab 2**: Projections.
 
 #### Week 3
 
