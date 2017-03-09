@@ -31,7 +31,7 @@ After completing this course, students should be able to:
 
 * *Course/lecture:* Jacob Blair
     - Email: jblair3@uoregon.edu
-    - Office hours: Time & location TBA
+    - Office hours: Fridays 8:00-10:00, 109 Condon[(map)](https://map.uoregon.edu/99b67d6a9)
 * *Lab:* Dean Olson
     - Email: deano@uoregon.edu
     - Office hours: Time & location TBA
