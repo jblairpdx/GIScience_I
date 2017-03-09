@@ -111,15 +111,15 @@ After completing this course, students should be able to:
 #### Week 9
 
 * **Reading**: *TODO: do we need a reading?*.
-* **(Mon 05/29) Memorial Day**, no lecture.
-* **(Wed 05/31) Lecture 15**: *TODO*. *TODO: alt: the geographic citizen*.
+* **Memorial Day** (Mon 05/29): No lecture, enjoy yourself.
+* **Lecture 15** (Wed 05/31): *TODO*. *TODO: alt: the geographic citizen*.
 * **Final project**: Work on in lab session.
 
 #### Week 10
 
 * **Reading**: Longley et al Chapter 19.
-* **Mon (06/05) Lecture 16**: The geographic citizen: GIScience in work and life. *TODO: alt: grad presentations*.
-* **Wed (06/07) Lecture 17**: Graduate student presentations. *TODO: alt: Test 3.
+* **Lecture 16** (Mon 06/05): The geographic citizen: GIScience in work and life. *TODO: alt: grad presentations*.
+* **Lecture 17** (Wed 06/07): Graduate student presentations. *TODO: alt: Test 3.
 * **Final project**: Work on in lab session.
 
 
