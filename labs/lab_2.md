@@ -79,7 +79,7 @@ When first created, a data frame does not have a projection or coordinate system
 
 ##### Create a data frame of the world's countries.
 
-When in the *Data View* (not *Layout View*), adding a new data frame will cause the area displaying the active data frame (the main body of the application window) to go blank. This is because only the **active** data frame is displayed in *Data View*. ArcMap automatically switches the active data frame to the new one after adding it. To activate an inactive data frame, right-click on its name and choose `Activate`.
+When in the *Data View* (not *Layout View*), adding a new data frame will cause the area displaying the active data frame (the main body of the application window) to go blank. This is because only the **active** data frame is displayed in *Data View*. ArcMap automatically switches the active data frame to the new one after adding it. The active data frame will have its name in **bold text**. To activate an inactive data frame, right-click on its name and choose `Activate`.
 
 1. Create a new data frame with the menu item `Insert->Data Frame`.
 2. Add the country boundaries you downloaded to the map.
@@ -87,6 +87,37 @@ When in the *Data View* (not *Layout View*), adding a new data frame will cause 
 4. Rename the data frame to 'World - GCS'.
 5. View the coordinate system of the data frame; note that it is set to display the unprojected *Geographic Coordinate System*.
 
+##### Position the data frames in the layout.
+
+1. Switch from *Data View* to *Layout View* with the menu item `View->Layout View` (or using the button at the bottom of the window).
+2. Activate the 'Oregon - GCS' data frame.
+  1. In *Layout View*, selecting a data frame in the layout will activate it.
+  2. You can also activate using the same method as works in the data frame.
+3. Open the data frame's properties. Much like activating, this can be done by interacting with the data frame in the *Table of Contents* and the graphical representation of it.
+4. Adjust the size and position of the data frame. Where and what to change should be apparent.
+  1. Set the top-left corner of the frame to be 0.15 inches from the left (X), and 9.85 inches from the bottom (Y) of the layout.
+    - *Position coordinates advance from the bottom-left corner of the layout, just like a standard cartesian coordinate (XY) graph.*
+    - Units are set by the Map Page Size in *Page & Print Setup*, which you set near the beginning of the lab. Don't worry about typing them in when entering values.
+  2. Set the size of the map to be 4 inches square.
+5. Pan the **data frame** so it is centered on Oregon.
+6. Zoom the data frame so that the entire state of Oregon appears with margins on all sides.
+7. Activate the 'World - GCS' data frame, and repeat steps 3-6 with it using:
+  1. Top-left corner's X = 0.15 inches, Y = 4.5 inches.
+  2. Width = 2.5 inches, height = 4 inches.
+
+Beware double-clicking a data frame rectangle in the layout! You may assume this will open the properties, but it does not. Instead it will make the space within interactive like you are in *Data View*. If this is happening, the rectangle will have a thicker outline than usual. Clicking out of the frame will bring you out of it. A normally-selected data frame in the layout will have the resizing handles.
+
+##### Duplicate the data frames and project the duplicates.
+
+1. Select one of the data frames in the layout.
+2. Copy the data frame. Either right-click on the rectangle, use the menu item `Edit->Copy`, or use the keyboard shortcut `CTRL-C`.
+3. Paste the copy into the layout. Either right-click, `Edit->Paste`, or `CTRL-V`.
+4. Rename the new data frame. Replace the 'GCS' part of the name with 'Lambert'.
+5. Adjust the position of the new data frame (keep the same size).
+  1. 'Oregon - Lambert': Top-right corner's X = 8.35 in, Y = 9.85 in.
+  2. 'World - Lambert': Top-right corner's X = 8.35 in, Y = 4.5 in.
+
+##### Project the duplicate maps.
 
 
 TODO: FINISH MAP INSTRUCTIONS.
@@ -115,5 +146,11 @@ TODO: OVERWRITE WRITE-UP WITH NEW QUESTIONS
 5. What happens to files that are saved on the C:\\ drive when you log out of the computers in SSIL?
 
 TODO: This may be handy for Lab1 or here: https://desktop.arcgis.com/en/arcmap/latest/map/working-with-arcmap/quick-ways-to-navigate-data-frames-and-layouts.htm
-TODO: Image & references for: 
-Data Frame Properties - Coordinate System tab.
+
+TODO: Image & references for:
+Data Frame Properties
+  Coordinate System tab.
+  Size and Position tab.
+
+TODO: Other
+Download files to class folder, in case of internet hell.
