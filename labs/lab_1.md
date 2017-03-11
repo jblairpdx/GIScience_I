@@ -131,7 +131,7 @@ Now that the those shapefile datasets have been added, they're now listed as *la
     - Properties of an element can be viewed & modified by double-clicking on the element.
 8. Be sure to save your map document.
 
-##### Make PDF copy of your map.
+##### Make a PDF copy of your map.
 
 ArcMap map documents (MXD files) are not particularly portable documents; they not only require a not-very-common application to view, they also require the underlying datasets to be reachable by whoever opens them. For that reason, a number of formats are available for converting the layout into.
 
