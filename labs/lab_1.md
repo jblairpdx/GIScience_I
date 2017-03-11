@@ -137,7 +137,7 @@ ArcMap map documents (MXD files) are not particularly portable documents; they n
 
 1. Open the file export dialog: `File->Export`.
 2. Set the output file type: `PDF`.
-3. Set the outout filename: `Lab1_Oregon.pdf`, and click `OK`.
+3. Set the output filename: `Lab1_Oregon.pdf`, and click `OK`.
 4. Take a look at your exported PDF through a PDF viewing application or a web browser. **Always look at your output!** Both common and unusual errors slip past creators when they don't look at their outputs.
 
 
