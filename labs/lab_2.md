@@ -117,14 +117,38 @@ Beware double-clicking a data frame rectangle in the layout! You may assume this
   1. 'Oregon - Lambert': Top-right corner's X = 8.35 in, Y = 9.85 in.
   2. 'World - Lambert': Top-right corner's X = 8.35 in, Y = 4.5 in.
 
-##### Project the duplicate maps.
+##### Project the duplicate data frames.
 
+None of the data frames currently have a projection; they're just longitude and latitude expressed as X and Y coordinates. For each of the new data frames ('Oregon - Lambert', 'World - Lambert'):
 
-TODO: FINISH MAP INSTRUCTIONS.
-TODO: OVERWRITE WRITE-UP WITH NEW QUESTIONS
+1. Open the *Data Frame Properties* and go to the *Coordinate System* tab.
+2. In the list of coordinate systems, find the projected coordinate system **NAD 1983 (2011) Oregon Statewide Lambert (Meters)**. Hint: typing something in the search bar at the top may help thin the options.
 
+Note: ArcMap will perform reprojection of a coordinate system 'on-the-fly'. The spatial data in the files do not change; rather the software transforms the coordinates to match the data frame just before drawing the display. This is very handy, and not as common in GIS software as you'd hope.
 
+##### Add elements for each map.
 
+Type, style, and place the following elements for each map in the layout (use your judgement). Remember the `Insert` menu!
+
+1. An appropriate (and distinct) title.
+2. A brief description of the suitability of the projection for the map considering the scale and type/location of distortion.
+
+Note: When making a visual information product, you should always be sure each map, data graphic, or table is labeled with a title or caption, possibly both. Folks need to know what they're looking at.
+
+##### Add elements for the layout.
+
+Type, style, and place the following elements in the layout.
+
+1. An appropriate title.
+2. The author/cartographer's name (that's you). To help your instructors, please put this under the title or in the bottom-right corner.
+3. The data source(s).
+  1. In a data visualization such as this, naming the individual or organization that collected the data will suffice for citations.
+  2. e.g. "Source: OpenStreetMap Contributors".
+
+##### Make a PDF copy of your map.
+
+1. Filename: `Lab2_Projections.pdf`.
+2. Take a look at your exported PDF through a PDF viewing application or a web browser. **Always look at your output!** Both common and unusual errors slip past creators when they don't look at their outputs.
 
 
 ### Part 3 - Write-up
@@ -139,11 +163,12 @@ TODO: OVERWRITE WRITE-UP WITH NEW QUESTIONS
 
 ##### Questions
 
-1. How many files were contained in the downloaded file *citylim_2016.zip*?
-2. What types of files were contained in the downloaded file *citylim_2016* and what data does each one contain? Hint: look at the file extensions and do a web search, e.g., Google or Wikipedia, to find out what they mean.
-3. Looking at your final map, what pattern(s) do you notice in the data? How might these perceived patterns change if you plotted cities as points rather than showing the city limits? (1-2 sentences)
-4. What changes would you make in a future version of the map to make it easier to read or interpret? (1-2 sentences; there are always changes that can be made, take some time to think and be creative)
-5. What happens to files that are saved on the C:\\ drive when you log out of the computers in SSIL?
+1. When changing the projection of a data frame a warning pop-up windows appeared. What does this warning message mean? What happens when you dismiss the window (click `Yes`)?
+2. ArcMap allows you to have multiple data frames (maps) in a single layout. You can drag files from the *Catalog* panel in the *Layout View* to add it to a data frame. If there are multiple data frames, in which one is the new layer added? How is that data frame visually presented in the ArcMap user interface?
+3. For which of the four maps you created is it appropriate to include a north arrow as the direction indicator? Briefly describe (1-2 sentences) why a north arrow would not be appropriate for the other maps.
+4. For which of the four maps you created is it appropriate to include an indicator of scale (bar or text-ratio). Briefly describe (1-2 sentences) how a map reader would understand or interpret scale in the other maps.
+5. For each of the two datasets, (state of Oregon and countries of the world), which of the projections/coordinate systems used in the lab (unprojected geographic coordinates or Lambert Conformal Conic) would you use for making maps similar in scale and extent to the ones you created here? Briefly (1-2 sentences) describe why.
+
 
 TODO: This may be handy for Lab1 or here: https://desktop.arcgis.com/en/arcmap/latest/map/working-with-arcmap/quick-ways-to-navigate-data-frames-and-layouts.htm
 
