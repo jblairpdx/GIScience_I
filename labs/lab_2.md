@@ -60,7 +60,7 @@ Discover and download the datasets via the link provided. Be sure to note the da
 
 Name it Lab2_Projections.mxd and put it in your Lab2 folder.
 
-##### Set up the layour page.
+##### Set up the layout page.
 
 1. Open the page settings with the menu item `File->Page and Print Setup`.
 2. Make sure these sett paper size to *Letter*, and set the map page size to match or use the printer paper settings.
