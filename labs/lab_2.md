@@ -19,6 +19,8 @@ This excercise builds on skills practiced in Lab 1, inlcuding basic knowledge of
 
 * ArcGIS Desktop: Using data frames.
   - [https://desktop.arcgis.com/en/arcmap/latest/map/working-with-arcmap/using-data-frames.htm](https://desktop.arcgis.com/en/arcmap/latest/map/working-with-arcmap/using-data-frames.htm)
+* United States Census Bureau: Geography - Maps & Data.
+  - [https://www.census.gov/geo/maps-data/](https://www.census.gov/geo/maps-data/)
 
 
 #### To Turn In
