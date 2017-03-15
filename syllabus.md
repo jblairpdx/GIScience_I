@@ -10,7 +10,7 @@ This class is an introduction to concepts behind organizing, analyzing, and visu
 2. How to record, recall, and analyze this information?
 3. How to communicate and discuss this information with others?
 
-GIScience I explores these questions though the applied use of software designed to facilitate the collection, analysis, symbolization, and communication of information about the world; that is to turn observations of the real world into information useful for acting in the real world. This is often doen with maps, and much of ther work will involve the creation of maps.
+GIScience I explores these questions though the applied use of software designed to facilitate the collection, analysis, symbolization, and communication of information about the world; that is to turn observations of the real world into information useful for acting in the real world. This is often done with maps, and much of ther work will involve the creation of maps.
 
 #### Objectives
 
