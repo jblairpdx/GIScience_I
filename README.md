@@ -7,9 +7,11 @@ Spring 2017
 
 ## Lecture Slides
 
-* [Lecture 1: Class Introduction; syllabus](https://jblairpdx.github.io/GIScience_I/slides/lecture_01.html)
+* [Lecture 1: Class introduction](https://jblairpdx.github.io/GIScience_I/slides/lecture_01.html)
 
 ## Lab Documents
 
 * [Lab 0: Filesystem and Servers in SSIL](https://jblairpdx.github.io/GIScience_I/labs/lab_0.html)
 * [Lab 1: Using GIS with ArcMap and SSIL](https://jblairpdx.github.io/GIScience_I/labs/lab_1.html)
+* [Lab 2: Projections](https://jblairpdx.github.io/GIScience_I/labs/lab_2.html)
+* [Lab 3: Spatial Data Types and Querying Values](https://jblairpdx.github.io/GIScience_I/labs/lab_3.html)
