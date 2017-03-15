@@ -136,7 +136,7 @@ After completing this course, students should be able to:
 
 There are four lab sections for the course. Each lab assignment will made be available by applicable lab session. During the lab section you have registered for, the SSIL computer lab is reserved for your use and a GE will be available to present material and answer questions.
 
-If there is space available in the other sections---and the GE for it gives their permission---you may sit in as a guest. Please understand that the GTF must prioritize the students registered for that section.
+If there is space available in the other sections---and the GE for it gives their permission---you may sit in as a guest. Please understand that the GE must prioritize the students registered for that section.
 
 Plan ahead, and **save often** while working; computers and software can be unpredictable and crash when one least expects (or wants). Please save your lab files to your student folder on the SSIL server. Feel free to save copies elsewhere.
 
