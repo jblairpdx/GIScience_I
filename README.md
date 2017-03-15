@@ -8,7 +8,7 @@ Spring 2017
 ## Lecture Slides
 
 * [Lecture 1: Class introduction](https://jblairpdx.github.io/GIScience_I/slides/lecture_01.html)
-* [Lecture 2: Components of a GIS; GIS case studies](https://jblairpdx.github.io/GIScience_I/slides/lecture_02.html)
+* [Lecture 2: Components of a GIS](https://jblairpdx.github.io/GIScience_I/slides/lecture_02.html)
 
 ## Lab Documents
 
