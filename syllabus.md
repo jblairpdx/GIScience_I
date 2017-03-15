@@ -56,7 +56,7 @@ After completing this course, students should be able to:
 
 * **Reading**: Longley et al Chapters 1 & 2.
 * **Lecture 1** (Mon 04/03): Class introduction.
-* **Lecture 2** (Wed 04/05): Components of a GIS; GIS case studies.
+* **Lecture 2** (Wed 04/05): Components of a GIS.
 * **Lab 1**: Using GIS with ArcMap and SSIL.
 
 #### Week 2
