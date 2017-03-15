@@ -134,7 +134,7 @@ After completing this course, students should be able to:
 
 #### Lab Sections
 
-There are two lab sections for the course. Lab assignments will be given during the scheduled lab time. During the lab section you have registered for, the SSIL computer lab is reserved for your use and a GE will be available to present material and answer questions.
+There are four lab sections for the course. Each lab assignment will made be available by applicable lab session. During the lab section you have registered for, the SSIL computer lab is reserved for your use and a GE will be available to present material and answer questions.
 
 If there is space available in the other sections---and the GE for it gives their permission---you may sit in as a guest. Please understand that the GTF must prioritize the students registered for that section.
 
