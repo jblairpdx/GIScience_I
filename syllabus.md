@@ -55,7 +55,7 @@ After completing this course, students should be able to:
 #### Week 1
 
 * **Reading**: Longley et al Chapters 1 & 2.
-* **Lecture 1** (Mon 04/03): Class introduction; syllabus.
+* **Lecture 1** (Mon 04/03): Class introduction.
 * **Lecture 2** (Wed 04/05): Components of a GIS; GIS case studies.
 * **Lab 1**: Using GIS with ArcMap and SSIL.
 
@@ -104,7 +104,7 @@ After completing this course, students should be able to:
 #### Week 8
 
 * **Reading**: Longley et al Chapter 8; *TODO: geo-computation supplemental*.
-* **Lecture 13** (Mon 05/22): *TODO: walk through a GIS project*; *TODO: alt: guest speaker about decision making with GIS*.
+* **Lecture 13** (Mon 05/22): Guest speaker.
 * **Lecture 14** (Wed 05/24): Data collection, quality; geo-computation.
 * **Lab 7**: Continued from previous week.
 
@@ -112,14 +112,14 @@ After completing this course, students should be able to:
 
 * **Reading**: *TODO: do we need a reading?*.
 * **Memorial Day** (Mon 05/29): No lecture, enjoy yourself.
-* **Lecture 15** (Wed 05/31): *TODO*. *TODO: alt: the geographic citizen*.
+* **Lecture 15** (Wed 05/31): The geographic citizen: GIScience in work and life.
 * **Final project**: Work on in lab session.
 
 #### Week 10
 
 * **Reading**: Longley et al Chapter 19.
-* **Lecture 16** (Mon 06/05): The geographic citizen: GIScience in work and life. *TODO: alt: grad presentations*.
-* **Lecture 17** (Wed 06/07): Graduate student presentations. *TODO: alt: Test 3.
+* **Lecture 16** (Mon 06/05): Graduate student presentations.
+* **Lecture 17** (Wed 06/07): Test 3.
 * **Final project**: Work on in lab session.
 
 
@@ -134,9 +134,9 @@ After completing this course, students should be able to:
 
 #### Lab Sections
 
-There are two lab sections for the course. Lab assignments will be given during the scheduled lab time. During the lab section you have registered for, the SSIL computer lab is reserved for your use and a GTF will be available to present material and answer questions.
+There are two lab sections for the course. Lab assignments will be given during the scheduled lab time. During the lab section you have registered for, the SSIL computer lab is reserved for your use and a GE will be available to present material and answer questions.
 
-If there is space available in the other sections---and the GTF for it gives their permission---you may sit in as a guest. Please understand that the GTF must prioritize the students registered for that section.
+If there is space available in the other sections---and the GE for it gives their permission---you may sit in as a guest. Please understand that the GTF must prioritize the students registered for that section.
 
 Plan ahead, and **save often** while working; computers and software can be unpredictable and crash when one least expects (or wants). Please save your lab files to your student folder on the SSIL server. Feel free to save copies elsewhere.
 
@@ -148,7 +148,7 @@ Lab 7 is twice as much of your grade as the other labs are. Doing the math, Labs
 
 #### Graduate Students
 
-Graduate students will have two additional components to their final project. The first is a description of the analysis you did (5-10 pages). Be sure to provide citations and reasoning for your methodology. The second is to present your project briefly in the last week of class.
+Graduate students will have two additional components to their final project. The first is a description of the analysis you did (5-10 pages), or a related literature review to the subject matter. Be sure to provide citations and reasoning for your methodology. The second is to present your project briefly in the last week of class.
 
 
 ## Student Responsibilities
