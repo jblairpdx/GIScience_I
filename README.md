@@ -7,7 +7,7 @@ Spring 2017
 
 ## Lecture Slides
 
-* [Lecture 1: TBD](https://jblairpdx.github.io/GIScience_I/slides/lecture_00.html)
+* [Lecture 1: Class Introduction; syllabus](https://jblairpdx.github.io/GIScience_I/slides/lecture_01.html)
 
 ## Lab Documents
 
