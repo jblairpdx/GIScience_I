@@ -109,7 +109,7 @@ When in the *Data View* (not *Layout View*), adding a new data frame will cause 
 
 Beware double-clicking a data frame rectangle in the layout! You may assume this will open the properties, but it does not. Instead it will make the space within interactive like you are in *Data View*. If this is happening, the rectangle will have a thicker outline than usual. Clicking out of the frame will bring you out of it. A normally-selected data frame in the layout will have the resizing handles.
 
-##### Duplicate the data frames and project the duplicates.
+##### Duplicate & place the data frames.
 
 1. Select one of the data frames in the layout.
 2. Copy the data frame. Either right-click on the rectangle, use the menu item `Edit->Copy`, or use the keyboard shortcut `CTRL-C`.
