@@ -92,11 +92,26 @@ Just as you have connected to folders on local and network drives mapped to a dr
   - Do use the website or the associated PDF for citation information.
 2. Reorder the layers in the *Table of Contents*, if necessary, to place the raster layer below the vector layers.
 
-##### Make adjustments to the vector layers.
+##### Make adjustments to the raster layer.
 
-1. Choose *Stretched* symbology.
+1. Rename the layer to something more understandable.
+2. Symbolize the raster with *Stretched* symbology.
+3. Choose a color ramp that displays values from light-to-dark that is of a contrasting color in comparison to the city symbols.
+4. Try the different choices under *Stretch Type*, located toward the bottom of the *Symbology* tab after choosing *Stretched*. Choose the one that you believe makes the data most clear.
+
+##### Inspect the attribute values for the raster layer.
+
+Raster datasets only have a single value for each pixel (ignoring concepts like multi-band and related attribute tables).
+
+1. Use the *Identify* tool again to inspect some raster pixel values across the map. Feel free to zoom in for more accuracy in choosing pixels.
+  - The *Pixel value* is the actual attribute value at that point.
+  - The *Stretched value* is the conversion of the pizel value into a position on the color ramp (from 0 to 255 from left-to-right). The details of the conversion are defined in the *Stretch Type*
+
+#### 1.3 - Layout and Context Map
 
 TODO: FINISH FROM HERE
+?: what are the units of the population attribute value?
+
 
 
 
