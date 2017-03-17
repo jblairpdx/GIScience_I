@@ -83,7 +83,7 @@ After completing this course, students should be able to:
 #### Week 5
 
 * **Reading**: Longley et al Chapter 14 (*TODO: double-check on this chapter*); Chapter 15.
-* **Lecture 8** (Mon 05/01): Spatial analysis II: map algebra, surface analysis
+* **Lecture 8** (Mon 05/01): Spatial analysis: a look in the toolbox.
 * **Lecture 9** (Wed 05/3): GIS models.
 * **Lab 5**: Siting Food Relief Centers.
 
@@ -103,15 +103,15 @@ After completing this course, students should be able to:
 
 #### Week 8
 
-* **Reading**: Longley et al Chapter 8; *TODO: geo-computation supplemental*.
+* **Reading**: Longley et al Chapter 8.
 * **Lecture 13** (Mon 05/22): Guest speaker.
-* **Lecture 14** (Wed 05/24): Data collection, quality; geo-computation.
+* **Lecture 14** (Wed 05/24): Data collection; data quality.
 * **Lab 7**: Continued from previous week.
 
 #### Week 9
 
 * **Reading**: *TODO: do we need a reading?*.
-* **Memorial Day** (Mon 05/29): No lecture, enjoy yourself.
+* **Memorial Day** (Mon 05/29): No school, enjoy yourself.
 * **Lecture 15** (Wed 05/31): The geographic citizen: GIScience in work and life.
 * **Final project**: Work on in lab session.
 
