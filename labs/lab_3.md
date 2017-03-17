@@ -107,100 +107,48 @@ Raster datasets only have a single value for each pixel (ignoring concepts like 
   - The *Pixel value* is the actual attribute value at that point.
   - The *Stretched value* is the conversion of the pizel value into a position on the color ramp (from 0 to 255 from left-to-right). The details of the conversion are defined in the *Stretch Type*
 
-#### 1.3 - Layout and Context Map
+#### 1.3 - Design layout & add context map.
 
-TODO: FINISH FROM HERE
-?: what are the units of the population attribute value?
+#### Adjust & place current data frame.
 
+1. Choose a country to be the focus of the current data frame, and adjust the position and scale to set that focus.
+2. Using what you learned from Lab 2 and the projections lecture, set a projection that is suitable for the data. You'll want to minimize distortion for your chosen country, and preserve properties related to the data (hint: population density is area-based).
+3. In *Layout View*, adjust the size of the data frame to fill the majority of the page.
+4. You may need to readjust the scale & position so that the focus is how you want it.
 
+#### Create a context map.
 
+Context maps are useful for readers to understand the map's location in a greater extent. Here we will make a context map that shows the location of the country of focus in the wider world.
 
-##### Set up the layout page.
-
-1. Open the page settings with the menu item `File->Page and Print Setup`.
-2. Make sure these sett paper size to *Letter*, and set the map page size to match or use the printer paper settings.
-3. Set the orientation to *Portrait*.
-4. Be sure to save your map document.
-
-##### Create a data frame of the state of Oregon.
-
-1. Add the state boundaries you downloaded to the map. Remember, SSIL doesn't save your application settings, so you'll need to use the `Connect to Folder` button in ArcCatalog to add your Lab2 folder.
-2. Choose a color to symbolize the states with.
-3. Rename the data frame.
-  1. Open the *Data Frame Properties* dialog window: double-click the data frame's name in the Table of Contents, or right-click and choose `Properties`.
-  2. In the *General* tab, the name is listed at the top. Change it to 'Oregon - GCS', then click `OK` to set the new properties.
-4. View the coordinate system of the data frame, under the *Coordinate System* tab of the *Properties* dialog window. Note that the data frame is set to display the unprojected *Geographic Coordinate System*.
-5. Be sure to save your map document.
-
-When first created, a data frame does not have a projection or coordinate system. It will automatically set itself to the first spatial dataset that is added.
-
-##### Create a data frame of the world's countries.
-
-When in the *Data View* (not *Layout View*), adding a new data frame will cause the area displaying the active data frame (the main body of the application window) to go blank. This is because only the **active** data frame is displayed in *Data View*. ArcMap automatically switches the active data frame to the new one after adding it. The active data frame will have its name in **bold text**. To activate an inactive data frame, right-click on its name and choose `Activate`.
-
-1. Create a new data frame with the menu item `Insert->Data Frame`.
-2. Add the country boundaries you downloaded to the map.
-3. Choose a color to symbolize the countries with.
-4. Rename the data frame to 'World - GCS'.
-5. View the coordinate system of the data frame; note that it is set to display the unprojected *Geographic Coordinate System*.
-
-##### Position the data frames in the layout.
-
-1. Switch from *Data View* to *Layout View* with the menu item `View->Layout View` (or using the button at the bottom of the window).
-2. Activate the 'Oregon - GCS' data frame.
-  1. In *Layout View*, selecting a data frame in the layout will activate it.
-  2. You can also activate using the same method as works in the data frame.
-3. Open the data frame's properties. Much like activating, this can be done by interacting with the data frame in the *Table of Contents* and the graphical representation of it.
-4. Adjust the size and position of the data frame. Where and what to change should be apparent.
-  1. Set the top-left corner of the frame to be 0.15 inches from the left (X), and 9.85 inches from the bottom (Y) of the layout.
-    - *Position coordinates advance from the bottom-left corner of the layout, just like a standard cartesian coordinate (XY) graph.*
-    - Units are set by the Map Page Size in *Page & Print Setup*, which you set near the beginning of the lab. Don't worry about typing them in when entering values.
-  2. Set the size of the map to be 4 inches square.
-5. Pan the **data frame** so it is centered on Oregon.
-6. Zoom the data frame so that the entire state of Oregon appears with margins on all sides.
-7. Activate the 'World - GCS' data frame, and repeat steps 3-6 with it using:
-  1. Top-left corner's X = 0.15 inches, Y = 4.5 inches.
-  2. Width = 2.5 inches, height = 4 inches.
-
-Beware double-clicking a data frame rectangle in the layout! You may assume this will open the properties, but it does not. Instead it will make the space within interactive like you are in *Data View*. If this is happening, the rectangle will have a thicker outline than usual. Clicking out of the frame will bring you out of it. A normally-selected data frame in the layout will have the resizing handles.
-
-##### Duplicate the data frames and project the duplicates.
-
-1. Select one of the data frames in the layout.
-2. Copy the data frame. Either right-click on the rectangle, use the menu item `Edit->Copy`, or use the keyboard shortcut `CTRL-C`.
-3. Paste the copy into the layout. Either right-click, `Edit->Paste`, or `CTRL-V`.
-4. Rename the new data frame. Replace the 'GCS' part of the name with 'Lambert'.
-5. Adjust the position of the new data frame (keep the same size).
-  1. 'Oregon - Lambert': Top-right corner's X = 8.35 in, Y = 9.85 in.
-  2. 'World - Lambert': Top-right corner's X = 8.35 in, Y = 4.5 in.
-
-##### Project the duplicate data frames.
-
-None of the data frames currently have a projection; they're just longitude and latitude expressed as X and Y coordinates. For each of the new data frames ('Oregon - Lambert', 'World - Lambert'):
-
-1. Open the *Data Frame Properties* and go to the *Coordinate System* tab.
-2. In the list of coordinate systems, find the projected coordinate system **NAD 1983 (2011) Oregon Statewide Lambert (Meters)**. Hint: typing something in the search bar at the top may help thin the options.
-
-Note: ArcMap will perform reprojection of a coordinate system 'on-the-fly'. The spatial data in the files do not change; rather the software transforms the coordinates to match the data frame just before drawing the display. This is very handy, and not as common in GIS software as you'd hope.
-
-##### Add elements for each map.
-
-Type, style, and place the following elements for each map in the layout (use your judgement). Remember the `Insert` menu!
-
-1. An appropriate (and distinct) title.
-2. A brief description of the suitability of the projection for the map considering the scale and type/location of distortion.
-
-Note: When making a visual information product, you should always be sure each map, data graphic, or table is labeled with a title or caption, possibly both. Folks need to know what they're looking at.
+1. Insert a new data frame.
+2. Add the countries dataset to the new data frame.
+3. Symbolize the countries with a neutral fill color.
+4. Set the data frame's projection to be an area-preserving world projection.
+5. Adjust the size of the data frame in the layout to fit in available space.
+  - It's certainly possible to have the context data frame overlap the main map or be within a data-free section of it. Use your judgement regarding whether that makes sense design-wise. You will need to change the data frame background fill color, though (it's clear at first).
+6. Zoom to the extent of the data (worldwide).
+  1. You can zoom using methods you've learned in previous labs, but there is also some other ways to zoom that may be helpful:
+    + Right-click on a layer name and choose `Zoom to Layer` from the context menu.
+    + Select features in a layer you wish to zoom to; `Select Features` white arrow and `Clear Selected Features` button are on the *Tools* toolbar. You can select features by: clicking on them (hold shift to select more), or dragging a box around the ones you want (hold shift to select more). After selecting them, right-click the layer name and choose `Selection->Zoom to Selected Features`. Don't forget to clear the selection when you're done.
+7. Add a graticule (a grid of parallels and meridians) as the direction indicator.
+  1. Open the context map data frame's properties and go to the *Grids* tab.
+  2. Add a new grid, and step through the 'wizard' to set up how it is displayed. Lines every 30 degrees is recommended.
+8. Add an extent indicator to show the location of your main map in the context map.
+  1. Open the context map data frame properties, and go to the *Extent Indicators* tab.
+  2. Move the data frame for the main map into the *Show extent indicator for these data frames* box.
+  3. If you wish, you may choose to adjust the options for the extent indicator when they appear below the box.
 
 ##### Add elements for the layout.
 
 Type, style, and place the following elements in the layout.
 
-1. An appropriate title.
+1. An appropriate title, representing the data presented.
+2. A text caption for each map.
 2. The author/cartographer's name (that's you). To help your instructors, please put this under the title or in the bottom-right corner.
 3. The data source(s).
-  1. In a data visualization such as this, naming the individual or organization that collected the data will suffice for citations.
-  2. e.g. "Source: OpenStreetMap Contributors".
+4. Direction indicator each map (north arrow or graticule), as appropriate.
+5. Scale indicator, as appropriate.
+6. A legend for the main map (`Insert->Legend`). No need to make this perfect, but do try to make it clean and readable.
 
 ##### Make a PDF copy of your map.
 
@@ -219,6 +167,9 @@ Type, style, and place the following elements in the layout.
 2. Compose your answers for each question in the document following each question.
 
 ##### Questions
+
+TODO: FINISH FROM HERE
+?: what are the units of the population attribute value?
 
 1. When changing the projection of a data frame a warning pop-up windows appeared. What does this warning message mean? What happens when you dismiss the window (click `Yes`)?
 2. ArcMap allows you to have multiple data frames (maps) in a single layout. You can drag files from the *Catalog* panel in the *Layout View* to add it to a data frame. If there are multiple data frames, in which one is the new layer added? How is that data frame visually presented in the ArcMap user interface?
