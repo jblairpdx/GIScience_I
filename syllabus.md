@@ -77,13 +77,13 @@ After completing this course, students should be able to:
 
 * **Reading**: Longley et al Chapter 13.
 * **Test 1** (Mon 04/24).
-* **Lecture 7** (Wed 04/26): Data Analysis: tools and techniques.
+* **Lecture 7** (Wed 04/26): Spatial analysis: location, distance, area.
 * **Lab 4**: Spatial Selection and Attribute Queries.
 
 #### Week 5
 
 * **Reading**: Longley et al Chapter 14 (*TODO: double-check on this chapter*); Chapter 15.
-* **Lecture 8** (Mon 05/01): Spatial analysis; raster vs. vector.
+* **Lecture 8** (Mon 05/01): Spatial analysis II: map algebra, surface analysis
 * **Lecture 9** (Wed 05/3): GIS models.
 * **Lab 5**: Siting Food Relief Centers.
 
