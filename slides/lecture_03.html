@@ -40,13 +40,109 @@ class: inverse
 class: middle
 # Lecture 3: Representing the Earth; reference & coordinate systems
 
-???
+---
+
+## GIS as process
+
+1. Locate entities in the world.
+**2. Represent the entities digitally.**
+3. Describe the entities.
+4. Process, integrate, analyze.
+5. Communicate the results.
+6. Audience: Interpret, make decisions, give feedback.
 
 ---
 
-## Foobar
+## What is representation?
+ionsvations into data defined and stored in the system.
+
+* **The Fundamental Problem**: The world if infinitely complex, but computer systems are finite.
+* Key is to understand what to record and what to discard for your purposes.
 
 ???
+
+* Really, all man-made systems are finite.
+
+---
+
+Consider your contacts in your phone/email/rolodex.
+
+![Contact](media/contact.png)
+
+???
+
+* Information stored about a contact isn't a complete description of the person.
+* An approximation, primarily focused on the needs for contacting them.
+
+---
+
+## Discrete objects vs. continuous fields
+
+* Discrete object view: the world is empty, except where it is occupied by objects the defined boundaris that are instances of recognized categories.
+  - Objects can be counted.
+  - Objects have dimensionality.
+  - Objects can be associated with multiple attributes.
+
+???
+
+* Counting, attributes: these tend to lend themselves well to inventories; to censuses; to esy-to-determine dimensions.
+
+---
+
+## Discrete objects vs. continuous fields
+
+* continuous field view: the world is a finite number of variables, each one defined at every possible position.
+  - Fields show variance.
+  - Fields show smoot patterns (and disruptive ones).
+
+???
+
+* In many ways an inversion of discrete objects.
+* But there are many phenomena that do haev object distinction (or an easy way to fake it).
+* Tough question: how to represent a 'soil inventory'?
+* Also: emergence of patterns can tie field + discrete together: could you create a discrete object representation from a pattern in a field representation?
+
+---
+
+## Types of spatial objects
+
+* Point (0 dimensions).
+* Line (1 dimension).
+* Area (2 dimensions).
+* Volume (3 dimensions).
+
+* Real-world entities can have a representation that approximates their real-world geometry, or an artificial reclassification.
+* How one chooses to represent the entities is dependent on scale.
+
+???
+
+* Reclassification:
+  - Lower-dimension: City area --> city point.
+  - Higher-dimension: Person --> aggregate population; weather station --> continuous temperature map.
+
+---
+
+## Sidebar: Scale
+
+Scale has a number of meanings.
+
+* Scale of *detail*.
+  - Alt: 'spatial resoultion' or 'level of spatial detail'.
+  - Fine-scaled vs. coarse-scaled data.
+* Scale of *extent*.
+  - 'Large-scale' covers a large area, 'small-scale' covers a small area.
+* Scale of the *map*.
+  - Alt: 'representative fraction'.
+  - Ratio of distance on the map to distance in the real world.
+  - 'Large-scale' has a bigger fraction, but covers a small area (!!!).
+
+???
+
+* Don't let large/small scale trip you up. Just make sense.
+* You can be more specific.
+
+
+
 
 </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
