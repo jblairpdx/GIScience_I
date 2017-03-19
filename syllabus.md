@@ -62,7 +62,7 @@ After completing this course, students should be able to:
 #### Week 2
 
 * **Reading**: Longley et al Chapters 3 & 4; *TODO: projection supplemental*.
-* **Lecture 3** (Mon 04/10): Representing the Earth; reference/coordinate systems.
+* **Lecture 3** (Mon 04/10): Representing the Earth; reference & coordinate systems.
 * **Lecture 4** (Wed 04/12): Projections.
 * **Lab 2**: Projections.
 
