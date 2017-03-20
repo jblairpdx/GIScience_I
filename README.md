@@ -10,7 +10,7 @@ Spring 2017
 * [Lecture 1: Class introduction](https://jblairpdx.github.io/GIScience_I/slides/lecture_01.html)
 * [Lecture 2: Components of a GIS](https://jblairpdx.github.io/GIScience_I/slides/lecture_02.html)
 * [Lecture 3: Representing the Earth; georeferencing](https://jblairpdx.github.io/GIScience_I/slides/lecture_03.html)
-* [Lecture 4: Coordinate Systems and Projections](https://jblairpdx.github.io/GIScience_I/slides/lecture_04.html)
+* [Lecture 4: Coordinate systems and projections](https://jblairpdx.github.io/GIScience_I/slides/lecture_04.html)
 
 ## Lab Documents
 
