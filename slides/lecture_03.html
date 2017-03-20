@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Lecture 3: Representing the Earth; reference</title>
+    <title>Lecture 3: Representing the Earth; georeferencing</title>
     <meta charset="utf-8">
     <style>
       @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
@@ -40,7 +40,7 @@ class: inverse
 ---
 
 class: middle
-# Lecture 3: Representing the Earth; reference & coordinate systems
+# Lecture 3: Representing the Earth; georeferencing
 
 ---
 
@@ -67,6 +67,9 @@ Atomic element of representation: A location, (a time), and an attribute.
 
 ???
 
+* Sometimes you'll hear 'modeling' the Earth instead of representing.
+  * I chose representing, matches up with our process concept better.
+  * There's also a different kind of GIS 'modeling' (which we'll talk about later).
 * Really, all man-made systems are finite.
 
 ---
@@ -191,6 +194,50 @@ Borges, J. L. 1998. On exactitude in science. P. 325, In, Jorge Luis Borges, Col
     * Example: road-modeling systems can combine roads (divided highways, whole neighborhoods, external connections).
   * Where you can only have one object per unique identification.
     * Example: Living Learning Center - 2 buildings, but one name.
+
+---
+
+## In-class activity: How-to GIS?
+
+* Get in groups of two or three.
+* Put your names on a piece of paper.
+* Discuss how you would represent the following phenomena in a GIS (consider object v. field, scale, generalization):
+  * Restaurants in a city.
+  * Local parks and playgrounds.
+  * World cities.
+  * Vegetation classes.
+
+---
+
+## Georeferencing (geolocating) (geocoding)
+
+Tagging a data object with a spatial location.
+
+* Must be unique.
+* Should be persistent.
+* Understandable by the system that will interpret it.
+
+???
+
+* Unique: 'Green Mountain' occurs 153 times in USGS Geographic Names Information System; 21 in Oregon; 2 in Linn County!
+* Persistent: names change (Centennial Blvd -> Martin Luther King Jr. Blvd, Saigon -> Ho Chi Minh City).
+* Understandable: 'system' can be a computer or a person. Most western addresses are consistently understandable by folks in the area.
+
+---
+
+## Georeferencing Examples
+
+| System                    | Domain of uniqueness                   | Metric? | Example                                      |
+| ------------------------- | -------------------------------------- | :-----: | -------------------------------------------- |
+| Place-name (POI)          | varies                                 | no      | London, Ontario, Canada                      |
+| Postal code               | country                                | no      | 3334 NE Blakeley St, Seattle, WA, USA        |
+| Postal address            | global                                 | no*     | 97403 (US ZIP code)                          |
+| Linear referencing        | along reference line                   | no*     | Interstate 5 Milepost 1.4                    |
+| What3Words                | global                                 | no      | https://map.what3words.com/soak.trader.lined |
+| IP address                | varies                                 | no      | 128.111.106.183                              |
+| Public Land Survey System | principal meridian in West Canada/U.S. | yes     | Section 4, Township 4N, Range 6E             |
+| Longitude/latitude        | global                                 | yes     | -123.077250, 44.043588                       |
+| Coordinate system         | zone originating from a zero-point     | yes     | 4408634E, 7421076N                           |
 
 </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
