@@ -68,8 +68,8 @@ Coordinate systems are made up of the following components:
 
 1. A measurement framework.
 2. Units of measurement.
-3. A representative model of the Earth.
-4. One or more control points on the model.
+3. A representative model of the Earth (ellipsoid).
+4. A set of control points with known geometric relationship to the reference ellipsoid (datum).
 
 A 'geographic' coordinate system has a measurement framework with coordinates that measure angles from the Earth's center.
 
@@ -131,7 +131,7 @@ Defining meridians and parallels by the rotational axis allows us to apply them 
 
 ---
 
-## Representative model
+## Representative model: Ellipsoid
 
 Difficult to define coordinates like longitude/latitude on a geoid, though.
 
@@ -139,18 +139,27 @@ To simplify calculations, it's better to use an idealized mathematical represent
 
 * Ellipsoid (spheroid).
 
-![http://www.geography.hunter.cuny.edu/~jochen/GTECH361/lectures/lecture04/concepts/04%20-%20Understanding%20spheroids.html](media/image001.gif)
+.image-120[![http://www.geography.hunter.cuny.edu/~jochen/GTECH361/lectures/lecture04/concepts/04%20-%20Understanding%20spheroids.html](media/image001.gif)]
 
 ---
 
-## Shape of the Earth: Mathematical representation
+## Control Points: Datum
 
-##TODO: FILL IN DATUM PART
-http://courses.umass.edu/nrc592g-cschweik/pdfs/Class_3_Georeferencing_concepts.pdf
+From these control points, we can find distance, area, direction between locations on the Earth.
 
----
+* Amazingly, ellipsoids can vary quite a bit (newer ones are pretty similar).
+  * Advances in math & measuring the Earth's mass/shape.
+  * Newer ones are pretty similar.
+  * Datums do get minor updates (can't stop plate tectonics).
+* Datum shift: the slight variation when converting between datums.
+  * Important to not forget when using data with different datums.
 
-* "Geographic" coordinate system.
+![http://lp360.com/newsletter/December2014/December2014_2.html](media/TS_Fig3.jpg)
+
+???
+
+* Technically, the datum is the combination of the reference ellipsoid and the control points.
+* Big ones around here: WGS84 (all GPS), NAD83 + derivatives (most gov).
 
 ---
 
@@ -164,10 +173,14 @@ Why flatten the Earth?
 
 A projection is the mathematical transformation converting spherical coordinate (longitude/latitude) to a flat *Cartesian* coordinate system-
 
+![http://www.geog.ucsb.edu/~dylan/mtpe/geosphere/topics/map/map1.html](media/projections.jpg)
 ---
 
 ##TODO: FINISH
-
+http://courses.umass.edu/nrc592g-cschweik/pdfs/Class_3_Georeferencing_concepts.pdf
+http://lp360.com/newsletter/December2014/December2014_2.html
+http://desktop.arcgis.com/en/arcmap/10.3/guide-books/map-projections/projection-basics-for-gis-professionals.htm
+  
 </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
     </script>
