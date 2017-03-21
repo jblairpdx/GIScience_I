@@ -50,9 +50,27 @@ class: middle
 
 ---
 
-## Polar coordinates: longitude/latitude.
+## Coordinate system.
 
-* "Geographic" coordinate system.
+A system for georeferencing used to represent locations by their position in *geometric* space.
+
+Coordinate systems are made up of the following components:
+
+1. A measurement framework.
+2. Units of measurement.
+3. A representative model of the Earth.
+4. One or more control points on the model.
+
+A 'geographic' coordinate system has a measurement framework with coordinates that measure angles from the Earth's center.
+
+A 'projected' coordinate system is one where the measurement framework represents a conversion of the spherical location to a 'planimetric' (flat) location.
+
+But first, let's consider geographic coordinate systems.
+
+---
+
+## Measurement framework: longitude/latitude.
+
 * Outer boundary of plane that lies perpendicular to Earth's rotational axis is the *equator*.
   * Outer boundary of a parallel plane a given distance from the equator is called a *parallel*.
   * Points on a parallel share the same latitude.
@@ -71,7 +89,7 @@ class: middle
 
 ---
 
-## Longitude/latitude: Degrees
+## Units of measurement: Degrees
 
 * Historically, common to record as `Degrees, Minutes, Seconds` of angle.
   * `123° 42' 20" W, 44° 0' 22" N`
@@ -83,7 +101,7 @@ class: middle
 
 ---
 
-## Shape of the Earth
+## Shape of the Earth.
 
 Defining meridians and parallels by the rotational axis allows us to apply them to any rotating object, no matter the shape.
 
@@ -91,7 +109,7 @@ Defining meridians and parallels by the rotational axis allows us to apply them 
   * It's actually a bumpy, complex irregular shape called a *geoid*.
     * Bulges around the equator; flattened at the poles.
 
-.image-80![https://timeandnavigation.si.edu/multimedia-asset/geoid](media/540-geoid_-_nga.jpg)]
+.image-80[![https://timeandnavigation.si.edu/multimedia-asset/geoid](media/540-geoid_-_nga.jpg)]
 
 (heights exaggerated. red = above representative ellipsoid; blue = below)
 
@@ -103,7 +121,7 @@ Defining meridians and parallels by the rotational axis allows us to apply them 
 
 ---
 
-## Shape of the Earth: Mathematical representation.
+## Representative model.
 
 Difficult to define coordinates like longitude/latitude on a geoid, though.
 
@@ -119,6 +137,10 @@ To simplify calculations, it's better to use an idealized mathematical represent
 
 ##TODO: FILL IN DATUM PART
 http://courses.umass.edu/nrc592g-cschweik/pdfs/Class_3_Georeferencing_concepts.pdf
+
+---
+
+* "Geographic" coordinate system.
 
 ---
 
