@@ -181,7 +181,29 @@ These build upon each other.
 
 ## Attribute queries
 
-ArcGIS—along with many other GIS applications—use a form of *Structured Query Language* (SQL) to perform queries. 
+* ArcGIS—along with many other GIS applications—use a form of *Structured Query Language* (SQL) to perform queries.
+* The query tools in ArcGIS only concern themselves with the *where clause* part of an SQL query.
+  * The `SELECT * FROM dataset WHERE` part is conveniently taken care of for you.
+* Note: *field* and *attribute* are used somewhat interchangeably. Field refers to the attribute across all features in the dataset/feature class, so it seems more appropriate here.
+
+Basic query:
+```sql
+-- {field name} {operator} {value}
+    STATE = 'Washington'
+```
+Compound query
+```sql
+-- {basic query} {connector} {basic query}
+STATE = 'Washington' AND POP >= 50000
+
+-- Can set query order with parentheses, too.
+(STATE = 'Washington' OR STATE = 'Oregon') AND POP >= 50000
+```
+
+???
+
+* Sometimes the field/attribute name has quotes or brackets around it. This conforms to the dataset's format requirements, though they're rarely required. Using the provided query builder adds them for you, so don't sweat which ones go where.
+* Text strings always require single-quotes around them.
 
 ---
 
@@ -195,6 +217,13 @@ ArcGIS—along with many other GIS applications—use a form of *Structured Quer
   * Statistical calculations ignore features with nulls in used attributes.
   * Queries ignore nulls when running their logic, unless they're explicitly tested for in the query.
 
+```sql
+-- Looking for unnamed features?
+NAME IS NULL
+
+-- Perhaps you suspeect some unnamed features have empty strings?
+NAME IS NULL OR NAME = ''
+```
 
 </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
