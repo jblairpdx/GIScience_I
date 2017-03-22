@@ -120,7 +120,7 @@ After completing this course, students should be able to:
 * **Reading**: Longley et al Chapter 19.
 * **Lecture 16** (Mon 06/05): Graduate student presentations.
 * **Lecture 17** (Wed 06/07): Test 3.
-* **Final project**: Work on in lab session.
+* **Final project**: Work on in lab session. Project proposal due.
 
 
 ## Grading
