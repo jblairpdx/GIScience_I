@@ -138,8 +138,7 @@ class: inverse, middle
 * Each cell has a value with a sampled attribute from the location.
 
 * One value per cell.
-
-* Values are numbers.
+  * Values are numbers.
 
 .left-column[
   .image-100[![https://desktop.arcgis.com/en/arcmap/latest/manage-data/geodatabases/raster-basics.htm](media/GUID-885FD35E-8680-4FFE-A3D7-76E473F31B76-web.gif)]
@@ -157,10 +156,18 @@ class: inverse, middle
 ## Vector data model
 
 * A geometric represenation (features) of an entity.
-* Usually 2-dimensional (x- & y-coordinates); can have a third (z-coordinate).
+
+* Location of each feature is defined by an ordered set of coordinates tracing the geometry in the coordinate system.
+  * Usually 2-dimensional (x- & y-coordinates); can have a third (z-coordinate).
+
+* Features can have as many attribute values as the physical model can hold.
+  * Attribute can be any type of value the physical model provides.
+
+* Two types of features:
+  * Simple features: no stored relationships between features.
+  * Topological features: defined relationships between features are stored.
 
 ???
-
 
 ---
 
