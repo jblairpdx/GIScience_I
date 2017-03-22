@@ -82,7 +82,7 @@ These build upon each other.
 * Ordinal
   * Values have a 'natural order'.
   * Can perform comparisons: 'greater/more than'; 'less than'.
-  * Descriptive statistics: count, mode, median.
+  * Descriptive statistics: count, mode, min, max, median.
   * Examples: Rank, high-medium-low, Likert Scale.
 
 ---
@@ -94,13 +94,13 @@ These build upon each other.
 * Interval
   * Values have numeric value.
   * Differences between values have meaning: addition & subtraction.
-  * Descriptive statistics: count, mode, median, mean, variance/standard deviation.
+  * Descriptive statistics: count, mode, min, max, median, mean, variance/standard deviation.
   * Examples: Temperature (Farhenheit or Celsius), IQ.
 
 * Ratio
   * Values have an absolute zero point.
   * Ratios between values have meaning: multiplication & division.
-  * Descriptive statistics: (count, mode, median), mean, variance/standard deviation.
+  * Descriptive statistics: (count, mode), min, max, (median), mean, variance/standard deviation.
   * Inferential statistics: now have tools to make estimates about other features in same population as sample.
   * Examples: Weight, distance, temperature (Kelvin), money.
 
@@ -189,15 +189,15 @@ These build upon each other.
 Basic query:
 ```sql
 -- {field name} {operator} {value}
-    STATE = 'Washington'
+"STATE" = 'Washington'
 ```
 Compound query
 ```sql
 -- {basic query} {connector} {basic query}
-STATE = 'Washington' AND POP >= 50000
+"STATE" = 'Washington' AND "POP" >= 50000
 
 -- Can set query order with parentheses, too.
-(STATE = 'Washington' OR STATE = 'Oregon') AND POP >= 50000
+("STATE" = 'Washington' OR "STATE" = 'Oregon') AND "POP" >= 50000
 ```
 
 ???
@@ -211,7 +211,7 @@ STATE = 'Washington' AND POP >= 50000
 
 * `null` is the absence of a recorded value for a field.
 
-* **NOT** the same as zero or empty string `''`. Those are recorded values, with contents.
+* **NOT** the same as zero or empty string `''`. Those are recorded values with content.
 
 * GIS work often needs to account for them.
   * Statistical calculations ignore features with nulls in used attributes.
@@ -224,6 +224,24 @@ NAME IS NULL
 -- Perhaps you suspeect some unnamed features have empty strings?
 NAME IS NULL OR NAME = ''
 ```
+
+---
+
+## Querying in GIS Applications
+
+There are two primary ways queries are used in GIS applications. We'll refer to the with the ArcGIS terms.
+
+* Select by attributes ('select by expression' in QGIS)
+  * Features returned by the query are 'selected' in the application's various feature displays (Data Frame, Table View).
+![https://www.r-bloggers.com/time-series-analysis-in-arcgis/](media/Fig7.jpg)
+
+*Definition Query ('Feature subset' in QGIS)
+  * Features not returned by the query are completely excluded from the application's interface.
+![http://educationally.narod.ru/gislayerphotoalbum.html](media/def_query.jpg)
+
+???
+
+* Definition query: nice way to limit features in map/analysis, but not delete unused.
 
 </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
