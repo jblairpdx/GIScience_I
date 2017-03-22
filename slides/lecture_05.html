@@ -60,7 +60,7 @@ layout: true
 
 ---
 
-class: middle
+class: inverse, middle
 # Lecture 5: Geospatial data models; dataset formats
 
 ---
@@ -89,6 +89,7 @@ class: middle
 ???
 
 * Data model is where we design how representations and descriptions are to be stored in the GIS.
+* Note: This is different (though with similar approaches) than a *GIS Model*, which we will be discussing later in the term.
 
 ---
 
@@ -108,9 +109,24 @@ class: middle
   * Conceptual: Letter drives, files & folders.
   * Logical: Partitions, blocks & journals.
   * Physical: Disk media, electromagnetic switches.
-* Independence of conceptual model without barring change to lower-levels is important.
-  * Even as simple as changing file formats.
+* Conceptual data model: Often represented as labelled shapes with lines/arrows representing relationships.
+* Conceptual model (should be) independent: lower levels can make changes without affecting it.
+  * Example: Changing file formats (logical).
   * User of of the data shouldn't care, so long as they're getting their report/map/document.
+* Takeaway is that there is a relationship between how data is stored and how users interact with it.
+  * Data is abstracted to match the system's formats, but still reflect the conceptual level.
+
+---
+
+## Geospatial (logical) data models
+
+| Foo | Bar |
+| --- | --- |
+| foo | bar |
+
+???
+
+* Though conceptual and physical are important, we're going to 
 
 </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
