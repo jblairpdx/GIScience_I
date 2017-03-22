@@ -53,6 +53,22 @@ class: inverse, middle
 
 ---
 
+## GIS as process
+
+1. Locate entities in the world.
+
+2. Represent the entities digitally.
+
+3. **Describe the entities.**
+
+4. Process, integrate, analyze.
+
+5. Communicate the results.
+
+6. Audience: Interpret, make decisions, give feedback.
+
+--
+
 ## Measurement Scales
 
 These build upon each other.
@@ -99,27 +115,53 @@ These build upon each other.
 * Text
   * Value is a sequence of characters, including letters, numbers, punctuation, whitespace, 🎓🌐😜...
   * Example: `'Knight Library'`
+  * Alt names: string, char(acters).
   * Generally nominal.
-  * Can be ordinal, but system would not automatically recognize order (outside of alphanumerically).
-  * Alt names: text, string, char(acters).
+  * Can be ordinal, but system would not automatically recognize order outside of alphanumeric order.
 
 * Numeric
   * Value is a number.
   * Two main numeric types:
     * integers: whole numbers with no fractions.
       * Example: `-11574`
+      * Alt names: int, bigint, tinyint, long, short.
     * floating point: numbers with fractions.
       * Example: `4387.112`
+      * Alt names: float, double, numeric.
+  * Can be nominal, ordinal, interval, or ratio.
 
 ???
 
 * Floating point: Stored as a whole number with an extra number indicating where the decimal point goes.
 
 ---
+## Attribute Data Types
 
 * Boolean
+  * Value is one of only two possible values: `True` or `False`.
+  * Alt names: bool
+  * Technically nominal, though one could insist that `True` is 'more than' `False`.
+  * Most GIS logical data models have no explicit boolean attribute type. Substitutes:
+    * Integer: `0` = `False`, `1` or any other value = `True`
+    * Text: `'N'` = `False`, `'Y'` = `True` (or any similar design).
 
 * Date/time
+  * Value is a representation of a date, time, or both together.
+  * Example: `2017-06-06 20:03:00`
+  * Alt names: date, time, datetime.
+  * Dates & date-times are interval, but not ratio.
+  * Times are ratio only if they're stored as 24-hour style.
+
+???
+
+* Boolean
+  * The integer boolean substitution is favored by programmers & applications.
+  * The text boolean substitution is favored by manual editors & human readers of data.
+* Date/time
+  * Computer dates having arbitraty zero points have been the cause of many issues, e.g. Y2K.
+
+---
+
 
 * Binary (BLOB)
 
