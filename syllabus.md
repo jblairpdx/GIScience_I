@@ -69,7 +69,7 @@ After completing this course, students should be able to:
 #### Week 3
 
 * **Reading**: Longley et al Chapter 7; *TODO: attribute data supplemenal*; *TODO: where clause query suppliemental*.
-* **Lecture 5** (Mon 04/17): Geospatial data models; dataset formats.
+* **Lecture 5** (Mon 04/17): Geospatial data models.
 * **Lecture 6** (Wed 04/19): Attribute data: types & selection.
 * **Lab 3**: Spatial Data Types and Querying Values.
 
