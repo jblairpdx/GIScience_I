@@ -204,44 +204,98 @@ Most projections minimize distortion of a geometric property.
 
 ---
 
-## Conformal
+## In-class activity: Comparing projections
 
-##TODO: Example + notes.
+* Put your name on a piece of paper.
 
-???
-
----
-
-## Equal-area
-
-##TODO: Example + notes.
-##TODO: Use http://www.nationalgeographic.org/activity/investigating-map-projections/ for a class activity.
-
-???
+* For each of the upcoming projection examples, write the following information as we discuss them in class
+  1. Projection name.
+  2. Describe the lines of longitude (straight? parallel? meet at poles?).
+  3. Why use this projection?
 
 ---
 
-## Equidistant
+## Conformal: Lambert conformal conic
 
-##TODO: Example + notes.
+![https://en.wikipedia.org/wiki/Lambert_conformal_conic_projection](media/Lambert_conformal_conic_projection_SW.jpg)
 
 ???
+
+1. Lambert conformal conic.
+2. Not parallel, but meet at north pole and fan out at consistent angles.
+3. Lines approximate great circles at short enough distances.
+  * Aeronautical charts.
+  * Common in government-specified projected coordinate systems: US State Plane, India, EU/INSPIRE.
 
 ---
 
-## Retroazimuthal
+## Conformal: Mercator
 
-##TODO: Example + notes.
+![https://en.wikipedia.org/wiki/Mercator_projection](https://github.com/jblairpdx/GIScience_I/blob/master/slides/media/Mercator_projection_SW.jpg)
 
 ???
+
+1. Mercator (cylindrical).
+2. Parallel, do not meet at poles.
+3. Lines have constant bearing/direction: good for navigation.
+
+* Transverse Mercator: rotates the cylinder 90 degrees. High accuracy measurements when within a few degrees of parallel + constant bearing.
+
+---
+
+## Equal-area: Goode homolosine
+
+![https://en.wikipedia.org/wiki/Goode_homolosine_projection](media/Goode_homolosine_projection_SW.jpg)
+
+???
+
+1. Goode homolosine (pseudocylindrical).
+2. Not parallel, meet at poles.
+3. Actually two different projections in midlatitudes (Sinusoidal) and at poles (Mollweide).
+  * Avoids increasing distortion away from the reference lines.
+  * Excellent area preservation makes good do distribution maps.
+
+---
+
+## Equidistant: Azimuthal equidistant
+
+![https://en.wikipedia.org/wiki/Azimuthal_equidistant_projection](media/Azimuthal_equidistant_projection_SW.jpg)
+
+???
+
+1. Azimuthal equidistant (planar).
+2. Not parallel, but fan out at equal angles; meet at pole that's showing.
+3. Useful for showing distances from a point of interest. Also...
+
+---
+
+## Equidistant: Azimuthal equidistant
+
+![https://en.wikipedia.org/wiki/Azimuthal_equidistant_projection](media/Emblem_of_the_United_Nations.svg)
+
+---
+
+## Retroazimuthal: Craig retroazimuthal
+
+![https://en.wikipedia.org/wiki/Craig_retroazimuthal_projection](media/Craig_projection_SW.jpg)
+
+???
+
+1. Craig retroazimuthal (planar).
+2. Parallel, do not meet at poles.
+3. Consider the centerpoint, and why one would wish to know the direction to there from elsewhere.
 
 ---
 
 ## Gnomonic
 
-##TODO: Example + notes.
+![https://en.wikipedia.org/wiki/Gnomonic_projection](https://github.com/jblairpdx/GIScience_I/blob/master/slides/media/Gnomonic_projection_SW.jpg)
 
 ???
+
+1. Gnomonic
+2. Not parallel, fanning out at equal angles. Meet at visible pole.
+3. Useful anywhere you would like to easily see shortest routes.
 
 ---
 
