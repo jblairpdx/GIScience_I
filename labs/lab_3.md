@@ -22,6 +22,8 @@ This excercise builds on skills practiced in Labs 1-2.
   - [https://desktop.arcgis.com/en/arcmap/latest/map/working-with-layers/identifying-features.htm](https://desktop.arcgis.com/en/arcmap/latest/map/working-with-layers/identifying-features.htm)
 * ArcGIS Desktop: What is raster data?
   - [https://desktop.arcgis.com/en/arcmap/latest/manage-data/raster-and-images/what-is-raster-data.htm](https://desktop.arcgis.com/en/arcmap/latest/manage-data/raster-and-images/what-is-raster-data.htm)
+* Socioeconomic Data and Applications Center (SEDAC): Gridded Population of the World (GPW), v4 - Population Density, v4.
+  - [http://sedac.ciesin.columbia.edu/data/set/gpw-v4-population-density](http://sedac.ciesin.columbia.edu/data/set/gpw-v4-population-density)
 * UO Libraries: Map & Aerial Photography Library - Learning Commons Data Share.
   - [https://library.uoregon.edu/map/gis_data/data_in_commons.html](https://library.uoregon.edu/map/gis_data/data_in_commons.html)
 
@@ -87,9 +89,9 @@ Just as you have connected to folders on local and network drives mapped to a dr
 
 ##### Add the world population (2015) raster dataset as a layer to the data frame.
 
-1. Find the dataset at `R:\Class_Data\Lab3_Data\NAME_HERE`.
-  - The dataset is actually from: [http://sedac.ciesin.columbia.edu/data/collection/gpw-v4/sets/browse](http://sedac.ciesin.columbia.edu/data/collection/gpw-v4/sets/browse). We skipped that process here because (a) the website requires registration for downloads, and (b) the download is large (230 MB), no point in everyone downloading it to the same filesystem.
-  - Do use the website or the associated PDF for citation information.
+1. Find the dataset at `R:\Class_Data\Lab3\Data\gpw-v4-population-density-2015.tif`.
+  - The dataset is actually from the [Socioeconomic Data and Applications Center (SEDAC)](http://sedac.ciesin.columbia.edu/data/set/gpw-v4-population-density). We skipped the download process here because (a) the website requires registration for downloads, and (b) the download is large (230 MB), no point in everyone downloading it to the same filesystem.
+  - Do use the website or the associated PDF in the folder for citation information and any other details you may be interested in.
 2. Reorder the layers in the *Table of Contents*, if necessary, to place the raster layer below the vector layers.
 
 ##### Make adjustments to the raster layer.
@@ -168,17 +170,17 @@ Type, style, and place the following elements in the layout.
 
 ##### Questions
 
-TODO: FINISH FROM HERE
-?: what are the units of the population attribute value?
-
-1. When changing the projection of a data frame a warning pop-up windows appeared. What does this warning message mean? What happens when you dismiss the window (click `Yes`)?
-2. ArcMap allows you to have multiple data frames (maps) in a single layout. You can drag files from the *Catalog* panel in the *Layout View* to add it to a data frame. If there are multiple data frames, in which one is the new layer added? How is that data frame visually presented in the ArcMap user interface?
-3. For which of the four maps you created is it appropriate to include a north arrow as the direction indicator? Briefly describe (1-2 sentences) why a north arrow would not be appropriate for the other maps.
-4. For which of the four maps you created is it appropriate to include an indicator of scale (bar or text-ratio). Briefly describe (1-2 sentences) how a map reader would understand or interpret scale in the other maps.
-5. For each of the two datasets, (state of Oregon and countries of the world), which of the projections/coordinate systems used in the lab (unprojected geographic coordinates or Lambert Conformal Conic) would you use for making maps similar in scale and extent to the ones you created here? Briefly (1-2 sentences) describe why.
-
-
-TODO: Image & references for:
+1. Vector features are represented as points, (poly)lines, or area features (polygons). The cities data are represented as _____________ and the countries are represented as _____________.
+2. What does one row in the attribute table for the cities layer represent?
+3. What city is at the location -3.01° longitude and 16.76° latitude?
+  * Note: As you move the cursor in the map area, the coordinates of the cursor are shown in the bottom bar of the application. You may need to `Pan` and `Zoom` (on the *Tools* toolbar) the map display to focus on the area of interest.
+4. In what country is the city named in question 3 located?
+5. What does one cell in the population density raster represent?
+6. What is the population density ('pixel value') in the city named in question 3?
+  * Note: Zoom in far enough to see the individual grid cells; the city is represented by a point in the vector layer, and that point lies in exactly one cell (even though the extent of the city in the real world covered the area of many grid cells).
+6. What are the units for the pixel values? Hint: check the documents that came with the dataset.
+7. What are the pixel values for the color-free area inside Greenland, and over the oceans? Can you find a setting to make these cells a specific color instead of transparent? Where is it?
+8. Which projection did you choose for your map? Provide a brief justification for your choice.
 
 TODO: Other:
 Double-check the LC Data Share's data used here (SDCs are old, right?).
