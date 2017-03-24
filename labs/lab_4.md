@@ -4,28 +4,30 @@ title: GEOG 4/581 - Lab 4
 ---
 
 # Lab 4: Spatial Selection and Attribute Queries
-##TODO: FINISH FROM HERE
+
 
 #### Purpose
 
-Spatial data is commonly represented in either of two formats: raster and vector. This lab will explore, compare, and contrast data in each of these formats.
+Datasets are often large collections of like features, of which only a subset is of interest in answering a specific question. This lab will demonstrate seveal ways to accomplish the tasks of selecting and filtering data. It will also introduce a way to summarize numeric data and display that data in an infographic—a chart).
 
 
 #### Prerequisites
 
-This excercise builds on skills practiced in Labs 1-2.
+This excercise builds on skills practiced in Labs 1-3.
 
 
 #### References & Links
 
-* ArcGIS Desktop: Identifying features.
-  - [https://desktop.arcgis.com/en/arcmap/latest/map/working-with-layers/identifying-features.htm](https://desktop.arcgis.com/en/arcmap/latest/map/working-with-layers/identifying-features.htm)
-* ArcGIS Desktop: What is raster data?
-  - [https://desktop.arcgis.com/en/arcmap/latest/manage-data/raster-and-images/what-is-raster-data.htm](https://desktop.arcgis.com/en/arcmap/latest/manage-data/raster-and-images/what-is-raster-data.htm)
-* Socioeconomic Data and Applications Center (SEDAC): Gridded Population of the World (GPW), v4 - Population Density, v4.
-  - [http://sedac.ciesin.columbia.edu/data/set/gpw-v4-population-density](http://sedac.ciesin.columbia.edu/data/set/gpw-v4-population-density)
+* ArcGIS Desktop: Using Select By Location.
+  - [http://desktop.arcgis.com/en/arcmap/latest/map/working-with-layers/using-select-by-location.htm](http://desktop.arcgis.com/en/arcmap/latest/map/working-with-layers/using-select-by-location.htm)
+* The National Map - Small-Scale Data Download.
+  - [https://nationalmap.gov/small_scale/atlasftp.html](https://nationalmap.gov/small_scale/atlasftp.html)
+* United States Census Bureau: Geography - Maps & Data.
+  - [https://www.census.gov/geo/maps-data/](https://www.census.gov/geo/maps-data/)
 * UO Libraries: Map & Aerial Photography Library - Learning Commons Data Share.
   - [https://library.uoregon.edu/map/gis_data/data_in_commons.html](https://library.uoregon.edu/map/gis_data/data_in_commons.html)
+* Washington State Geospatial Portal - GIS Data Catalog.
+  - [https://geography.wa.gov/node/111](https://geography.wa.gov/node/111)
 
 
 #### To Turn In
@@ -47,26 +49,95 @@ For best results, read through all instructions before starting the lab.
 
 Note: The questions to answer in this lab relate to the process you complete in these steps. You may find it helpful to answer questions as you create the map rather than waiting until the end. Whichever method you prefer, be sure to contemplate *what you are actually doing* while completing these steps. Remember: the skill is not in following directions (or memorizing them), it's understanding what is happening.
 
+ArcMap has a way to make a selection—a subset of features that have been chosen in some way to be highlighted and available for other functions to interact with separate the rest of the features.
+
+**Selection**
+
+* The selection is a temporary state in the application, displayed in the map and attribute table.
+  - The default graphical representation of the selection is a bright teal outline of the feature geometry in the map and row in the attribute table.
+* Selections are mutable: features can be added and removed, or the selection set can be completely re-evaluated.
+* Selections are ephemeral: selections are not encoded in the dataset/feature class itself (though it can persist in the map document).
+  - To make a more permanent copy of a selection, one should create a new feature class with the selected features.
+
 ### Part 1 - Map Instructions
 
 Reminder: Save often! it is a good idea to save frequently. You may even want to Save As and give sequential filelenames so that you could revert to a previous version if you make a mistake that you cannot undo or if the ArcMap document gets corrupted.
 
-#### 1.1 - Vector Data
+#### 1.1 - Data
 
-Unlike in previous labs, you will not need to download the vector data for this part. Instead, you will connect to the UO Library's server to acess the data directly.
+The purpose of the map that you create is to show the distribution of observed precipiation across cities in the state of Washington. Though there may be a Washington-specific feature class for precipitation, we will be developing our own using selection and querying techniques.
 
-##### Create a new Lab3 folder and ArcMap document.
+##### Create a new Lab4 folder, and download spatial datasets there.
 
-Name it Lab3_World_Population.mxd.
+Discover and download the datasets via the link provided. Be sure to note the data source, in order to provide citations on your map.
 
-##### Connect to the library's Learning Commons Data Share.
+* States 2015 (1:500k).
+  - Link: [https://www.census.gov/geo/maps-data/data/tiger-cart-boundary.html](https://www.census.gov/geo/maps-data/data/tiger-cart-boundary.html)
+  - Filename: cb_2015_us_state_5m.zip.
+* Counties 2015 (1:500k).
+  - Link: [https://www.census.gov/geo/maps-data/data/tiger-cart-boundary.html](https://www.census.gov/geo/maps-data/data/tiger-cart-boundary.html)
+  - Filename: cb_2015_us_county_500k.zip.
+* Cities and Towns, One Million Scale.
+  - Link: [https://nationalmap.gov/small_scale/atlasftp.html](https://nationalmap.gov/small_scale/atlasftp.html)
+  - Filename: citiesx010g_shp_nt00962.tar.gz.
+  - **Note**: Unlike the other downloads, this isn't stored in a zipfile archive. Rather, it's stored in a tar-archive which is then in a gzip-archive. Windows doesn't natively read from these kinds of archives. To extract this archive, use the PeaZip utility application (twice, it's double-archived), which you can find at `R:\Class_Data\Utilities\PeaZip\peazip.exe`.
+* Precipitation Intensities (Western Washington).
+  - Link: [https://geography.wa.gov/node/111](https://geography.wa.gov/node/111)
+  - Filename: precipevents.zip.
+  - Raster dataset name: maprecip (for 'mean annual precipitation').
+  - **Note**: This portal is not the origin of the dataset: be sure to investigate the website and/or metadata for the source.
 
-Just as you have connected to folders on local and network drives mapped to a drive letter, you can also connect to folders on other servers without a drive letter. Follow the connection instructions on the [data shares website](https://library.uoregon.edu/map/gis_data/data_in_commons.html) to get it connected.
+##### Create a new ArcMap document.
 
-##### Add the countries and cities of the world to the map from the Esri-provided data collection.
+1. Name it Lab4_Washington_Precipitation.mxd.
+2. Rename the default data frame `Washington State`.
+3. Change the data frame coordinate system to Washington's state plane (north) coordinate system: `NAD 1983 HARN StatePlane Washington North FIPS 4601`.
 
-* Countries: `\\confusion.uoregon.edu\GISData\Esri_Data\world\data\cntry06.sdc\cntry06`
-* Cities: `\\confusion.uoregon.edu\GISData\Esri_Data\world\data\cities.sdc\cities`
+##### Add & filter states.
+
+1. Add state boundaries to the map.
+2. Filter the state boundaries to show only the state of Washington using a `Definition Query`.
+  1. Open the *Layer Properties*, and go to the *Definition Query* tab.
+  2. Construct a query that will return features for which the `NAME` field/attribute value is `'Washington'`. You can take a crack at typing this out, but I would recommend using the *Query Builder* tool available. It helps avoid formatting errors and typos.
+
+A definition query omits features that do not satisfy the logic of the query from display in the data frame map or attribute table. Any functions or processing that occurs on the layer while the definition query is in place will only use the features still showing; however the query does not change the contents of the actual dataset—the file is still the same.
+
+##### Add & spatially select cities.
+
+There are three different tools to perform a spatial selection in ArcMap, and they vary by the level of interaction they provide.
+
+* `Select Features` tool on the `Tools` toolbar (white arrow over a white square) (highest level of interaction).
+* `Select By Location` dialog in the `Selection` menu.
+* `Select Layer By Location` tool in the `Data Management` toolbox in the `ArcToolbox` panel (lowest level of interaction).
+
+Though you may investigate the other tools, this step will use the middle option.
+
+1. Add U.S. cities to the map.
+2. Read the webpage ['Using Select By Location'](https://desktop.arcgis.com/en/arcmap/latest/map/working-with-layers/using-select-by-location.htm).
+3. Open the tool dialog at `Selection->Select By Location`.
+4. Examine the *Selection method* options. You'll be fine with the default `select features from`.
+5. *Target layer(s)* are the layers that you want to select the features from. We want to select cities.
+6. *Source layer* is the layer that has the features you want to define the spatial area to select with. We want to select cities within the state of Washington.
+7. Examine the *Spatial selection method for target layer feature(s)* options. This is a description of the relationship between the source geometry (Washington) and the target geometry (cities) you'll be selecting. You'll be fine with the default `intersect the source feature layer.
+
+
+##TODO: FINISH FROM HERE
+
+
+
+##### Add the following datasets from the library's Learning Commons Data Share.
+
+See instructions on the [data shares website](https://library.uoregon.edu/map/gis_data/data_in_commons.html).
+
+* Canada Provinces: `\\confusion.uoregon.edu\GISData\Esri_Data\canada\data\province.sdc`
+
+
+
+
+
+
+
+
 
 ##### Make adjustments to the vector layers.
 
@@ -174,7 +245,7 @@ Type, style, and place the following elements in the layout.
 2. Compose your answers for each question in the document following each question.
 
 ##### Questions
-
+##TODO: have try all-caps, all lower, mixed attribute in state query. have try same with attribute/field name.try without double-quites around fieldname. try without single quotes around attribute value.
 1. Vector features are represented as points, (poly)lines, or area features (polygons). The cities data are represented as _____________ and the countries are represented as _____________.
 2. What does one row in the attribute table for the cities layer represent?
 3. What city is at the location -3.01° longitude and 16.76° latitude?
