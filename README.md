@@ -12,6 +12,8 @@ Spring 2017
 * [Lecture 3: Representing the Earth; georeferencing](https://jblairpdx.github.io/GIScience_I/slides/lecture_03.html)
 * [Lecture 4: Coordinate systems and projections](https://jblairpdx.github.io/GIScience_I/slides/lecture_04.html)
 * [Lecture 5: Geospatial data models; dataset formats](https://jblairpdx.github.io/GIScience_I/slides/lecture_05.html)
+* [Lecture 6: Attribute data — types & queries](https://jblairpdx.github.io/GIScience_I/slides/lecture_06.html)
+* [Lecture 7: Spatial analysis: location, distance, area<](https://jblairpdx.github.io/GIScience_I/slides/lecture_07.html)
 
 ## Lab Documents
 
