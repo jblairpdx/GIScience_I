@@ -69,6 +69,72 @@ class: inverse, middle
 
 --
 
+## Spatial analysis
+
+* Can be thought of as similar to statistical analysis, but including a 2-D coordinate plain.
+
+* However assumptions of statistical analysis are not valid here.
+
+* Spatial analysis are the steps we undertake to convert raw spatial data into the useful information we've set out to get.
+  * Add value in transformations, which bring out patterns & anomalies.
+
+???
+
+* Statistical assumptions:
+  * Normaility: Somewhat normal distribution.
+  * Homogeneity of variances: Data from multiple groups have the same variance.
+  * Linearity: Data have a linear relationship.
+  * Independence: Data are independent.
+
+---
+
+## Types of Spatial Analysis
+
+Three main types:
+
+1. Analysis based on location (one dimension).
+
+2. Analysis based on distance (two dimensions).
+
+3. Analysis based on area (three dimensions).
+
+---
+
+## Analysis based on location
+
+* Identifying **where** something exists or happens.
+
+* The ability to compare different properties of the same place.
+  * Discover relationships, correlations, 'hotspots'.
+
+* Would be convenient if we had data model where every location was represented, with every property attributed directly on it.
+
+* However spatial data models and their implementations tend to emphasize carrying a few properties for all places over a lot of properties for one place.
+  * Raster data model limits to one.
+  * Maintenance simplicity and "normalization" tends to limit how much one can 'hang' on a single dataset.
+  * Horizontal vs. vertical integration of data.
+
+* For that reason, we need ways to be able to collect the properties at a location.
+
+???
+
+* Normalization is the concept that a system shouldn't have more than one copy of data.
+  * Using Duckweb as an example: your name should only be written in one place.
+  * If another part of the system needs your name, it would just store an ID attribute (95 number) to connect one to the other.
+  * That way if you ever changed your name, the change would automatically be available to all references, wih only a single update.
+
+---
+
+## Analysis based on location
+
+---
+
+## Analysis based on distance
+
+---
+
+## Analysis based on area
+
 </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
     </script>
