@@ -100,9 +100,9 @@ class: inverse, middle
 * Spatial analysis are the steps we undertake to convert raw spatial data into the useful information we've set out to get.
   * Add value in transformations, which bring out patterns & anomalies.
 
-* (When output combines dataset attributes) can be thought of as a spatial version of a join: joining datasets using the geometry as the key-field.
+* When output combines dataset attributes, can be thought of as a spatial version of a join: joining datasets using the geometry as the key-field.
   * By the complex nature of geometry, has to use different method for linking than `dataset1.key = dataset2.key`.
-
+  * The method by which the geometry are related is the *analysis*.
 
 ???
 
@@ -126,7 +126,7 @@ Three main types:
 
 ---
 
-## Analysis based on location
+## 1. Analysis based on location
 
 * Identifying **where** something exists or happens.
 
@@ -151,7 +151,7 @@ Three main types:
 
 ---
 
-## Location: "Spatial" join
+## 1a. "Spatial" join
 
 * Spatial join is the same as an attribute join, but in this case the key value defines a spatial relationship
 
@@ -161,10 +161,9 @@ Three main types:
 
 ---
 
-## Location: Point-in-polygon operation
+## 1b. Point-in-polygon operation
 
-* Determining whether a point lies inside or outside a polygon.
-  * Which polygon, if in?
+* Determining whether a point lies inside or outside a polygon (also: which polygon?).
 
 * It's quite useful to apply areal properties to point locations.
 
@@ -172,7 +171,7 @@ Three main types:
   * What boundaries does it lie in? City, district, Census, neighborhood?
   * What areal classifications does it lie in? Zoning, flood areas, wetlands.
 
-* Though not as easy to compute as an attribute join, is still quite simple to solve.
+* Though not as easy to compute as an attribute join, still quite simple to solve.
 
 ![http://giscommons.org/analysis/](media/5.12.gif)
 
@@ -182,7 +181,7 @@ Three main types:
 
 ---
 
-## Location: Polygon overlay
+## 1c. Polygon overlay
 
 * Similar to point-in-polygon, as two objects are involved.
 
@@ -201,13 +200,13 @@ Three main types:
 
 ---
 
-## Analysis based on distance
+## 2. Analysis based on distance
 
 ##TODO: FINISH FROM HERE
 
 ---
 
-## Analysis based on area
+## 3. Analysis based on area
 
 </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
