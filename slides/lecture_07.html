@@ -235,7 +235,7 @@ Three main types:
 
 ## 2a. Measuring distance/length
 
-* Pythagorean distance.
+* Euclidean/Pythagorean (straight-line) distance.
   * Easy math; can use projected coordinate system coordinates.
   * Drawbacks: Distance doesn't include topography, Earth's curvature.
 ![http://www.gogeometry.com/pythagoras/right_triangle_formulas_facts.htm](media/pythagoras_cartesian.gif)
@@ -248,7 +248,7 @@ Three main types:
 
 ???
 
-* Pythagorean: not for use over longer distances.
+* Euclidean: not for use over longer distances.
 * Many GIS appplications do have both Pythagorean (coordinate system) and great circle (geodesic) distance.
 * Representation underestimates: lacking topography & curvature makes for less distance.
 
@@ -263,7 +263,15 @@ Three main types:
     * Polygon-end of point-in-polygon operation.
     * Polygon overlay.
 
-.image-80[![https://desktop.arcgis.com/en/arcmap/latest/tools/analysis-toolbox/buffer.htm](media/GUID-267CF0D1-DB92-456F-A8FE-F819981F5467-web.png)]
+.image-70[![https://desktop.arcgis.com/en/arcmap/latest/tools/analysis-toolbox/buffer.htm](media/GUID-267CF0D1-DB92-456F-A8FE-F819981F5467-web.png)]
+
+---
+
+.left-column[
+  Buffer (Pythagorean
+  ]
+.right-column[
+  ]
 
 ---
 
