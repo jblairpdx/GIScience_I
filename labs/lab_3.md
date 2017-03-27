@@ -145,7 +145,7 @@ Context maps are useful for readers to understand the map's location in a greate
   2. Move the data frame for the main map into the *Show extent indicator for these data frames* box.
   3. If you wish, you may choose to adjust the options for the extent indicator when they appear below the box.
 
-##### Add elements for the layout.
+##### Add elements for the maps & layout.
 
 Type, style, and place the following elements in the layout.
 
@@ -153,8 +153,8 @@ Type, style, and place the following elements in the layout.
 2. A text caption for each map.
 2. The author/cartographer's name (that's you). To help your instructors, please put this under the title or in the bottom-right corner.
 3. The data source(s).
-4. Direction indicator each map (north arrow or graticule), as appropriate.
-5. Scale indicator, as appropriate.
+4. A direction indicator (north arrow or graticule), as appropriate.
+5. A scale indicator, as appropriate.
 6. A legend for the main map (`Insert->Legend`). No need to make this perfect, but do try to make it clean and readable.
 
 ##### Make a PDF copy of your map.
