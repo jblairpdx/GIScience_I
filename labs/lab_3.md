@@ -159,7 +159,7 @@ Type, style, and place the following elements in the layout.
 
 ##### Make a PDF copy of your map.
 
-1. Filename: `Lab2_Projections.pdf`.
+1. Filename: `Lab3_World_Population.pdf`.
 2. Take a look at your exported PDF through a PDF viewing application or a web browser. **Always look at your output!** Both common and unusual errors slip past creators when they don't look at their outputs.
 
 
