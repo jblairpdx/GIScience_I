@@ -17,7 +17,12 @@ This excercise builds on skills practiced in Labs 1-3.
 
 
 #### References & Links
-
+* ArcGIS Desktop: Extract Values to Points.
+  - [https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/extract-values-to-points.htm](https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/extract-values-to-points.htm)
+* ArcGIS Desktop: Using graduated symbols.
+  - [https://desktop.arcgis.com/en/arcmap/latest/map/working-with-layers/using-graduated-symbols.htm](https://desktop.arcgis.com/en/arcmap/latest/map/working-with-layers/using-graduated-symbols.htm)
+* ArcGIS Desktop: Using Select By Attributes.
+  - [https://desktop.arcgis.com/en/arcmap/latest/map/working-with-layers/using-select-by-attributes.htm](https://desktop.arcgis.com/en/arcmap/latest/map/working-with-layers/using-select-by-attributes.htm)
 * ArcGIS Desktop: Using Select By Location.
   - [http://desktop.arcgis.com/en/arcmap/latest/map/working-with-layers/using-select-by-location.htm](http://desktop.arcgis.com/en/arcmap/latest/map/working-with-layers/using-select-by-location.htm)
 * The National Map - Small-Scale Data Download.
@@ -118,105 +123,145 @@ Though you may investigate the other tools, this step will use the middle option
 4. Examine the *Selection method* options. You'll be fine with the default `select features from`.
 5. *Target layer(s)* are the layers that you want to select the features from. We want to select cities.
 6. *Source layer* is the layer that has the features you want to define the spatial area to select with. We want to select cities within the state of Washington.
-7. Examine the *Spatial selection method for target layer feature(s)* options. This is a description of the relationship between the source geometry (Washington) and the target geometry (cities) you'll be selecting. You'll be fine with the default `intersect the source feature layer.
+7. Examine the *Spatial selection method for target layer feature(s)* options. This is a description of the relationship between the source geometry (Washington) and the target geometry (cities) you'll be selecting. You'll be fine with the default `intersect the source layer feature`/
 
+Note: The selection can be cleared via the menu item `Selection -> Clear Selected Features`; or using the icon in the *Tools* toolbar with the same button icon as the menu item (white square).
 
-##TODO: FINISH FROM HERE
+##### Alter selection using population attribute.
 
+If you look at the population attributes for the cities, you'll notice a number of places with a 2010 population of -999. Data maintainers often use obviously incorrect numbers such as this to indicate 'no value' when the data model doesn't support an explicit lack of value. In this case, these are 'cities' that the Census no longer counts a population for (usually a city that no longer exists or one that was subsumed by a different city).
 
+Let's remove these population-less cities from our selection. There are two tools to perform an attribute selection in ArcMap.
 
-##### Add the following datasets from the library's Learning Commons Data Share.
+* `Select By Attributes` dialog in the `Selection` menu.
+* `Select Layer By Attributes` tool in the `Data Management` toolbox in the `ArcToolbox` panel.
 
-See instructions on the [data shares website](https://library.uoregon.edu/map/gis_data/data_in_commons.html).
+This step will use the first one.
 
-* Canada Provinces: `\\confusion.uoregon.edu\GISData\Esri_Data\canada\data\province.sdc`
+1. Read the webpage ['Using Select By Attributes'](https://desktop.arcgis.com/en/arcmap/latest/map/working-with-layers/using-select-by-attributes.htm).
+2. Open the attribute selection tool via `Selection -> Select By Attributes`.
+3. Examine the *Method* options. This is description of the relationship (if any) this selection will have with the 'current selection'. For our purposes here, we should choose `Select from current selection`.
+4. Use the field & value boxes and operator buttons to create an attribute query that will select cities that do not have a 2010 population with the value -999.
 
+##### Export selected citites to new dataset.
 
+1. Right-click on the name of the cities layer, and choose `Data -> Export Data`.
+  1. The default export option when the layer has a selection set is to export the selected features. Keep this.
+  2. It doesn't matter a whole lot for our purposes here, but use the layer's source data to set the output's coordinate system.
+  3. Place output in your Lab4 folder, specifying a descriptive filename (e.g. `City_WA_5000.shp`).
+2. Once the output is exported, ArcMap will ask whether you want to add the exported data to the map; choose yes.
+3. Turn off (uncheck the box) or remove (right-click on name, choose `Remove`) the original cities layer.
 
+##### Add precipitation data (maprecip) to the map.
 
+##### Determine the precipitation value at each city.
 
+In Lab 2, you used the `Identify` tool to find the raster value at a given city; you had to zoom in to the city-point to determine the cell that lay under it. It's more efficient when dealing with lots of data points to let the computer do the work.
 
+1. Read the webpage ['Extract Values to Points'](https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/extract-values-to-points.htm).
+2. Turn on the *Spatial Analyst* extension: the *Extract Values to Points* tool will only work with the extension turned-on.
+  1. Open the *Extensions* dialog via `Customize -> Extensions`.
+  2. Mark the checkbox next to *Spatial Analyst*.
+3. Open *ArcToolbox* via the menu item `Geoprocessing -> ArcToolbox`. ArcToolbox is a large collection of tools available for GIS processing. Much of the deeper functions are contained here.
+4. In ArcToolbox, navigate to and open the *Extract Values to Points* tool: `Spatial Analyst Tools -> Extraction -> Extract Values to Points`. Alternatively, you could search for the tool via the Search panel (if not present on your sidebar, it can be opened via `Windows -> Search`).
+5. Enter your Washington cities layer as the `Input point features` by choosing it from the drop-down menu.
+6. Enter the precipitation raster as the `Input raster`.
+7. Set `Output point features` to be in your Lab4 folder and have a descriptive filename (e.g. `City_Precip.shp`).
+8. Leave the rest of the options with their default settings.
+9. After running the tool, open the attribute table for the output layer. At the far right side of the table, you'll see a field named `RASTERVALU`; this was added to the city attributes by the tool, containing the values for the cell at the same location as the city-point.
+10. Turn off or remove the Washington cities layer that does not have the precipitation values added.
+11. The `maprecip` raster layer will be of no more use. Feel free to turn it off or remove.
 
+Spatial dataset output in a file folder will default to the *shapefile* type; the file extension `.shp` will automatically be added at the end of the filename if not already there.
 
+##### Summarize precipitation data by county.
 
-##### Make adjustments to the vector layers.
+We will be creating an infographic to supplement our map. First, we need to summarize the information we've integrated.
 
-1. Rename the countries layer to something more understandable.
-2. Symbolize the countries with a dark color for the outline and 'No Color' for the fill.
-3. Symbolize the cities using a point symbol and color of your choice.
+1. Open the attribute table for your new cities-precipitation layer.
+2. Find the `COUNTY` attribute field; right-click on the field name and choose `Summarize`.
+3. `Select a field to summarize` is already filled-out, defaulting to the field you clicked on.
+4. Find `RASTERVALU`in the field list for option 2; pick `Average` as the statistic to summarize for each county.
+5. Set the output table to be in your Lab4 folder and have a descriptive filename (e.g. `Precip_County_Summary.dbf`).
 
-##### Open and inspect the *Attribute Table* for the cities layer.
+Summary output does not have spatial attributes (i.e. a geometry). Hence it does not appear in the map view of the data frame, nor does it appear in the default Table of Contents style, which is called the *List By Drawing Order* TOC. To be able to see the table listed, change the Table of Contents to the *List By Source* style, which can be activated by clicking on the second button between where it says 'Table of Contents' and the list of layers.
 
-1. Right-click with the cursor on the name of the layer.
-2. Select `Open Attribute Table`.
+Table output in a file folder will default to the *dBase* type; the file extension `.dbf` will automatically be added at the end of the filename if not already there.
 
-##### Use the *Identify* tool with the vector layers.
+##### Add Canadian provinces and Washington counties for context.
 
-1. Read the webpage ['Identifying Features'](https://desktop.arcgis.com/en/arcmap/latest/map/working-with-layers/identifying-features.htm).
-2. Enable the *Identify* tool by clicking on the button in the *Tools* toolbar.
-  - It looks like a white lowercase 'i' in front of a blue globe.
-3. Click on features displayed in the data frame to see more information about those features.
-  - The *Identify* panel (which will appear after clicking the tool on a feature) displays the attributes for a single feature in a slightly different way than the *Attribute Table*.
-4. Try a few options from the the *Identify* panel's 'Identify from' menu.
+1. Canada provinces: `\\confusion.uoregon.edu\GISData\Esri_Data\canada\data\province.sdc`. See instructions on the [data shares website](https://library.uoregon.edu/map/gis_data/data_in_commons.html) to refresh how to access this.
+2. You've already downloaded counties, but they're nationwide. Apply what you've learned so far to get what you need.
 
-#### 1.2 - Raster Data
+#### 1.2 Map and Infographic
 
-##### Read the webpage ['What is raster data?'](https://desktop.arcgis.com/en/arcmap/latest/manage-data/raster-and-images/what-is-raster-data.htm)
+##### Symbolize cities using graduated symbols that represent the precipitation value.
 
-##### Add the world population (2015) raster dataset as a layer to the data frame.
+1. Read the webpage ['Using Graduated Symbols'](https://desktop.arcgis.com/en/arcmap/latest/map/working-with-layers/using-graduated-symbols.htm).
+2. Open the layer properties for the city-precipitation layer, and select the *Symbology* tab.
+3. Choose `Quantities -> Graduated symbols` for the *Show* option on the left.
+4. Set *Fields -> Value* to be `RASTERVALU`, your precipitation attribute.
+6. Change the template symbol to the fill color of your preference.
+5. Use the defaults for the other options; feel free to investigate at your leisure, though.
 
-1. Find the dataset at `R:\Class_Data\Lab3\Data\gpw-v4-population-density-2015.tif`.
-  - The dataset is actually from the [Socioeconomic Data and Applications Center (SEDAC)](http://sedac.ciesin.columbia.edu/data/set/gpw-v4-population-density). We skipped the download process here because (a) the website requires registration for downloads, and (b) the download is large (230 MB), no point in everyone downloading it to the same filesystem.
-  - Do use the website or the associated PDF in the folder for citation information and any other details you may be interested in.
-2. Reorder the layers in the *Table of Contents*, if necessary, to place the raster layer below the vector layers.
+##### Symbolize & label counties
 
-##### Make adjustments to the raster layer.
+1. Set a visible border and no fill color.
+2. Turn on the labels: right-click the layer name and choose `Label Features`. Alternatively, you can open the layer properties and check the box at the top of the *Labels* tab. This is also where you would go to change the label defaults.
 
-1. Rename the layer to something more understandable.
-2. Symbolize the raster with *Stretched* symbology.
-3. Choose a color ramp that displays values from light-to-dark that is of a contrasting color in comparison to the city symbols.
-4. Try the different choices under *Stretch Type*, located toward the bottom of the *Symbology* tab after choosing *Stretched*. Choose the one that you believe makes the data most clear.
+##### Symbolize & label surrounding provinces.
 
-##### Inspect the attribute values for the raster layer.
+Use a subtle color: let Washington stand out.
 
-Raster datasets only have a single value for each pixel (ignoring concepts like multi-band and related attribute tables).
+##### Symbolize & label states.
 
-1. Use the *Identify* tool again to inspect some raster pixel values across the map. Feel free to zoom in for more accuracy in choosing pixels.
-  - The *Pixel value* is the actual attribute value at that point.
-  - The *Stretched value* is the conversion of the pizel value into a position on the color ramp (from 0 to 255 from left-to-right). The details of the conversion are defined in the *Stretch Type*
+1. You want to show the surrounding states along with Washington now, so remove the definition query.
+2. Color Washington to stand out from the surrounding states.
+  1. Open the *Symbology* tab in the states layer properties, and choose `Categories -> Unique Values` from the *Show* option.
+  2. Set the *Value Field* to `NAME`
+  3. Click the `Add Values` button, find and select `'Washington'`. Washington now appears in the symbol list on its own.
+  4. Choose a bold color for Washington, aand a subtle color for `<all other values>` that matches the color for the provinces above.
+3. Label the surrounding states (not Washington; its name will be in the map title).
+  1. Open the *Labels* tab of the layer properties, and check the `Label features in this layer` box.
+  2. Change the *Method* option to `Define classes of features and label each class differently`.
+  3. Open the now-available `SQL Query` tool, and use what you've learned about attribute queries to label all states that **are not** Washington.
 
-#### 1.3 - Design layout & add context map.
+##### Re-evaluate the symbolization.
 
-#### Adjust & place current data frame.
+Adjust the color scheme to best emphasize the map data and area of interest. Also be sure to not overwhelm the labels.
 
-1. Choose a country to be the focus of the current data frame, and adjust the position and scale to set that focus.
-2. Using what you learned from Lab 2 and the projections lecture, set a projection that is suitable for the data. You'll want to minimize distortion for your chosen country, and preserve properties related to the data (hint: population density is area-based).
-3. In *Layout View*, adjust the size of the data frame to fill the majority of the page.
-4. You may need to readjust the scale & position so that the focus is how you want it.
+##### Place the map in the layout.
 
-#### Create a context map.
+1. Switch to *Layout View*.
+2. Change the paper size to 11"x17" (called 'tabloid' size).
+2. Resize and place the Washington State data frame to fill a large portion of the page.
+3. Pan the data frame to center on the state of Washington and zoom in so that the Washington fills most of the data frame.
 
-Context maps are useful for readers to understand the map's location in a greater extent. Here we will make a context map that shows the location of the country of focus in the wider world.
+##### Create an inset map.
 
-1. Insert a new data frame.
-2. Add the countries dataset to the new data frame.
-3. Symbolize the countries with a neutral fill color.
-4. Set the data frame's projection to be an area-preserving world projection.
-5. Adjust the size of the data frame in the layout to fit in available space.
-  - It's certainly possible to have the context data frame overlap the main map or be within a data-free section of it. Use your judgement regarding whether that makes sense design-wise. You will need to change the data frame background fill color, though (it's clear at first).
-6. Zoom to the extent of the data (worldwide).
-  1. You can zoom using methods you've learned in previous labs, but there is also some other ways to zoom that may be helpful:
-    + Right-click on a layer name and choose `Zoom to Layer` from the context menu.
-    + Select features in a layer you wish to zoom to; `Select Features` white arrow and `Clear Selected Features` button are on the *Tools* toolbar. You can select features by: clicking on them (hold shift to select more), or dragging a box around the ones you want (hold shift to select more). After selecting them, right-click the layer name and choose `Selection->Zoom to Selected Features`. Don't forget to clear the selection when you're done.
-7. Add a graticule (a grid of parallels and meridians) as the direction indicator.
-  1. Open the context map data frame's properties and go to the *Grids* tab.
-  2. Add a new grid, and step through the 'wizard' to set up how it is displayed. Lines every 30 degrees is recommended.
-8. Add an extent indicator to show the location of your main map in the context map.
-  1. Open the context map data frame properties, and go to the *Extent Indicators* tab.
-  2. Move the data frame for the main map into the *Show extent indicator for these data frames* box.
-  3. If you wish, you may choose to adjust the options for the extent indicator when they appear below the box.
+1. Copy the current data frame & paste the copy in the layout.
+2. Rename the new data frame `Olympic Peninsula`.
+3. Adjust the position and size of the new data frame to fit in your layout design.
+4. Pan & zoom the new data frame to capture the Olympic Peninsula as the focus. This is the large peninsula that occupies the western part of the state.
+5. Add an extend indicator for the new data frame in the Washington State data frame (see Lab 3).
 
-##### Add elements for the layout.
+##### Create a county precipitation graph.
+
+1. Open the county precipitation summary table you created (remember, only visible in *List By Source* style of Table of Contents).
+2. From the *Table Options* menu (notecard-like button in upper-left corner of *Table* panel), choose `Create Graph`.
+3. Step through the *Create Graph Wizard* that opened, and configure a graph that shows the precipitation by county. The color used in the graph should complement the color you used to symbolize precipitation in the map.
+  1. A simple graph would be a vertical bar graph using the value `Average_RASTERVALU` (Y-value) and an X-value from the `COUNTY` field.
+  2. As you alter settings, the preview will update. Make adjustments until you feel the graph is satisfactory. I would recommend improved title and labels, and possibly dropping the graph legend.
+4. When you finish, the graph will appear in its own window. Right-click on the graph, and choose `Add to Layout`.
+5. Resize and place the graph as appropriate in your layout.
+
+ArcMap was designed to process and display spatial data as maps; the tools for other infographics are fairly limited in comparison to other applications. It is important to have labels and complete data on infographics, but less important to perfect the graphic design here. In a more professional GIS project workflow, infographics would probably be developed (or at least completed) in an application more attuned to graphic design.
+
+##### Make final adjustments of graphs & maps.
+
+Explore layout designs, finding a way to use the available space. Don't leave gaping holes, but also leave enough empty space so the layout doesn't seem overly crowded. This is an iterative process.
+
+##### Add elements for the maps & layout.
 
 Type, style, and place the following elements in the layout.
 
@@ -224,13 +269,13 @@ Type, style, and place the following elements in the layout.
 2. A text caption for each map.
 2. The author/cartographer's name (that's you). To help your instructors, please put this under the title or in the bottom-right corner.
 3. The data source(s).
-4. Direction indicator each map (north arrow or graticule), as appropriate.
-5. Scale indicator, as appropriate.
-6. A legend for the main map (`Insert->Legend`). No need to make this perfect, but do try to make it clean and readable.
+4. A direction indicator (north arrow or graticule), as appropriate.
+5. A scale indicator, as appropriate.
+6. A legend for the main map (`Insert->Legend`). No need to make this perfect, but do try to make it clean and readable (renaming map layer may help).
 
 ##### Make a PDF copy of your map.
 
-1. Filename: `Lab2_Projections.pdf`.
+1. Filename: `Lab4_Washington_Precipitation.pdf`.
 2. Take a look at your exported PDF through a PDF viewing application or a web browser. **Always look at your output!** Both common and unusual errors slip past creators when they don't look at their outputs.
 
 
@@ -245,20 +290,13 @@ Type, style, and place the following elements in the layout.
 2. Compose your answers for each question in the document following each question.
 
 ##### Questions
-##TODO: have try all-caps, all lower, mixed attribute in state query. have try same with attribute/field name.try without double-quites around fieldname. try without single quotes around attribute value.
-1. Vector features are represented as points, (poly)lines, or area features (polygons). The cities data are represented as _____________ and the countries are represented as _____________.
-2. What does one row in the attribute table for the cities layer represent?
-3. What city is at the location -3.01° longitude and 16.76° latitude?
-  * Note: As you move the cursor in the map area, the coordinates of the cursor are shown in the bottom bar of the application. You may need to `Pan` and `Zoom` (on the *Tools* toolbar) the map display to focus on the area of interest.
-4. In what country is the city named in question 3 located?
-5. What does one cell in the population density raster represent?
-6. What is the population density ('pixel value') in the city named in question 3?
-  * Note: Zoom in far enough to see the individual grid cells; the city is represented by a point in the vector layer, and that point lies in exactly one cell (even though the extent of the city in the real world covered the area of many grid cells).
-6. What are the units for the pixel values? Hint: check the documents that came with the dataset.
-7. What are the pixel values for the color-free area inside Greenland, and over the oceans? Can you find a setting to make these cells a specific color instead of transparent? Where is it?
-8. Which projection did you choose for your map? Provide a brief justification for your choice.
 
-TODO: Other:
+1. To filter the states to show only the state of Washington, we set a *Definition Query*; to filter the cities to consist of a subset of all U.S. cities, we performed a selection (*Select By Location*) and exported the result to a new file. What are the differences between a *Definition Query* and a selection export from the perspective of the files saved on the computer?
+2. What are the differences between a *Definition Query* and a selection from the perspective of the data displayed on the map?
+3. The *Extract Values to Points* tool was run after the original cities dataset had been filtered to include on the cities in Washington. What difference would it have made to perform those actions in the opposite order?
+4. Briefly describe the pattern that you see in the distribution of precipitation in Washington (1-2 sentences).
+5. Briefly describe the pattern that you see in the distribution of precipitation in the Olympic Peninsula. 
+6. Review the *Table of Contents* styles (buttons directly above the layer contents of the TOC panel). List the four styles, and suggest a reason each style would be useful.
+
+##TODO: Other:
 Double-check the LC Data Share's data used here (SDCs are old, right?).
-Create Lab3_Data folder in R:\Class_Data.
-Move population density raster into there (be sure to update naming/path-ing).
