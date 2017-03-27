@@ -100,6 +100,10 @@ class: inverse, middle
 * Spatial analysis are the steps we undertake to convert raw spatial data into the useful information we've set out to get.
   * Add value in transformations, which bring out patterns & anomalies.
 
+* (When output combines dataset attributes) can be thought of as a spatial version of a join: joining datasets using the geometry as the key-field.
+  * By the complex nature of geometry, has to use different method for linking than `dataset1.key = dataset2.key`.
+
+
 ???
 
 * Statistical assumptions:
@@ -137,9 +141,6 @@ Three main types:
   * Horizontal vs. vertical integration of data.
 
 * For that reason, we need ways to be able to collect the properties at a location: to bring all the attributes into a single feature.
-
-* Can be thought of as a *spatial join*: joining datasets using the geometry as the key-field.
-  * By the complex nature of geometry, has to use different method for linking than `dataset1.key = dataset2.key`.
 
 ???
 
