@@ -49,7 +49,7 @@ layout: true
 ---
 
 class: inverse, middle
-# Lecture 7: Spatial analysis—location, distance, area
+# Lecture 7: Combining Data: Attribute joins & spatial analysis
 
 ---
 
@@ -66,6 +66,28 @@ class: inverse, middle
 5. Communicate the results.
 
 6. Audience: Interpret, make decisions, give feedback.
+
+---
+
+## Attribute joins
+
+* Join: Connecting two attribute tables using a common 'key' value.
+
+* Creates a temporary relationship.
+
+* Can have a `one-to-one` or `many-to-one` relationship.
+
+.left-column[
+  .image-100[![https://desktop.arcgis.com/en/arcmap/latest/manage-data/tables/about-joining-and-relating-tables.htm](media/GUID-6FF790F5-02F7-4CC5-83AC-17FF1D4EBDA4-web.png)]
+  ]
+.right-column[
+  .image-100[![https://desktop.arcgis.com/en/arcmap/latest/manage-data/tables/about-joining-and-relating-tables.htm](media/GUID-1786A5F6-AEB9-48D5-8071-C94115A4EEA0-web.png)]
+  ]
+
+???
+
+* Joins can be made more permanent via creating new output of the combination, or copying values from one table to another.
+* Is also `one-to-many` and `many-to-many` relationships, but in GIS joins these are not often included in the standard joins. This is because the spatial representation becomes problematic, when features would require more than one representation (extra rows in table).
 
 ---
 
@@ -118,31 +140,66 @@ Three main types:
 
 ???
 
-* Normalization is the concept that a system shouldn't have more than one copy of data.
+* Normalization is the concept that a system shouldn't have more than one copy of a piece of data.
   * Using Duckweb as an example: your name should only be written in one place.
   * If another part of the system needs your name, it would just store an ID attribute (95 number) to connect one to the other.
   * That way if you ever changed your name, the change would automatically be available to all references, wih only a single update.
 
 ---
 
-## Point-in-polygon operation
+## Location: Spatial Join
 
-* Determining whether a point lies inside or outside a polygon.
-  * Which one, if in?
+* Spatial join is the same as an attribute join, but in this case the key value defines a spatial relationship
 
-* It's quite useful to apply areal properties to point locations.
-
-##TODO: IMAGE HERE
-
-##TODO: FINISH FROM HERE
+* Example: Using a base feature class with cities' economic information; want to add some state-level info, e.g. unemployment.
+  * So long as the cities have their state as an attribute (name, code, FIPS), should be joinable via their relationship.
+  * **BE SURE** to not assume state attributes are equivalent to city attributes: properly document.
 
 ---
 
-## Polygon overlay
+## Location: Point-in-polygon operation
+
+* Determining whether a point lies inside or outside a polygon.
+  * Which polygon, if in?
+
+* It's quite useful to apply areal properties to point locations.
+
+* Probably the most-used operation for assigning attributes to features (even non-point!).
+  * What boundaries does it lie in? City, district, Census, neighborhood?
+  * What areal classifications does it lie in? Zoning, flood areas, wetlands.
+
+* Though not as easy to compute as an attribute join, is still quite simple to solve.
+
+![http://giscommons.org/analysis/](media/5.12.gif)
+
+???
+
+* Yes, even non-point features can use point-in-polygon, by 'pretending' to be a point (centroid).
+
+---
+
+## Location: Polygon overlay
+
+* Similar to point-in-polygon, as two objects are involved.
+
+* Combination of two or more sets of features, essentially creating a new set of features.
+
+* Geometry is 'split' to define the spatial extent of the combinations.
+
+* Slivers: When a boundary line occurs in multiple input datasets but isn't an exact match.
+  * Oddly: better data collection almost always **causes** more of these.
+
+![https://desktop.arcgis.com/en/arcmap/latest/tools/coverage-toolbox/identity.htm](media/GUID-E0535FDB-1F08-418C-B6E9-EB27FDC490D4-web.gif)
+
+???
+
+* Better causes slivers: More data points on the line = more ever-tinier ones.
 
 ---
 
 ## Analysis based on distance
+
+##TODO: FINISH FROM HERE
 
 ---
 
