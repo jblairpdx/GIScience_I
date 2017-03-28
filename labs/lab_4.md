@@ -17,6 +17,7 @@ This excercise builds on skills practiced in Labs 1-3.
 
 
 #### References & Links
+
 * ArcGIS Desktop: Extract Values to Points.
   - [https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/extract-values-to-points.htm](https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/extract-values-to-points.htm)
 * ArcGIS Desktop: Using graduated symbols.
