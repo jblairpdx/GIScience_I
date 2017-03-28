@@ -22,4 +22,4 @@ Spring 2017
 * [Lab 2: Projections](https://jblairpdx.github.io/GIScience_I/labs/lab_2.html)
 * [Lab 3: Spatial Data Types and Querying Values](https://jblairpdx.github.io/GIScience_I/labs/lab_3.html)
 * [Lab 4: Spatial Selection and Attribute Queries](https://jblairpdx.github.io/GIScience_I/labs/lab_4.html)
-* [Lab 5: Spatial Selection and Attribute Queries](https://jblairpdx.github.io/GIScience_I/labs/lab_5.html)
+* [Lab 5: Site Selection—Tsunami Relief Center](https://jblairpdx.github.io/GIScience_I/labs/lab_5.html)
