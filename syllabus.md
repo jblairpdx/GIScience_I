@@ -18,9 +18,8 @@ After completing this course, students should be able to:
 
 * Plan and execute basic GIS analysis using a software framework.
 * Communicate the results of an analysis through language and graphics.
-* Identify significant events in the development of GIScience.
 * Articulate the characteristics of and differences between data representations.
-* Identify and critique choices that made in map design.
+* Identify and critique choices that are made in map design.
 * Critically evaluate geospatial arguments in popular media.
 * Develop skills in information-seeking.
 
@@ -54,73 +53,109 @@ After completing this course, students should be able to:
 
 #### Week 1
 
-* **Reading**: Longley et al Chapters 1 & 2.
-* **Lecture 1** (Mon 04/03): Class introduction.
-* **Lecture 2** (Wed 04/05): Components of a GIS.
-* **Lab 1**: Using GIS with ArcMap and SSIL.
+* **Reading**:
+  * Longley et al Chapters 1 & 2 (sections 2.3+ optional).
+* **Lecture**:
+  * Mon Apr 03 — Lecture 1: Class introduction.
+  * Wed Apr 05 — Lecture 2: Components of a GIS.
+* **Lab**:
+  * Lab 1: Using GIS with ArcMap and SSIL.
 
 #### Week 2
 
-* **Reading**: Longley et al Chapters 3 & 4; *TODO: projection supplemental*.
-* **Lecture 3** (Mon 04/10): Representing the Earth; georeferencing.
-* **Lecture 4** (Wed 04/12): Coordinate systems and projections.
-* **Lab 2**: Projections.
+* **Reading**:
+  * Longley et al Chapters 3 & 4.
+* **Lecture**:
+  * Mon Apr 10 — Lecture 3: Representing the Earth; georeferencing.
+  * Wed Apr 12 — Lecture 4: Coordinate systems and projections.
+* **Lab**:
+  * Lab 2: Projections.
 
 #### Week 3
 
-* **Reading**: Longley et al Chapter 7; *TODO: attribute data supplemenal*; *TODO: where clause query suppliemental*.
-* **Lecture 5** (Mon 04/17): Geospatial data models.
-* **Lecture 6** (Wed 04/19): Attribute data — types & queries.
-* **Lab 3**: Spatial Data Types and Querying Values.
+* **Reading**:
+  * Longley et al Chapter 7.
+* **Lecture**:
+  * Mon Apr 17 — Lecture 5: Geospatial data models.
+  * Wed Apr 19 — Lecture 6: Attribute data — Types & queries.
+* **Lab**:
+  * Lab 3: Spatial Data Types and Querying Values.
 
 #### Week 4
 
-* **Reading**: Longley et al Chapter 13.
-* **Test 1** (Mon 04/24).
-* **Lecture 7** (Wed 04/26): Spatial analysis: location, distance, area.
-* **Lab 4**: Spatial Selection and Attribute Queries.
+* **Reading**:
+  * Longley et al Chapter 13 (sections 13.3.4+ optional); Chapter 14 (section 14.4+ unnecessary).
+* **Lecture**:
+  * Mon Apr 24 — Test 1: Lectures 1-6.
+  * Wed Apr 26 — Lecture 7: Combining Data — Attribute joins & spatial analysis.
+* **Lab**:
+  * Lab 4: Spatial Selection and Attribute Queries.
 
 #### Week 5
 
-* **Reading**: Longley et al Chapter 14 (*TODO: double-check on this chapter*); Chapter 15.
-* **Lecture 8** (Mon 05/01): Spatial analysis: a look in the toolbox.
-* **Lecture 9** (Wed 05/3): GIS models.
-* **Lab 5**: Siting Food Relief Centers.
+* **Reading**:
+  * "ArcGIS Desktop: Analysis toolbox" (overview section plus each toolset subsection).
+    * [https://desktop.arcgis.com/en/arcmap/latest/tools/analysis-toolbox/an-overview-of-the-analysis-toolbox.htm](https://desktop.arcgis.com/en/arcmap/latest/tools/analysis-toolbox/an-overview-of-the-analysis-toolbox.htm)
+  * Longley et al Chapter 15.
+* **Lecture**:
+  * Mon May 01 — Lecture 8: Spatial analysis — A look in the toolbox.
+  * Wed May 03 — Lecture 9: GIS models.
+* **Lab**:
+  * Lab 5: Siting Food Relief Centers.
 
 #### Week 6
 
-* **Reading**: Longley et al Chapter 11; *TODO: cartography supplemental(s)*.
-* **Lecture 10** (Mon 05/08): Maps: elements, symbolization, classification.
-* **Lecture 11** (Wed 05/10): Maps II: visualization & design.
-* **Lab 6**: Plotting Elevation.
+* **Reading**:
+  * Longley et al Chapter 11.
+  * *TBA: Supplemental reading on cartographic visualization/design*.
+* **Lecture**:
+  * Mon May 08 — Lecture 10: Maps — Elements, symbolization, classification.
+  * Wed May 10 — Lecture 11: Maps II — Visualization & design.
+* **Lab**:
+  * Lab 6: Working with Raster Data — Elevation.
 
 #### Week 7
 
-* **Reading**: *TODO: project design supplemental(s)*.
-* **Test 2** (Mon 05/15).
-* **Lecture 12** (Wed 05/17): GIS project design; introducing the final project.
-* **Lab 7**: Ecology Report.
+* **Reading**:
+  * *TBA: Supplemental reading on project design*.
+* **Lecture**:
+  * Mon May 15 — Test 2: Lectures 7-11.
+  * Wed May 17 — Lecture 12: GIS project design; introducing the final project.
+* **Lab**:
+  * Lab 7: Vegetation Report (due in two weeks).
 
 #### Week 8
 
-* **Reading**: Longley et al Chapter 8.
-* **Lecture 13** (Mon 05/22): Guest speaker.
-* **Lecture 14** (Wed 05/24): Data collection; data quality.
-* **Lab 7**: Continued from previous week.
+* **Reading**:
+  * Longley et al Chapter 8.
+  * Veregin, "12: Data quality parameters" in Geographical Information Systems Abridged, Second Edition.
+    * [http://www.geos.ed.ac.uk/~gisteac/gis_book_abridged/files/ch12.pdf](http://www.geos.ed.ac.uk/~gisteac/gis_book_abridged/files/ch12.pdf)
+* **Lecture**:
+  * Mon May 22 — Lecture 13: Guest speaker — David Richey.
+  * Wed May 24 — Lecture 14: Data collection; data quality.
+* **Lab**:
+  * Lab 7: Vegetation Report (continued from previous week).
 
 #### Week 9
 
-* **Reading**: *TODO: do we need a reading?*.
-* **Memorial Day** (Mon 05/29): No school, enjoy yourself.
-* **Lecture 15** (Wed 05/31): The geographic citizen: GIScience in work and life.
-* **Final project**: Work on in lab session.
+* **Reading**:
+  * *TBA*.
+* **Lecture**:
+  * Mon May 29 — Memorial Day Holiday: No class.
+  * Wed May 31 — Lecture 15: The geographic citizen — GIScience in work and life.
+* **Lab**:
+  * Final project: Work on in lab session.
 
 #### Week 10
 
-* **Reading**: Longley et al Chapter 19.
-* **Lecture 16** (Mon 06/05): Graduate student presentations.
-* **Lecture 17** (Wed 06/07): Test 3.
-* **Final project**: Work on in lab session. Project proposal due.
+* **Reading**:
+  * *TBA*.
+* **Lecture**:
+  * Mon Jun 05 — Lecture 16: Graduate student presentations (not optional: will be in-class activity).
+  * Wed Jun 07 — Test 3: Lectures 12-16.
+* **Lab**:
+  * Final project: Work on in lab session.
+  * Project proposal due.
 
 
 ## Grading
@@ -145,6 +180,8 @@ Most lab assignments will be due at the start of the lab the next week. The exce
 Assignments may often require extra work outside normal lab hours to complete. Be proactive in ensuring you have access to the tools required to complete it on time, whether that be extra SSIL time or software, VPN, and Canvas access when required.
 
 Lab 7 is twice as much of your grade as the other labs are. Doing the math, Labs 1-6 are 5% each of your class grade; Lab 7 is 10%.
+
+There is a handy ["Lab 0"](https://jblairpdx.github.io/GIScience_I/labs/lab_0.html) document that can familiarize you with the filesysyem and servers in the SSIL computing environment, available on the class website.
 
 #### Graduate Students
 
