@@ -2,7 +2,7 @@
 title: GEOG 4/581 - Lab 5
 ---
 
-# Lab 5: Site Selection - Tsunami Relief Center
+# Lab 5: Site Selection—Tsunami Relief Center
 
 
 #### Purpose
