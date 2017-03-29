@@ -100,6 +100,8 @@ In lieu of a lab in the final weeks of the term and cumulative final, students w
 
 The project will be not unlike the labs you will have completed, except the data, analysis, and products of it will be designed by you rather than the instructor. As you progress through the class, be thinking about possible topics for your final project.
 
+In week 7, we will discuss the project in detail, and do an in-class activity related to fine-tuning ideas. A 'proposal', outlining your intentions for the content of the project is due at the beginning of week 10.
+
 Graduate students will have two additional components to their final project. The first is a description of the analysis you did (4-10 pages), or a related literature review to the subject matter. Be sure to provide citations and reasoning for your methodology. The second is to present your project briefly in the last week of class.
 
 
@@ -206,10 +208,10 @@ Graduate students will have two additional components to their final project. Th
   * *TBA*.
 * **Lecture**:
   * Mon Jun 05 — Test 3: Lectures 12-14.
+    * Final project proposal due.
   * Wed Jun 07 — Graduate student presentations (not optional: will be related in-class activity).
 * **Lab**:
   * Final project: Work on in lab session.
-  * Project proposal due at beginning of week's lab session.
 
 #### Finals Week
 
