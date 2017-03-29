@@ -185,8 +185,8 @@ Graduate students will have two additional components to their final project. Th
   * Veregin, "12: Data quality parameters" in Geographical Information Systems Abridged, Second Edition.
     * [http://www.geos.ed.ac.uk/~gisteac/gis_book_abridged/files/ch12.pdf](http://www.geos.ed.ac.uk/~gisteac/gis_book_abridged/files/ch12.pdf)
 * **Lecture**:
-  * Mon May 22 — Lecture 13: Guest speaker — David Richey.
-  * Wed May 24 — Lecture 14: Data collection; data quality.
+  * Mon May 22 — Guest speaker: David Richey.
+  * Wed May 24 — Lecture 13: Data collection; data quality.
 * **Lab**:
   * Lab 7: Vegetation Report (continued from previous week).
 
@@ -196,7 +196,7 @@ Graduate students will have two additional components to their final project. Th
   * *TBA*.
 * **Lecture**:
   * Mon May 29 — Memorial Day Holiday: No class.
-  * Wed May 31 — Lecture 15: The geographic citizen — GIScience in work and life.
+  * Wed May 31 — Lecture 14: The geographic citizen — GIScience in work and life.
 * **Lab**:
   * Final project: Work on in lab session.
 
@@ -205,11 +205,11 @@ Graduate students will have two additional components to their final project. Th
 * **Reading**:
   * *TBA*.
 * **Lecture**:
-  * Mon Jun 05 — Lecture 16: Graduate student presentations (not optional: will be in-class activity).
-  * Wed Jun 07 — Test 3: Lectures 12-16.
+  * Mon Jun 05 — Test 3: Lectures 12-14.
+  * Wed Jun 07 — Graduate student presentations (not optional: will be related in-class activity).
 * **Lab**:
   * Final project: Work on in lab session.
-  * Project proposal due.
+  * Project proposal due at beginning of week's lab session.
 
 
 ## Student Responsibilities
