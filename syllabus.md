@@ -26,15 +26,20 @@ After completing this course, students should be able to:
 
 ## Resources
 
+#### Links:
+
+* *Class materials*: https://jblairpdx.github.io/GIScience_I/
+
+
 #### Instructors
 
-* *Course/lecture:* Jacob Blair
+* *Course/lecture*: Jacob Blair
     - Email: jblair3@uoregon.edu
     - Office hours: Fridays 8:00-10:00, 109 Condon [(map)](https://map.uoregon.edu/99b67d6a9)
-* *Lab:* Dean Olson
+* *Lab*: Dean Olson
     - Email: deano@uoregon.edu
     - Office hours: TBA
-* *Lab:* William Chang
+* *Lab*: William Chang
     - Email: cchang3@uoregon.edu
     - Office hours: TBA
 
@@ -46,8 +51,8 @@ After completing this course, students should be able to:
 
 #### Locations
 
-* *Lecture:* [101 Knight Library](https://library.uoregon.edu/classrooms/101LIB) [(map)](https://map.uoregon.edu/5980f3a0b)
-* *Lab:* [Social Sciences Instructional Laboratory (SSIL), 442 McKenzie](https://ssil.uoregon.edu/) [(map)](https://map.uoregon.edu/e11e8713c)
+* *Lecture*: [101 Knight Library](https://library.uoregon.edu/classrooms/101LIB) [(map)](https://map.uoregon.edu/5980f3a0b)
+* *Lab*: [Social Sciences Instructional Laboratory (SSIL), 442 McKenzie](https://ssil.uoregon.edu/) [(map)](https://map.uoregon.edu/e11e8713c)
 
 
 ## Grading
@@ -61,12 +66,12 @@ After completing this course, students should be able to:
 
 Students will be graded based on percentages of the total points—the class is not graded on a curve. Grading will follow the Department of Geography's standard grading rubric:
 
-* **A+** Only used when a student's performance significantly exceeds all requirements and expectations for the class. Typically very few to no students receive this grade.
-* **A** Excellent grasp of material and strong performance across the board, or exceptional performance in one aspect of the course offsetting somewhat less strong performance in another. Typically no more than a quarter of the students in a class receive this grade, fewer in lower-division classes.
-* **B** Good grasp of material and good performance on most components of the course. Typically this is the most common grade.
-* **C** Satisfactory grasp of material and/or performance on significant aspects of the class.
-* **D** Subpar grasp of material and/or performance on significant aspects of the class.
-* **F** Unacceptable grasp of material and/or performance on significant aspects of the class.
+* **A+**: Only used when a student's performance significantly exceeds all requirements and expectations for the class. Typically very few to no students receive this grade.
+* **A**: Excellent grasp of material and strong performance across the board, or exceptional performance in one aspect of the course offsetting somewhat less strong performance in another. Typically no more than a quarter of the students in a class receive this grade, fewer in lower-division classes.
+* **B**: Good grasp of material and good performance on most components of the course. Typically this is the most common grade.
+* **C**: Satisfactory grasp of material and/or performance on significant aspects of the class.
+* **D**: Subpar grasp of material and/or performance on significant aspects of the class.
+* **F**: Unacceptable grasp of material and/or performance on significant aspects of the class.
 
 #### In-class activities
 
