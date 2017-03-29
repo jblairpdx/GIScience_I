@@ -92,11 +92,11 @@ There is a handy ["Lab 0"](https://jblairpdx.github.io/GIScience_I/labs/lab_0.ht
 
 #### Tests
 
-Tests will not be cumulative, and will directly relate to content covered in the lecture portion of the class. The final test will be taken during the final week of class; concentrate on your final project during finals week.
+Tests will not be cumulative, and will directly relate to content covered in the lecture portion of the class. The last test will be taken during the final week of class; concentrate on your final project during finals week.
 
 #### Final Project
 
-In lieu of a lab in the final weeks of the term and cumulative final, students will undertake a final project, to be completed by the day our final would usually be scheduled.
+In lieu of a lab in the final weeks of the term and cumulative final, students will undertake a final project, to be completed by the end of the time a final exam would be scheduled if we had one (Tuesday, June 13th at 12:15PM).
 
 The project will be not unlike the labs you will have completed, except the data, analysis, and products of it will be designed by you rather than the instructor. As you progress through the class, be thinking about possible topics for your final project.
 
@@ -210,6 +210,10 @@ Graduate students will have two additional components to their final project. Th
 * **Lab**:
   * Final project: Work on in lab session.
   * Project proposal due at beginning of week's lab session.
+
+#### Finals Week
+
+**Final project due Tuesday, June 13th at 12:15PM.**
 
 
 ## Student Responsibilities
