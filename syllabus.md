@@ -16,7 +16,7 @@ GIScience I explores these questions though the applied use of software designed
 
 After completing this course, students should be able to:
 
-* Plan and execute basic GIS analysis using a software framework.
+* Plan and execute basic GIS analysis using a software application framework.
 * Communicate the results of an analysis through language and graphics.
 * Articulate the characteristics of and differences between data representations.
 * Identify and critique choices that are made in map design.
@@ -33,10 +33,10 @@ After completing this course, students should be able to:
     - Office hours: Fridays 8:00-10:00, 109 Condon [(map)](https://map.uoregon.edu/99b67d6a9)
 * *Lab:* Dean Olson
     - Email: deano@uoregon.edu
-    - Office hours: Time & location TBA
+    - Office hours: TBA
 * *Lab:* William Chang
     - Email: cchang3@uoregon.edu
-    - Office hours: Time & location TBA
+    - Office hours: TBA
 
 #### Texts
 
@@ -78,7 +78,7 @@ Activities will relate directly to the lecture subject. They will not be hard: j
 
 There are four lab sections for the course. Each lab assignment will made be available by the applicable lab session. During the lab section you have registered for, the SSIL computer lab is reserved for your use and a GE will be available to present material and answer questions.
 
-If there is space available in the other sections---and the GE for it gives their permission---you may sit in as a guest. Please understand that the GE must prioritize the students registered for that section.
+If there is space available in the other sections—and the GE for it gives their permission—you may sit in as a guest. Please understand that the GE must prioritize the students registered for that section.
 
 Plan ahead, and **save often** while working; computers and software can be unpredictable and crash when one least expects (or wants). Please save your lab files to your student folder on the SSIL server. Feel free to save copies elsewhere.
 
@@ -216,4 +216,4 @@ Graduate students will have two additional components to their final project. Th
 
 #### Conduct
 
-The University Student Conduct Code (available at conduct.uoregon.edu) defines academic misconduct. Students are prohibited from committing or attempting to commit any act that constitutes academic misconduct. By way of example, students should not give or receive (or attempt to give or receive) unauthorized help on assignments or examinations without express permission from the instructor. Students should properly acknowledge and document all sources of information (e.g. quotations, paraphrases, ideas) and use only the sources and resources authorized by the instructor. If there is any question about whether an act constitutes academic misconduct, it is the students’ obligation to clarify the question with the instructor before committing or attempting to commit the act. Additional information about a common form of academic misconduct, plagiarism, is available at researchguides.uoregon.edu/citing-plagiarism.  
+The University Student Conduct Code (available at [https://dos.uoregon.edu/conduct](https://dos.uoregon.edu/conduct)) defines academic misconduct. Students are prohibited from committing or attempting to commit any act that constitutes academic misconduct. By way of example, students should not give or receive (or attempt to give or receive) unauthorized help on assignments or examinations without express permission from the instructor. Students should properly acknowledge and document all sources of information (e.g. quotations, paraphrases, ideas) and use only the sources and resources authorized by the instructor. If there is any question about whether an act constitutes academic misconduct, it is the students’ obligation to clarify the question with the instructor before committing or attempting to commit the act. Additional information about a common form of academic misconduct, plagiarism, is available at researchguides.uoregon.edu/citing-plagiarism.  
