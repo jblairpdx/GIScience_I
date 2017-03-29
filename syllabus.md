@@ -66,12 +66,12 @@ After completing this course, students should be able to:
 
 Students will be graded based on percentages of the total points—the class is not graded on a curve. Grading will follow the Department of Geography's standard grading rubric:
 
-* **A+**: Only used when a student's performance significantly exceeds all requirements and expectations for the class. Typically very few to no students receive this grade.
-* **A**: Excellent grasp of material and strong performance across the board, or exceptional performance in one aspect of the course offsetting somewhat less strong performance in another. Typically no more than a quarter of the students in a class receive this grade, fewer in lower-division classes.
-* **B**: Good grasp of material and good performance on most components of the course. Typically this is the most common grade.
-* **C**: Satisfactory grasp of material and/or performance on significant aspects of the class.
-* **D**: Subpar grasp of material and/or performance on significant aspects of the class.
-* **F**: Unacceptable grasp of material and/or performance on significant aspects of the class.
+* **A+** — Only used when a student's performance significantly exceeds all requirements and expectations for the class. Typically very few to no students receive this grade.
+* **A** — Excellent grasp of material and strong performance across the board, or exceptional performance in one aspect of the course offsetting somewhat less strong performance in another. Typically no more than a quarter of the students in a class receive this grade, fewer in lower-division classes.
+* **B** — Good grasp of material and good performance on most components of the course. Typically this is the most common grade.
+* **C** — Satisfactory grasp of material and/or performance on significant aspects of the class.
+* **D** — Subpar grasp of material and/or performance on significant aspects of the class.
+* **F** — Unacceptable grasp of material and/or performance on significant aspects of the class.
 
 #### In-class activities
 
