@@ -213,7 +213,7 @@ Graduate students will have two additional components to their final project. Th
 
 #### Finals Week
 
-**Final project due Tuesday, June 13th at 12:15PM.**
+* **Final project due Tuesday, June 13th at 12:15PM.**
 
 
 ## Student Responsibilities
