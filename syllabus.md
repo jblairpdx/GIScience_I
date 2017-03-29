@@ -57,10 +57,10 @@ After completing this course, students should be able to:
 
 ## Grading
 
-* 10% - In-class activities. Due at the end of classtime.
-* 40% - Lab assignments. Due at the start of the next lab's session.
-* 30% - Tests: Three will be conducted, in-class. Due at the end of classtime.
-* 20% - Final project. Due on the date/time of our scheduled finals time.
+* 10% — In-class activities. Due at the end of classtime.
+* 40% — Lab assignments. Due at the start of the next lab's session.
+* 30% — Tests: Three will be conducted, in-class. Due at the end of classtime.
+* 20% — Final project. Due on the date/time of our scheduled finals time.
 
 **Late work will be reduced in value by 10% per day late. No late tests or final projects will be accepted.**
 
