@@ -18,7 +18,7 @@ If you prefer a more portable digital copy of any of the materials listed below,
 * [Lecture 6: Attribute data—types & queries](https://jblairpdx.github.io/GIScience_I/slides/lecture_06.html)
 * [Lecture 7: Combining Data—Attribute joins & spatial analysis](https://jblairpdx.github.io/GIScience_I/slides/lecture_07.html)
 
-## Lab Documents
+## Lab Instructions
 
 * [Lab 0: Filesystem and Servers in SSIL](https://jblairpdx.github.io/GIScience_I/labs/lab_0.html)
 * [Lab 1: Using GIS with ArcMap and SSIL](https://jblairpdx.github.io/GIScience_I/labs/lab_1.html)
