@@ -297,6 +297,3 @@ Type, style, and place the following elements in the layout.
 4. Briefly describe the pattern that you see in the distribution of precipitation in Washington (1-2 sentences).
 5. Briefly describe the pattern that you see in the distribution of precipitation in the Olympic Peninsula. 
 6. Review the *Table of Contents* styles (buttons directly above the layer contents of the TOC panel). List the four styles, and suggest a reason each style would be useful.
-
-##TODO: Other:
-Double-check the LC Data Share's data used here (SDCs are old, right?).
