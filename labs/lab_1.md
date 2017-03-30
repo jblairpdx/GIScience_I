@@ -60,7 +60,7 @@ Note: The questions to answer in this lab relate to the process you complete in 
 2. Browse or search for the following datasets:
   - *Oregon City Limits (2016)*: citylim_2016.zip.
   - *Oregon Counties - 2015*: orcnty2015.zip.
-3. Download the files and save them in your student folder's newly-created Lab1 folder (e.g. R:\GEOG481\<Duck ID>\Lab1\Data\orcnty2015.zip).
+3. Download the files and save them in your student folder's newly-created Lab1 folder (e.g. R:\GEOG481\[Duck ID]\Lab1\Data\orcnty2015.zip).
 4. Make a note of the data source. (Spatial) data has value, and you will want to give credit where due when creating maps or other documents. The data sources should be listed on every map you create.
 5. Extract the dataset files from within the zipfiles for each dataset you downloaded.
 
@@ -159,13 +159,15 @@ ArcMap map documents (MXD files) are not particularly portable documents; they n
 ##### Questions
 
 1. How many files were contained in the downloaded file *citylim_2016.zip*?
+
 2. What types of files were contained in the downloaded file *citylim_2016* and what data does each one contain? Hint: look at the file extensions and do a web search, e.g., Google or Wikipedia, to find out what they mean.
+
 3. Looking at your final map, what pattern(s) do you notice in the data? How might these perceived patterns change if you plotted cities as points rather than showing the city limits? (1-2 sentences)
+
 4. What changes would you make in a future version of the map to make it easier to read or interpret? (1-2 sentences; there are always changes that can be made, take some time to think and be creative)
+
 5. What happens to files that are saved on the C:\\ drive when you log out of the computers in SSIL?
 
-TODO: ?s
-about multiple ways to do something.
 
 TODO: Image & references for: 
 Check if downloads have line+poly.
