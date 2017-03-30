@@ -111,7 +111,7 @@ Export a copy of this with a descriptive name (e.g. `Florence_Taxlots_Tsunami.sh
 
 1. Open the attribute layer for the lots in the tsunami evacuation zone.
 2. Find the "impval" field; right-click on the field name and choose `Statistics`.
-3. Write down the values mentioned above.
+3. Write down the values mentioned above for answering questions 1 & 2.
 
 ##TODO: FINISH FROM HERE.
 
