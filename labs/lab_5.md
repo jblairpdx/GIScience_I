@@ -17,7 +17,10 @@ This excercise builds on skills practiced in Labs 1-4.
 
 #### References & Links
 
-##TODO: R&L
+* Oregon Spatial Data Library.
+  * [http://spatialdata.oregonexplorer.info/geoportal/](http://spatialdata.oregonexplorer.info/geoportal/)
+* UO Libraries: Map & Aerial Photography Library - Learning Commons Data Share.
+  * [https://library.uoregon.edu/map/gis_data/data_in_commons.html](https://library.uoregon.edu/map/gis_data/data_in_commons.html)
 
 
 #### To Turn In
@@ -46,40 +49,71 @@ Reminder: Save often! it is a good idea to save frequently. You may even want to
 
 #### 1.1 - Data
 
-##TODO: FINISH FROM HERE
-
-
-
-
-
-
-The purpose of the map that you create is to show the distribution of observed precipiation across cities in the state of Washington. Though there may be a Washington-specific feature class for precipitation, we will be developing our own using selection and querying techniques.
-
-##### Create a new Lab4 folder, and download spatial datasets there.
+##### Create a new Lab5 folder, and download spatial datasets there.
 
 Discover and download the datasets via the link provided. Be sure to note the data source, in order to provide citations on your map.
 
-* States 2015 (1:500k).
-  - Link: [https://www.census.gov/geo/maps-data/data/tiger-cart-boundary.html](https://www.census.gov/geo/maps-data/data/tiger-cart-boundary.html)
-  - Filename: cb_2015_us_state_5m.zip.
-* Counties 2015 (1:500k).
-  - Link: [https://www.census.gov/geo/maps-data/data/tiger-cart-boundary.html](https://www.census.gov/geo/maps-data/data/tiger-cart-boundary.html)
-  - Filename: cb_2015_us_county_500k.zip.
-* Cities and Towns, One Million Scale.
-  - Link: [https://nationalmap.gov/small_scale/atlasftp.html](https://nationalmap.gov/small_scale/atlasftp.html)
-  - Filename: citiesx010g_shp_nt00962.tar.gz.
-  - **Note**: Unlike the other downloads, this isn't stored in a zipfile archive. Rather, it's stored in a tar-archive which is then in a gzip-archive. Windows doesn't natively read from these kinds of archives. To extract this archive, use the PeaZip utility application (twice, it's double-archived), which you can find at `R:\Class_Data\Utilities\PeaZip\peazip.exe`.
-* Precipitation Intensities (Western Washington).
-  - Link: [https://geography.wa.gov/node/111](https://geography.wa.gov/node/111)
-  - Filename: precipevents.zip.
-  - Raster dataset name: maprecip (for 'mean annual precipitation').
-  - **Note**: This portal is not the origin of the dataset: be sure to investigate the website and/or metadata for the source.
+* Oregon Tsunami Evacutation Zone - 2013.
+  * Link: [http://spatialdata.oregonexplorer.info/geoportal/](http://spatialdata.oregonexplorer.info/geoportal/)
+  * Filename: `DOGAMI_TsunamiEvacuationZones_2013.zip`.
+* Oregon City Limits - 2015.
+  * Link: [http://spatialdata.oregonexplorer.info/geoportal/](http://spatialdata.oregonexplorer.info/geoportal/)
+  * Filename: `citylim_2016.zip`.
 
 ##### Create a new ArcMap document.
 
-1. Name it Lab4_Washington_Precipitation.mxd.
-2. Rename the default data frame `Washington State`.
-3. Change the data frame coordinate system to Washington's state plane (north) coordinate system: `NAD 1983 HARN StatePlane Washington North FIPS 4601`.
+1. Name it Lab5_Tsunami_Relief_Center.mxd.
+2. Add the downloaded datasets to the default data frame.
+2. Change the data frame coordinate system to Oregon's statewide coordinate system: `NAD 1983 HARN Oregon Statewide Lambert`.
+  * **Note**: this will automatically happen if the first dataset is one of the above downloaded from the state library.
+3. Add taxlots from the Library's Leaning Commons Data Share.
+
+* Lane County Taxlots - 2012.
+  * File location: `\\confusion.uoregon.edu\GISData\UO_GIS_Collections\US_states\Oregon\Counties\Lane_Co\Tax_lots\LaneTaxlots_2012.gdb`.
+  * Filename: `LaneTaxlots2012`.
+
+
+#### 1.2 - Analysis & Processing
+
+##### Filter the city limits to only include the city of Florence.
+
+You should now know numerous ways of only having the Florence boundaries:
+
+1. Definition query.
+2. Select and export to a new shapefile with a descriptive name (e.g. `Florence.shp`).
+
+Which to choose is a matter of preference. Some like the clean representation of their steps in new datasets. Others prefer to not create lots of extra files. Sometimes a definition query of a large-enough dataset will perform more slowly. Either way, ArcMap will treat them exactly the same.
+
+#####  Filter the tsunami evacuation zones to only include the zones for a 'local' tsunami.
+
+Check the attribute table for the zone types. It's up to you whether to filter the local zones that aren't near Florence (they won't affect the map or analysis).
+
+##### Select taxlots that are in the city of Florence.
+
+Since definition queries cannot perform spatial queries, you'll need to export the results of a spatial selection to a new shapefile with a descriptive name (e.g. `Florence_Taxlots.shp`).
+
+##### Filter Florence taxlots to exclude water and right-of-way taxlots.
+
+It would make no sense to place a relief center in water or a road or other right-of-way. Luckily, the taxlot dataset has ways of identifying these types of lots:
+
+1. Water & right-of-way lots have "taxlot" field values of `'11'`, `'22'`, `'33'`, `'44'`, `'55'`, `'66'`, `'77'`, `'88'`, `'99'` (see a pattern?).
+  * If using these, do notice they are text attributes, not integers (i.e. no `<` or `>` can be used).
+1. These types of taxlots also do not have a "taxcode" value, while  others do.
+  * If using this, remember that null-values have a distinct query syntax: `X is NULL`, not `X = NULL`.
+
+##### Select Florence taxlots that that are within by the tsunami evacuation zone.
+
+Export a copy of this with a descriptive name (e.g. `Florence_Taxlots_Tsunami.shp`).
+
+##### Compute the total potential improvement damage and number of taxlots affected.
+
+'Improvements' is assessment & taxation jargon for buildings, structures, and any other property of value on a lot beyond its land value.
+
+1. Open the attribute layer for the lots in the tsunami evacuation zone.
+2. Find the "impval" field; right-click on the field name and choose `Statistics`.
+3. Write down the values mentioned above.
+
+##TODO: FINISH FROM HERE.
 
 ##### Add & filter states.
 
