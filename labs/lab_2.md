@@ -17,10 +17,12 @@ This excercise builds on skills practiced in Lab 1, inlcuding basic knowledge of
 
 #### References & Links
 
+* ArcGIS Desktop: Quick ways to navigate data frames and layouts.
+  * [https://desktop.arcgis.com/en/arcmap/latest/map/working-with-arcmap/quick-ways-to-navigate-data-frames-and-layouts.htm](https://desktop.arcgis.com/en/arcmap/latest/map/working-with-arcmap/quick-ways-to-navigate-data-frames-and-layouts.htm)
 * ArcGIS Desktop: Using data frames.
-  - [https://desktop.arcgis.com/en/arcmap/latest/map/working-with-arcmap/using-data-frames.htm](https://desktop.arcgis.com/en/arcmap/latest/map/working-with-arcmap/using-data-frames.htm)
+  * [https://desktop.arcgis.com/en/arcmap/latest/map/working-with-arcmap/using-data-frames.htm](https://desktop.arcgis.com/en/arcmap/latest/map/working-with-arcmap/using-data-frames.htm)
 * United States Census Bureau: Geography - Maps & Data.
-  - [https://www.census.gov/geo/maps-data/](https://www.census.gov/geo/maps-data/)
+  * [https://www.census.gov/geo/maps-data/](https://www.census.gov/geo/maps-data/)
 
 
 #### To Turn In
@@ -93,6 +95,8 @@ When in the *Data View* (not *Layout View*), adding a new data frame will cause 
 3. Choose a color to symbolize the countries with.
 4. Rename the data frame to 'World - GCS'.
 5. View the coordinate system of the data frame; note that it is set to display the unprojected *Geographic Coordinate System*.
+
+##### Read [*Quick ways to navigate data frames and layouts*](https://desktop.arcgis.com/en/arcmap/latest/map/working-with-arcmap/quick-ways-to-navigate-data-frames-and-layouts.htm]) from the ArcMap documentation site.
 
 ##### Position the data frames in the layout.
 
@@ -175,6 +179,3 @@ Type, style, and place the following elements in the layout.
 3. For which of the four maps you created is it appropriate to include a north arrow as the direction indicator? Briefly describe (1-2 sentences) why a north arrow would not be appropriate for the other maps.
 4. For which of the four maps you created is it appropriate to include an indicator of scale (bar or text-ratio). Briefly describe (1-2 sentences) how a map reader would understand or interpret scale in the other maps.
 5. For each of the two datasets, (state of Oregon and countries of the world), which of the projections/coordinate systems used in the lab (unprojected geographic coordinates or Lambert Conformal Conic) would you use for making maps similar in scale and extent to the ones you created here? Briefly (1-2 sentences) describe why.
-
-
-TODO: This may be handy for Lab1 or here: https://desktop.arcgis.com/en/arcmap/latest/map/working-with-arcmap/quick-ways-to-navigate-data-frames-and-layouts.htm
