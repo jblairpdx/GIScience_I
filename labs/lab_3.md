@@ -18,13 +18,13 @@ This excercise builds on skills practiced in Labs 1-2.
 #### References & Links
 
 * ArcGIS Desktop: Identifying features.
-  - [https://desktop.arcgis.com/en/arcmap/latest/map/working-with-layers/identifying-features.htm](https://desktop.arcgis.com/en/arcmap/latest/map/working-with-layers/identifying-features.htm)
+  * [https://desktop.arcgis.com/en/arcmap/latest/map/working-with-layers/identifying-features.htm](https://desktop.arcgis.com/en/arcmap/latest/map/working-with-layers/identifying-features.htm)
 * ArcGIS Desktop: What is raster data?
-  - [https://desktop.arcgis.com/en/arcmap/latest/manage-data/raster-and-images/what-is-raster-data.htm](https://desktop.arcgis.com/en/arcmap/latest/manage-data/raster-and-images/what-is-raster-data.htm)
+  * [https://desktop.arcgis.com/en/arcmap/latest/manage-data/raster-and-images/what-is-raster-data.htm](https://desktop.arcgis.com/en/arcmap/latest/manage-data/raster-and-images/what-is-raster-data.htm)
 * Socioeconomic Data and Applications Center (SEDAC): Gridded Population of the World (GPW), v4 - Population Density, v4.
-  - [http://sedac.ciesin.columbia.edu/data/set/gpw-v4-population-density](http://sedac.ciesin.columbia.edu/data/set/gpw-v4-population-density)
+  * [http://sedac.ciesin.columbia.edu/data/set/gpw-v4-population-density](http://sedac.ciesin.columbia.edu/data/set/gpw-v4-population-density)
 * UO Libraries: Map & Aerial Photography Library - Learning Commons Data Share.
-  - [https://library.uoregon.edu/map/gis_data/data_in_commons.html](https://library.uoregon.edu/map/gis_data/data_in_commons.html)
+  * [https://library.uoregon.edu/map/gis_data/data_in_commons.html](https://library.uoregon.edu/map/gis_data/data_in_commons.html)
 
 
 #### To Turn In
@@ -185,8 +185,3 @@ Type, style, and place the following elements in the layout.
 6. What are the units for the pixel values? Hint: check the documents that came with the dataset.
 7. What are the pixel values for the color-free area inside Greenland, and over the oceans? Can you find a setting to make these cells a specific color instead of transparent? Where is it?
 8. Which projection did you choose for your map? Provide a brief justification for your choice.
-
-TODO: Other:
-Double-check the LC Data Share's data used here (SDCs are old, right?).
-Create Lab3_Data folder in R:\Class_Data.
-Move population density raster into there (be sure to update naming/path-ing).
