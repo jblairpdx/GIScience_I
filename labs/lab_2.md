@@ -178,11 +178,3 @@ Type, style, and place the following elements in the layout.
 
 
 TODO: This may be handy for Lab1 or here: https://desktop.arcgis.com/en/arcmap/latest/map/working-with-arcmap/quick-ways-to-navigate-data-frames-and-layouts.htm
-
-TODO: Image & references for:
-Data Frame Properties
-  Coordinate System tab.
-  Size and Position tab.
-
-TODO: Other
-Download files to class folder, in case of internet hell.
