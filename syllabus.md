@@ -210,7 +210,7 @@ Graduate students will have two additional components to their final project. Th
 #### Week 10
 
 * **Reading**:
-  * *TBA*.
+  * None.
 * **Lecture**:
   * Mon Jun 05 — Test 3: Lectures 12-14.
     * Final project proposal due.
