@@ -4,7 +4,7 @@ Spring 2017
 
 If you prefer a more portable digital copy of any of the materials listed below, use your web browser's print-to-PDF functionality.
 
-## Documents
+## Misc. Documents
 
 * [Syllabus](https://jblairpdx.github.io/GIScience_I/syllabus.html)
 
