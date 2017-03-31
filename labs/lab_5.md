@@ -90,7 +90,7 @@ Check the attribute table for the zone types. It's up to you whether to filter t
 
 ##### Select taxlots that are in the city of Florence.
 
-Since definition queries cannot perform spatial queries, you'll need to export the results of a spatial selection to a new shapefile with a descriptive name (e.g. `Florence_Taxlots.shp`).
+Since definition queries cannot perform spatial queries, you'll need to export the results of a spatial selection to a new shapefile with a descriptive name (e.g. `Florence_Taxlots.shp`) and add it to your data frame.
 
 ##### Filter Florence taxlots to exclude water and right-of-way taxlots.
 
@@ -101,9 +101,9 @@ It would make no sense to place a relief center in water or a road or other righ
 1. These types of taxlots also do not have a "taxcode" value, while  others do.
   * If using this, remember that null-values have a distinct query syntax: `X is NULL`, not `X = NULL`.
 
-##### Select Florence taxlots that that are within by the tsunami evacuation zone.
+##### Select Florence taxlots that that will be impacted by a local tsunami.
 
-Export a copy of this with a descriptive name (e.g. `Florence_Taxlots_Tsunami.shp`).
+Export a copy of this with a descriptive name (e.g. `Florence_Taxlots_Tsunami.shp`) and add it to your data frame.
 
 ##### Compute the total potential improvement damage and number of taxlots affected.
 
@@ -111,9 +111,7 @@ Export a copy of this with a descriptive name (e.g. `Florence_Taxlots_Tsunami.sh
 
 1. Open the attribute layer for the lots in the tsunami evacuation zone.
 2. Find the "impval" field; right-click on the field name and choose `Statistics`.
-3. Write down the values mentioned above for answering questions 1 & 2.
-
-##TODO: FINISH FROM HERE.
+3. Write down the values mentioned above; you will need them later.
 
 ##### Locate potential properties to site a tsunami relief center on.
 
@@ -121,87 +119,57 @@ Export a copy of this with a descriptive name (e.g. `Florence_Taxlots_Tsunami.sh
   1. Be more than 500 feet from the tsunami evacuation zone;
   2. Have an improvement value less than $10,000;
   3. Cover an area ("mapacres") greater than a half-acre but less than 1 acre;
-  4. Have a property class ("propcldes") of `'COMMERCIAL, VACANT'` or `'COMMERCIAL, IMPROVED'`.
+  4. Have a property class description ("propcldes") of `'COMMERCIAL, VACANT'` or `'COMMERCIAL, IMPROVED'`.
 2. Take some time to think about which operations are needed to answer this, including:
   1. The selection method setting when selecting part of the criteria.
   2. The spatial selection method setting when selecting by location.
   2. If combining the attribute selections into a single query, whether you need to enfore query order (parentheses).
-3. After you're satisfied your selection queries have the correct result, export the selection as a new shapefile with a descriptive name (e.g. `Potential_Relief_Centers.shp`).
+3. After you're satisfied your selection queries have the correct result, export the selection as a new shapefile with a descriptive name (e.g. `Potential_Relief_Centers.shp`), and add it to your data frame.
 
 
 #### 1.2 Map and Infographic
 
+You will create **two** data frames tp place on your page layout. The first will show a local tsunami's impact in historic 'Old Town' Florence, along the bayfront. The second will show impact across all of Florence, as well as the potential locations for relief centers.
 
+##### Create Old Town Florence data frame.
 
+1. Rename the current data frame to 'Old Town Florence'.
+2. Symbolize the tsunami-impacted taxlots in categories by the property class description.
+  1. Combine the property classes into larger groups or your choosing, e.g. residential, commercial.
+  2. When in the *Symbology* tab of the layer properties, select the individual values you wish to group.
+    * Hold down the `Ctrl` button and click on the values to select & unselect them.
+    * Select a value, then hold the `Shift` button and click another to select them and all values between them.
+  3. Right-click on the selected values, and choose `Group Values`.
+  4. You can remove values/groups; they will be symbolized with the `<all other values>`. To add them back, click the `Add Values` button, generate a complete list, and select the one(s) you wish to re-add.
+  5. Click on the text in the *Label* section for the grouped value to create a simpler name for the group, e.g. 'Residential'.
+  6. If using `<all other values>`, change its label. If not, uncheck it on the list to turn it off.
+  7. Hint: Changing the text next to where the list says `<Heading>` will impact how a map legend covering these is labelled.
+  8. Other hint: create a group to hold other/miscellaneous values. `<all other values>` is listed in map legends rather distinct from the other values for that layer.
+3. Symbolize the tsunami evacuation zone with a blue shade, and make it somewhat transparent (*Transparent %* is a setting in the *Display* tab of the layer properties). Set the outline width to `0` (will turn the outline off); place the layer atop the drawing order.
+4. Show the taxlots not affected by the tsunami (only the Florence ones). Give this layer a neutral color and place it below the tsunami-impacted lots in the drawing order.
+5. Change the names of your layers to something more descriptive.
+6. Consider adding a 'basemap'. Basemaps are images of map information that can be placed behind data layers to make a map seem 'more complete'. ArcMap has a number of options for basemaps that you can add to your maps, accessible via the menu item `File -> Add Data ->  Add Basemap`. The data behind these comes across your internet connection, so they tend to draw more slowly.
 
-##TODO: FINISH FROM HERE
+##### Create all-Florence data frame.
 
+1. Insert a new data frame and name it 'Florence'.
+2. Copy (`right-click on name -> Copy`) the following layers from the Old Town data frame and paste (`right-click on data frame name -> Paste`) them in the new one: tsunami zone, and tsunami-impacted taxlots, basemap (if using).
+3. If the potential relief center locations and the Florence city limits are in the Old Town data frame, copy & paste them over as well. If not, add them to the new data frame.
+4. Change the symbology of the tsunami-impacted taxlots to a single symbol type.
+5. Change the symbology of the potential relief center locations and city limits. Make sure the relief center polygons stand out on the map. For the city limits, make sure the outline is visible, and fill draws behind the other non-basemap layers. If you have a basemap, you may wish to not have a fill color on the city at all.
+5. Add an extent indicator to show the extent of the Old Town Florence data frame (only visible in *Layout View*).
 
-
-
-##### Symbolize cities using graduated symbols that represent the precipitation value.
-
-1. Read the webpage ['Using Graduated Symbols'](https://desktop.arcgis.com/en/arcmap/latest/map/working-with-layers/using-graduated-symbols.htm).
-2. Open the layer properties for the city-precipitation layer, and select the *Symbology* tab.
-3. Choose `Quantities -> Graduated symbols` for the *Show* option on the left.
-4. Set *Fields -> Value* to be `RASTERVALU`, your precipitation attribute.
-6. Change the template symbol to the fill color of your preference.
-5. Use the defaults for the other options; feel free to investigate at your leisure, though.
-
-##### Symbolize & label counties
-
-1. Set a visible border and no fill color.
-2. Turn on the labels: right-click the layer name and choose `Label Features`. Alternatively, you can open the layer properties and check the box at the top of the *Labels* tab. This is also where you would go to change the label defaults.
-
-##### Symbolize & label surrounding provinces.
-
-Use a subtle color: let Washington stand out.
-
-##### Symbolize & label states.
-
-1. You want to show the surrounding states along with Washington now, so remove the definition query.
-2. Color Washington to stand out from the surrounding states.
-  1. Open the *Symbology* tab in the states layer properties, and choose `Categories -> Unique Values` from the *Show* option.
-  2. Set the *Value Field* to `NAME`
-  3. Click the `Add Values` button, find and select `'Washington'`. Washington now appears in the symbol list on its own.
-  4. Choose a bold color for Washington, aand a subtle color for `<all other values>` that matches the color for the provinces above.
-3. Label the surrounding states (not Washington; its name will be in the map title).
-  1. Open the *Labels* tab of the layer properties, and check the `Label features in this layer` box.
-  2. Change the *Method* option to `Define classes of features and label each class differently`.
-  3. Open the now-available `SQL Query` tool, and use what you've learned about attribute queries to label all states that **are not** Washington.
-
-##### Re-evaluate the symbolization.
-
-Adjust the color scheme to best emphasize the map data and area of interest. Also be sure to not overwhelm the labels.
-
-##### Place the map in the layout.
+##### Place the maps in the layout.
 
 1. Switch to *Layout View*.
 2. Change the paper size to 11"x17" (called 'tabloid' size).
-2. Resize and place the Washington State data frame to fill a large portion of the page.
-3. Pan the data frame to center on the state of Washington and zoom in so that the Washington fills most of the data frame.
-
-##### Create an inset map.
-
-1. Copy the current data frame & paste the copy in the layout.
-2. Rename the new data frame `Olympic Peninsula`.
-3. Adjust the position and size of the new data frame to fit in your layout design.
-4. Pan & zoom the new data frame to capture the Olympic Peninsula as the focus. This is the large peninsula that occupies the western part of the state.
-5. Add an extend indicator for the new data frame in the Washington State data frame (see Lab 3).
-
-##### Create a county precipitation graph.
-
-1. Open the county precipitation summary table you created (remember, only visible in *List By Source* style of Table of Contents).
-2. From the *Table Options* menu (notecard-like button in upper-left corner of *Table* panel), choose `Create Graph`.
-3. Step through the *Create Graph Wizard* that opened, and configure a graph that shows the precipitation by county. The color used in the graph should complement the color you used to symbolize precipitation in the map.
-  1. A simple graph would be a vertical bar graph using the value `Average_RASTERVALU` (Y-value) and an X-value from the `COUNTY` field.
-  2. As you alter settings, the preview will update. Make adjustments until you feel the graph is satisfactory. I would recommend improved title and labels, and possibly dropping the graph legend.
-4. When you finish, the graph will appear in its own window. Right-click on the graph, and choose `Add to Layout`.
-5. Resize and place the graph as appropriate in your layout.
-
-ArcMap was designed to process and display spatial data as maps; the tools for other infographics are fairly limited in comparison to other applications. It is important to have labels and complete data on infographics, but less important to perfect the graphic design here. In a more professional GIS project workflow, infographics would probably be developed (or at least completed) in an application more attuned to graphic design.
-
-##### Make final adjustments of graphs & maps.
+2. Resize and place the data frames on the page how you think best displays them for viewers.
+  1. Consider different sizes for each of the maps.
+  2. Consider vertical & horizontal lengths: your map's extent may not be easily represented in a square.
+  3. You may need to pan & zoom within the data frame to make sure you're showing all you wish at the right scale.
+3. Once you've set the data frames' size, placement, and extent, you may want to re-evaluate your symbolization within your data frames.
+  1. Do the outlines seem too thick?
+  2. Are the colors distinguishable from each other?
 
 Explore layout designs, finding a way to use the available space. Don't leave gaping holes, but also leave enough empty space so the layout doesn't seem overly crowded. This is an iterative process.
 
@@ -213,13 +181,15 @@ Type, style, and place the following elements in the layout.
 2. A text caption for each map.
 2. The author/cartographer's name (that's you). To help your instructors, please put this under the title or in the bottom-right corner.
 3. The data source(s).
-4. A direction indicator (north arrow or graticule), as appropriate.
-5. A scale indicator, as appropriate.
+4. A direction indicator (north arrow or graticule) for each map, as appropriate.
+5. A scale indicator for each map, as appropriate.
 6. A legend for the main map (`Insert->Legend`). No need to make this perfect, but do try to make it clean and readable (renaming map layer may help).
+
+Be sure to include the values for total potential improvement damage and number of taxlots affected on your layout. These could be included in the map captions, or as other text elements.
 
 ##### Make a PDF copy of your map.
 
-1. Filename: `Lab4_Washington_Precipitation.pdf`.
+1. Filename: `Lab5_Tsunami_Relief_Center.pdf`.
 2. Take a look at your exported PDF through a PDF viewing application or a web browser. **Always look at your output!** Both common and unusual errors slip past creators when they don't look at their outputs.
 
 
@@ -235,12 +205,9 @@ Type, style, and place the following elements in the layout.
 
 ##### Questions
 
-1. To filter the states to show only the state of Washington, we set a *Definition Query*; to filter the cities to consist of a subset of all U.S. cities, we performed a selection (*Select By Location*) and exported the result to a new file. What are the differences between a *Definition Query* and a selection export from the perspective of the files saved on the computer?
-2. What are the differences between a *Definition Query* and a selection from the perspective of the data displayed on the map?
-3. The *Extract Values to Points* tool was run after the original cities dataset had been filtered to include on the cities in Washington. What difference would it have made to perform those actions in the opposite order?
-4. Briefly describe the pattern that you see in the distribution of precipitation in Washington (1-2 sentences).
-5. Briefly describe the pattern that you see in the distribution of precipitation in the Olympic Peninsula. 
-6. Review the *Table of Contents* styles (buttons directly above the layer contents of the TOC panel). List the four styles, and suggest a reason each style would be useful.
-
-##TODO: Other:
-Double-check the LC Data Share's data used here (SDCs are old, right?).
+1. How many taxlots are potentially impacted by a local tsunami?
+2. What is the total potential improvement damage caused by a local tsunami?
+3. The answer for question 2 represents the potential economic loss (by destruction of improvements) on taxlots that may be impacted by a local tsunami. How well does this number capture the potential impact? Be creative; consider the selection method you used, accuracy of improvement data, and whether a tsunami's impact is felt primarily by the improvements...
+4. How many taxlots met the criteria for a tsunami relief center?
+5. Which spatial selection method did you use to determine which taxlots would be impacted by a local tsunami? Why did you choose this method (in contrast to the other methods)?
+6. Briefly describe the story that your map product tells. Include a statement about the analysis you performed, or results you obtained (3-4 sentences).
