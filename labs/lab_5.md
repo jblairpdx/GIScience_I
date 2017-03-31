@@ -115,102 +115,29 @@ Export a copy of this with a descriptive name (e.g. `Florence_Taxlots_Tsunami.sh
 
 ##TODO: FINISH FROM HERE.
 
-##### Add & filter states.
+##### Locate potential properties to site a tsunami relief center on.
 
-1. Add state boundaries to the map.
-2. Filter the state boundaries to show only the state of Washington using a `Definition Query`.
-  1. Open the *Layer Properties*, and go to the *Definition Query* tab.
-  2. Construct a query that will return features for which the `NAME` field/attribute value is `'Washington'`. You can take a crack at typing this out, but I would recommend using the *Query Builder* tool available. It helps avoid formatting errors and typos.
+1. Eligible taxlots will need to meet the following criteria:
+  1. Be more than 500 feet from the tsunami evacuation zone;
+  2. Have an improvement value less than $10,000;
+  3. Cover an area ("mapacres") greater than a half-acre but less than 1 acre;
+  4. Have a property class ("propcldes") of `'COMMERCIAL, VACANT'` or `'COMMERCIAL, IMPROVED'`.
+2. Take some time to think about which operations are needed to answer this, including:
+  1. The selection method setting when selecting part of the criteria.
+  2. The spatial selection method setting when selecting by location.
+  2. If combining the attribute selections into a single query, whether you need to enfore query order (parentheses).
+3. After you're satisfied your selection queries have the correct result, export the selection as a new shapefile with a descriptive name (e.g. `Potential_Relief_Centers.shp`).
 
-A definition query omits features that do not satisfy the logic of the query from display in the data frame map or attribute table. Any functions or processing that occurs on the layer while the definition query is in place will only use the features still showing; however the query does not change the contents of the actual dataset—the file is still the same.
-
-##### Add & spatially select cities.
-
-There are three different tools to perform a spatial selection in ArcMap, and they vary by the level of interaction they provide.
-
-* `Select Features` tool on the `Tools` toolbar (white arrow over a white square) (highest level of interaction).
-* `Select By Location` dialog in the `Selection` menu.
-* `Select Layer By Location` tool in the `Data Management` toolbox in the `ArcToolbox` panel (lowest level of interaction).
-
-Though you may investigate the other tools, this step will use the middle option.
-
-1. Add U.S. cities to the map.
-2. Read the webpage ['Using Select By Location'](https://desktop.arcgis.com/en/arcmap/latest/map/working-with-layers/using-select-by-location.htm).
-3. Open the tool dialog at `Selection->Select By Location`.
-4. Examine the *Selection method* options. You'll be fine with the default `select features from`.
-5. *Target layer(s)* are the layers that you want to select the features from. We want to select cities.
-6. *Source layer* is the layer that has the features you want to define the spatial area to select with. We want to select cities within the state of Washington.
-7. Examine the *Spatial selection method for target layer feature(s)* options. This is a description of the relationship between the source geometry (Washington) and the target geometry (cities) you'll be selecting. You'll be fine with the default `intersect the source layer feature`/
-
-Note: The selection can be cleared via the menu item `Selection -> Clear Selected Features`; or using the icon in the *Tools* toolbar with the same button icon as the menu item (white square).
-
-##### Alter selection using population attribute.
-
-If you look at the population attributes for the cities, you'll notice a number of places with a 2010 population of -999. Data maintainers often use obviously incorrect numbers such as this to indicate 'no value' when the data model doesn't support an explicit lack of value. In this case, these are 'cities' that the Census no longer counts a population for (usually a city that no longer exists or one that was subsumed by a different city).
-
-Let's remove these population-less cities from our selection. There are two tools to perform an attribute selection in ArcMap.
-
-* `Select By Attributes` dialog in the `Selection` menu.
-* `Select Layer By Attributes` tool in the `Data Management` toolbox in the `ArcToolbox` panel.
-
-This step will use the first one.
-
-1. Read the webpage ['Using Select By Attributes'](https://desktop.arcgis.com/en/arcmap/latest/map/working-with-layers/using-select-by-attributes.htm).
-2. Open the attribute selection tool via `Selection -> Select By Attributes`.
-3. Examine the *Method* options. This is description of the relationship (if any) this selection will have with the 'current selection'. For our purposes here, we should choose `Select from current selection`.
-4. Use the field & value boxes and operator buttons to create an attribute query that will select cities that do not have a 2010 population with the value -999.
-
-##### Export selected citites to new dataset.
-
-1. Right-click on the name of the cities layer, and choose `Data -> Export Data`.
-  1. The default export option when the layer has a selection set is to export the selected features. Keep this.
-  2. It doesn't matter a whole lot for our purposes here, but use the layer's source data to set the output's coordinate system.
-  3. Place output in your Lab4 folder, specifying a descriptive filename (e.g. `City_WA_5000.shp`).
-2. Once the output is exported, ArcMap will ask whether you want to add the exported data to the map; choose yes.
-3. Turn off (uncheck the box) or remove (right-click on name, choose `Remove`) the original cities layer.
-
-##### Add precipitation data (maprecip) to the map.
-
-##### Determine the precipitation value at each city.
-
-In Lab 2, you used the `Identify` tool to find the raster value at a given city; you had to zoom in to the city-point to determine the cell that lay under it. It's more efficient when dealing with lots of data points to let the computer do the work.
-
-1. Read the webpage ['Extract Values to Points'](https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/extract-values-to-points.htm).
-2. Turn on the *Spatial Analyst* extension: the *Extract Values to Points* tool will only work with the extension turned-on.
-  1. Open the *Extensions* dialog via `Customize -> Extensions`.
-  2. Mark the checkbox next to *Spatial Analyst*.
-3. Open *ArcToolbox* via the menu item `Geoprocessing -> ArcToolbox`. ArcToolbox is a large collection of tools available for GIS processing. Much of the deeper functions are contained here.
-4. In ArcToolbox, navigate to and open the *Extract Values to Points* tool: `Spatial Analyst Tools -> Extraction -> Extract Values to Points`. Alternatively, you could search for the tool via the Search panel (if not present on your sidebar, it can be opened via `Windows -> Search`).
-5. Enter your Washington cities layer as the `Input point features` by choosing it from the drop-down menu.
-6. Enter the precipitation raster as the `Input raster`.
-7. Set `Output point features` to be in your Lab4 folder and have a descriptive filename (e.g. `City_Precip.shp`).
-8. Leave the rest of the options with their default settings.
-9. After running the tool, open the attribute table for the output layer. At the far right side of the table, you'll see a field named `RASTERVALU`; this was added to the city attributes by the tool, containing the values for the cell at the same location as the city-point.
-10. Turn off or remove the Washington cities layer that does not have the precipitation values added.
-11. The `maprecip` raster layer will be of no more use. Feel free to turn it off or remove.
-
-Spatial dataset output in a file folder will default to the *shapefile* type; the file extension `.shp` will automatically be added at the end of the filename if not already there.
-
-##### Summarize precipitation data by county.
-
-We will be creating an infographic to supplement our map. First, we need to summarize the information we've integrated.
-
-1. Open the attribute table for your new cities-precipitation layer.
-2. Find the `COUNTY` attribute field; right-click on the field name and choose `Summarize`.
-3. `Select a field to summarize` is already filled-out, defaulting to the field you clicked on.
-4. Find `RASTERVALU`in the field list for option 2; pick `Average` as the statistic to summarize for each county.
-5. Set the output table to be in your Lab4 folder and have a descriptive filename (e.g. `Precip_County_Summary.dbf`).
-
-Summary output does not have spatial attributes (i.e. a geometry). Hence it does not appear in the map view of the data frame, nor does it appear in the default Table of Contents style, which is called the *List By Drawing Order* TOC. To be able to see the table listed, change the Table of Contents to the *List By Source* style, which can be activated by clicking on the second button between where it says 'Table of Contents' and the list of layers.
-
-Table output in a file folder will default to the *dBase* type; the file extension `.dbf` will automatically be added at the end of the filename if not already there.
-
-##### Add Canadian provinces and Washington counties for context.
-
-1. Canada provinces: `\\confusion.uoregon.edu\GISData\Esri_Data\canada\data\province.sdc`. See instructions on the [data shares website](https://library.uoregon.edu/map/gis_data/data_in_commons.html) to refresh how to access this.
-2. You've already downloaded counties, but they're nationwide. Apply what you've learned so far to get what you need.
 
 #### 1.2 Map and Infographic
+
+
+
+
+##TODO: FINISH FROM HERE
+
+
+
 
 ##### Symbolize cities using graduated symbols that represent the precipitation value.
 
