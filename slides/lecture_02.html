@@ -144,7 +144,7 @@ GIS is the process of using integrated technologies + data.
 .right-column[
 * Collecting where they happen.
   * GPS, surveying, fieldwork.
-  * Remote collection: image capture (satellite, airplane, car, etc.).
+  * Remote capture: images (satellite, airplane, car, etc.); sensors.
 * Coding a spatial location onto collected information.
   ]
 ---
@@ -153,17 +153,28 @@ GIS is the process of using integrated technologies + data.
 
 .image-90[![The Real World -> GIS World Model (http://henrico.us/it/gis/)](media/Capture9.png)]
 
+* How should your data appear in digital form?
+* What generalizations & distortions can we accept for our purposes?
+
 ---
 
 ## 3. Describe the entities
 
 Attributes: individual values describing aspects of the object.
 
-![Parcel atrributes accessed using the parcel ID (https://desktop.arcgis.com/en/arcmap/latest/manage-data/tables/creating-tables.htm)](media/GUID-39A8F674-382B-49FE-9EFA-97E6B76571C8-web.gif)
-
-???
-
-* Note 'shape', the geometry, is listed with the attributes.
+.left-column[
+.image-100[![Parcel atrributes accessed using the parcel ID (https://desktop.arcgis.com/en/arcmap/latest/manage-data/tables/creating-tables.htm)](media/GUID-39A8F674-382B-49FE-9EFA-97E6B76571C8-web.gif)]
+  ]
+.right-column[
+* Data values used to describe an entity, beyond coding the location.
+* Data-wise, at the core of the integrative definition. Connects location to:
+  * Databases;
+  * Map symbolization;
+  * Statistical analysis;
+* Geometry/shape is first-order description attribute.
+  * Properties (e.g. area, perimeter), statistics (centrality, dispersion).
+  * Literal: describes the entity (though imperfect).
+  ]
 
 ---
 
