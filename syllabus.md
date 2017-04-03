@@ -118,7 +118,7 @@ Graduate students will have two additional components to their final project. Th
   * Longley et al Chapters 1 & 2 (sections 2.3+ optional).
 * **Lecture**:
   * Mon Apr 03 — Lecture 1: Class introduction.
-  * Wed Apr 05 — Lecture 2: What Is GIS.
+  * Wed Apr 05 — Lecture 2: What Is GIS?
 * **Lab**:
   * Lab 1: Using GIS with ArcMap and SSIL.
 
