@@ -11,7 +11,7 @@ If you prefer a more portable digital copy of any of the materials listed below,
 ## Lecture Slides
 
 * [Lecture 1: Class introduction](https://jblairpdx.github.io/GIScience_I/slides/lecture_01.html)
-* [Lecture 2: Components of a GIS](https://jblairpdx.github.io/GIScience_I/slides/lecture_02.html)
+* [Lecture 2: What Is GIS?](https://jblairpdx.github.io/GIScience_I/slides/lecture_02.html)
 * [Lecture 3: Representing the Earth; georeferencing](https://jblairpdx.github.io/GIScience_I/slides/lecture_03.html)
 * [Lecture 4: Coordinate systems and projections](https://jblairpdx.github.io/GIScience_I/slides/lecture_04.html)
 * [Lecture 5: Geospatial data models](https://jblairpdx.github.io/GIScience_I/slides/lecture_05.html)
