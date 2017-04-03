@@ -223,14 +223,12 @@ Maps; reports; "the answer".
 
 * Get in groups of three or four.
 * Put your names on a piece of paper.
-* Answer for one of the following questions (left) how you could approach the steps in the GIS process (right). Answer in general terms, but try to be thoughtful about it.
+* Answer for one of the following questions (left) how you could approach the steps in the GIS process (right). Answer in general terms, but try to be thoughtful/creative about it.
 
 .left-column[
-* Where should we open a new coffee & donut shop?
-* Which streets and sidewalks should be improved first?
+* Where should we open a new coffee/donut shop?
 * Can we predict affected areas from a hazardous spill?
-* Where can we route a high-speed railroad between Portland and Seattle?
-* Where are the facilty coverage gaps in a health provider network?
+* Which parts of the city should public works staff go to for cleanup/graffiti/landscaping?
 ]
 .right-column[
 1. Locate entities in the world.
@@ -240,6 +238,27 @@ Maps; reports; "the answer".
 5. Communicate the results.
 6. Interpret, make decisions, give feedback.
   ]
+
+???
+
+* Coffee/donut.
+  1. Existing shops/competitors? Available properties? Water features?
+  2. Points? Property lots?
+  3. Attributes: property cost, sales information?
+  4. Combine with neighborhood demographics/economics; distance to positive factors (quality customers, venues); distance buffer around existing shops?
+  5. Map of collected entities; buffers.
+* Hazardous spill.
+  1. Spill location? Vulnerable property types (homes, utilities)?
+  2. Point, maybe expand to area as more information collected?
+  3. Spill type; quantity?
+  4. Use slope representation to estimate direction of flow? Simpler: buffers of incrementing distance?
+  5. Map of potential areas to evacuate/verify?
+* City staff.
+  1. Complaint locations? Neighborhood/zone areas?
+  2. Complaints as points? Maybe buffered to areas (uncertainty)?
+  3. Complaint types (graffiti, landscaping, trash, disrepair)?
+  4. Overlay complaints on neighborhood areas (counts)? Overlay ownership types (public or private)? Group by nearest road right-of-way?
+  5. Map (of course)? Maybe a list?
 
 </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
