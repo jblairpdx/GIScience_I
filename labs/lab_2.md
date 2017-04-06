@@ -142,7 +142,11 @@ Note: ArcMap will perform reprojection of a coordinate system 'on-the-fly'. The 
 Type, style, and place the following elements for each map in the layout (use your judgement). Remember the `Insert` menu!
 
 1. An appropriate (and distinct) title.
-2. A brief description of the suitability of the projection for the map considering the scale and type/location of distortion.
+2. A brief description of the how suitable the projection (or lack of) is for the map.
+  * Consider the extent the map covers, and the possible distortion effects of the projection.
+  * Note: The class lecture on projections occurs on Wednesday of this week. Early lab sections may want to wait until after that class to fill this out, or read up on the projection in question.
+    * Wikipedia has great projection pages: [https://en.wikipedia.org/wiki/Lambert_conformal_conic_projection](https://en.wikipedia.org/wiki/Lambert_conformal_conic_projection)
+    * [https://jblairpdx.github.io/GIScience_I/slides/lecture_04.html](https://jblairpdx.github.io/GIScience_I/slides/lecture_04.html)
 
 Note: When making a visual information product, you should always be sure each map, data graphic, or table is labeled with a title or caption, possibly both. Folks need to know what they're looking at.
 
@@ -173,6 +177,10 @@ Type, style, and place the following elements in the layout.
 2. Compose your answers for each question in the document following each question.
 
 ##### Questions
+
+  * Note: The class lecture on projections occurs on Wednesday of this week. Early lab sections may want to wait until after that class to fill these out, or read up on the projection in question.
+    * Wikipedia has great projection pages: [https://en.wikipedia.org/wiki/Lambert_conformal_conic_projection](https://en.wikipedia.org/wiki/Lambert_conformal_conic_projection)
+    * [https://jblairpdx.github.io/GIScience_I/slides/lecture_04.html](https://jblairpdx.github.io/GIScience_I/slides/lecture_04.html)
 
 1. When changing the projection of a data frame a warning pop-up windows appeared. What does this warning message mean? What happens when you dismiss the window (click `Yes`)?
 2. ArcMap allows you to have multiple data frames (maps) in a single layout. You can drag files from the *Catalog* panel in the *Layout View* to add it to a data frame. If there are multiple data frames, in which one is the new layer added? How is that data frame visually presented in the ArcMap user interface?
