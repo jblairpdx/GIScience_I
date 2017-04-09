@@ -93,9 +93,9 @@ Just as you have connected to folders on local and network drives mapped to a dr
 
 ##### Add the world population (2015) raster dataset as a layer to the data frame.
 
-1. Find the dataset at `R:\Class_Data\Lab3\Data\gpw-v4-population-density-2015.tif`.
-  - The dataset is actually from the [Socioeconomic Data and Applications Center (SEDAC)](http://sedac.ciesin.columbia.edu/data/set/gpw-v4-population-density). We skipped the download process here because (a) the website requires registration for downloads, and (b) the download is large (230 MB), no point in everyone downloading it to the same filesystem.
-  - Do use the website or the associated PDF in the folder for citation information and any other details you may be interested in.
+1. Find the dataset at `R:\GEOG481_3\Class_Data\Lab3\Data\gpw-v4-population-density-2015.tif`.
+  * The dataset is actually from the [Socioeconomic Data and Applications Center (SEDAC)](http://sedac.ciesin.columbia.edu/data/set/gpw-v4-population-density). We skipped the download process here because (a) the website requires registration for downloads, and (b) the download is large (230 MB), no point in everyone downloading it to the same filesystem.
+  * Do use the website or the associated PDF in the folder for citation information and any other details you may be interested in.
 2. Reorder the layers in the *Table of Contents*, if necessary, to place the raster layer below the vector layers.
 
 ##### Make adjustments to the raster layer.
