@@ -66,7 +66,7 @@ class: inverse, middle
 
 ---
 
-## What is representation?
+## What is spatial representation?
 
 A real-world entity converted into data defined and stored in the system.
 
@@ -80,7 +80,8 @@ Atomic element of representation: A location, (a time), and an attribute.
 
 * Sometimes you'll hear 'modeling' the Earth instead of representing.
   * I chose representing, matches up with our process concept better.
-  * There's also a different kind of GIS 'modeling' (which we'll talk about later).
+  * There's also other terms we'll use with 'model' or 'modeling' in them (which we'll talk about later).
+
 * Really, all man-made systems are finite.
 
 ---
@@ -92,6 +93,7 @@ Consider contacts in your phone/email/rolodex.
 ???
 
 * Information stored about a contact isn't a complete description of the person.
+
 * An approximation, primarily focused on the needs for contacting them.
 
 ---
@@ -99,11 +101,9 @@ Consider contacts in your phone/email/rolodex.
 ## Representation types
 
 
-Spatial representations are recorded in a GIS as one of two types.
+Spatial representations are recorded in a GIS as one of two types:
 
-1. Discrete objects.
-
-2. Continuous fields.
+'Discrete objects' vs. 'continuous fields'
 
 ---
 
@@ -126,6 +126,25 @@ Spatial representations are recorded in a GIS as one of two types.
 
 ---
 
+## Types of discrete spatial objects
+
+* Point (0 dimensions).
+* Line (1 dimension).
+* Area (2 dimensions).
+* Volume (3 dimensions).
+
+
+* Real-world entities can have a representation that approximates their real-world geometry, or an artificial reclassification.
+* How one chooses to represent the entities is dependent on scale.
+
+???
+
+* Reclassification:
+  - Lower-dimension: City area --> city point.
+  - Higher-dimension: Person --> aggregate population.
+
+---
+
 ## Representation types (cont.)
 
 #### Continuous field view: the world is a finite number of variables, each one defined at every possible position.
@@ -145,25 +164,6 @@ Vector vs. raster: stay tuned.
 * Tough question: how to represent a 'soil inventory'?
 
 * Also: emergence of patterns can tie field + discrete together: could you create a discrete object representation from a pattern in a field representation?
-
----
-
-## Types of discrete spatial objects
-
-* Point (0 dimensions).
-* Line (1 dimension).
-* Area (2 dimensions).
-* Volume (3 dimensions).
-
-
-* Real-world entities can have a representation that approximates their real-world geometry, or an artificial reclassification.
-* How one chooses to represent the entities is dependent on scale.
-
-???
-
-* Reclassification:
-  - Lower-dimension: City area --> city point.
-  - Higher-dimension: Person --> aggregate population; weather station --> continuous temperature map.
 
 ---
 
