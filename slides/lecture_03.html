@@ -111,7 +111,7 @@ Spatial representations are recorded in a GIS as one of two types: 'discrete obj
 * Objects can be associated with multiple attributes.
 * Spatial representation of objects often called features - to distinguish from non-spatial objects.
 
-.image-80[![https://archive.epa.gov/region5/superfund/fields/web/html/gis.html](media/gis_illustration.jpg)]
+![https://archive.epa.gov/region5/superfund/fields/web/html/gis.html](media/gis_illustration.jpg)
 
 ???
 
@@ -134,13 +134,9 @@ Spatial representations are recorded in a GIS as one of two types: 'discrete obj
   ]
 
 * Real-world entities can have a representation that approximates their real-world geometry, or an artificial reclassification.
+  * Lower-dimension: City area --> city point.
+  * Higher-dimension: Person --> aggregate population.
 * How one chooses to represent the entities is dependent on scale.
-
-???
-
-* Reclassification:
-  - Lower-dimension: City area --> city point.
-  - Higher-dimension: Person --> aggregate population.
 
 ---
 ## Continuous field view
@@ -179,20 +175,17 @@ Scale has a number of meanings.
 ---
 ## Generalization
 
+* Illustrative of the need for generalization:
+
 > "... In that Empire, the Art of Cartography attained such Perfection that the map of a single Province occupied the entirety of a City, and the map of the Empire, the entirety of a Province. In time, those Unconscionable Maps no longer satisfied, and the Cartographers Guilds struck a Map of the Empire whose size was that of the Empire, and which coincided point for point with it. The following Generations, who were not so fond of the Study of Cartography as their Forebears had been, saw that that vast Map was Useless, and not without some Pitilessness was it, that they delivered it up to the Inclemencies of Sun and Winters. In the Deserts of the West, still today, there are Tattered Ruins of that Map, inhabited by Animals and Beggars; in all the Land there is no other Relic of the Disciplines of Geography."
-
-Borges, J. L. 1998. On exactitude in science. P. 325, In, Jorge Luis Borges, Collected Fictions (Trans. Hurley, H.) Penguin Books.
-
-???
-
-* Illustrative of the problems.
+> 
+> Borges, J. L. 1998. On exactitude in science. P. 325, In, Jorge Luis Borges, Collected Fictions (Trans. Hurley, H.) Penguin Books.
 
 ---
 ## Generalization (cont.)
 
 * Details of a spatial represenation must be carefully selected to fit the GIS system (and the ability to collect the data).
 * To be sure, all digital representations are generalized to a degree.
-* In context of spatial representations, we can consider ten types of generalizations:
 
 ???
 
@@ -204,46 +197,39 @@ Borges, J. L. 1998. On exactitude in science. P. 325, In, Jorge Luis Borges, Col
   * Accuracy of collection technology.
 
 ---
-## Generalization (cont.)
+## Types of spatial generalizations
 
 [open](https://jblairpdx.github.io/GIScience_I/slides/media/Longley_et_al_Figure_3.15.png)
 .image-50[![Longley, et al 2015](media/Longley_et_al_Figure_3.15.png)]
 
-???
+---
+## Types of spatial generalizations (cont.)
 
-* Many of these rarely apply to anything but mapping, rather than analysis.
+![https://www.researchgate.net/figure/220144000_fig2_Figure-2-Some-generalization-operations-translated-and-adapted-from-Musti-re-2001](media/Figure-2-Some-generalization-operations-translated-and-adapted-from-Musti-re-2001.png)
 
+---
+
+* Easy to see generalitzations in mapping, but not so much in analysis.
 * There can be analysis requirements for generalization, though:
   * Systems that have an upper limit on the amount of detail they can handle.
     * Example: road-modeling systems can combine roads (divided highways, whole neighborhoods, external connections).
   * Where you can only have one object per unique identification.
     * Example: Living Learning Center - 2 buildings, but one name.
-
----
-## In-class activity: Representation
-
-* Get in groups of two or three.
-* Put your names on a piece of paper.
-* Discuss how you would represent the following phenomena in a GIS (consider object v. field, scale, generalization):
-  * Restaurants in a city.
-  * Local parks and playgrounds.
-  * World cities.
-  * Vegetation classes.
+  * Where a more faithful representation may produce less-helpful results.
+    * Example: Highway distance signs.
 
 ---
 ## Georeferencing (geolocating) (geocoding)
 
 Tagging a data object with a spatial location.
 
-* Must be unique.
-* Should be persistent.
+* Must be (mostly) unique.
+  * 'Green Mountain' occurs 153 times in USGS Geographic Names Information System; 21 in Oregon; 2 in Linn County!
+* Should be persistent (or consistent).
+  * Changes shouldn't surprise (Centennial Blvd -> Martin Luther King Jr. Blvd; Saigon -> Ho Chi Minh City).
 * Understandable by the system that will interpret it.
-
-???
-
-* Unique: 'Green Mountain' occurs 153 times in USGS Geographic Names Information System; 21 in Oregon; 2 in Linn County!
-* Persistent: names change (Centennial Blvd -> Martin Luther King Jr. Blvd, Saigon -> Ho Chi Minh City).
-* Understandable: 'system' can be a computer or a person. Most western addresses are consistently understandable by folks in the area.
+  * 'System' can be some computer application or a person. Most western addresses are consistently understandable by locals.
+* Optional: Metric (location tag includes a distance from an origin).
 
 ---
 ## Georeferencing Examples
