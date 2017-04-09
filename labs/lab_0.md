@@ -59,11 +59,11 @@ Note: To connect to the server from off-campus, you will first need to connect t
 
 ### 3 - Explore class-related server locations
 
-Once connected to the R: drive, you should see a folder named 'GEOG481'. Within that folder are three folder that organize the course material.
+Once connected to the R: drive, you should see a folder named 'GEOG481_3'. Within that folder are three folder that organize the course material.
 
-* R:\GEOG481\Class_Data: Will contain copies of lab assignments and any supporting material.
-* R:\GEOG481\Shared_Data: Will contain copies of any datasets referenced in a lab that are not publicly available on the internet.
-* R:\GEOG481\Student_Data: Will contain a subfolder with your Duck ID (among others). This will be referred to regularly as your 'student folder'.
+* R:\GEOG481_3\Class_Data: Will contain copies of lab assignments and any supporting material.
+* R:\GEOG481_3\Shared_Data: Will contain copies of any datasets referenced in a lab that are not publicly available on the internet.
+* R:\GEOG481_3\Student_Data: Will contain a subfolder with your Duck ID (among others). This will be referred to regularly as your 'student folder'.
 
 **IMPORTANT: Be sure to save your work to your student folder on the R: drive.** The SSIL computers will allow you to save files to the local computer's drives; however files on these drives are deleted regularly, and you should not count on them beyond the immediate time on that computer.
 
