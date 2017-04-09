@@ -127,7 +127,7 @@ Graduate students will have two additional components to their final project. Th
 * **Reading**:
   * Longley et al Chapters 3 & 4.
 * **Lecture**:
-  * Mon Apr 10 — Lecture 3: Representing the Earth; georeferencing.
+  * Mon Apr 10 — Lecture 3: Spatial representation; georeferencing.
   * Wed Apr 12 — Lecture 4: Coordinate systems and projections.
 * **Lab**:
   * Lab 2: Projections.
