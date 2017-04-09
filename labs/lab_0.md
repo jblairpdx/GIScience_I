@@ -28,30 +28,30 @@ Nothing: lab is for reference only.
 
 #### Steps
 
-*Windows Explorer* is an application available on the Microsoft Windows operating system that allows you to view and modify the filesystem. Its functionality includes:
+*File Explorer* is an application available on the Microsoft Windows 10 operating system that allows you to view and modify the filesystem. Its functionality includes:
 
 * Establishing a connection with a server's filesystem.
 * Viewing the filesystem on the local computer and connected servers.
 * Creating files and folders.
 * Copying, moving, or deleting files.
 
-### 1 - Open *Windows Explorer*
+### 1 - Open *File Explorer*
 
-From the Windows Start Menu, type "explorer" and choose from the pick-list *Windows Explorer*. You can also click the folder icon on the menu bar.
+From the Windows Start Menu, type "explorer" and choose from the pick-list *File Explorer*.
 
 Note: You can open a second window of the application using the keyboard shortcut `Ctrl+N` (meaning hold the Ctrl-button and press the N-button). A second window can be useful when moving files between folders.
 
 ### 2 - View the filesystem
 
-The main display in *Windows Explorer* shows a list of the files in the current directory. You can navigate through the filesystem using the address bar at the top of the window, or using the folder tree displayed on the left side of the window.
+The main display in *File Explorer* shows a list of the files in the current directory. You can navigate through the filesystem using the address bar at the top of the window, or using the folder tree displayed on the left side of the window.
 
 ### Connect to a server
 
 The computers in the SSIL labs are configured to provide you with connections to the SSIL file server from the start. The file system is mapped to the R: drive. If you are working on a computer that has not already been connected, you will need to map the drive to the network location.
 
-1. Open *Windows Explorer*. Make sure you are on 'Computer' in the folder tree.
+1. Open *File Explorer*. Make sure you are on 'This PC' in the folder tree.
 2. Click the button labeled `Map Network Drive`.
-3. Enter the server address: `\\cs-fs2\CAS-Labs\Classes`.
+3. Enter the server address: `\\cs-fs2\CAS-LABS\Classes`.
 
 For additional information, see the [SSIL Network Drives and Connecting Remotely page](https://ssil.uoregon.edu/ssil/ssil-network-drives-and-connecting-remotely/)
 
@@ -71,7 +71,7 @@ Once connected to the R: drive, you should see a folder named 'GEOG481_3'. Withi
 
 To create a new folder on the filesystem:
 
-1. Open *Windows Explorer*.
+1. Open *File Explorer*.
 2. Navigate to your student folder.
 3. Right-click with the mouse in a blank area of the window.
 4. Select `New->Folder` from the context menu that appears.
@@ -87,9 +87,9 @@ To select files or folders, you just need to single-click on them. To select mor
 * Click on one item, hold the Ctrl key, and click on any others you wish to select. All clicked items will stay selected.
 * Click and hold in a blank spot in the window, then drag across the items you wish to select.
 
-Initiate copying selectd items using the menu item `Edit->Copy`, or use the keyoard shortcut `Ctrl+C`. Place the copies somewhere using `Edit->Paste` or keyboard shortcut `Ctrl-V`. Be sure to have the window set to the location you want to place the copies in.
+Initiate copying selected items using the menu item `Home->Copy`, or use the keyoard shortcut `Ctrl+C`. Place the copies somewhere using `Home->Paste` or keyboard shortcut `Ctrl-V`. Be sure to have the window set to the location you want to place the copies in.
 
-To move selected items, drag and drop the icon(s) into the destination folder as represented in the same window, the folder tree, or another window altogether. Alternatively, use the menu item `Edit->Cut` of keyboard shortcut `Crtl-X` to initiate a move, then paste it with the same process as copying used.
+To move selected items, drag and drop the icon(s) into the destination folder as represented in the same window, the folder tree, or another window altogether. Alternatively, use the menu item `Home->Cut` of keyboard shortcut `Crtl-X` to initiate a move, then paste it with the same process as copying used.
 
 To delete a selected item, you can: drag and drop it into the Recycle Bin icon; right-click the item and choose `Delete` from the context menu; or press the delete key.
 
@@ -99,7 +99,7 @@ To delete a selected item, you can: drag and drop it into the Recycle Bin icon; 
 
 Large files and collections of files available on the internet are often combined into a single file and compressed to save space. Once donwloaded, the file will need to be unpacked before its contents can be used. To extract the contents:
 
-1. Open *Windows Explorer*.
+1. Open *File Explorer*.
 2. Navigate to the location of the archive file.
-3. Right-click on the filename, and select `Extract to Folder` from the context menu.
+3. Right-click on the filename, and select `Extract All` from the context menu.
 4. Type the name of the folder to create & unpack to when prompted, and click `OK`.
