@@ -85,7 +85,7 @@ Discover and download the datasets via the link provided. Be sure to note the da
 * Cities and Towns, One Million Scale.
   - Link: [https://nationalmap.gov/small_scale/atlasftp.html](https://nationalmap.gov/small_scale/atlasftp.html)
   - Filename: citiesx010g_shp_nt00962.tar.gz.
-  - **Note**: Unlike the other downloads, this isn't stored in a zipfile archive. Rather, it's stored in a tar-archive which is then in a gzip-archive. Windows doesn't natively read from these kinds of archives. To extract this archive, use the PeaZip utility application (twice, it's double-archived), which you can find at `R:\Class_Data\Utilities\PeaZip\peazip.exe`.
+  - **Note**: Unlike the other downloads, this isn't stored in a zipfile archive. Rather, it's stored in a tar-archive which is then in a gzip-archive. This is a common Unix/Linux method of archiving collections of files. Windows doesn't natively read from these kinds of archives, though; to extract this archive, use the 7-Zip File Manager application (twice, it's double-archived), which you can find in the start menu of the SSIL computers.
 * Precipitation Intensities (Western Washington).
   - Link: [https://geography.wa.gov/node/111](https://geography.wa.gov/node/111)
   - Filename: precipevents.zip.
