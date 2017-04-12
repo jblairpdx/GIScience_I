@@ -38,7 +38,7 @@ After completing this course, students should be able to:
     - Office hours: Fridays 8:00-10:00, 109 Condon [(map)](https://map.uoregon.edu/99b67d6a9)
 * *Lab*: Dean Olson
     - Email: deano@uoregon.edu
-    - Office hours: TBA
+    - Office hours: Wednesdays 12:00-13:30, Reed Seminar Room Knight Library[(map)](https://map.uoregon.edu/83ce7039c)
 * *Lab*: William Chang
     - Email: cchang3@uoregon.edu
     - Office hours: TBA
