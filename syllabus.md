@@ -148,7 +148,7 @@ Graduate students will have two additional components to their final project. Th
   * Longley et al Chapter 13 (sections 13.3.4+ optional); Chapter 14 (section 14.4+ unnecessary).
 * **Lecture**:
   * Mon Apr 24 — Test 1: Lectures 1-6.
-  * Wed Apr 26 — Lecture 7: Combining Data — Attribute joins & spatial analysis.
+  * Wed Apr 26 — Lecture 7: Combining data — Attribute joins & spatial analysis.
 * **Lab**:
   * Lab 4: Spatial Selection and Attribute Queries.
 
