@@ -160,7 +160,7 @@ Graduate students will have two additional components to their final project. Th
   * Longley et al Chapter 15.
 * **Lecture**:
   * Mon May 01 — Lecture 8: Spatial analysis — A look in the toolbox.
-  * Wed May 03 — Lecture 9: GIS models.
+  * Wed May 03 — Lecture 9: Spatial modeling.
 * **Lab**:
   * Lab 5: Site Selection—Tsunami Relief Center.
 
