@@ -62,10 +62,17 @@ Name it Lab3_World_Population.mxd.
 
 Just as you have connected to folders on local and network drives mapped to a drive letter, you can also connect to folders on other servers without a drive letter. Follow the connection instructions on the [data shares website](https://library.uoregon.edu/map/gis_data/data_in_commons.html) to get it connected.
 
+Note: As the website states, the Learning Commons are only accessible on UO computers, or directly connected to the UO network: the VPN will not work. Also, we recently discovered that the data share was not accessible to the SSIL computers. If this is still the case at lab time, use the alternative downloads instead.
+
 ##### Add the countries and cities of the world to the map from the Esri-provided data collection.
 
 * Countries: `\\confusion.uoregon.edu\GISData\Esri_Data\world\data\cntry06.sdc\cntry06`
 * Cities: `\\confusion.uoregon.edu\GISData\Esri_Data\world\data\cities.sdc\cities`
+
+Alternative downloads:
+* Site: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_0_countries.zip
+* Countries alt: `Admin 0 - Countries`
+* Cities alt: `Admin 1 - Populated Places`
 
 ##### Make adjustments to the vector layers.
 
