@@ -70,7 +70,7 @@ Note: As the website states, the Learning Commons are only accessible on UO comp
 * Cities: `\\confusion.uoregon.edu\GISData\Esri_Data\world\data\cities.sdc\cities`
 
 Alternative downloads:
-* Site: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_0_countries.zip
+* Site: [http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_0_countries.zip](http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_0_countries.zip)
 * Countries alt: `Admin 0 - Countries`
 * Cities alt: `Admin 1 - Populated Places`
 
