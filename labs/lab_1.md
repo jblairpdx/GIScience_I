@@ -60,7 +60,7 @@ Note: The questions to answer in this lab relate to the process you complete in 
 2. Browse or search for the following datasets:
   * *Oregon City Limits (2016)*: citylim_2016.zip.
   * *Oregon Counties - 2015*: orcnty2015.zip.
-3. Download the files and save them in your student folder's newly-created Lab1 folder (e.g. R:\GEOG481_3\Student_Data\[Duck ID]\Lab1\Data\orcnty2015.zip).
+3. Download the files and save them in your student folder's newly-created Lab1 folder (e.g. `R:\GEOG481_3\Student_Data\[Duck ID]\Lab1\Data\orcnty2015.zip`).
 4. Make a note of the data source. (Spatial) data has value, and you will want to give credit where due when creating maps or other documents. The data sources should be listed on every map you create.
 5. Extract the dataset files from within the zipfiles for each dataset you downloaded.
 
