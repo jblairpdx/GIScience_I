@@ -17,6 +17,7 @@ If you prefer a more portable digital copy of any of the materials listed below,
 * [Lecture 5: Geospatial data models](https://jblairpdx.github.io/GIScience_I/slides/lecture_05.html)
 * [Lecture 6: Attribute data—types & queries](https://jblairpdx.github.io/GIScience_I/slides/lecture_06.html)
 * [Lecture 7: Combining Data—Attribute joins & spatial analysis](https://jblairpdx.github.io/GIScience_I/slides/lecture_07.html)
+* [Lecture 8: Spatial analysis—A look in the toolbox.](https://jblairpdx.github.io/GIScience_I/slides/lecture_08.html)
 
 ## Lab Instructions
 
