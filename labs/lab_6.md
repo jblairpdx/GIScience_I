@@ -17,7 +17,17 @@ This excercise builds on skills practiced in Labs 1-5.
 
 #### References & Links
 
-##TODO: R&L
+* ArcGIS Desktop: Aspect.
+  * [https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/aspect.htm](https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/aspect.htm)
+* ArcGIS Desktop: Contour.
+  * [https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/contour.htm](https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/contour.htm)
+* ArcGIS Desktop: Extract Multi Values to Points.
+  * [https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/extract-multi-values-to-points.htm](https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/extract-multi-values-to-points.htm)
+* ArcGIS Desktop: Hillshade.
+  * [https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/hillshade.htm](https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/hillshade.htm)
+* ArcGIS Desktop: Slope.
+  * [https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/slope.htm](https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/slope.htm)
+
 
 #### To Turn In
 
@@ -63,9 +73,8 @@ Digital elevation models are continuous data that breaks the covered space into 
 ##### Create a new ArcMap document.
 
 1. Name it `Lab6_Mt_St_Helens.mxd`.
-2. Turn on the *Spatial Analyst* extension (under menu `Customize -> Extensions').
-3. Add the downloaded datasets to the default data frame.
-4. Change the names of your layers to something more descriptive, e.g. `DEM Before`, `DEM After`.
+2. Add the downloaded datasets to the default data frame.
+3. Change the names of your layers to something more descriptive, e.g. `DEM_Before`, `DEM_After`.
 
 ##### Create a new shapefile dataset.
 
@@ -85,8 +94,56 @@ Digital elevation models are continuous data that breaks the covered space into 
 
 #### 1.2 - Analysis & Processing
 
+##### Prepare your application settings for running raster analysis tools.
+
+1. Turn on the *Spatial Analyst* extension (under menu item `Customize -> Extensions`).
+2. Set the workspace environment to automatically write output to your `Lab6` folder.
+  1. Open the *Environment Settings* dialog via the menu item `Geoprocessing -> Environments`.
+  2. Expand the *Workspace* section.
+  3. Change the *Current Workspace* & *Scratch Workspace* setting to your lab folder (should be `R:\GEOG481_3\Student_Data\[Duck ID]\Lab6`).
+
+By setting the *Workspace* environment setting, tools will automatically use the `Lab6` folder when creating a default output filepath.
+
+##### Run a collection of elevation analysis tools.
+
+For each tool in the following list:
+
+1. Read the ArcGIS Desktop documentation webpage about the tool.
+2. Execute the tool with the **after** DEM as the input raster, with the other parameters as provided.
+  * All tools listed are availabe in the `Spatial Analyst -> Surface` section of the *ArcToolbox* panel.
+  * If *ArcToolbox* is not open, do so via the menu item `Geoprocessing -> ArcToolbox`.
+  * If you wish to see how a long-running tool is doing, open the *Results* panel via the menu item `Geoprocessing -> Results`. This panel has indicators for tool status, messages, and even history of tools run.
+4. Examine the output raster.
+
+* Contour [(documentation)](https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/contour.htm).
+  * Output polyline features: `Contour_After_60m.shp`.
+  * Contour interval: `60` (meters; check the coordinate system units).
+* Slope [(documentation)](https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/slope.htm).
+  * Output raster: `Slope_After`.
+  * Output measurement: `DEGREE`.
+* Aspect [(documentation)](https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/aspect.htm).
+  * Output raster: `Aspect_After`.
+* Hillshade [(documentation)](https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/hillshade.htm).
+  * Output raster: `Hillshade_After`.
+
+##### Extract the raster values for elevation, slope, and aspect for each of the viewpoints.
+
+You could certainly do this manually, using the *Identify* tool you've used in a previous lab to find the the cell values below each viewpoint. You could even run the *Extract Values to Points* tool that you used in Lab 4 multiple times. However, there is a tool that can automate this some.
+
+1. Read the documentation for [*Extract Multi Values to Points*](https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/extract-multi-values-to-points.htm)
+2. Open the tool interface, in `ArcToolbox -> Spatial Analyst Tools -> Extraction`.
+3. Choose your viewpoints shapefile as the input point features, and add your aspect, slope, and after DEM as your input rasters.
+4. Optional: change the *Output field name* for each raster to something more readable. These are the fields that the tool will create on the viewpoints shapefile; you may want not wish to use the raster layer name for the field (e.g. maybe *elevation* makes more sense when on the viewpoints than *DEM_After*.
+5. Run the tool.
+6. Open the viewpoints attribute table and examine the values in the new fields.
+
+
+#### 1.3 - 3D Scene Plotting
+
+
 
 ##TODO: FINISH FROM HERE
+
 
 
 ##### Filter the city limits to only include the city of Florence.
