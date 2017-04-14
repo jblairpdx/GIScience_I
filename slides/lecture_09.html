@@ -69,8 +69,50 @@ Spatial modeling is a sequence of operations on spatial data combined into a sin
   * Calculations of indicators or predictors.
   * Automation of standard workflows.
 
+---
+## Common traits of GIS/spatial models
 
+* Multiple stages of transformation & analysis - sequential or looping.
+
+* Allow for experimenting/alteration of options & scenarios.
+  * Change inputs.
+  * Change operational details.
+  * Replace individual part(s).
+
+---
+## Static vs. dynamic
+
+* Static model
+  * Represents a single point in time, or unchanging system.
+  * Typically designed as multiple inputs -> single output.
+  * Example: Location analysis - where to open our next coffee shop.
+* Dynamic model
+  * Model loops through certain stages in multiple *iterations*.
+  * System parameters change over iterations of the model.
+  * Example: Disease outbreak analysis.
   
+---
+## Individual vs. aggregate
+
+* Individual, or agent-based models calculate process results for every discrete actor in the system.
+  * Requires lots of computing power.
+  * Also requires lots of knowledge about actors.
+  * Common use for modeling human/animal behavior.
+* Aggregate models simulate process results for collective units.
+  * Useful when individual parts too numerous to track, or observation/theory applies at a higher level.
+  * Common use for modeling physical processes.
+
+---
+## Cellular models
+
+* Raster representation.
+* Each cell has a number of possible states.
+* States change through time from applying transition rules in stages.
+* Rule's effect on cell often take into account:
+  * Current state.
+  * States of neighboring cells.
+  * Associated attribute values of cell.
+
 
 
 </textarea>
