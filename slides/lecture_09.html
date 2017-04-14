@@ -122,9 +122,53 @@ Spatial modeling is a sequence of operations on spatial data combined into a sin
 ##TODO: Clarke UGB model image.
 
 ---
-## The Beginner's Take
+## Technology: How do I make a model?
 
-* 
+All models:
+* Can have their individual stages run separately/manually (with proper inputs).
+* Can be expressed by a flowchart or a list/script of ordered operations/stages.
+* Can be developed in a system that can properly represent its flow or sequencing and has access to the necessary operations/tools.
+
+* A **very** common approach to developing a model:
+  1. Sketch likely steps needed to get desired results (maybe draw flowchart, or script in pseudocode).
+  2. Run steps manually to verify correct steps.
+  3. Refine documentation/flowchart/pseudocode.
+  4. Use model-building application to create an executable single version of your model.
+  5. (Optional) Program scripting code to refine model and manage quirks/edge cases.
+  6. (Optional) Program lower-level code to create model as own application or tool, maximize speed/power/stability.
+
+* Model design & improvement is an iterative process: Sketch -> Manual -> Model Builder -> Script -> App/Tool.
+##TODO: Consider creating flowchart image of this progression.
+
+---
+## Flowcharts
+
+* Lots of flowchart applications out there:
+  * IMHO few feel simple or easy-to-use.
+  * Quality of tools and output generally varies with cost.
+  * Microsoft Visio ($$), Wizflow Flowcharter ($), www.draw.io (😄), Google Drawings (😄), etc.
+* Honestly, drawing flowcharts by hand is less painful, gets easier every time you do it.
+* Don't need to be fancy with chart graphics. Just need a couple distinct types.
+  * Datasets - commonly represented as ellipses.
+  * Operations - commonly represented as rectangles.
+* Can add some extra frills if you'd like:
+  * Color variations on each type (e.g. input/intermediate/ouput dataset; tentative vs. verified operation).
+
+##TODO: Image of flowchart - either Google Drawings one or hand-done (or side-by-side).
+
+---
+## Model-building app — ModelBuilder for ArcGIS Desktop
+
+* A flowchart program that creates the model as you connect the flowchart.
+* Create a new *Toolbox* (.tbx file), then create model(s) within.
+* When run inside ArcMap, enables access to your active data frame's contents, places output there.
+
+##TODO: Image of ModelBuilder.
+
+---
+## Model coupling
+
+
 
 
 </textarea>
