@@ -60,8 +60,9 @@ class: middle
 Spatial modeling is a sequence of operations on spatial data combined into a single whole, for a single purpose.
 
 * All steps in the sequence are means to the desired output or endpoint of the model.
+
+* The sequence should be considered a 'model' representation of a thematically singular geospatial process or property.
   * A collection of unrelated tasks isn't a model: that's just a to-do list.
-  * Rather the sequence should be considered a 'model' representation of a geospatial process or property.
 
 * The 'spatial data model' represents collected information; a GIS/spatial model here is is an expression of a process in the world.
   * Simulations of natural or social proceses.
@@ -77,7 +78,7 @@ Spatial modeling is a sequence of operations on spatial data combined into a sin
 * Allow for experimenting/alteration of options & scenarios.
   * Change inputs.
   * Change operational details.
-  * Replace individual part(s).
+  * Replace/rewrite individual part(s).
 
 ---
 ## Static vs. dynamic
@@ -90,7 +91,9 @@ Spatial modeling is a sequence of operations on spatial data combined into a sin
   * Model loops through certain stages in multiple *iterations*.
   * System parameters change over iterations of the model.
   * Example: Disease outbreak analysis.
-  
+
+##TODO: Image examples of static vs. dynamic models side-by-side.
+
 ---
 ## Individual vs. aggregate
 
@@ -102,17 +105,26 @@ Spatial modeling is a sequence of operations on spatial data combined into a sin
   * Useful when individual parts too numerous to track, or observation/theory applies at a higher level.
   * Common use for modeling physical processes.
 
+##TODO: Image examples of individual vs. aggregate models side-by-side.
+
 ---
 ## Cellular models
 
 * Raster representation.
 * Each cell has a number of possible states.
 * States change through time from applying transition rules in stages.
-* Rule's effect on cell often take into account:
+* A rule's effect on cell often take into account:
   * Current state.
   * States of neighboring cells.
-  * Associated attribute values of cell.
+  * Associated attribute values of cell (via an attribute table, overlaid companion rasters).
+* Common to use for dynamic models where the state of the neighboring locations has high impact on outcomes.
 
+##TODO: Clarke UGB model image.
+
+---
+## The Beginner's Take
+
+* 
 
 
 </textarea>
