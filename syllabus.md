@@ -155,9 +155,9 @@ Graduate students will have two additional components to their final project. Th
 #### Week 5
 
 * **Reading**:
+  * Longley et al Chapter 15.
   * "ArcGIS Desktop: Analysis toolbox" (overview section plus each toolset subsection).
     * [https://desktop.arcgis.com/en/arcmap/latest/tools/analysis-toolbox/an-overview-of-the-analysis-toolbox.htm](https://desktop.arcgis.com/en/arcmap/latest/tools/analysis-toolbox/an-overview-of-the-analysis-toolbox.htm)
-  * Longley et al Chapter 15.
 * **Lecture**:
   * Mon May 01 — Lecture 8: Spatial analysis — A look in the toolbox.
   * Wed May 03 — Lecture 9: Spatial modeling.
