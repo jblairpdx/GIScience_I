@@ -109,7 +109,7 @@ By setting the *Workspace* environment setting, tools will automatically use the
 For each tool in the following list:
 
 1. Read the ArcGIS Desktop documentation webpage about the tool.
-2. Execute the tool with the **after** DEM as the input raster, with the other parameters as provided.
+2. Execute the tool with the **after-eruption** DEM as the input raster, with the other parameters as provided.
   * All tools listed are availabe in the `Spatial Analyst -> Surface` section of the *ArcToolbox* panel.
   * If *ArcToolbox* is not open, do so via the menu item `Geoprocessing -> ArcToolbox`.
   * If you wish to see how a long-running tool is doing, open the *Results* panel via the menu item `Geoprocessing -> Results`. This panel has indicators for tool status, messages, and even history of tools run.
@@ -119,12 +119,17 @@ For each tool in the following list:
   * Output polyline features: `Contour_After_60m.shp`.
   * Contour interval: `60` (meters; check the coordinate system units).
 * Slope [(documentation)](https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/slope.htm).
-  * Output raster: `Slope_After`.
+  * Output raster: `Slope_After.tif`.
   * Output measurement: `DEGREE`.
 * Aspect [(documentation)](https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/aspect.htm).
-  * Output raster: `Aspect_After`.
+  * Output raster: `Aspect_After.tif`.
 * Hillshade [(documentation)](https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/hillshade.htm).
-  * Output raster: `Hillshade_After`.
+  * Output raster: `Hillshade_After.tif`.
+
+##### Create a pre-eruption hillshade.
+
+1. Run the Hillshade tool again, this time derived from pre-eruption elevations.
+2. Name it descriptively.
 
 ##### Extract the raster values for elevation, slope, and aspect for each of the viewpoints.
 
@@ -138,71 +143,82 @@ You could certainly do this manually, using the *Identify* tool you've used in a
 6. Open the viewpoints attribute table and examine the values in the new fields.
 
 
-#### 1.3 - 3D Scene Plotting
+#### 1.3 - 3D Scene Creation
 
+ArcScene is another application in the ArcGIS Desktop suite of applications, alongside ArcMap. This application is a powerful tool for visualizing 3D data. We will only be using a small part of its capabilities.
+
+##### Open ArcScene and create a new document.
+
+1. Open ArcScene from the Windows *Start Menu*.
+2. Choose *Blank Scene* from the *Getting Started* window prompt that appears.
+3. Do an initial save of the document, to create the document in your `Lab6` folder. Name it similar to your ArcMap document.
+4. Take a look around the application interface. This should all look familiar: where things are, how you access certain things is nearly the same as it is in ArcMap, with some considerations for displaying 3D space.
+
+##### Add data to the scene document.
+
+1. Add the following datasets.
+  * Pre-eruption/before DEM.
+  * Pre-eruption/before hillshade.
+  * After-eruption DEM.
+  * After-eruption hillshade.
+2. Uncheck the DEM layers in the *Table of Contents* to stop displaying them. These layers are only added to provide information.
+
+##### "Drape" the hillshade from the pre-eruption data over its respective elevation model.
+
+1. Open the layer properties, and switch to the *Base Heights* tab.
+2. Choose the `Floating on a custom surface` option for *Elevation from surfaces*.
+3. Choose the pre-eruption DEM from the drop-down right below.
+4. Repeat these steps for the after-eruption hillshade.
+
+##### Move the "observer" around the scene for a better view.
+
+1. Use the tools in the *Tools* toolbar to explore. Hovering the mouse cursor over a tool button for a second will display some explanatory text.
+  * `Navigate` (tiny Earth with four triangles pointing out): Rotates the display around - click-and-hold, then move mouse.
+  * `Fly` (a bird): Allows you to glide around the scene like a bird. Click the left mouse button to increase speed, right to decrease.
+  * `Center on Target` (crosshairs): Recenters the display on wherever you click.
+  * `Zoom to Target` (magnifying glass over crosshairs): Attempts to zoom up close to place you click on.
+  * `Set Observer` (eye over crosshairs): Attempts to place observer (think of as where the camera would be) where you click.
+  * `Zoom In`/`Zoom Out` (magnifying glass with plus or minus): Same concept as in ArcMap.
+    * Can also be done whenever using mouse-wheel.
+  * `Pan` (hand): Same concept as in ArcMap.
+  * `Full Extent` (globe): Returns scene to extent showing all datasets.
+    * Handy if you adjusted the view something crazy (e.g. couldn't control that flying).
+2. Use the tools to change the view until you have a scene looking southward from the north into the crater.
+  * You can turn on a helpful 3D orientation graphic via the menu item `View -> View Settings`, and checking-on `Directional Arrow`.
+  * Note: *View Settings* also has the numeric representation of the current scene's view. You can change these here, but it's probably easier to do so with the tools mentioned instead.
+3. Turn on & off the before hillshade to see the change the mountain underwent between then and the after-hillshade.
+
+##### Save a 'before' and 'after' image of the scene.
+
+1. Turn off all layers except the pre-eruption hillshade.
+2. Export an image of the scene using the menu item `File -> Export Scene -> 2D`.
+  1. Choose an image file type (PNG is good).
+  2. Give it a descriptive filename, and save it to your Lab6 folder.
+3. Repeat the previous steps for the after-eruption hillshade.
+
+
+#### 1.4 Map and Infographic
+
+The layout will contain:
+
+* One map visualizing after-eruption elevation;
+* Two images from the 3D scene (before and after);
+* Information from each viewpoint as either labels or a table.
+
+##### Develop the main map in the data frame.
+
+1. Display the after-eruption hillshade with the default grayscale coloring.
+2. Display the after-DEM above the after-hillshade. in drawing order.
+  1. Make it partially-transparent: adjust `Layer Properties -> Display -> Transparency %`.
+  2. Symbolize the DEM with a color ramp of your own choosing. to emphasize the elevation over the hillshade.
+3. Display the contour lines so that they're visible.
+  1. your call on over or under the transparent layer.
+  2. Symbolize them to your satisfaction (color, width).
+4. Display & symbolize the viewpoints layer.
 
 
 ##TODO: FINISH FROM HERE
 
-
-
-##### Filter the city limits to only include the city of Florence.
-
-You should now know numerous ways of only having the Florence boundaries:
-
-1. Definition query.
-2. Select and export to a new shapefile with a descriptive name (e.g. `Florence.shp`).
-
-Which to choose is a matter of preference. Some like the clean representation of their steps in new datasets. Others prefer to not create lots of extra files. Sometimes a definition query of a large-enough dataset will perform more slowly. Either way, ArcMap will treat them exactly the same.
-
-#####  Filter the tsunami evacuation zones to only include the zones for a 'local' tsunami.
-
-Check the attribute table for the zone types. It's up to you whether to filter the local zones that aren't near Florence (they won't affect the map or analysis).
-
-##### Select taxlots that are in the city of Florence.
-
-Since definition queries cannot perform spatial queries, you'll need to export the results of a spatial selection to a new shapefile with a descriptive name (e.g. `Florence_Taxlots.shp`) and add it to your data frame.
-
-##### Filter Florence taxlots to exclude water and right-of-way taxlots.
-
-It would make no sense to place a relief center in water or a road or other right-of-way. Luckily, the taxlot dataset has ways of identifying these types of lots:
-
-1. Water & right-of-way lots have "taxlot" field values of `'11'`, `'22'`, `'33'`, `'44'`, `'55'`, `'66'`, `'77'`, `'88'`, `'99'` (see a pattern?).
-  * If using these, do notice they are text attributes, not integers (i.e. no `<` or `>` can be used).
-1. These types of taxlots also do not have a "taxcode" value, while  others do.
-  * If using this, remember that null-values have a distinct query syntax: `X is NULL`, not `X = NULL`.
-
-##### Select Florence taxlots that that will be impacted by a local tsunami.
-
-Export a copy of this with a descriptive name (e.g. `Florence_Taxlots_Tsunami.shp`) and add it to your data frame.
-
-##### Compute the total potential improvement damage and number of taxlots affected.
-
-'Improvements' is assessment & taxation jargon for buildings, structures, and any other property of value on a lot beyond its land value.
-
-1. Open the attribute layer for the lots in the tsunami evacuation zone.
-2. Find the "impval" field; right-click on the field name and choose `Statistics`.
-3. Write down the values mentioned above; you will need them later.
-
-##### Locate potential properties to site a tsunami relief center on.
-
-1. Eligible taxlots will need to meet the following criteria:
-  1. Be more than 500 feet from the tsunami evacuation zone;
-  2. Have an improvement value less than $10,000;
-  3. Cover an area ("mapacres") greater than a half-acre but less than 1 acre;
-  4. Have a property class description ("propcldes") of `'COMMERCIAL, VACANT'` or `'COMMERCIAL, IMPROVED'`.
-2. Take some time to think about which operations are needed to answer this, including:
-  1. The selection method setting when selecting part of the criteria.
-  2. The spatial selection method setting when selecting by location.
-  2. If combining the attribute selections into a single query, whether you need to enfore query order (parentheses).
-3. After you're satisfied your selection queries have the correct result, export the selection as a new shapefile with a descriptive name (e.g. `Potential_Relief_Centers.shp`), and add it to your data frame.
-
-
-#### 1.2 Map and Infographic
-
-You will create **two** data frames tp place on your page layout. The first will show a local tsunami's impact in historic 'Old Town' Florence, along the bayfront. The second will show impact across all of Florence, as well as the potential locations for relief centers.
-
-##### Create Old Town Florence data frame.
 
 1. Rename the current data frame to 'Old Town Florence'.
 2. Symbolize the tsunami-impacted taxlots in categories by the property class description.
@@ -220,6 +236,12 @@ You will create **two** data frames tp place on your page layout. The first will
 4. Show the taxlots not affected by the tsunami (only the Florence ones). Give this layer a neutral color and place it below the tsunami-impacted lots in the drawing order.
 5. Change the names of your layers to something more descriptive.
 6. Consider adding a 'basemap'. Basemaps are images of map information that can be placed behind data layers to make a map seem 'more complete'. ArcMap has a number of options for basemaps that you can add to your maps, accessible via the menu item `File -> Add Data ->  Add Basemap`. The data behind these comes across your internet connection, so they tend to draw more slowly.
+
+
+
+
+
+
 
 ##### Create all-Florence data frame.
 
