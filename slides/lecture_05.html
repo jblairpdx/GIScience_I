@@ -95,22 +95,21 @@ class: inverse, middle
 ---
 ## Data models: Levels of abstraction (cont.)
 
----
-## Data models: Levels of abstraction (cont.)
-
 .image-100[![http://www.wikixbrl.info/index.php?title=Guidelines_for_Data_Point_Modeling](media/Levels_of_data_oriented_modelling.jpg)]
 
-???
+---
+## Conceptual data model
 
-* Conceptual data model: Often represented as labelled shapes with lines/arrows representing relationships.
 * Conceptual model (should be) independent: lower levels can make changes without affecting it.
   * Example: Changing file formats (logical).
   * User of of the data shouldn't care, so long as they're getting their report/map/document.
 * Takeaway is that there is a relationship between how data is stored and how users interact with it.
   * Data is abstracted to match the system's formats, but still reflect the conceptual level.
+* Often represented as labelled shapes with lines/arrows representing relationships (entity-relationship diagram).
+
+![http://gisweb.massey.ac.nz/topic/DatabaseDesign/lectures/ermodelling.html](media/er_diagram3.jpg)
 
 ---
-
 ## Geospatial (logical) data models
 
 ![https://www.slideshare.net/esambale/raster](media/raster-1-728.jpg)
@@ -121,79 +120,78 @@ class: inverse, middle
 * The textbook lists more (p. 154), but the two primary model types are raster and vector.
 
 ---
-
 ## Raster data model
 
 * A pattern of uniform cells over a rectangular area (grid).
-
 * The location of each cell is defined by an index of its row and column (i.e., vertical and horizontal placement in grid).
 
-* Each cell has a value with a sampled attribute from the location.
+.image-100[![https://desktop.arcgis.com/en/arcmap/latest/manage-data/geodatabases/raster-basics.htm](media/GUID-885FD35E-8680-4FFE-A3D7-76E473F31B76-web.gif)]
 
+---
+## Raster cells
+
+* Each cell has a value with a sampled attribute from the location.
 * One value per cell.
   * Values are numbers.
+  * One-value rule can be bent with class attributes, related tables, multiple related rasters.
 
-.left-column[
-  .image-100[![https://desktop.arcgis.com/en/arcmap/latest/manage-data/geodatabases/raster-basics.htm](media/GUID-885FD35E-8680-4FFE-A3D7-76E473F31B76-web.gif)]
-  ]
-.right-column[
-  .image-100[![https://www.slideshare.net/esambale/raster](media/raster-5-728.jpg)]
-  ]
+.image-100[![https://www.slideshare.net/esambale/raster](media/raster-5-728.jpg)]
 
-???
+---
+## Raster values
 
-* One-value rule can be bent with class attributes, related tables, multiple rasters.
 * 1 cell, 1 value is quite powerful for mathematical calculations between rasters.
   * "Map algebra": grid addition/subtraction etc.
   * Neighborhood - kernels.
   * Cost accumulation.
 
----
+.left-column[
+.image-100[http://www.geography.hunter.cuny.edu/~jochen/GTECH361/lectures/lecture11/concepts/Map%20algebra.htm](media/image001.gif)
+]
+.right-column[
+.image-100[https://sites.google.com/a/udel.edu/apec480-s15/a3](media/cost_distance.png)
+]
 
+---
 ## Vector data model
 
 * A geometric represenation (features) of an entity.
-
 * Location of each feature is defined by an ordered set of coordinates tracing the geometry in the coordinate system.
   * Usually 2-dimensional (x- & y-coordinates); can have a third (z-coordinate).
 
+![http://www.geography.hunter.cuny.edu/~jochen/GTECH361/lectures/lecture05/concepts/03%20-%20Geographic%20data%20models.html](media/image001_2.gif))
+
+---
+## Vector features
+
 * Features can have as many attribute values as the physical model can hold.
   * Attribute can be any type of value the physical model provides.
-
 * Two types of features:
   * Simple features: no stored relationships between features.
   * Topological features: defined relationships between features are stored.
+    * Historically was the dominant feature type (saved space in the underlying system).
+    * Making a bit of a comeback on the web.
+    * Useful in other ways: network connectivity, adjacency, editing speed, data quality check.
 
-???
-
-* We're not going to encounter topological features much.
-  * Historically was the dominant feature type (saved space in the underlying system).
-  * Making a bit of a comeback on the web.
-  * Useful in other ways: network connectivity, adjacency, editing speed, data quality check.
+![https://saylordotorg.github.io/text_essentials-of-geographic-information-systems/s08-data-models-for-gis.html](media/b50c0b3b34b539df30b11820df0b8ec7.jpg)
 
 ---
-
 ### Vector features
 
 * Point feature: Single coordinate.
   * No measureable dimension.
-
 * (Poly)line feature: An ordered sequence of points.
   * Can measure length.
-
+  * Called **poly**line because geometry definition of a line straight; polylines are ordered sets of line segments.
 * Polygon features: A sequence of closed polylines.
   * Can measure length (perimeter) and area.
+  * Why do polygons need a sequence of polylines? "Donut holes."
 
 ![http://www.restore.ac.uk/geo-refer/52611cwors00y00000000.php](media/Concepts%20-%20geographical%20objects%20in%20GIS.png)
 
-???
-
-* Called **poly**line because geometry definition of a line straight; polylines are ordered sets of line segments.
-* Why do polygons need a sequence of polylines? "Donut holes."
 * May sometimes see 'multipart' features. Still point/polyline/polygon, but more than one distinct shape for a single feature.
 
 ---
-
 ## In-class activity: Raster vs. Vector
 
 It would be quite simple to see the choice between these two data models as equivalent to discrete vs. continuous representations. That conflation is more often than not true, but let's explore possible inversions of that.
