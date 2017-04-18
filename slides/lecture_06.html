@@ -186,13 +186,12 @@ These build upon each other.
 * Sometimes the field/attribute name has quotes or brackets around it. This conforms to the dataset's format requirements, though they're rarely required. Using the provided query builder adds them for you, so don't sweat which ones go where.
 * Text strings always require single-quotes around them.
 
-Basic query:
 ```sql
+/* Basic Query */
 -- {field name} {operator} {value}
 "STATE" = 'Washington'
-```
-Compound query
-```sql
+
+/* Compound Query */
 -- {basic query} {connector} {basic query}
 "STATE" = 'Washington' AND "POP" >= 50000
 
