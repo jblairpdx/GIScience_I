@@ -215,6 +215,8 @@ Compound query
   * Statistical calculations ignore features with nulls in used attributes.
   * Queries ignore nulls when running their logic, unless they're explicitly tested for in the query.
 
+* Shapefiles—and some other file formats—do not allow null-values.
+
 ```sql
 -- Looking for unnamed features?
 "NAME" IS NULL
