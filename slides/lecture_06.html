@@ -187,18 +187,13 @@ These build upon each other.
 * 
 
 ```sql
-/* Basic Queries */
--- {field name} {operator} {value}
+/* Basic Query: {field name} {operator} {value} */
 "PCT_PRESENT" >= 50
-
 -- Text strings always require single-quotes around them.
 "STATE" = 'Washington'
 
-
-/* Compound Query */
--- {basic query} {connector} {basic query}
+/* Compound Query: {basic query} {connector} {basic query} */
 "STATE" = 'Washington' AND "POP" >= 50000
-
 -- Can set query order with parentheses, too.
 ("STATE" = 'Washington' OR "STATE" = 'Oregon') AND "POP" >= 50000
 ```
