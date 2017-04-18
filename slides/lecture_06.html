@@ -183,13 +183,17 @@ These build upon each other.
 * ArcGIS—along with many other GIS applications—use a form of *Structured Query Language* (SQL) to perform queries.
 * The query tools in ArcGIS only concern themselves with the *where clause* part of an SQL query.
   * The `SELECT * FROM dataset WHERE` part is conveniently taken care of for you.
-* Sometimes the field/attribute name has quotes or brackets around it. This conforms to the dataset's format requirements, though they're rarely required. Using the provided query builder adds them for you, so don't sweat which ones go where.
-* Text strings always require single-quotes around them.
+* Sometimes the field/attribute name has quotes or brackets around it. This conforms to the dataset's format requirements; they're rarely required though. The provided query builder adds them for you, so don't sweat which ones go where.
+* 
 
 ```sql
-/* Basic Query */
+/* Basic Queries */
 -- {field name} {operator} {value}
+"PCT_PRESENT" >= 50
+
+-- Text strings always require single-quotes around them.
 "STATE" = 'Washington'
+
 
 /* Compound Query */
 -- {basic query} {connector} {basic query}
