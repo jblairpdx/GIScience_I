@@ -136,48 +136,36 @@ These build upon each other.
       * Example: `-11574`
       * Alt names: int, bigint, tinyint, long, short.
     * floating point: numbers with fractions.
+      * Stored as a whole number with an extra number indicating where the decimal point goes.
       * Example: `4387.112`
       * Alt names: float, double, numeric.
   * Can be nominal, ordinal, interval, or ratio.
 
-???
-
-* Floating point: Stored as a whole number with an extra number indicating where the decimal point goes.
-
 ---
-
-## Attribute data types
+## Attribute data types (cont.)
 
 * Boolean
   * Value is one of only two possible values: `True` or `False`.
   * Alt names: bool
-  * Technically nominal, though one could insist that `True` is 'more than' `False`.
+  * Technically nominal, though one could insist that `True` is 'more than' `False` (ordinal?).
   * Most GIS logical data models have no explicit boolean attribute type. Substitutes:
-    * Integer: `0` = `False`, `1` or any other value = `True`
-    * Text: `'N'` = `False`, `'Y'` = `True` (or any similar design).
+    * Integer: `0` = `False`, `1` or any other value = `True` (programmers prefer).
+    * Text: `'N'` = `False`, `'Y'` = `True` (or any similar design) (users prefer).
 
 * Date/time
   * Value is a representation of a date, time, or both together.
   * Example: `2012-06-06 20:03:00`
   * Alt names: date, time, datetime.
   * Dates & date-times are interval, but not ratio.
+    * Computer dates having arbitraty zero points have been the cause of many issues, e.g. Y2K.
   * Times are ratio only if they're stored as 24-hour style.
-
-???
-
-* Boolean
-  * The integer boolean substitution is favored by programmers & applications.
-  * The text boolean substitution is favored by manual editors & human readers of data.
-* Date/time
-  * Computer dates having arbitraty zero points have been the cause of many issues, e.g. Y2K.
-
+  
 ---
-
-## Attribute data types
+## Attribute data types (cont.)
 
 * Binary object
   * Value is some sort of object stored in binary.
-  * Example: Often a stored document or media file (e.g. image, PDF) associated with the feature.
+  * Example: Often a stored document or media file 📷 (e.g. image, PDF) associated with the feature.
   * This could be any sort of computer file: could even be another GIS dataset!
   * Requires special application or programming setup to write/access.
   * Alt name: blob, raster.
