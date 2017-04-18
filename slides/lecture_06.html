@@ -184,16 +184,17 @@ These build upon each other.
 * The query tools in ArcGIS only concern themselves with the *where clause* part of an SQL query.
   * The `SELECT * FROM dataset WHERE` part is conveniently taken care of for you.
 * Sometimes the field/attribute name has quotes or brackets around it. This conforms to the dataset's format requirements; they're rarely required though. The provided query builder adds them for you, so don't sweat which ones go where.
-* 
 
 ```sql
-/* Basic Query: {field name} {operator} {value} */
+/* Basic Query */
+-- {field name} {operator} {value}
 "PCT_PRESENT" >= 50
 
 -- Text strings always require single-quotes around them.
 "STATE" = 'Washington'
 
-/* Compound Query: {basic query} {connector} {basic query} */
+/* Compound Query */
+-- {basic query} {connector} {basic query}
 "STATE" = 'Washington' AND "POP" >= 50000
 
 -- Can set query order with parentheses, too.
@@ -204,7 +205,6 @@ These build upon each other.
 * Note: *field* and *attribute* are used somewhat interchangeably. Field refers to the attribute across all features in the dataset/feature class, so it seems more appropriate here.
 
 ---
-
 ## The 'null-value'
 
 * `null` is the absence of a recorded value for a field.
@@ -215,7 +215,7 @@ These build upon each other.
   * Statistical calculations ignore features with nulls in used attributes.
   * Queries ignore nulls when running their logic, unless they're explicitly tested for in the query.
 
-* Shapefiles—and some other file formats—do not allow null-values.
+* Shapefiles (and some other dataset formats) do not allow null-values.
 
 ```sql
 -- Looking for unnamed features?
@@ -226,7 +226,6 @@ These build upon each other.
 ```
 
 ---
-
 ## Querying in GIS Applications
 
 There are two primary ways queries are used in GIS applications. We'll refer to them with the ArcGIS terms, though there are similar queries in other applications.
