@@ -189,11 +189,13 @@ These build upon each other.
 ```sql
 /* Basic Query: {field name} {operator} {value} */
 "PCT_PRESENT" >= 50
+
 -- Text strings always require single-quotes around them.
 "STATE" = 'Washington'
 
 /* Compound Query: {basic query} {connector} {basic query} */
 "STATE" = 'Washington' AND "POP" >= 50000
+
 -- Can set query order with parentheses, too.
 ("STATE" = 'Washington' OR "STATE" = 'Oregon') AND "POP" >= 50000
 ```
@@ -227,7 +229,7 @@ These build upon each other.
 
 ## Querying in GIS Applications
 
-There are two primary ways queries are used in GIS applications. We'll refer to the with the ArcGIS terms, though there are similar queries in other applications.
+There are two primary ways queries are used in GIS applications. We'll refer to them with the ArcGIS terms, though there are similar queries in other applications.
 
 .left-column[
   **Select by Attributes**
