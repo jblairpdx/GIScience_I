@@ -141,7 +141,7 @@ This step will use the first one.
 1. Read the webpage ['Using Select By Attributes'](https://desktop.arcgis.com/en/arcmap/latest/map/working-with-layers/using-select-by-attributes.htm).
 2. Open the attribute selection tool via `Selection -> Select By Attributes`.
 3. Examine the *Method* options. This is description of the relationship (if any) this selection will have with the 'current selection'. For our purposes here, we should choose `Select from current selection`.
-4. Use the field & value boxes and operator buttons to create an attribute query that will select cities that do not have a 2010 population with the value -999.
+4. Use the field & value boxes and operator buttons to create an attribute query that will select cities that do not have a 2010 population with the value -999. *Note: putting the two ordinal comparators together like this `<>` means 'not equal to'. You should see an equivalent button in the query builder*
 
 ##### Export selected citites to new dataset.
 
