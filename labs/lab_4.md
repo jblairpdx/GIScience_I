@@ -123,7 +123,7 @@ Though you may investigate the other tools, this step will use the middle option
 4. Examine the *Selection method* options. You'll be fine with the default `select features from`.
 5. *Target layer(s)* are the layers that you want to select the features from. We want to select cities.
 6. *Source layer* is the layer that has the features you want to define the spatial area to select with. We want to select cities within the state of Washington.
-7. Examine the *Spatial selection method for target layer feature(s)* options. This is a description of the relationship between the source geometry (Washington) and the target geometry (cities) you'll be selecting. You'll be fine with the default `intersect the source layer feature`/
+7. Examine the *Spatial selection method for target layer feature(s)* options. This is a description of the relationship between the source geometry (Washington) and the target geometry (cities) you'll be selecting. You'll be fine with the default `intersect the source layer feature`.
 
 Note: The selection can be cleared via the menu item `Selection -> Clear Selected Features`; or using the icon in the *Tools* toolbar with the same button icon as the menu item (white square).
 
