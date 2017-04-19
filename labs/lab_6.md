@@ -208,81 +208,68 @@ The layout will contain:
 ##### Develop the main map in the data frame.
 
 1. Display the after-eruption hillshade with the default grayscale coloring.
-2. Display the after-DEM above the after-hillshade. in drawing order.
+2. Display the after-DEM above the after-hillshade in the drawing order.
   1. Make it partially-transparent: adjust `Layer Properties -> Display -> Transparency %`.
-  2. Symbolize the DEM with a color ramp of your own choosing. to emphasize the elevation over the hillshade.
+  2. Symbolize the DEM with a color ramp of your own choosing, to emphasize the elevation atop the hillshade.
 3. Display the contour lines so that they're visible.
-  1. your call on over or under the transparent layer.
+  1. your call on over or under the transparent elevation layer.
   2. Symbolize them to your satisfaction (color, width).
-4. Display & symbolize the viewpoints layer.
+4. Display & symbolize the viewpoints layer. Be sure to have them stand-out from the background.
+5. Add labels to the viewpoints that display the elevation, slope, and aspect a that location.
+  1. Navigate to the *Labels* tab in the viewpoints' layer properties.
+  2. Check the box for *Label features in this layer*.
+  3. Click on the `Expression` button to open the *Label Expression* builder. At the bottom of the window, choose `Python` for the *Parser*. VBScript works fine, but it can't do newlines, and we want stacked labels.
+  4. Label expressions are an arcane black magic that combines the parser scripting language with field name tokens that will insert the attribute values where placed. It can be frustrating when the expression doesn't do what you want (or is declared invalid). I would recommend just altering the expression below, changing the field names if they do not match what you labelled them on your viewpoints.
+6. Adjust the label formatting to improve their readability & presence.
+  1. Go back to the *Labels* tab in the layer properties.
+  4. Click on the `Label Styles` button. This will show a list of pre-defined label styles. These are a good starting place to adjust labels from. I recommend for labels overlaying the rich raster information below to use one of the *Banner* styles.
+  2. Adjust the font type and size to improve readability. If you change the font, be sure it matches or contrasts with the other text elements in your layout in a satisfying or meaningful way (i.e. don't use different fonts unless you have a good reason to).
+  3. You may adjust the font color as well, but beware reducing readability.
+  4. You may also adjust the banner box color as well, though it's kind of buried. `Layer Properties -> Labels -> Symbol -> Edit Symbol -> Advanced Text -> Text Background (check) -> Properties -> Symbol`.
+7. Welcome to cartography: there's thousands of potential tweaks great and small, and you not only have to decide which to do (or undo), but you also have to avoid spending too much time on them.
 
+```python
+# Just use the bottom line for the label expression.
+# Brackets contain the field names; single- or double-quotes can contain literal text.
+# '\n' is a signifier to Python to start a new line.
+'Elevation: ' + [DEM_After] + '\nSlope: ' + [Slope] + '\nAspect: ' + [Aspect] 
+```
 
-##TODO: FINISH FROM HERE
-
-
-1. Rename the current data frame to 'Old Town Florence'.
-2. Symbolize the tsunami-impacted taxlots in categories by the property class description.
-  1. Combine the property classes into larger groups or your choosing, e.g. residential, commercial.
-  2. When in the *Symbology* tab of the layer properties, select the individual values you wish to group.
-    * Hold down the `Ctrl` button and click on the values to select & unselect them.
-    * Select a value, then hold the `Shift` button and click another to select them and all values between them.
-  3. Right-click on the selected values, and choose `Group Values`.
-  4. You can remove values/groups; they will be symbolized with the `<all other values>`. To add them back, click the `Add Values` button, generate a complete list, and select the one(s) you wish to re-add.
-  5. Click on the text in the *Label* section for the grouped value to create a simpler name for the group, e.g. 'Residential'.
-  6. If using `<all other values>`, change its label. If not, uncheck it on the list to turn it off.
-  7. Hint: Changing the text next to where the list says `<Heading>` will impact how a map legend covering these is labelled.
-  8. Other hint: create a group to hold other/miscellaneous values. `<all other values>` is listed in map legends rather distinct from the other values for that layer.
-3. Symbolize the tsunami evacuation zone with a blue shade, and make it somewhat transparent (*Transparent %* is a setting in the *Display* tab of the layer properties). Set the outline width to `0` (will turn the outline off); place the layer atop the drawing order.
-4. Show the taxlots not affected by the tsunami (only the Florence ones). Give this layer a neutral color and place it below the tsunami-impacted lots in the drawing order.
-5. Change the names of your layers to something more descriptive.
-6. Consider adding a 'basemap'. Basemaps are images of map information that can be placed behind data layers to make a map seem 'more complete'. ArcMap has a number of options for basemaps that you can add to your maps, accessible via the menu item `File -> Add Data ->  Add Basemap`. The data behind these comes across your internet connection, so they tend to draw more slowly.
-
-
-
-
-
-
-
-##### Create all-Florence data frame.
-
-1. Insert a new data frame and name it 'Florence'.
-2. Copy (`right-click on name -> Copy`) the following layers from the Old Town data frame and paste (`right-click on data frame name -> Paste`) them in the new one: tsunami zone, and tsunami-impacted taxlots, basemap (if using).
-3. If the potential relief center locations and the Florence city limits are in the Old Town data frame, copy & paste them over as well. If not, add them to the new data frame.
-4. Change the symbology of the tsunami-impacted taxlots to a single symbol type.
-5. Change the symbology of the potential relief center locations and city limits. Make sure the relief center polygons stand out on the map. For the city limits, make sure the outline is visible, and fill draws behind the other non-basemap layers. If you have a basemap, you may wish to not have a fill color on the city at all.
-5. Add an extent indicator to show the extent of the Old Town Florence data frame (only visible in *Layout View*).
-
-##### Place the maps in the layout.
+##### Place the map in the layout.
 
 1. Switch to *Layout View*.
-2. Change the paper size to 11"x17" (called 'tabloid' size).
-2. Resize and place the data frames on the page how you think best displays them for viewers.
-  1. Consider different sizes for each of the maps.
+2. Change the paper size to 'tabloid'/11"x17", and choose an orientation: *Portrait* (tall) or *Landscape* (wide). Note: since you will be submitting your map digitally, you can consider the size setting optional. However, there are a few things that layout page size affects even in unprinted maps:
+  1. Layout units: the edge rulers and every object's size & position use the page units; larger page = larger range.
+  2. Relative size of text & symbols to page; larger page = larger range.
+3. Resize and place the data frame on the page how you think best displays them for viewers. Be sure to leave room for the other map and layout elements (you can always make adjustments at any time).
+  1. Consider different sizes for the map.
   2. Consider vertical & horizontal lengths: your map's extent may not be easily represented in a square.
   3. You may need to pan & zoom within the data frame to make sure you're showing all you wish at the right scale.
-3. Once you've set the data frames' size, placement, and extent, you may want to re-evaluate your symbolization within your data frames.
-  1. Do the outlines seem too thick?
-  2. Are the colors distinguishable from each other?
+3. Once you've set the data frames' size, placement, and extent, you may want to re-evaluate your symbolization within your data frame.
+
+##### Place the images in the layout.
+
+1. Add the two 3D scene images.
+  1. Select the menu item `Insert -> Picture`.
+  2. Navigate to one of the images in your `Lab6` folder and choose it.
+  3. Repeat for the second image.
+2. Resize and place the images on the page how you think best displays them for viewers.
+  1. Picture properties are accessible in the same way as a data frame's properties are in *Layout View* (double-click on the picture, or right-click on it and choose `Properties`).
+  2. Be sure when resizing an image to have the option `Preserve Aspect Ratio` checked; this will ensure that when changing the width or height, the other value will automatically change in a way that won't warp the image.
+  3. Consider their relationship with the other elements, and how they fit in the visual hierarchy of the entire map product.
+3. Add a border around the images. Border setting are in the *Picture Properties* window. Style it (thickness/color) as seems appropriate for their role in the map product.
 
 Explore layout designs, finding a way to use the available space. Don't leave gaping holes, but also leave enough empty space so the layout doesn't seem overly crowded. This is an iterative process.
 
 ##### Add elements for the maps & layout.
 
-Type, style, and place the following elements in the layout.
+This week, we discussed map composition and the elements of a map product in lecture. Refer to the lecture slides or your notes, and apply this newfound knowledge to create, style, and place the necessary elements in your layout here.
 
-1. An appropriate title, representing the data presented.
-2. A text caption for each map.
-2. The author/cartographer's name (that's you). To help your instructors, please put this under the title or in the bottom-right corner.
-3. The data source(s).
-4. A direction indicator (north arrow or graticule) for each map, as appropriate.
-5. A scale indicator for each map, as appropriate.
-6. A legend for the main map (`Insert->Legend`). No need to make this perfect, but do try to make it clean and readable (renaming map layer may help).
-
-Be sure to include the values for total potential improvement damage and number of taxlots affected on your layout. These could be included in the map captions, or as other text elements.
+Note: Don't include the hillshade's symbology in the map legend.
 
 ##### Make a PDF copy of your map.
 
-1. Filename: `Lab5_Tsunami_Relief_Center.pdf`.
+1. Filename: `Lab6_Mt_St_Helens.pdf`.
 2. Take a look at your exported PDF through a PDF viewing application or a web browser. **Always look at your output!** Both common and unusual errors slip past creators when they don't look at their outputs.
 
 
@@ -298,9 +285,8 @@ Be sure to include the values for total potential improvement damage and number 
 
 ##### Questions
 
-1. How many taxlots are potentially impacted by a local tsunami?
-2. What is the total potential improvement damage caused by a local tsunami?
-3. The answer for question 2 represents the potential economic loss (by destruction of improvements) on taxlots that may be impacted by a local tsunami. How well does this number capture the potential impact? Be creative; consider the selection method you used, accuracy of improvement data, and whether a tsunami's impact is felt primarily by the improvements...
-4. How many taxlots met the criteria for a tsunami relief center?
-5. Which spatial selection method did you use to determine which taxlots would be impacted by a local tsunami? Why did you choose this method (in contrast to the other methods)?
-6. Briefly describe the story that your map product tells. Include a statement about the analysis you performed, or results you obtained (3-4 sentences).
+1. Describe what information is represented by the DEM (1-2 sentences). Consider: the spatial representation; the data model; the attribute value type/measurement scale; as well as what the values represent.
+2. What sort of output does the `Contour` tool create: what is created, and what does it represent?
+3. In your own words, describe what the values in a `slope` and `aspect` raster dataset represent (2-3 sentences).
+4. In your own words, describe what the `hillshade` is representing.
+5. Briefly describe the spatial analysis you conducted in this lab. Describe the purpose of the steps, rather than the technical details of them—pretend you are describing this to someone who does not know GIS. (4-5 sentences).
