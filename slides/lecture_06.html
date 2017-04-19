@@ -159,7 +159,6 @@ These build upon each other.
   * Example: `2012-06-06 20:03:00` (how stored in format is complex)
   * Alt names: date, time, datetime.
   * Dates & date-times are interval, but not ratio.
-    * Computer dates having arbitraty zero points have been the cause of many issues, e.g. Y2K.
   * Times are ratio only if they're stored as 24-hour style.
   
 ---
@@ -215,15 +214,15 @@ These build upon each other.
   * Statistical calculations ignore features with nulls in used attributes.
   * Queries ignore nulls when running their logic, unless they're explicitly tested for in the query.
 
-* Shapefiles (and some other dataset formats) do not allow null-values.
-
 ```sql
 -- Looking for unnamed features?
 "NAME" IS NULL
 
--- Perhaps you suspeect some unnamed features have empty strings?
+-- Perhaps you suspect some unnamed features have empty strings?
 "NAME" IS NULL OR NAME = ''
 ```
+
+* Shapefiles (and some other dataset formats) do not allow null-values.
 
 ---
 ## Querying in GIS Applications
