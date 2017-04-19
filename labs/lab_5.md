@@ -163,11 +163,11 @@ You will create **two** data frames tp place on your page layout. The first will
 
 1. Switch to *Layout View*.
 2. Change the paper size to 11"x17" (called 'tabloid' size).
-2. Resize and place the data frames on the page how you think best displays them for viewers.
+3. Resize and place the data frames on the page how you think best displays them for viewers.
   1. Consider different sizes for each of the maps.
   2. Consider vertical & horizontal lengths: your map's extent may not be easily represented in a square.
   3. You may need to pan & zoom within the data frame to make sure you're showing all you wish at the right scale.
-3. Once you've set the data frames' size, placement, and extent, you may want to re-evaluate your symbolization within your data frames.
+4. Once you've set the data frames' size, placement, and extent, you may want to re-evaluate your symbolization within your data frames.
   1. Do the outlines seem too thick?
   2. Are the colors distinguishable from each other?
 
