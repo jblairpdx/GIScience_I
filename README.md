@@ -44,7 +44,6 @@ If you prefer a more portable digital copy of any of the materials listed below,
 ## Lab Instructions
 
 * [Lab 0: Filesystem and Servers in SSIL](https://jblairpdx.github.io/GIScience_I/labs/lab_0.html)
-
 * Week 01 — [Lab 1: Using GIS with ArcMap and SSIL](https://jblairpdx.github.io/GIScience_I/labs/lab_1.html)
 * Week 02 — [Lab 2: Projections](https://jblairpdx.github.io/GIScience_I/labs/lab_2.html)
 * Week 03 — [Lab 3: Spatial Data Types and Querying Values](https://jblairpdx.github.io/GIScience_I/labs/lab_3.html)
