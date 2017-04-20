@@ -47,12 +47,10 @@ layout: true
 .footnote[GIScience I, Spring 2017]
 
 ---
-
 class: inverse, middle
 # Lecture 7: Combining data — Attribute joins & spatial analysis
 
 ---
-
 ## GIS as process
 
 1. Locate entities in the world.
@@ -68,7 +66,6 @@ class: inverse, middle
 6. Audience: Interpret, make decisions, give feedback.
 
 ---
-
 ## Attribute joins
 
 * Join: Connecting two attribute tables using a common 'key' value.
@@ -85,12 +82,10 @@ class: inverse, middle
   ]
 
 ???
-
 * Joins can be made more permanent via creating new output of the combination, or copying values from one table to another.
 * Is also `one-to-many` and `many-to-many` relationships, but in GIS joins these are not often included in the standard joins. This is because the spatial representation becomes problematic, when features would require more than one representation (extra rows in table).
 
 ---
-
 ## Spatial analysis
 
 * Can be thought of as similar to statistical analysis, but including a 2-D coordinate plain.
@@ -105,7 +100,6 @@ class: inverse, middle
   * The method by which the geometry are related is the *analysis*.
 
 ???
-
 * Statistical assumptions:
   * Normaility: Somewhat normal distribution.
   * Homogeneity of variances: Data from multiple groups have the same variance.
@@ -113,7 +107,6 @@ class: inverse, middle
   * Independence: Data are independent.
 
 ---
-
 ## Types of spatial analysis
 
 Three main types:
@@ -125,7 +118,6 @@ Three main types:
 3. Analysis based on area (three dimensions).
 
 ---
-
 ## 1. Analysis based on location
 
 * Identifying **where** something exists or happens.
@@ -143,14 +135,12 @@ Three main types:
 * For that reason, we need ways to be able to collect the properties at a location: to bring all the attributes into a single feature.
 
 ???
-
 * Normalization is the concept that a system shouldn't have more than one copy of a piece of data.
   * Using Duckweb as an example: your name should only be written in one place.
   * If another part of the system needs your name, it would just store an ID attribute (95 number) to connect one to the other.
   * That way if you ever changed your name, the change would automatically be available to all references, wih only a single update.
 
 ---
-
 ## 1a. 'Spatial' attribute join
 
 * Spatial join is the same as an attribute join, but in this case the key value defines a spatial relationship
@@ -160,12 +150,10 @@ Three main types:
   * **BE SURE** to not assume state attributes are equivalent to city attributes: properly document.
 
 ???
-
 * 'Spatial join' is somewhat problematic here. Spatial join commonly used to refer to spatial analysis tools that combine dataset attributes in general.
 ---
 
 ## 1b. Point-in-polygon operation
-
 * Determining whether a point lies inside or outside a polygon (also: which polygon?).
 * It's quite useful to apply areal properties to point locations.
 * Probably the most-used operation for assigning attributes to features (even non-point!).
@@ -175,12 +163,10 @@ Three main types:
 .image-80[![http://giscommons.org/analysis/](media/5.12.gif)]
 
 ???
-
 * Yes, even non-point features can use point-in-polygon, by 'pretending' to be a point (centroid).
 * Though not as easy to compute as an attribute join, still quite simple to solve.
 
 ---
-
 ## 1c. Polygon overlay
 
 * Similar to point-in-polygon, as two objects are involved.
@@ -195,11 +181,9 @@ Three main types:
 ![https://desktop.arcgis.com/en/arcmap/latest/tools/coverage-toolbox/identity.htm](media/GUID-E0535FDB-1F08-418C-B6E9-EB27FDC490D4-web.gif)
 
 ???
-
 * Better data causes slivers: More data points on the line = more ever-tinier ones.
 
 ---
-
 ## 1d. Raster-on-raster overlay: Map algebra
 
 * If cells are identical (or one is subdivision of other):
@@ -210,12 +194,10 @@ Three main types:
 .image-60[![http://gisgeography.com/map-algebra-global-zonal-focal-local/](media/Land-Surface-Temperature-Subtraction.png)]
 
 ???
-
 * Resampling: converting a raster to a different cell grid, deriving new values using a method of interpolation.
   * Not covering resampling in this class.
 
 ---
-
 ## 2. Analysis based on distance
 
 * How near or features are from each other can indicate a spatial dependence (or lack thereof).
@@ -228,11 +210,9 @@ Three main types:
 .image-70[![https://www.wired.com/2017/03/first-national-noise-map-charts-americans-aural-misery/](media/SF-NEW-1.jpg)]
 
 ???
-
 * Image is newly-released US Department of Transportation's online National Noise Map.
 
 ---
-
 ## 2a. Measuring distance/length
 
 * Euclidean/Pythagorean (straight-line) distance.
@@ -247,13 +227,11 @@ Three main types:
   * Holy grail of online maps/GIS.
 
 ???
-
 * Euclidean: not for use over longer distances.
 * Many GIS appplications do have both Pythagorean (coordinate system) and great circle (geodesic) distance.
 * Representation underestimates: lacking topography & curvature makes for less distance.
 
 ---
-
 ## 2b. Buffering
 
 * Builds new feature(s) by drawing boundary around areas within a given distance of the original feature(s).
@@ -266,7 +244,6 @@ Three main types:
 .image-70[![https://desktop.arcgis.com/en/arcmap/latest/tools/analysis-toolbox/buffer.htm](media/GUID-267CF0D1-DB92-456F-A8FE-F819981F5467-web.png)]
 
 ---
-
 .left-column[
   Buffer (straight-line or geodesic)
   .image-100[![http://www-personal.umich.edu/~copyrght/image/solstice/win02/schlossb/visualaccess.htm](media/image003.gif)]
@@ -277,7 +254,6 @@ Three main types:
   ]
 
 ---
-
 ## 2c. Cluster detection
 
 * Determining a consistency in the distance between a set of features (a pattern).
@@ -294,7 +270,6 @@ Three main types:
 * Existence of clusters suggests causal factors.
 
 ---
-
 ## 3. Analysis based on area
 
 The higher dimensionality here may suggest a jump in complexity, but that's not exactly the case.
@@ -306,7 +281,6 @@ The higher dimensionality here may suggest a jump in complexity, but that's not 
   * Projected coordinates come into play here, though.
 
 ---
-
 ## 3a. Measurement of area
 
 * Measurement of the 2-dimensional projected space within the area/polygon.
@@ -319,12 +293,10 @@ The higher dimensionality here may suggest a jump in complexity, but that's not 
   * Simple to include, since most data models construct polygons as sets of closed polylines.
 
 ???
-
 * Some GIS data models have automatically-updating length/perimeter & area attributes.
 * Perimeter can be useful as a part of other measurements.
 
 ---
-
 ## 3b. Measurement of shape
 
 * Can calculate mathematical formulas that describe the formation of the polygon.
@@ -336,7 +308,6 @@ The higher dimensionality here may suggest a jump in complexity, but that's not 
 .image-70[![http://www.npr.org/sections/thetwo-way/2017/03/11/519839892/federal-court-rules-three-texas-congressional-districts-illegally-drawn](media/texas-35-25810048abae74e2926130ee177bb5dfd1859e54-s700-c85.png)]
 
 ---
-
 ## 3c. Centrality
 
 * Can we find spatial equivalents to the statistical mean and standard deviation?
@@ -348,11 +319,9 @@ Mean center of values (U.S. population):
 .image-70[![https://en.wikipedia.org/wiki/Mean_center_of_the_United_States_population](media/US_Mean_Center_of_Population_1790-2010.png)]
 
 ???
-
 * In mean center of values, the values add weight to the coordinates.
 
 ---
-
 .left-column[
 Feature centroid: mean of unweighted coordinates.
 
@@ -368,7 +337,6 @@ Sometimes true centroid falls outside polygon. Alternative: `visual center`, or 
 Central feature: median of a set of features.
 
 ???
-
 * In feature centroid, all coordinates have equal weight.
 
 </textarea>
