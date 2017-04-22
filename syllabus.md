@@ -169,7 +169,7 @@ Graduate students will have two additional components to their final project. Th
 * **Reading**:
   * Longley et al Chapter 11.
   * Axis Maps, "Thematic Cartography Guide." (can skip over projections section)
-    * [https://axismaps.github.io/thematic-cartography/articles/labeling.html](https://axismaps.github.io/thematic-cartography/articles/labeling.html)
+    * [https://axismaps.github.io/thematic-cartography/](https://axismaps.github.io/thematic-cartography/)
   * Buckley, "Make Maps People Want to Look At" in ArcUser, Winter 2012.
     * [https://www.esri.com/news/arcuser/0112/files/design-principles.pdf](https://www.esri.com/news/arcuser/0112/files/design-principles.pdf)
 * **Lecture**:
