@@ -27,7 +27,7 @@ If you prefer a more portable digital copy of any of the materials listed below,
 * Wed May 03 — [Lecture 9: Spatial modeling.](https://jblairpdx.github.io/GIScience_I/slides/lecture_09.html)
 <!-- Week 06 -->
   * Mon May 08 — [Lecture 10: Maps — Elements, symbolization, classification](https://jblairpdx.github.io/GIScience_I/slides/lecture_10_11.html)
-  * Wed May 10 — [Lecture 11: Maps II — Visualization & design](https://jblairpdx.github.io/GIScience_I/slides/lecture_10_11.html)-->
+  * Wed May 10 — [Lecture 11: Maps II — Visualization & design](https://jblairpdx.github.io/GIScience_I/slides/lecture_10_11.html)
 <!-- Week 07 -->
 * Mon May 15 — No lecture: Test 2 (covers lectures 7-11)
 * Wed May 17 — Lecture 12: Final project introduction & worksheet peer review<!--* Wed May 17 — [Lecture 12: Final project introduction; worksheet peer review](https://jblairpdx.github.io/GIScience_I/slides/lecture_12.html)-->
