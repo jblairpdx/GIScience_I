@@ -10,12 +10,12 @@ If you prefer a more portable digital copy of any of the materials listed below,
 
 ## Lecture Slides
 
-<!-- Week 01 -->
-* Mon Apr 03 — [Lecture 1: Class introduction](https://jblairpdx.github.io/GIScience_I/slides/lecture_01.html)
-* Wed Apr 05 — [Lecture 2: What Is GIS?](https://jblairpdx.github.io/GIScience_I/slides/lecture_02.html)
-<!-- Week 02 -->
-* Mon Apr 10 — [Lecture 3: Spatial representation; georeferencing](https://jblairpdx.github.io/GIScience_I/slides/lecture_03.html)
-* Wed Apr 12 — [Lecture 4: Coordinate systems and projections](https://jblairpdx.github.io/GIScience_I/slides/lecture_04.html)
+* Week 01
+  * Mon Apr 03 — [Lecture 1: Class introduction](https://jblairpdx.github.io/GIScience_I/slides/lecture_01.html)
+  * Wed Apr 05 — [Lecture 2: What Is GIS?](https://jblairpdx.github.io/GIScience_I/slides/lecture_02.html)
+* Week 02
+  * Mon Apr 10 — [Lecture 3: Spatial representation; georeferencing](https://jblairpdx.github.io/GIScience_I/slides/lecture_03.html)
+ * Wed Apr 12 — [Lecture 4: Coordinate systems and projections](https://jblairpdx.github.io/GIScience_I/slides/lecture_04.html)
 <!-- Week 03 -->
 * Mon Apr 17 — [Lecture 5: Geospatial data models](https://jblairpdx.github.io/GIScience_I/slides/lecture_05.html)
 * Wed Apr 19 — [Lecture 6: Attribute data — Types & queries](https://jblairpdx.github.io/GIScience_I/slides/lecture_06.html)
@@ -26,8 +26,8 @@ If you prefer a more portable digital copy of any of the materials listed below,
 * Mon May 01 — [Lecture 8: Spatial analysis — A look in the toolbox.](https://jblairpdx.github.io/GIScience_I/slides/lecture_08.html)
 * Wed May 03 — [Lecture 9: Spatial modeling.](https://jblairpdx.github.io/GIScience_I/slides/lecture_09.html)
 <!-- Week 06 -->
-* Mon May 08 — Lecture 10: Maps — Elements, symbolization, classification<!--* Mon May 08 — [Lecture 10: Maps — Elements, symbolization, classification](https://jblairpdx.github.io/GIScience_I/slides/lecture_10.html)-->
-* Wed May 10 — Lecture 11: Maps II — Visualization & design<!--* Wed May 10 — [Lecture 11: Maps II — Visualization & design](https://jblairpdx.github.io/GIScience_I/slides/lecture_11.html)-->
+  * Mon May 08 — [Lecture 10: Maps — Elements, symbolization, classification](https://jblairpdx.github.io/GIScience_I/slides/lecture_10_11.html)
+  * Wed May 10 — [Lecture 11: Maps II — Visualization & design](https://jblairpdx.github.io/GIScience_I/slides/lecture_10_11.html)-->
 <!-- Week 07 -->
 * Mon May 15 — No lecture: Test 2 (covers lectures 7-11)
 * Wed May 17 — Lecture 12: Final project introduction & worksheet peer review<!--* Wed May 17 — [Lecture 12: Final project introduction; worksheet peer review](https://jblairpdx.github.io/GIScience_I/slides/lecture_12.html)-->
