@@ -168,7 +168,10 @@ Graduate students will have two additional components to their final project. Th
 
 * **Reading**:
   * Longley et al Chapter 11.
-  * *TBA: Supplemental reading on cartographic visualization/design*.
+  * Axis Maps, "Thematic Cartography Guide."
+    * [https://axismaps.github.io/thematic-cartography/articles/labeling.html](https://axismaps.github.io/thematic-cartography/articles/labeling.html)
+  * Buckley, "Make Maps People Want to Look At" in ArcUser, Winter 2012.
+    * [https://www.esri.com/news/arcuser/0112/files/design-principles.pdf](https://www.esri.com/news/arcuser/0112/files/design-principles.pdf)
 * **Lecture**:
   * Mon May 08 — Lecture 10: Maps — Elements, symbolization, classification.
   * Wed May 10 — Lecture 11: Maps II — Visualization & design.
