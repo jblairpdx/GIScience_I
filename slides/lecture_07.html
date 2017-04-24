@@ -71,19 +71,24 @@ class: inverse, middle
 * Join: Connecting two attribute tables using a common 'key' value.
 
 * Creates a temporary relationship.
+  * Joins can be made more permanent via creating new output of the combination, or copying values from one table's attribute field to the other.
+
+.image-100[![https://pro.arcgis.com/en/pro-app/tool-reference/data-management/add-join.htm](media/GUID-C441B51F-B581-4743-A975-3EB04087838C-web.gif)]
+
+---
+## Attribute joins: Relationships
 
 * Can have a `one-to-one` or `many-to-one` relationship.
 
-.left-column[
-  .image-100[![https://desktop.arcgis.com/en/arcmap/latest/manage-data/tables/about-joining-and-relating-tables.htm](media/GUID-6FF790F5-02F7-4CC5-83AC-17FF1D4EBDA4-web.png)]
-  ]
-.right-column[
-  .image-100[![https://desktop.arcgis.com/en/arcmap/latest/manage-data/tables/about-joining-and-relating-tables.htm](media/GUID-1786A5F6-AEB9-48D5-8071-C94115A4EEA0-web.png)]
-  ]
+* Database table joins can technically include `one-to-many` and `many-to-many`, but GIS applications rarely allow these.
+  * The spatial representation would be problematic, when features would require more than one representation (extra rows in table).
 
-???
-* Joins can be made more permanent via creating new output of the combination, or copying values from one table to another.
-* Is also `one-to-many` and `many-to-many` relationships, but in GIS joins these are not often included in the standard joins. This is because the spatial representation becomes problematic, when features would require more than one representation (extra rows in table).
+.left-column[
+.image-100[![https://desktop.arcgis.com/en/arcmap/latest/manage-data/tables/about-joining-and-relating-tables.htm](media/GUID-6FF790F5-02F7-4CC5-83AC-17FF1D4EBDA4-web.png)]
+]
+.right-column[
+.image-100[![https://desktop.arcgis.com/en/arcmap/latest/manage-data/tables/about-joining-and-relating-tables.htm](media/GUID-1786A5F6-AEB9-48D5-8071-C94115A4EEA0-web.png)]
+]
 
 ---
 ## Spatial analysis
