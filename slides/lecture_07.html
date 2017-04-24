@@ -44,11 +44,11 @@
 
 name: base
 layout: true
-.footnote[GIScience I, Spring 2017]
 
 ---
 class: inverse, middle
 # Lecture 7: Combining data — Attribute joins & spatial analysis
+.footnote[GIScience I, Spring 2017]
 
 ---
 ## GIS as process
@@ -76,7 +76,7 @@ class: inverse, middle
 .image-100[![https://pro.arcgis.com/en/pro-app/tool-reference/data-management/add-join.htm](media/GUID-C441B51F-B581-4743-A975-3EB04087838C-web.gif)]
 
 ---
-## Attribute joins: Relationships
+## Attribute join relationships
 
 * Can have a `one-to-one` or `many-to-one` relationship.
 
@@ -95,7 +95,7 @@ class: inverse, middle
 
 * Can be thought of as similar to statistical analysis, but including a 2-D coordinate plain.
 
-* However assumptions of statistical analysis are not valid here.
+* However assumptions of statistical analysis (normality, homogeneity, linearity, independence) are not valid here.
 
 * Spatial analysis are the steps we undertake to convert raw spatial data into the useful information we've set out to get.
   * Add value in transformations, which bring out patterns & anomalies.
@@ -148,24 +148,25 @@ Three main types:
 ---
 ## 1a. 'Spatial' attribute join
 
-* Spatial join is the same as an attribute join, but in this case the key value defines a spatial relationship
+* Spatial attribute join is the same as an attribute join, but in this case the key value defines a spatial relationship
 
 * Example: Using a base feature class with cities' economic information; want to add some state-level info, e.g. unemployment.
   * So long as the cities have their state as an attribute (name, code, FIPS), should be joinable via their relationship.
   * **BE SURE** to not assume state attributes are equivalent to city attributes: properly document.
 
 ???
-* 'Spatial join' is somewhat problematic here. Spatial join commonly used to refer to spatial analysis tools that combine dataset attributes in general.
----
+* 'Spatial join' is a somewhat problematic name. Spatial join commonly used to refer to spatial analysis tools that combine dataset attributes in general.
 
+---
 ## 1b. Point-in-polygon operation
+
 * Determining whether a point lies inside or outside a polygon (also: which polygon?).
 * It's quite useful to apply areal properties to point locations.
 * Probably the most-used operation for assigning attributes to features (even non-point!).
   * What boundaries does it lie in? City, district, Census, neighborhood?
   * What areal classifications does it lie in? Zoning, flood areas, wetlands.
 
-.image-80[![http://giscommons.org/analysis/](media/5.12.gif)]
+.image-70[![http://giscommons.org/analysis/](media/5.12.gif)]
 
 ???
 * Yes, even non-point features can use point-in-polygon, by 'pretending' to be a point (centroid).
