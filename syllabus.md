@@ -41,7 +41,7 @@ After completing this course, students should be able to:
     - Office hours: Wednesdays 12:00-13:30, Reed Seminar Room Knight Library[(map)](https://map.uoregon.edu/83ce7039c)
 * *Lab*: William Chang
     - Email: cchang3@uoregon.edu
-    - Office hours: TBA
+    - Office hours: Mondays 14:00-15:00, Reed Seminar Room Knight Library[(map)](https://map.uoregon.edu/83ce7039c)
 
 #### Texts
 
