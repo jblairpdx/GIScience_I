@@ -48,7 +48,7 @@ Note: The questions to answer in this lab relate to the process you complete in 
 
 Reminder: Save often! it is a good idea to save frequently. You may even want to Save As and give sequential filelenames so that you could revert to a previous version if you make a mistake that you cannot undo or if the ArcMap document gets corrupted.
 
-##### Read [*Using data frames*](https://desktop.arcgis.com/en/arcmap/latest/map/working-with-arcmap/using-data-frames.htm]) from the ArcMap documentation site.
+##### Read [*Using data frames*](https://desktop.arcgis.com/en/arcmap/latest/map/working-with-arcmap/using-data-frames.htm) from the ArcMap documentation site.
 
 ##### Create a Lab2 folder in your student folder.
 
@@ -96,7 +96,7 @@ When in the *Data View* (not *Layout View*), adding a new data frame will cause 
 4. Rename the data frame to 'World - GCS'.
 5. View the coordinate system of the data frame; note that it is set to display the unprojected *Geographic Coordinate System*.
 
-##### Read [*Quick ways to navigate data frames and layouts*](https://desktop.arcgis.com/en/arcmap/latest/map/working-with-arcmap/quick-ways-to-navigate-data-frames-and-layouts.htm]) from the ArcMap documentation site.
+##### Read [*Quick ways to navigate data frames and layouts*](https://desktop.arcgis.com/en/arcmap/latest/map/working-with-arcmap/quick-ways-to-navigate-data-frames-and-layouts.htm) from the ArcMap documentation site.
 
 ##### Position the data frames in the layout.
 
