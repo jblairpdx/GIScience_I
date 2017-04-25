@@ -109,7 +109,7 @@ Tip: When reading ArcMap documentation pages, notice that there is a hierarchy o
 1. Add the CSV file table `gapcodes.csv` that you copied to your `Lab7` folder to the data frame.
 2. Right-click on the clipped vegetation layer, and choose the menu item `Joins and Relates -> Join`.
 3. Fill in the options in the *Join Data* window. Base the join on the numeric code for the vegetation type (`VEG_CODE` on the vegetation layer, `VALUE` in the GAP codes CSV table), and keep all the records.
-
+4. View the layer's attribute table and observe the joined attribute fields. Temporarily turn off the field aliases (`Table Options -> Show Field Aliases`) to see the field names with the table name attached.
 
 ##TODO: FINISH FROM HERE; INCLUDE A COLORBREWER PART.
 
