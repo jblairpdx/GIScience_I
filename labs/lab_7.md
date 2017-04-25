@@ -2,7 +2,7 @@
 title: GEOG 4/581 - Lab 7
 ---
 
-# Lab 7: Vegetation Report
+# Lab 7: Vegetation Land Cover Report
 
 
 #### Purpose
@@ -19,6 +19,10 @@ This excercise builds on skills practiced in Labs 1-6.
 
 #### References & Links
 
+* ArcGIS Desktop: Clip.
+  * [https://desktop.arcgis.com/en/arcmap/latest/tools/analysis-toolbox/clip.htm](https://desktop.arcgis.com/en/arcmap/latest/tools/analysis-toolbox/clip.htm)
+* ArcGIS Desktop: Joining attributes in one table to another.
+  * [https://desktop.arcgis.com/en/arcmap/latest/manage-data/tables/joining-attributes-in-one-table-to-another.htm](https://desktop.arcgis.com/en/arcmap/latest/manage-data/tables/joining-attributes-in-one-table-to-another.htm)
 * Oregon Spatial Data Library.
   * [http://spatialdata.oregonexplorer.info/geoportal/](http://spatialdata.oregonexplorer.info/geoportal/)
 
@@ -54,12 +58,13 @@ Discover and download the datasets via the link provided. Be sure to note the da
 1. Open a web browser, and navigate to the [Oregon Spatial Data Library](http://spatialdata.oregonexplorer.info/geoportal/).
 2. Browse or search for the following datasets:
   * *Oregon Historic Vegetation*: `historic_vegetation.zip`.
-  * *Oregon Actual Vegetation Map - 1992*: `vegetation.zip`.
   * *Oregon Ecoregions*: `ecoregion.zip`.
 3. Download them to your lab folder, and extract their contents.
-4. Make a copy of the CSV file `R:\GEOG481_3\Class_Data\Lab7\Data\gapcodes.csv` in your `Lab7` folder.
+4. Make a copy of the commas-separated value (CSV) file `R:\GEOG481_3\Class_Data\Lab7\Data\gapcodes.csv` in your `Lab7` folder.
 
-Additionally, as part of your map design you may want to locate additional data layers to provide context. For example, you may want to use Oregon and adjacent state boundaries, county boundaries, rivers, roads, cities, etc. for that purpose. You've been introduced to a numbers of good resources for these purposes: Oregon Spatial Data Explorer, UO MAP Library Learning Commons, and Natural Earth Data to name a few. Use your judgment and what you've been shown in class to choose helpful data layers for your map.
+Comma-separated value files are text files that are formatted to represent a table of attribute values. They use commas as "separators", dividing each row (represented as individual lines in the text) into columns/fields. Usually, the first row-line holds the field names. I encourage you to open up the file in both the Notepad and Excel applications, to see a raw and formatted version of the data stored within.
+
+Additionally, as part of your map design you should locate additional data layers to provide context. For example, you may want to use Oregon and adjacent state boundaries, county boundaries, rivers, roads, cities, etc. for that purpose. You've been introduced to a numbers of good resources for these purposes: Oregon Spatial Data Explorer, UO MAP Library Learning Commons, and Natural Earth Data to name a few. Use your judgment and what you've been shown in class to choose helpful data layers for your map.
 
 #### 1.2 GIS Analysis & Processing
 
@@ -67,9 +72,43 @@ This GIS analysis will prepare for a comparison between modern and historic vege
 
 ##### Create a new ArcMap document.
 
-1. Name it `Lab7_Vegetation.mxd`.
+1. Name it `Lab7_Vegetation_Land_Cover.mxd`.
 2. Add the ecoregion data to the data frame, and restrict the dataset to an ecoregion of your choice.
-  * Remember, you can use a *Definition Query* to filter the original data, or perform a selection by the ecoregion and export the single ecoregion to a new shapefile.
+  * Remember, you can use a *Definition Query* to filter the original data, or perform a selection for the ecoregion and export the single ecoregion to a new shapefile.
+3. Add the modern vegetation data to the data frame: `R:\GEOG481_3\Class_Data\Lab7\Data\gap_vegetation.shp`.
+  * This is a rather large file, so we're going to not make a copy in each lab folder.
+
+##### Read [*Clip*](https://desktop.arcgis.com/en/arcmap/latest/tools/analysis-toolbox/clip.htm) from the ArcMap documentation site.
+
+##### Extract vegetation data within the chosen ecoregion.
+
+Execute the *Clip* tool to extract the vegetation in the chosen ecoregion. *Clip* is located in the ArcToolbox panel, as `Analysis -> Extract -> Clip`.
+
+##### Recalculate the area for each vegetation polygon
+
+The attribute table for the vegetation has a field called `AREA`. However, this is not an automatically-updated attribute. For features that extended beyond the ecoregion, the *Clip* tool removed the parts outside the ecoregion's polygon interior. Therefore, the attribute value in `AREA` is no longer accurate for those features.
+
+1. Add a new field to the attribute table of the feature class.
+  1. Open the attribute table.
+  2. Under *Table Options* (the button on the attribute table that looks like a paper with holes & lines in it), choose `Add Field`.
+  3. Provide a short name for the field; shapefiles are limited to 10 character names. Tip: you may want to include the units in your field name, so you can better remember them later, e.g. `area_sqmi`/`area_sqkm`.
+  4. Choose an appropriate attribute data type to store the area values for the polygons. Remember, `Float` and `Double` are names for decimal number attribute types.
+  5. After creating the field, scroll to the right end of the attribute table, which is where new fields are added.
+  6. Right-click on the name of the new field, and choose `Calculate Geometry`.
+  7. You should receive a warning that you're calculating attribute values outside an 'edit session'. Read the warning to understand its point, but go ahead and choose `Yes`.
+  8. Choose `Area` as the property, and specify your desired units (I recommend sqaure miles or kilometers, or you'll be dealing with very large numbers).
+
+Tip: You can rearrange (in ArcMap) the order of fields by clicking on the field name in the table and dragging it to the right or left of other fields columns. Additionally, you can 'freeze' (or 'unfreeze') a column in a visible place, or 'turn a field off' by right-clicking on a field name in the table and choosing the corresponding option. Turning a field back 'on' can be done via `Layer Properties -> Fields`.
+
+##### Read [*Joining attributes in one table to another*](https://desktop.arcgis.com/en/arcmap/latest/manage-data/tables/joining-attributes-in-one-table-to-another.htm) from the ArcMap documentation site.
+
+Tip: When reading ArcMap documentation pages, notice that there is a hierarchy of the documentation contents on the left side of the page. Other pages under the same section heading may also be helpful in understanding what the tools do and how to use them; or perhaps have information for related tools and operations. For example, the section with the above page also has one titled *Esssentials of joining tables* which may be useful in better understanding the join operations.
+
+##### Join the land cover type to the the vegetation features.
+
+1. Add the CSV file table `gapcodes.csv` that you copied to your `Lab7` folder to the data frame.
+2. Right-click on the clipped vegetation layer, and choose the menu item `Joins and Relates -> Join`.
+3. Fill in the options in the *Join Data* window. Base the join on the numeric code for the vegetation type (`VEG_CODE` on the vegetation layer, `VALUE` in the GAP codes CSV table), and keep all the records.
 
 
 ##TODO: FINISH FROM HERE; INCLUDE A COLORBREWER PART.
