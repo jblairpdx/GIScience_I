@@ -51,20 +51,29 @@ Reminder: Save often! it is a good idea to save frequently. You may even want to
 
 Discover and download the datasets via the link provided. Be sure to note the data source, in order to provide citations on your map.
 
-##TODO: FINISH FROM HERE; INCLUDE A COLORBREWER PART.
-
 1. Open a web browser, and navigate to the [Oregon Spatial Data Library](http://spatialdata.oregonexplorer.info/geoportal/).
 2. Browse or search for the following datasets:
   * *Oregon Historic Vegetation*: `historic_vegetation.zip`.
   * *Oregon Actual Vegetation Map - 1992*: `vegetation.zip`.
   * *Oregon Ecoregions*: `ecoregion.zip`.
 3. Download them to your lab folder, and extract their contents.
+4. Make a copy of the CSV file `R:\GEOG481_3\Class_Data\Lab7\Data\gapcodes.csv` in your `Lab7` folder.
+
+Additionally, as part of your map design you may want to locate additional data layers to provide context. For example, you may want to use Oregon and adjacent state boundaries, county boundaries, rivers, roads, cities, etc. for that purpose. You've been introduced to a numbers of good resources for these purposes: Oregon Spatial Data Explorer, UO MAP Library Learning Commons, and Natural Earth Data to name a few. Use your judgment and what you've been shown in class to choose helpful data layers for your map.
+
+#### 1.2 GIS Analysis & Processing
+
+This GIS analysis will prepare for a comparison between modern and historic vegetation in a specific ecoregion of Oregon. In the first part of the analysis, you will explore and summarize the modern data. In the second part, you will repeat the process for the historic data; but you will need to do a bit of additional manual work to augment the historic data so that it will be comparable to the modern data. The original datasets include a name (or code) describing the vegetation; the comparison will be based on the corresponding landscape types.
 
 ##### Create a new ArcMap document.
 
-1. Name it `Lab6_Mt_St_Helens.mxd`.
-2. Add the downloaded datasets to the default data frame.
-3. Change the names of your layers to something more descriptive, e.g. `DEM_Before`, `DEM_After`.
+1. Name it `Lab7_Vegetation.mxd`.
+2. Add the ecoregion data to the data frame, and restrict the dataset to an ecoregion of your choice.
+  * Remember, you can use a *Definition Query* to filter the original data, or perform a selection by the ecoregion and export the single ecoregion to a new shapefile.
+
+
+##TODO: FINISH FROM HERE; INCLUDE A COLORBREWER PART.
+
 
 ##### Create a new shapefile dataset.
 
