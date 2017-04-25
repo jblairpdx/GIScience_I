@@ -186,7 +186,7 @@ Graduate students will have two additional components to their final project. Th
   * Mon May 15 — Test 2 (covers lectures 7-11).
   * Wed May 17 — Lecture 12: Final project introduction; worksheet peer review.
 * **Lab**:
-  * Lab 7: Vegetation Report (due in two weeks).
+  * Lab 7: Vegetation Land Cover Report (due in two weeks).
 
 #### Week 8
 
@@ -198,7 +198,7 @@ Graduate students will have two additional components to their final project. Th
   * Mon May 22 — Lecture 13: Guest speaker — David Richey.
   * Wed May 24 — Lecture 14: Data collection/data quality.
 * **Lab**:
-  * Lab 7: Vegetation Report (continued from previous week).
+  * Lab 7: Vegetation Land Cover Report (continued from previous week).
 
 #### Week 9
 
