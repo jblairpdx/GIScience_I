@@ -109,7 +109,7 @@ Three main types:
   * That way if you ever changed your name, the change would automatically be available to all references, wih only a single update.
 
 ---
-#### 1a. 'Spatial' attribute join
+### 1a. 'Spatial' attribute join
 
 * Spatial attribute join is the same as an attribute join, but in this case the key value defines a spatial relationship
 
@@ -121,7 +121,7 @@ Three main types:
 * 'Spatial join' is a somewhat problematic name. Spatial join commonly used to refer to spatial analysis tools that combine dataset attributes in general.
 
 ---
-#### 1b. Point-in-polygon operation
+### 1b. Point-in-polygon operation
 
 * Determining whether a point lies inside or outside a polygon (also: which polygon?).
 * It's quite useful to apply areal properties to point locations.
@@ -136,7 +136,7 @@ Three main types:
 * Though not as easy to compute as an attribute join, still quite simple to solve.
 
 ---
-#### 1c. Polygon overlay
+### 1c. Polygon overlay
 
 * Similar to point-in-polygon, as two objects are involved.
 
@@ -153,7 +153,7 @@ Three main types:
 * Better data causes slivers: More data points on the line = more ever-tinier ones.
 
 ---
-#### 1d. Raster-on-raster overlay: Map algebra
+### 1d. Raster-on-raster overlay: Map algebra
 
 * If cells are identical (or one is subdivision of other):
   * Overlay vastly simplified: raster indexes match or are convertible; no slivers
@@ -182,7 +182,7 @@ Three main types:
 * Image is newly-released US Department of Transportation's online National Noise Map.
 
 ---
-#### 2a. Measuring distance/length
+### 2a. Measuring distance/length
 
 * Euclidean/Pythagorean (straight-line) distance.
   * Easy math; can use projected coordinate system coordinates.
@@ -201,7 +201,7 @@ Three main types:
 * Representation underestimates: lacking topography & curvature makes for less distance.
 
 ---
-#### 2b. Buffering
+### 2b. Buffering
 
 * Builds new feature(s) by drawing boundary around areas within a given distance of the original feature(s).
 
@@ -223,7 +223,7 @@ Three main types:
   ]
 
 ---
-#### 2c. Cluster detection
+### 2c. Cluster detection
 
 * Determining a consistency in the distance between a set of features (a pattern).
 
@@ -250,7 +250,7 @@ The higher dimensionality here may suggest a jump in complexity, but that's not 
   * Projected coordinates come into play here, though.
 
 ---
-#### 3a. Measurement of area
+### 3a. Measurement of area
 
 * Measurement of the 2-dimensional projected space within the area/polygon.
   * Usually same units as coordinates. Can convert.
@@ -261,12 +261,18 @@ The higher dimensionality here may suggest a jump in complexity, but that's not 
   * Including perimeter of 'donut holes'.
   * Simple to include, since most data models construct polygons as sets of closed polylines.
 
+.left-column[
+.image-100[![https://www.mathsisfun.com/geometry/area-irregular-polygons.html](media/area-irregular-polygon3.gif)]
+]
+.right-column[
+.image=100[![http://davidvs.net/math/geometry-concepts.shtml](media/perimeterpolygon.png)]
+]
 ???
 * Some GIS data models have automatically-updating length/perimeter & area attributes.
 * Perimeter can be useful as a part of other measurements.
 
 ---
-#### 3b. Measurement of shape
+### 3b. Measurement of shape
 
 * Can calculate mathematical formulas that describe the formation of the polygon.
 
@@ -277,7 +283,7 @@ The higher dimensionality here may suggest a jump in complexity, but that's not 
 .image-70[![http://www.npr.org/sections/thetwo-way/2017/03/11/519839892/federal-court-rules-three-texas-congressional-districts-illegally-drawn](media/texas-35-25810048abae74e2926130ee177bb5dfd1859e54-s700-c85.png)]
 
 ---
-#### 3c. Centrality
+### 3c. Centrality
 
 * Can we find spatial equivalents to the statistical mean and standard deviation?
 
