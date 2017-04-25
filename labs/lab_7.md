@@ -5,38 +5,28 @@ title: GEOG 4/581 - Lab 7
 # Lab 7: Vegetation Report
 
 
-##TODO: FINISH FROM HERE
-##TODO: INCLUDE A COLORBREWER PART.
-
-
 #### Purpose
 
-Processing & analysis functions available for raster data differs from that of vector data. Although we have encountered raster data in previous labs, it had played a relatively minor role. In this lab, raster data is at the forefront. This lab explores raster processing that focuses on elevation data, and also includes a quick introduction to a new application in ArcGIS Desktop—ArcScene—which displays 3-dimensional spatial data.
+A major part of GIS analysis is preparing the data—combining data from diverse sources and extracting portions of a larger dataset that apply to a specific question. This week we will be working with attribute joins in ArcMap, as well as extracting data based on spatial overlap. In Lab 5 where you chose a selection method that best approximated the tsunami's impact zone; those techniques could over- or underestimate, including or excluding taxlots that were only partially touched by the tsunami layer. This lab you will perform spatial operations that will use polygon overlay to exactly match the area of overlap between two sets of polygons.
+
+This lab explores attribute joins and polygon overlays using vegetation layers to illustrate the ideas.
 
 
 #### Prerequisites
 
-This excercise builds on skills practiced in Labs 1-5.
+This excercise builds on skills practiced in Labs 1-6.
 
 
 #### References & Links
 
-* ArcGIS Desktop: Aspect.
-  * [https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/aspect.htm](https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/aspect.htm)
-* ArcGIS Desktop: Contour.
-  * [https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/contour.htm](https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/contour.htm)
-* ArcGIS Desktop: Extract Multi Values to Points.
-  * [https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/extract-multi-values-to-points.htm](https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/extract-multi-values-to-points.htm)
-* ArcGIS Desktop: Hillshade.
-  * [https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/hillshade.htm](https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/hillshade.htm)
-* ArcGIS Desktop: Slope.
-  * [https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/slope.htm](https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/slope.htm)
+* Oregon Spatial Data Library.
+  * [http://spatialdata.oregonexplorer.info/geoportal/](http://spatialdata.oregonexplorer.info/geoportal/)
 
 
 #### To Turn In
 
 * Single-page map in Portable Document Format (PDF).
-* Written document with lab questions in a commonly-accessible format (Microsoft Word, rich text, markdown, etc.)
+* **A short report** describing the GIS analysis conducted and the conclusions you found.
 
 Put a copy of each document:
 
@@ -50,8 +40,6 @@ Submit the documents at your earliest convenience before the start of the next l
 
 For best results, read through all instructions before starting the lab.
 
-Note: The questions to answer in this lab relate to the process you complete in these steps. You may find it helpful to answer questions as you create the map rather than waiting until the end. Whichever method you prefer, be sure to contemplate *what you are actually doing* while completing these steps. Remember: the skill is not in following directions (or memorizing them), it's understanding what is happening.
-
 
 ### Part 1 - Map Instructions
 
@@ -59,20 +47,18 @@ Reminder: Save often! it is a good idea to save frequently. You may even want to
 
 #### 1.1 - Data
 
-##### Create a new `Lab6` folder, and download spatial datasets there.
+##### Create a new `Lab7` folder, and download spatial datasets there.
 
 Discover and download the datasets via the link provided. Be sure to note the data source, in order to provide citations on your map.
 
-* Pre-eruption Mt. St. Helens 30-meter Digital Elevation Model (DEM).
-  * Link: [http://gis.ess.washington.edu/data/raster/thirtymeter/mtsthelens/](http://gis.ess.washington.edu/data/raster/thirtymeter/mtsthelens/)
-  * Filename: `OldMtStHelens.zip`.
-* (Current) Mt. St. Helens 30-meter Digital Elevation Model (DEM).
-  * Link: [http://gis.ess.washington.edu/data/raster/thirtymeter/mtsthelens/](http://gis.ess.washington.edu/data/raster/thirtymeter/mtsthelens/)
-  * Filename: `q2323.zip`.
+##TODO: FINISH FROM HERE; INCLUDE A COLORBREWER PART.
 
-Hint: The DEM rasters are derived from United States Geological Survey (USGS) data. Unfortunately, their historic DEM website is currently missing, so we're getting these from a secondary source.
-
-Digital elevation models are continuous data that breaks the covered space into a uniform grid of cells, and stores a single elevation value in each cell as sampled from the ground it covers. Though a DEM can be stored in pretty much any raster data format, it is common to see USGS DEM datasets as a *.dem file.
+1. Open a web browser, and navigate to the [Oregon Spatial Data Library](http://spatialdata.oregonexplorer.info/geoportal/).
+2. Browse or search for the following datasets:
+  * *Oregon Historic Vegetation*: `historic_vegetation.zip`.
+  * *Oregon Actual Vegetation Map - 1992*: `vegetation.zip`.
+  * *Oregon Ecoregions*: `ecoregion.zip`.
+3. Download them to your lab folder, and extract their contents.
 
 ##### Create a new ArcMap document.
 
@@ -277,7 +263,7 @@ Note: Don't include the hillshade's symbology in the map legend.
 2. Take a look at your exported PDF through a PDF viewing application or a web browser. **Always look at your output!** Both common and unusual errors slip past creators when they don't look at their outputs.
 
 
-### Part 3 - Write-up
+### Part 2 - Write-up
 
 **Note:** Some of the questions in the write-up relate to the actions you take in making your map; you may find it helpful to answer those questions as you go, rather than waiting until after completion.
 
