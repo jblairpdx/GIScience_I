@@ -58,7 +58,7 @@ If you prefer a more portable digital copy of any of the materials listed below,
 * Week 04 — [Lab 4: Spatial Selection and Attribute Queries](https://jblairpdx.github.io/GIScience_I/labs/lab_4.html)
 * Week 05 — [Lab 5: Site Selection—Tsunami Relief Center](https://jblairpdx.github.io/GIScience_I/labs/lab_5.html)
 * Week 06 — [Lab 6: Working with Raster Data — Elevation](https://jblairpdx.github.io/GIScience_I/labs/lab_6.html)
-* Week 07 — Lab 7: Vegetation Report<!--* Week 07 — [Lab 7: Vegetation Report](https://jblairpdx.github.io/GIScience_I/labs/lab_7.html)-->
+* Week 07 — Lab 7:  Vegetation Land Cover Report<!--* Week 07 — [Lab 7:  Vegetation Land Cover Report](https://jblairpdx.github.io/GIScience_I/labs/lab_7.html)-->
 * Week 08 — Continue work on Lab 7
 * Week 09 — Work on final project
 * Week 10 — Work on final project
