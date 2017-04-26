@@ -56,7 +56,7 @@ Discover and download the datasets via the link provided. Be sure to note the da
 * Oregon Tsunami Evacutation Zone - 2013.
   * Link: [http://spatialdata.oregonexplorer.info/geoportal/](http://spatialdata.oregonexplorer.info/geoportal/)
   * Filename: `DOGAMI_TsunamiEvacuationZones_2013.zip`.
-* Oregon City Limits - 2015.
+* Oregon City Limits - 2016.
   * Link: [http://spatialdata.oregonexplorer.info/geoportal/](http://spatialdata.oregonexplorer.info/geoportal/)
   * Filename: `citylim_2016.zip`.
 
@@ -69,7 +69,7 @@ Discover and download the datasets via the link provided. Be sure to note the da
 3. Add taxlots from the Library's Leaning Commons Data Share.
 
 * Lane County Taxlots - 2012.
-  * File location: `\\confusion.uoregon.edu\GISData\UO_GIS_Collections\US_states\Oregon\Counties\Lane_Co\Tax_lots\LaneTaxlots_2012.gdb`.
+  * File location: `\\confusion.uoregon.edu\GISData\UO_GIS_Collection\US_states\Oregon\Counties\Lane_Co\Tax_lots\LaneTaxlots_2012.gdb`.
   * Filename: `LaneTaxlots2012`.
 
 
