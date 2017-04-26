@@ -8,13 +8,11 @@ If you prefer a more portable digital copy of any of the materials listed below,
 
 * [Syllabus](https://jblairpdx.github.io/GIScience_I/syllabus.html)
 
-<!--
 ## Final project
 
 * [Worksheet](https://jblairpdx.github.io/GIScience_I/final_project/worksheet.pdf)
 * [Worksheet—Peer Feedback](https://jblairpdx.github.io/GIScience_I/final_project/worksheet_peer_feedback.pdf)
 * [Proposal](https://jblairpdx.github.io/GIScience_I/final_project/proposal.pdf)
--->
 
 ## Lecture Slides
 
