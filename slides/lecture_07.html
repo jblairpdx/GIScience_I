@@ -287,7 +287,7 @@ Perimeter
 
 * Spatial equivalents to the statistical mean and standard deviation?
 
-* Center (centroid) is 2-D equivalent of mean: an average of X & Y coordinates represented by a point.
+* Center is 2-D equivalent of mean: a weighted average of X & Y coordinates represented by a point.
 
 Mean center of values (U.S. population): The values add 'weight' to the coordinates.
 
@@ -296,8 +296,10 @@ Mean center of values (U.S. population): The values add 'weight' to the coordina
 ---
 #### Centroid
 
+A mean of unweighted coordinates.
+
 .left-column[
-Feature centroid: mean of unweighted coordinates.
+Feature centroid.
 
 .image-100[![http://giscommons.org/earth-and-map-preprocessing/](media/3.17.gif)]
 ]
@@ -307,6 +309,13 @@ Sometimes true centroid falls outside polygon. Alternative: `visual center`, or 
 
 .image-100[![https://www.mapbox.com/blog/polygon-center/](media/28967581056_bc954a3174_o.png)]
 ]
+---
+#### Central Feature
+
+Of all the features, which one most closey falls in the center of the X & Y coordinates of all features (median).
+
+.image-100[![https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-statistics-toolbox/central-feature.htm](media/GUID-10E5C859-6101-4D48-9DED-C0F2D4CFC8F2-web.png)]
+
 </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
     </script>
