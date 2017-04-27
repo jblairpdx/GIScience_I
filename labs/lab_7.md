@@ -21,6 +21,8 @@ This excercise builds on skills practiced in Labs 1-6.
 
 * ArcGIS Desktop: Clip.
   * [https://desktop.arcgis.com/en/arcmap/latest/tools/analysis-toolbox/clip.htm](https://desktop.arcgis.com/en/arcmap/latest/tools/analysis-toolbox/clip.htm)
+* ArcGIS Desktop: Dissolve.
+  * [https://desktop.arcgis.com/en/arcmap/latest/tools/data-management-toolbox/dissolve.htm](https://desktop.arcgis.com/en/arcmap/latest/tools/data-management-toolbox/dissolve.htm)
 * ArcGIS Desktop: Joining attributes in one table to another.
   * [https://desktop.arcgis.com/en/arcmap/latest/manage-data/tables/joining-attributes-in-one-table-to-another.htm](https://desktop.arcgis.com/en/arcmap/latest/manage-data/tables/joining-attributes-in-one-table-to-another.htm)
 * Oregon Spatial Data Library.
@@ -77,12 +79,13 @@ This GIS analysis will prepare for a comparison between modern and historic vege
   * Remember, you can use a *Definition Query* to filter the original data, or perform a selection for the ecoregion and export the single ecoregion to a new shapefile.
 3. Add the modern vegetation data to the data frame: `R:\GEOG481_3\Class_Data\Lab7\Data\gap_vegetation.shp`.
   * This is a rather large file, so we're going to not make a copy in each lab folder.
+4. Rename the data frame to reflect its contents, e.g. 'Modern Vegetation'.
 
 ##### Read [*Clip*](https://desktop.arcgis.com/en/arcmap/latest/tools/analysis-toolbox/clip.htm) from the ArcMap documentation site.
 
 ##### Extract vegetation data within the chosen ecoregion.
 
-Execute the *Clip* tool to extract the vegetation in the chosen ecoregion. *Clip* is located in the ArcToolbox panel, as `Analysis -> Extract -> Clip`.
+Execute the *Clip* tool to extract the vegetation in the chosen ecoregion. *Clip* is located in the ArcToolbox panel, as `Analysis Tools -> Extract -> Clip`.
 
 ##### Recalculate the area for each vegetation polygon
 
@@ -109,7 +112,49 @@ Tip: When reading ArcMap documentation pages, notice that there is a hierarchy o
 1. Add the CSV file table `gapcodes.csv` that you copied to your `Lab7` folder to the data frame.
 2. Right-click on the clipped vegetation layer, and choose the menu item `Joins and Relates -> Join`.
 3. Fill in the options in the *Join Data* window. Base the join on the numeric code for the vegetation type (`VEG_CODE` on the vegetation layer, `VALUE` in the GAP codes CSV table), and keep all the records.
-4. View the layer's attribute table and observe the joined attribute fields. Temporarily turn off the field aliases (`Table Options -> Show Field Aliases`) to see the field names with the table name attached.
+4. You may choose run the `Validate Join` tool at the bottom beforehand; this just checks to ensure the join will work as advertised. In this case, it will warn you about using a 'reserved word', `VALUE`. Don't worry about this, just `OK` the join.
+5. View the layer's attribute table and observe the joined attribute fields. Temporarily turn off the field aliases (`Table Options -> Show Field Aliases`) to see the field names with the table name attached.
+
+Tip: To remove a joined attribute table, ricght-click on the layer with the join, and look under `Joins and Relates -> Join -> Remove Join(s)` for the table in question.
+
+##### Read [*Dissolve*](https://desktop.arcgis.com/en/arcmap/latest/tools/analysis-toolbox/clip.htm) from the ArcMap documentation site.
+
+##### Combine the vegetation features into new landscape type features.
+
+1. Execute the *Dissolve* tool to combine vegetation features in the ecoregion that have the same landscape type. *Dissolve* is located in the ArcToolbox panel, as `Data Management Tools -> Generalization -> Dissolve`.
+  * Choose the joined field `Landscape_Type` for the *Dissolve Field(s)*.
+  * Include the new area field you calculated values for as the sole *Statistics Field(s)*, with a *Statistic Type* as `SUM`. **Important**: If you don't do this, you will not have the collected area of the newly-merged features, and will have to calculate it again.
+  * *Create multipart features*. This option will unify all features with matching dissolve fields, even if they aren't adjacent to each other. This creates 'multipart' features, or features with more than one point/line/polygon representing them. Keep it checked.
+2. Open the attribute table; notice that only the dissolve field(s) and statistics field(s) are present in the output. They also may have strange & truncated names. This is because (a) joined fields when exported try to include the table name, (b) statistics fields prefix the statistic type to their name, and (c) shapefiles limit field names to ten characters. Options for handling these screwy names:
+  * Change the field name alias via the *Field Properties*—right-click on the field name in the attribute table, choose `Properties`.
+  * Change the field name alias via the *Fields* tab in the layer properties.
+  * Create a new field with the same data type, and calculate the values from one field to another. This is the only option that changes the underlying shapefile, but it's also the most work.
+
+##### Insert a new data frame for historic vegetation of the ecoregion.
+
+1. Name it to reflect its contents, e.g. 'Historic Vegetation'.
+2. Copy your chosen ecoregion layer over from the modern data frame.
+3. Add the historic vegetation data you downloaded to the data frame.
+4. Extract the vegetation data in your chosen ecoregion—just as you did above for the modern vegetation.
+5. Create a new area field and calculate the attribute values for it—just as you did above for the modern vegetation.
+  * Use the same units as the modern vegetation!
+
+##### Create a 'lookup' table similar to `gapcodes.csv` to match historic vegetation to landscape types.
+
+Unlike the modern vegetation, the historic vegetation dataset does not carry the vegetation codes (`VEG_CODE`), or use the exact names of the modern version. So we'll need to create a lookup table specifically to match historic vegetation names to landscape types.
+
+1. Open the attribute table of the historic vegetation layer.
+2. Right-click on the `VEGNAME` field name and choose `Summarize`. Accept the defaults.
+3. Open the *Saving Data* dialog via the button that looks like a folder.
+4. In *Save as type* choose `Text File`. This will save it as a csv.
+5. Give it a descriptive name and save it.
+6. Find the file in File Explorer and open it with the *Notepad* application (`right-click -> Open With -> Notepad`).
+  * This is the underlying setup of a CSV-file. It's just text, with columns separated by commas. The applications do all the organizing and data typing work.
+7. Now open the CSV file in Excel (this is the default application for that type).
+8. Remove the `FID` and `Cnt_VEGNAME` columns; they unnecessary bits the *Summarize* tool added on.
+9. Title a new column `Landscape Type` (just like in `gapcodes.csv`).
+
+
 
 ##TODO: FINISH FROM HERE; INCLUDE A COLORBREWER PART.
 
