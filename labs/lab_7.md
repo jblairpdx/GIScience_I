@@ -141,89 +141,35 @@ Tip: To remove a joined attribute table, ricght-click on the layer with the join
 
 ##### Create a 'lookup' table similar to `gapcodes.csv` to match historic vegetation to landscape types.
 
-Unlike the modern vegetation, the historic vegetation dataset does not carry the vegetation codes (`VEG_CODE`), or use the exact names of the modern version. So we'll need to create a lookup table specifically to match historic vegetation names to landscape types.
+Unlike the modern vegetation, the historic vegetation dataset does not carry the vegetation codes (`VEG_CODE`), or use the same names of the modern version. So we'll need to create a lookup table specifically to match historic vegetation names to landscape types.
 
 1. Open the attribute table of the historic vegetation layer.
 2. Right-click on the `VEGNAME` field name and choose `Summarize`. Accept the defaults.
 3. Open the *Saving Data* dialog via the button that looks like a folder.
 4. In *Save as type* choose `Text File`. This will save it as a csv.
-5. Give it a descriptive name and save it.
+5. Give it a descriptive name and save it. Make sure you give it the file extension `.csv` instead of the default `.txt`.
 6. Find the file in File Explorer and open it with the *Notepad* application (`right-click -> Open With -> Notepad`).
   * This is the underlying setup of a CSV-file. It's just text, with columns separated by commas. The applications do all the organizing and data typing work.
 7. Now open the CSV file in Excel (this is the default application for that type).
 8. Remove the `FID` and `Cnt_VEGNAME` columns; they unnecessary bits the *Summarize* tool added on.
 9. Title a new column `Landscape Type` (just like in `gapcodes.csv`).
+10. Open the other CSV file, `gapcodes.csv`, and place it side-by-side with the historic one you're completing.
+  * Recent Excel versions open multiple files in the same application window, which makes this slightly more difficult. To place them side-by-side, either (a) Go to the *View* tab on the Excel option ribbon, and choose `Arrange All`. The *Vertical* option will place all spreadsheets side-by-side; or (b) open an entirely new instance of Excel from the application menu, and open the other CSV in that.
+11. Using the modern GAP codes as a guide, copy/type the Landscape type that you believe would correspond to each historic vegetation type.
+12. Once finished, save the CSV file. You will get a warning about CSV files not being able to save all features of Excel spreadsheets; click `Yes` to keep the format.
+13. Add the CSV file to your historic data frame.
 
+**Matching note**: Some of the text descriptions may be quite easy for human eyes to match between the GAP and historic vegetation. For example, `Sitka sprice-western hemlock` is quite comparable to `Sitka-Spruce-W. Hemlock Maritime Forest`; this could then be given the corresponding landscape type: `FOREST AND WOODLAND`. Others may not correspond so easily, but have an obvious landscape: if it talks only about trees (forest), if it highlights grass or shrubs, or if it highlights riparian or wetland components. Others may require more research—look up tree species or terms you're not familiar with to get a better picture.
+
+##### Create a new historic landscape type feature class for your chosen ecoregion.
+
+1. Join the historic CSV table you created to the historic vegetation, just as you had above excepting the join this time will be based on the `VEGNAME` field in the shapefile and table.
+2. Dissolve the joined datasets into a dataset of landscape features, just as you had above. Don't forget to sum the newly-calculated area.
 
 
 ##TODO: FINISH FROM HERE; INCLUDE A COLORBREWER PART.
 
 
-##### Create a new shapefile dataset.
-
-1. Using the *ArcCatalog* panel, right-click on your `Lab6` folder, and choose `New -> Shapefile`.
-  1. Name the new shapefile `Viewpoints.shp`.
-  2. Make the feature type `Point`.
-  3. Choose the spatial reference (`Edit` button), match it to the DEMs (NAD 1927 UTM Zone 10N).
-2. Add the shapefile as a layer in your data frame, if it doesn't automatically do so.
-3. Add at least five points somewhere on the mountain.
-  1. Turn on one of the DEMs to make sure you place them where elevation data exists.
-  2. Open the *Editor* toolbar: right-click on any toolbar, and choose `Editor`.
-  3. In the drop-down menu on the toolbar, choose `Start Editing`. Note: if you have layers from more than one folder or database, it will ask you which folder/database you wish to edit in. Choose your `Lab6` folder; this makes any editable dataset in that 'workspace' open for adding/removing/altering features.
-  4. A *Create Features* panel should have opened up. If it has not, under the *Editor* toolbar's drop-down menu it will be available to open under *Editing Windows*.
-  5. Click on the point feature that shows in the panel (likely labelled 'Viewpoints' - this chooses the dataset features to create). Then click in locations you wish to create a point at.
-  6. Though you've created the points, they are not 'saved' to the file itself. To do that, choose `Save Edits` from the *Editor* toolbar's drop-down menu.
-  7. Choose `Stop Editing` from the drop-down. If you haven't saved recent edits, you will be prompted whether you want them saved to the file. Alternately, you can choose to get rid of unsaved edits by stopping an 'Edit Session' and choosing to not save your edits.
-
-#### 1.2 - Analysis & Processing
-
-##### Prepare your application settings for running raster analysis tools.
-
-1. Turn on the *Spatial Analyst* extension (under menu item `Customize -> Extensions`).
-2. Set the workspace environment to automatically write output to your `Lab6` folder.
-  1. Open the *Environment Settings* dialog via the menu item `Geoprocessing -> Environments`.
-  2. Expand the *Workspace* section.
-  3. Change the *Current Workspace* & *Scratch Workspace* setting to your lab folder (should be `R:\GEOG481_3\Student_Data\[Duck ID]\Lab6`).
-
-By setting the *Workspace* environment setting, tools will automatically use the `Lab6` folder when creating a default output filepath.
-
-##### Run a collection of elevation analysis tools.
-
-For each tool in the following list:
-
-1. Read the ArcGIS Desktop documentation webpage about the tool.
-2. Execute the tool with the **after-eruption** DEM as the input raster, with the other parameters as provided.
-  * All tools listed are availabe in the `Spatial Analyst -> Surface` section of the *ArcToolbox* panel.
-  * If *ArcToolbox* is not open, do so via the menu item `Geoprocessing -> ArcToolbox`.
-  * If you wish to see how a long-running tool is doing, open the *Results* panel via the menu item `Geoprocessing -> Results`. This panel has indicators for tool status, messages, and even history of tools run.
-4. Examine the output raster.
-
-* Contour [(documentation)](https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/contour.htm).
-  * Output polyline features: `Contour_After_60m.shp`.
-  * Contour interval: `60` (meters; check the coordinate system units).
-* Slope [(documentation)](https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/slope.htm).
-  * Output raster: `Slope_After.tif`.
-  * Output measurement: `DEGREE`.
-* Aspect [(documentation)](https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/aspect.htm).
-  * Output raster: `Aspect_After.tif`.
-* Hillshade [(documentation)](https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/hillshade.htm).
-  * Output raster: `Hillshade_After.tif`.
-
-##### Create a pre-eruption hillshade.
-
-1. Run the Hillshade tool again, this time derived from pre-eruption elevations.
-2. Name it descriptively.
-
-##### Extract the raster values for elevation, slope, and aspect for each of the viewpoints.
-
-You could certainly do this manually, using the *Identify* tool you've used in a previous lab to find the the cell values below each viewpoint. You could even run the *Extract Values to Points* tool that you used in Lab 4 multiple times. However, there is a tool that can automate this some.
-
-1. Read the documentation for [*Extract Multi Values to Points*](https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/extract-multi-values-to-points.htm)
-2. Open the tool interface, in `ArcToolbox -> Spatial Analyst Tools -> Extraction`.
-3. Choose your viewpoints shapefile as the input point features, and add your aspect, slope, and after DEM as your input rasters.
-4. Optional: change the *Output field name* for each raster to something more readable. These are the fields that the tool will create on the viewpoints shapefile; you may want not wish to use the raster layer name for the field (e.g. maybe *elevation* makes more sense when on the viewpoints than *DEM_After*.
-5. Run the tool.
-6. Open the viewpoints attribute table and examine the values in the new fields.
 
 
 #### 1.3 - 3D Scene Creation
