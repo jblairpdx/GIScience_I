@@ -19,6 +19,8 @@ This excercise builds on skills practiced in Labs 1-6.
 
 #### References & Links
 
+* ArcGIS Desktop: Calculate Field examples.
+  * [https://desktop.arcgis.com/en/arcmap/latest/manage-data/tables/calculate-field-examples.htm](https://desktop.arcgis.com/en/arcmap/latest/manage-data/tables/calculate-field-examples.htm)
 * ArcGIS Desktop: Clip.
   * [https://desktop.arcgis.com/en/arcmap/latest/tools/analysis-toolbox/clip.htm](https://desktop.arcgis.com/en/arcmap/latest/tools/analysis-toolbox/clip.htm)
 * ArcGIS Desktop: Dissolve.
@@ -32,7 +34,7 @@ This excercise builds on skills practiced in Labs 1-6.
 #### To Turn In
 
 * Single-page map in Portable Document Format (PDF).
-* **A short report** describing the GIS analysis conducted and the conclusions you found.
+* **A short report** (3-4 pages) describing the GIS analysis conducted and the conclusions you found.
 
 Put a copy of each document:
 
@@ -166,135 +168,41 @@ Unlike the modern vegetation, the historic vegetation dataset does not carry the
 1. Join the historic CSV table you created to the historic vegetation, just as you had above excepting the join this time will be based on the `VEGNAME` field in the shapefile and table.
 2. Dissolve the joined datasets into a dataset of landscape features, just as you had above. Don't forget to sum the newly-calculated area.
 
+##### Create a landcover area change table.
 
-##TODO: FINISH FROM HERE; INCLUDE A COLORBREWER PART.
+1. Create a summary table of the landscape type on the historic vegetation layer, including the sum of your newly-calculated area.
+2. Create a summary table of the landscape type on the modern vegetation layer, including the sum of your newly-calculated area.
+3. Look at the two summary tables; are there any landscape types on one table that aren't represented on the other? If so, you need to edit the table and add new rows for them in the table.
+  * Edit session: `Editor toolbar -> Editor menu -> Start Editing`.
+  * If a landscape isn't represented initially, that's because it doesn't cover that ecoregion in that dataset. Hence, area = 0.
+3. Join the two summary tables. In this case, the join will have a one-to-one relationship (i.e. only one row in each table for each landscape type), so it doesn't matter which is the *source table* or the *destination table*.
+4. Export the joined summary tables as a new 'landscape change' table. Save it as a dBase file.
+  * You may want to 'turn off' some of the unecessary fields before exporting.
+5. The unfortunate part of using shapefiles and dBase tables is that we can't rename fields in our datasets. Let's replace the badly named fields with better-named ones.
+  * Look at the field properties for ones you would like to replace, identifying the *Type*.
+  * Add a new field of the same type, but with a better name.
+  * Open the *Field Calculator* (right-click on the new field's name in the attribute table & select).
+  * Double-click on the name of the field you are going to replace. Once you click `OK`, this will copy the values of the old field into the new one.
+  * Once you've moved the values to the new field, you can choose to hide or delete the field.
+  * Repeat these steps for any other fields you wish to rename.
+5. Add a new floating point (or double) fields for percent change in area (`pct_change`).
+6. Use the *Field Calculator* to calculate the percent change in area between the historic and modern dataset.
+  * Right-click on the field name in the attribute table to find the *Field Calculator*.
+  * This tool operates similarly to the *Query Builder* used for selecting with SQL syntax; however this uses *VB Script* (default) or *Python* scripting syntax, which are different enough to make things difficult for unfamilar users. Don't sweat it, the math is written how you would expect it to be, with standard symbols.
+  * Percent change: ([modern area field] - [historic area field]) / [historic area field] * 100
 
+Warning! If your ecoregion has a landscape type that didn't exist in the historic dataset (but does in the modern), you'll notice the value in `pct_change` didn't change from `0`. This isn't because that's the answer: it's because the *Field Calculator* skipped over it because your equation asked it to divide by zero, which is impossible in math. The percent increase from 0 to anything is uncalculable because of this. Be aware of this when working on your report.
 
+If you are interested in learning more about how to build field calculations, I encourage you to read [*Calculate Field examples*](https://desktop.arcgis.com/en/arcmap/latest/manage-data/tables/calculate-field-examples.htm) from the ArcMap documentation site.
 
+#### 1.3 Map and Data Graphics
 
-#### 1.3 - 3D Scene Creation
+The products of this lab will be a one-page map layout to accompany a short document. The map layout can be designed with your choice of paper size and orientation (landscape or portrait). You may choose to include additional maps, data graphics, or tables in your layout or short document as needed to illustrate the narrative.
 
-ArcScene is another application in the ArcGIS Desktop suite of applications, alongside ArcMap. This application is a powerful tool for visualizing 3D data. We will only be using a small part of its capabilities.
-
-##### Open ArcScene and create a new document.
-
-1. Open ArcScene from the Windows *Start Menu*.
-2. Choose *Blank Scene* from the *Getting Started* window prompt that appears.
-3. Do an initial save of the document, to create the document in your `Lab6` folder. Name it similar to your ArcMap document.
-4. Take a look around the application interface. This should all look familiar: where things are, how you access certain things is nearly the same as it is in ArcMap, with some considerations for displaying 3D space.
-
-##### Add data to the scene document.
-
-1. Add the following datasets.
-  * Pre-eruption/before DEM.
-  * Pre-eruption/before hillshade.
-  * After-eruption DEM.
-  * After-eruption hillshade.
-2. Uncheck the DEM layers in the *Table of Contents* to stop displaying them. These layers are only added to provide information.
-
-##### "Drape" the hillshade from the pre-eruption data over its respective elevation model.
-
-1. Open the layer properties, and switch to the *Base Heights* tab.
-2. Choose the `Floating on a custom surface` option for *Elevation from surfaces*.
-3. Choose the pre-eruption DEM from the drop-down right below.
-4. Repeat these steps for the after-eruption hillshade.
-
-##### Move the "observer" around the scene for a better view.
-
-1. Use the tools in the *Tools* toolbar to explore. Hovering the mouse cursor over a tool button for a second will display some explanatory text.
-  * `Navigate` (tiny Earth with four triangles pointing out): Rotates the display around - click-and-hold, then move mouse.
-  * `Fly` (a bird): Allows you to glide around the scene like a bird. Click the left mouse button to increase speed, right to decrease.
-  * `Center on Target` (crosshairs): Recenters the display on wherever you click.
-  * `Zoom to Target` (magnifying glass over crosshairs): Attempts to zoom up close to place you click on.
-  * `Set Observer` (eye over crosshairs): Attempts to place observer (think of as where the camera would be) where you click.
-  * `Zoom In`/`Zoom Out` (magnifying glass with plus or minus): Same concept as in ArcMap.
-    * Can also be done whenever using mouse-wheel.
-  * `Pan` (hand): Same concept as in ArcMap.
-  * `Full Extent` (globe): Returns scene to extent showing all datasets.
-    * Handy if you adjusted the view something crazy (e.g. couldn't control that flying).
-2. Use the tools to change the view until you have a scene looking southward from the north into the crater.
-  * You can turn on a helpful 3D orientation graphic via the menu item `View -> View Settings`, and checking-on `Directional Arrow`.
-  * Note: *View Settings* also has the numeric representation of the current scene's view. You can change these here, but it's probably easier to do so with the tools mentioned instead.
-3. Turn on & off the before hillshade to see the change the mountain underwent between then and the after-hillshade.
-
-##### Save a 'before' and 'after' image of the scene.
-
-1. Turn off all layers except the pre-eruption hillshade.
-2. Export an image of the scene using the menu item `File -> Export Scene -> 2D`.
-  1. Choose an image file type (PNG is good).
-  2. Give it a descriptive filename, and save it to your Lab6 folder.
-3. Repeat the previous steps for the after-eruption hillshade.
-
-
-#### 1.4 Map and Infographic
-
-The layout will contain:
-
-* One map visualizing after-eruption elevation;
-* Two images from the 3D scene (before and after);
-* Information from each viewpoint as either labels or a table.
-
-##### Develop the main map in the data frame.
-
-1. Display the after-eruption hillshade with the default grayscale coloring.
-2. Display the after-DEM above the after-hillshade in the drawing order.
-  1. Make it partially-transparent: adjust `Layer Properties -> Display -> Transparency %`.
-  2. Symbolize the DEM with a color ramp of your own choosing, to emphasize the elevation atop the hillshade.
-3. Display the contour lines so that they're visible.
-  1. your call on over or under the transparent elevation layer.
-  2. Symbolize them to your satisfaction (color, width).
-4. Display & symbolize the viewpoints layer. Be sure to have them stand-out from the background.
-5. Add labels to the viewpoints that display the elevation, slope, and aspect a that location.
-  1. Navigate to the *Labels* tab in the viewpoints' layer properties.
-  2. Check the box for *Label features in this layer*.
-  3. Click on the `Expression` button to open the *Label Expression* builder. At the bottom of the window, choose `Python` for the *Parser*. VBScript works fine, but it can't do newlines, and we want stacked labels.
-  4. Label expressions are an arcane black magic that combines the parser scripting language with field name tokens that will insert the attribute values where placed. It can be frustrating when the expression doesn't do what you want (or is declared invalid). I would recommend just altering the expression below, changing the field names if they do not match what you labelled them on your viewpoints.
-6. Adjust the label formatting to improve their readability & presence.
-  1. Go back to the *Labels* tab in the layer properties.
-  4. Click on the `Label Styles` button. This will show a list of pre-defined label styles. These are a good starting place to adjust labels from. I recommend for labels overlaying the rich raster information below to use one of the *Banner* styles.
-  2. Adjust the font type and size to improve readability. If you change the font, be sure it matches or contrasts with the other text elements in your layout in a satisfying or meaningful way (i.e. don't use different fonts unless you have a good reason to).
-  3. You may adjust the font color as well, but beware reducing readability.
-  4. You may also adjust the banner box color as well, though it's kind of buried. `Layer Properties -> Labels -> Symbol -> Edit Symbol -> Advanced Text -> Text Background (check) -> Properties -> Symbol`.
-7. Welcome to cartography: there's thousands of potential tweaks great and small, and you not only have to decide which to do (or undo), but you also have to avoid spending too much time on them.
-
-```python
-# Just use the bottom line for the label expression.
-# Brackets contain the field names; single- or double-quotes can contain literal text.
-# '\n' is a signifier to Python to start a new line.
-'Elevation: ' + [DEM_After] + '\nSlope: ' + [Slope] + '\nAspect: ' + [Aspect] 
-```
-
-##### Place the map in the layout.
-
-1. Switch to *Layout View*.
-2. Change the paper size to 'tabloid'/11"x17", and choose an orientation: *Portrait* (tall) or *Landscape* (wide). Note: since you will be submitting your map digitally, you can consider the size setting optional. However, there are a few things that layout page size affects even in unprinted maps:
-  1. Layout units: the edge rulers and every object's size & position use the page units; larger page = larger range.
-  2. Relative size of text & symbols to page; larger page = larger range.
-3. Resize and place the data frame on the page how you think best displays them for viewers. Be sure to leave room for the other map and layout elements (you can always make adjustments at any time).
-  1. Consider different sizes for the map.
-  2. Consider vertical & horizontal lengths: your map's extent may not be easily represented in a square.
-  3. You may need to pan & zoom within the data frame to make sure you're showing all you wish at the right scale.
-3. Once you've set the data frames' size, placement, and extent, you may want to re-evaluate your symbolization within your data frame.
-
-##### Place the images in the layout.
-
-1. Add the two 3D scene images.
-  1. Select the menu item `Insert -> Picture`.
-  2. Navigate to one of the images in your `Lab6` folder and choose it.
-  3. Repeat for the second image.
-2. Resize and place the images on the page how you think best displays them for viewers.
-  1. Picture properties are accessible in the same way as a data frame's properties are in *Layout View* (double-click on the picture, or right-click on it and choose `Properties`).
-  2. Be sure when resizing an image to have the option `Preserve Aspect Ratio` checked; this will ensure that when changing the width or height, the other value will automatically change in a way that won't warp the image.
-  3. Consider their relationship with the other elements, and how they fit in the visual hierarchy of the entire map product.
-3. Add a border around the images. Border setting are in the *Picture Properties* window. Style it (thickness/color) as seems appropriate for their role in the map product.
-
-Explore layout designs, finding a way to use the available space. Don't leave gaping holes, but also leave enough empty space so the layout doesn't seem overly crowded. This is an iterative process.
-
-##### Add elements for the maps & layout.
-
-This week, we discussed map composition and the elements of a map product in lecture. Refer to the lecture slides or your notes, and apply this newfound knowledge to create, style, and place the necessary elements in your layout here.
-
-Note: Don't include the hillshade's symbology in the map legend.
+* Be sure to include all necessary map elements as discussed in [lectures 10 and 11](https://jblairpdx.github.io/GIScience_I/slides/lecture_10_11.html).
+* We also discussed controlling factors on map design, visual variables, thematic symbolization types, visual hierarchy, and things to do for better maps. Take your newfound knowledge fromn those lectures and the readings, and apply them to creating a map layout that communicates the analysis you performed and the document it accompanies.
+* Tip: I highly recommend working on any color schemes using the [ColorBrewer web app](http://colorbrewer2.org/).
+  * When changing a color in ArcMap, you'll see the option below the color picker for *More Colors*. A *Color Selector* will appear with prompts for the red, green, and blue (RGB) values to mix into the color. You can switch the ColorBrewer colors from `HEX` to `RGB` to see the numbers you can enter in the *Color Selector*.
 
 ##### Make a PDF copy of your map.
 
@@ -304,18 +212,12 @@ Note: Don't include the hillshade's symbology in the map legend.
 
 ### Part 2 - Write-up
 
-**Note:** Some of the questions in the write-up relate to the actions you take in making your map; you may find it helpful to answer those questions as you go, rather than waiting until after completion.
+In contrast to previous weeks, you will write a short report instead of answering questions provided here. The report should be 3-4 pages double-spaced. 
 
-##### Instructions
+The content should describe the GIS analysis conducted and the results of that analysis. It should be organized in a way that is easy to follow, *avoids excessive technical detail and jargon* (or defines any jargon used), and uses complete sentences.
 
-1. Copy & paste the questions below into a document in your preferred word processor/text editor.
-  - Be sure to use a commonly-viewable document format, e.g. Word, rich text, markdown.
-2. Compose your answers for each question in the document following each question.
+The report may include a description of steps where you made decisions (e.g. what selection method was used, how you solved problems assigning landscape types, etc.), or where you had to be creative in finding solutions/avoiding pitfalls.
 
-##### Questions
+In addition to the narrative, the report may optionally contain small maps, data graphics, or data tables.
 
-1. Describe what information is represented by the DEM (1-2 sentences). Consider: the spatial representation; the data model; the attribute value type/measurement scale; as well as what the values represent.
-2. What sort of output does the `Contour` tool create: what is created, and what does it represent?
-3. In your own words, describe what the values in a `slope` and `aspect` raster dataset represent (2-3 sentences).
-4. In your own words, describe what the `hillshade` is representing.
-5. Briefly describe the spatial analysis you conducted in this lab. Describe the purpose of the steps, rather than the technical details of them—pretend you are describing this to someone who does not know GIS. (4-5 sentences).
+Sources of GIS data should be listed on the map layout. If the data from a GIS source is used to create a figure, map, table, or graphic in the report, list the data source in the caption of that figure.
