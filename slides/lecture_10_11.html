@@ -280,20 +280,20 @@ Map metadata:
 * Classification takes large numbers of (ordinal, interval, ratio) values and groups them into ranges/classes/bins.
 * Why? Simplifies the spectrum into easily distinguishable groups (easier to reference legend values to classes).
 * Basics:
-  * Keep the number of distinct variable classes low.: people can usually only manage 5-7 distinct objects at once.
+  * Keep number of distinct classes low: 3-7 classes is the sweet-spot for maximizing perception & comprehension.
   * Number of classes may need to be adjusted; check histogram when symbolizing.
-  * Choose classification method that highlights patterns that you wish to emphasize.
+  * Choose classification method that highlights patterns you wish to emphasize.
 
 ---
 ## Data classification methods
 
 .left-column[
-* Equal interval — equal-sized classes.
+* Equal interval (equal-sized classes).
   * Best for: data spread evenly across entire range.
-* Quantiles — equal  number of features in each class.
+* Quantiles (equal  number of features in each class).
   * Best for: showing clear rankings within features.
   * Problematic: class breaks can fall between features with no significant value difference.
-* Natural breaks — application statistical model minimizes in-class variation while maximizing between-class differences.
+* Natural breaks (minimizes in-class variation while maximizing between-class differences).
   * Best for: data with distinct clusters that can align with classes.
   * Problematic: each unique set of features will have unique breaks between classes; not good cross-map comparison.
 ]
