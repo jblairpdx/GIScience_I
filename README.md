@@ -60,3 +60,28 @@ If you prefer a more portable digital copy of any of the materials listed below,
 * Week 08 — Continue work on Lab 7
 * Week 09 — Work on final project
 * Week 10 — Work on final project
+
+## Readings
+* Week 01
+  * Longley et al — Chapters 1 & 2 (sections 2.3+ optional)
+* Week 02
+  * Longley et al — Chapters 3 & 4
+* Week 03
+  * Longley et al — Chapter 7
+* Week 04
+  * Longley et al — Chapter 13 (sections 13.3.4+ optional); Chapter 14 (section 14.4+ unnecessary).
+* Week 05
+  * [ArcGIS Desktop — "Analysis toolbox" (overview section plus each toolset subsection)](https://desktop.arcgis.com/en/arcmap/latest/tools/analysis-toolbox/an-overview-of-the-analysis-toolbox.htm)
+  * Longley et al — Chapter 15
+* Week 06
+  * Longley et al — Chapter 11
+  * [Axis Maps — "Thematic Cartography Guide." (can skip over projections section)](https://axismaps.github.io/thematic-cartography/)
+  * [Buckley — "Make Maps People Want to Look At" in ArcUser, Winter 2012](https://www.esri.com/news/arcuser/0112/files/design-principles.pdf)
+* Week 07
+  * No reading
+* Week 08
+  * Longley et al — Chapter 8
+* Week 09
+  * *TBA*
+* Week 10
+  * No reading
