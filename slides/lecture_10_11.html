@@ -289,29 +289,27 @@ Map metadata:
 ---
 ### Data classification methods
 
-* Equal interval
-  * Equal-sized classes (e.g. 1-10, 11-20, 21-30...).
+* Equal interval — equal-sized classes (e.g. 1-10, 11-20, 21-30...).
   * Best for: data spread evenly across entire range.
-* Quantiles
-  * Equal number of features in each class.
+* Quantiles — equal number of features in each class.
   * Best for: showing clear rankings within features.
   * Problem: class breaks can fall between features with no significant value difference.
 
-.image-70[![Longley, etl al 2015](media/longley_4e_fig_11_14_crop1.jpg)]
+.image-70[![Longley, etl al 2015](media/longley_4e_fig_11_14_crop2.jpg)]
 
 ---
 ### Data classification methods
 
-* Standard deviation
+* Standard deviation — classes represent standard deviations from the mean.
   * Assumes normal distribution, uses st. dev. stat to classify.
-  * Best for: feature attributes with normal distributions; emphasizing nearness to mean value.
+  * Best for: normal distributions; emphasizing nearness to mean value.
   * Problem: not actual values; above & below mean values combine.
 * Natural breaks
   * Minimizes in-class variation, maximizes between-class.
   * Best for: data with distinct clusters that can align with classes.
   * Problem: each dataset have own unique breaks between classes; bad for cross-map comparison.
 
-.image-70[![Longley, etl al 2015](media/longley_4e_fig_11_14_crop2.jpg)]
+.image-70[![Longley, etl al 2015](media/longley_4e_fig_11_14_crop1.jpg)]
 
 ---
 ## Thematic map types—symbolization methods
@@ -421,6 +419,7 @@ The arrangement or presentation of elements in a way that implies importance.
 
 * Considerations:
   * Size and placement of map elements.
+  * Visual variables apply to all parts of media, not just map symbols.
   * Map symbolization.
   * Use or omission of borders or neatlines.
 
