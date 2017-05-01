@@ -290,12 +290,27 @@ Map metadata:
 ### Data classification methods
 
 .left-column[
-* Equal interval (equal-sized classes).
+* Equal interval
+  * Equal-sized classes (e.g. 1-10, 11-20, 21-30...).
   * Best for: data spread evenly across entire range.
-* Quantiles (equal  number of features in each class).
+* Quantiles
+  * Equal number of features in each class.
   * Best for: showing clear rankings within features.
   * Problem: class breaks can fall between features with no significant value difference.
-* Natural breaks (minimizes in-class variation/maximizing between-class differences).
+]
+.right-column[.image-110[![Longley, etl al 2015](media/longley_4e_fig_11_14.jpg)]]
+
+---
+### Data classification methods
+
+.left-column[
+* Standard deviation
+  * Assumes normal distribution, uses standard deviation stat to classify.
+  * Emphasizes features near the mean value + hgihest & lowest values.
+  * Best for: feature attributes with normal distributions; emphasizing distribution 'tails'.
+  * Problem: doesn't use actual values; above & below mean values combine.
+* Natural breaks
+  * Minimizes in-class variation while maximizing between-class differences.
   * Best for: data with distinct clusters that can align with classes.
   * Problem: each dataset have own unique breaks between classes; bad for cross-map comparison.
 ]
