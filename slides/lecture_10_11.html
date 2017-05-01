@@ -289,7 +289,6 @@ Map metadata:
 ---
 ### Data classification methods
 
-.left-column[
 * Equal interval
   * Equal-sized classes (e.g. 1-10, 11-20, 21-30...).
   * Best for: data spread evenly across entire range.
@@ -297,23 +296,22 @@ Map metadata:
   * Equal number of features in each class.
   * Best for: showing clear rankings within features.
   * Problem: class breaks can fall between features with no significant value difference.
-]
-.right-column[.image-110[![Longley, etl al 2015](media/longley_4e_fig_11_14.jpg)]]
+
+.image-100[![Longley, etl al 2015](media/longley_4e_fig_11_14_crop1.jpg)]
 
 ---
 ### Data classification methods
 
-.left-column[
 * Standard deviation
   * Assumes normal distribution, uses st. dev. stat to classify.
   * Best for: feature attributes with normal distributions; emphasizing nearness to mean value.
   * Problem: not actual values; above & below mean values combine.
 * Natural breaks
-  * Minimizes in-class variation; maximizes between-class differences.
+  * Minimizes in-class variation, maximizes between-class.
   * Best for: data with distinct clusters that can align with classes.
   * Problem: each dataset have own unique breaks between classes; bad for cross-map comparison.
-]
-.right-column[.image-110[![Longley, etl al 2015](media/longley_4e_fig_11_14.jpg)]]
+
+.image-100[![Longley, etl al 2015](media/longley_4e_fig_11_14_crop2.jpg)]
 
 ---
 ## Thematic map types—symbolization methods
@@ -329,8 +327,6 @@ Map metadata:
 * Graduated symbols map.
 
 * Flow map.
-
-(using US Census distinctions)
 
 ---
 ### Choropleth map
