@@ -275,6 +275,31 @@ Map metadata:
 .image-100[![Bertin, Meacham](media/Meacham_Visual_Variables.png)]
 
 ---
+## Data classification
+
+* Classification takes large numbers of (ordinal, interval, ratio) values and groups them into ranges/classes/bins.
+* Why? Simplifies the spectrum into easily distinguishable groups (easier to reference legend values to classes).
+* Basics:
+  * Keep the number of distinct variable classes low.: people can usually only manage 5-7 distinct objects at once.
+  * Number of classes may need to be adjusted; check histogram when symbolizing.
+  * Choose classification method that highlights patterns that you wish to emphasize.
+
+---
+## Data classification methods
+
+.left-column[
+* Equal interval — equal-sized classes.
+  * Best for: data spread evenly across entire range.
+* Quantiles — equal  number of features in each class.
+  * Best for: showing clear rankings within features.
+  * Problematic: class breaks can fall between features with no significant value difference.
+* Natural breaks — application statistical model minimizes in-class variation while maximizing between-class differences.
+  * Best for: data with distinct clusters that can align with classes.
+  * Problematic: each unique set of features will have unique breaks between classes; not good cross-map comparison.
+]
+.right-column[.image-100[![Longley, etl al 2015](media/longley_4e_fig_11_14.jpg)]]
+
+---
 ## Thematic map types—symbolization methods
 
 * Choropleth map.
@@ -376,19 +401,6 @@ More than one visual variable is chosen to symbolize a single collection of feat
 
 .left-column[.image-110[![https://www.e-education.psu.edu/geog486/node/1871](media/bivariate_hue_size_0.png)]]
 .right-column[.image-110[![https://www.e-education.psu.edu/geog486/node/1871](media/hue_value_choropleth.png)]]
-
----
-## Data classification
-
-.left-column[
-* Keep the number of distinct variable classes low.
-* People can usually only manage 5-7 distinct objects at once.
-* Considerations:
-  * Classification method.
-  * Number of classes.
-  * Decimal places.
-]
-.right-column[.image-100[![Longley, etl al 2015](media/longley_4e_fig_11_14.jpg)]]
 
 ---
 ## Visual hierarchy
