@@ -278,7 +278,9 @@ Map metadata:
 ## Data classification
 
 * Classification takes large numbers of (ordinal, interval, ratio) values and groups them into ranges/classes/bins.
+
 * Why? Simplifies the spectrum into easily distinguishable groups (easier to reference legend values to classes).
+
 * Basics:
   * Keep number of distinct classes low: 3-7 classes is the sweet-spot for maximizing perception & comprehension.
   * Number of classes may need to be adjusted; check histogram when symbolizing.
@@ -293,11 +295,11 @@ Map metadata:
 * Quantiles (equal  number of features in each class).
   * Best for: showing clear rankings within features.
   * Problematic: class breaks can fall between features with no significant value difference.
-* Natural breaks (minimizes in-class variation while maximizing between-class differences).
+* Natural breaks (minimizes in-class variation/maximizing between-class differences).
   * Best for: data with distinct clusters that can align with classes.
-  * Problematic: each unique set of features will have unique breaks between classes; not good cross-map comparison.
+  * Problematic: each dataset have own unique breaks between classes; bad for cross-map comparison.
 ]
-.right-column[.image-100[![Longley, etl al 2015](media/longley_4e_fig_11_14.jpg)]]
+.right-column[.image-110[![Longley, etl al 2015](media/longley_4e_fig_11_14.jpg)]]
 
 ---
 ## Thematic map types—symbolization methods
