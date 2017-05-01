@@ -2,7 +2,7 @@
 title: GEOG 4/581 - Lab 7
 ---
 
-# Lab 7: Vegetation Land Cover Report
+# Lab 7: Vegetation Landscapes Report
 
 
 #### Purpose
