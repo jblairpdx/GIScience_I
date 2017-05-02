@@ -39,7 +39,7 @@ If you prefer a more portable digital copy of any of the materials listed below,
   * Wed May 17 — Lecture 12: Final project introduction & worksheet peer review<!--* Wed May 17 — [Lecture 12: Final project introduction; worksheet peer review](https://jblairpdx.github.io/GIScience_I/slides/lecture_12.html)-->
 * Week 08
   * Mon May 22 — Lecture 13: Guest speaker — David Richey<!--* Mon May 22 — [Lecture 13: Guest speaker — David Richey](https://jblairpdx.github.io/GIScience_I/slides/lecture_13.html)-->
-  * Wed May 24 — Lecture 14: Data collection/data quality<!--* Wed May 24 — [Lecture 14: Data collection/data quality](https://jblairpdx.github.io/GIScience_I/slides/lecture_14.html)-->
+  * Wed May 24 — Lecture 14: Data collection — where do I get data?<!--* Wed May 24 — [Lecture 14: Data collection — where do I get data?](https://jblairpdx.github.io/GIScience_I/slides/lecture_14.html)-->
 * Week 09
   * Mon May 29 — No lecture: Memorial Day holiday.
   * Wed May 31 — Lecture 15: The geographic citizen — GIScience in work and life<!--* Wed May 31 — [Lecture 15: The geographic citizen — GIScience in work and life](https://jblairpdx.github.io/GIScience_I/slides/lecture_15.html)-->
