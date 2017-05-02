@@ -194,7 +194,7 @@ Graduate students will have two additional components to their final project. Th
   * Longley et al Chapter 8.
 * **Lecture**:
   * Mon May 22 — Lecture 13: Guest speaker — David Richey.
-  * Wed May 24 — Lecture 14: Data collection/data quality.
+  * Wed May 24 — Lecture 14: Data collection—where do I get data?
 * **Lab**:
   * Lab 7: Vegetation Land Cover Report (continued from previous week).
 
