@@ -138,7 +138,7 @@ Graduate students will have two additional components to their final project. Th
   * Longley et al Chapter 7.
 * **Lecture**:
   * Mon Apr 17 — Lecture 5: Geospatial data models.
-  * Wed Apr 19 — Lecture 6: Attribute data — Types & queries.
+  * Wed Apr 19 — Lecture 6: Attribute data—Types & queries.
 * **Lab**:
   * Lab 3: Spatial Data Types and Querying Values.
 
@@ -148,7 +148,7 @@ Graduate students will have two additional components to their final project. Th
   * Longley et al Chapter 13 (sections 13.3.4+ optional); Chapter 14 (section 14.4+ unnecessary).
 * **Lecture**:
   * Mon Apr 24 — Test 1 (covers lectures 1-6).
-  * Wed Apr 26 — Lecture 7: Combining data — Attribute joins & spatial analysis.
+  * Wed Apr 26 — Lecture 7: Combining data—Attribute joins & spatial analysis.
 * **Lab**:
   * Lab 4: Spatial Selection and Attribute Queries.
 
@@ -159,7 +159,7 @@ Graduate students will have two additional components to their final project. Th
     * [https://desktop.arcgis.com/en/arcmap/latest/tools/analysis-toolbox/an-overview-of-the-analysis-toolbox.htm](https://desktop.arcgis.com/en/arcmap/latest/tools/analysis-toolbox/an-overview-of-the-analysis-toolbox.htm)
   * Longley et al Chapter 15.
 * **Lecture**:
-  * Mon May 01 — Lecture 8: Spatial analysis — A look in the toolbox.
+  * Mon May 01 — Lecture 8: Spatial analysis—A look in the toolbox.
   * Wed May 03 — Lecture 9: Spatial modeling.
 * **Lab**:
   * Lab 5: Site Selection—Tsunami Relief Center.
@@ -173,10 +173,10 @@ Graduate students will have two additional components to their final project. Th
   * Buckley, "Make Maps People Want to Look At" in ArcUser, Winter 2012.
     * [https://www.esri.com/news/arcuser/0112/files/design-principles.pdf](https://www.esri.com/news/arcuser/0112/files/design-principles.pdf)
 * **Lecture**:
-  * Mon May 08 — Lecture 10: Maps — Elements, symbolization, classification.
-  * Wed May 10 — Lecture 11: Maps II — Visualization & design.
+  * Mon May 08 — Lecture 10: Maps—Elements, symbolization, classification.
+  * Wed May 10 — Lecture 11: Maps II—Visualization & design.
 * **Lab**:
-  * Lab 6: Working with Raster Data — Elevation.
+  * Lab 6: Working with Raster Data—Elevation.
 
 #### Week 7
 
@@ -193,8 +193,8 @@ Graduate students will have two additional components to their final project. Th
 * **Reading**:
   * Longley et al Chapter 8.
 * **Lecture**:
-  * Mon May 22 — Lecture 13: Guest speaker — David Richey.
-  * Wed May 24 — Lecture 14: Data collection — where do I get data?
+  * Mon May 22 — Lecture 13: Guest speaker—David Richey.
+  * Wed May 24 — Lecture 14: Data collection—Where do I get data?
 * **Lab**:
   * Lab 7: Vegetation Land Cover Report (continued from previous week).
 
@@ -204,7 +204,7 @@ Graduate students will have two additional components to their final project. Th
   * *TBA*.
 * **Lecture**:
   * Mon May 29 — Memorial Day Holiday: No class.
-  * Wed May 31 — Lecture 15: The geographic citizen — GIScience in work and life.
+  * Wed May 31 — Lecture 15: The geographic citizen—GIScience in work and life.
 * **Lab**:
   * Final project: Work on in lab session.
 
