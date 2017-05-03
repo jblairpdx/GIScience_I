@@ -65,7 +65,7 @@ class: inverse, middle
 ]
 
 ---
-**Secondary data capture: Digitizing objects from georeferenced documents**
+**Secondary data capture: Digitizing vector objects from georeferenced raster materials**
 
 .left-column[
 .image-100[![http://geoinfo.amu.edu.pl/wpk/rst/rst/Sect15/Sect15_7.html](media/Fig15_19.jpg)]
@@ -77,7 +77,82 @@ class: inverse, middle
 ]
 
 ---
-## 
+**Secondary data capture: Coordinate geometry (COGO)**
+
+.left-column[
+.image-100[![https://surveycogo.com/](media/Screen1_530x@2x.jpg)]
+]
+.right-column[
+.image-100[![https://www.minesurveyor.net/links.php](media/freecogoScreen.jpg)]
+]
+
+---
+## Secondary data capture: Quality
+
+Effects on secondary data capture quality:
+* Source data.
+  * Nature of the source (is the data in source correct, minimally distorted)?
+  * Resolution.
+    * Spatial: size of smallest resolvable object (i.e. pixel size).
+    * Temporal: time frame of data representation (current enough? covers desired historical time?).
+
+* Digitization.
+  * Quality of the scanning hardware.
+  * Thoroughness of the georeferencing.
+  * Attention to detail of raster -> vector digitization.
+
+---
+## Data capture negatives
+
+* Data collection is a time-consuming, often tedious, and expensive process.
+* Usually estimated to be 15-50% of a GIS project's cost.
+  * More if needing to factor in maintenance cost.
+* You may just be repeating effort done for other purposes.
+
+Okay, then. It's likely someone's already done that. How do I get my hands on it?
+
+---
+## Data transfer: How do I find data out there?
+
+* Search engine (LMGTFY)!
+  * ["voting data by county"](https://lmgtfy.com/?q=income+data+by+county)
+  * ["minimum wages united states"](https://lmgtfy.com/?q=minimum+wages+united+states)
+  * ["gis weather data"](https://lmgtfy.com/?q=gis+weather+data)
+* Government & other open access (geo)portals/download sites.
+  * [Oregon Spatial Data Library](http://spatialdata.oregonexplorer.info/geoportal/)
+  * UO Library Learning Commons
+  * Federal data portals: [US Census Bureau](https://www.census.gov/data.html), [USGS The National Map](https://nationalmap.gov/), [Data.gov](https://www.data.gov/).
+* Experts/specialist groups.
+  * Look for commerical, nonprofit, or research groups with related missions. They may have a data sharing site.
+  * Contact them & ask.
+* Commerical vendors ($$).
+* 'Citation chaining': follow references from one place to another.
+
+---
+### Evaluating data
+
+This is a major challenge when determining fitness for your purposes: is it any good?
+
+* Read the metadata (*Description* tab in *ArcCatalog*, on the site/portal, or in accompanying document).
+  * Good to find out: Age — Provenance/Lineage — Projection — Resolution — etc.
+* Check the data atop a known/familiar base map.
+* Assume is proprietary unless explicitly stated otherwise.
+  * Follow the terms of use, whatever they are.
+  * Most data downloadable or in popular apps have a 'fair use' allowance for personal, non-commercial use (verify).
+
+---
+### How do I download/open that dataset?
+
+* There are countess spatial data formats; these are dwarfed even more by nonspatial data formats.
+  * Charitable view: Designed for various requirements or purposes.
+  * Cynical view: see below.
+* Some formats are fairly common for sharing: `shapefile`, `geojson`.
+* ArcMap can handle many of these.
+  * Some may require a conversion tool (in-app or online) rather than 'just work'.
+* Increasingly common for data to be available as a web service/API (e.g. www.arcgis.com data).
+  * Some allow downloads. Others you just hook into the application.
+
+.image-50[![https://xkcd.com/927/](media/standards.png)]
 
 </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
