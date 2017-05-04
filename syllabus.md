@@ -182,6 +182,8 @@ Graduate students will have two additional components to their final project. Th
 
 * **Reading**:
   * Longley et al Chapter 8.
+  * Esri Training Matters — "Use the Five-Step GIS Analysis Process."
+    * [https://blogs.esri.com/esri/esritrainingmatters/2009/10/08/use-the-five-step-gis-analysis-process/](https://blogs.esri.com/esri/esritrainingmatters/2009/10/08/use-the-five-step-gis-analysis-process/)
 * **Lecture**:
   * Mon May 15 — Lecture 12: Data collection—Where do I get data?
   * Wed May 17 — Lecture 13: Final project—Introduction & worksheet peer review.
