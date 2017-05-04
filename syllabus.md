@@ -173,28 +173,28 @@ Graduate students will have two additional components to their final project. Th
   * Buckley, "Make Maps People Want to Look At" in ArcUser, Winter 2012.
     * [https://www.esri.com/news/arcuser/0112/files/design-principles.pdf](https://www.esri.com/news/arcuser/0112/files/design-principles.pdf)
 * **Lecture**:
-  * Mon May 08 — Lecture 10: Maps—Elements, symbolization, classification.
-  * Wed May 10 — Lecture 11: Maps II—Visualization & design.
+  * Mon May 08 — Lecture 10: Maps.
+  * Wed May 10 — Lecture 11: Maps II.
 * **Lab**:
   * Lab 6: Working with Raster Data—Elevation.
 
 #### Week 7
 
 * **Reading**:
-  * None.
+  * Longley et al Chapter 8.
 * **Lecture**:
-  * Mon May 15 — Test 2 (covers lectures 7-11).
-  * Wed May 17 — Lecture 12: Final project introduction; worksheet peer review.
+  * Mon May 15 — Lecture 12: Data collection—Where do I get data?
+  * Wed May 17 — Lecture 13: Final project—Introduction & worksheet peer review.
 * **Lab**:
   * Lab 7: Vegetation Land Cover Report (due in two weeks).
 
 #### Week 8
 
 * **Reading**:
-  * Longley et al Chapter 8.
+  * None.
 * **Lecture**:
-  * Mon May 22 — Lecture 13: Guest speaker—David Richey.
-  * Wed May 24 — Lecture 14: Data collection—Where do I get data?
+  * Mon May 22 — Lecture 14: Guest speaker—David Richey.
+  * Wed May 24 — Test 2 (covers lectures 7-12).
 * **Lab**:
   * Lab 7: Vegetation Land Cover Report (continued from previous week).
 
@@ -213,9 +213,9 @@ Graduate students will have two additional components to their final project. Th
 * **Reading**:
   * None.
 * **Lecture**:
-  * Mon Jun 05 — Test 3 (covers lectures 12-15).
+  * Mon Jun 05 — Lecture 16: Graduate student project presentations.
     * Final project proposal due.
-  * Wed Jun 07 — Graduate student project presentations (not optional: will be related in-class activity).
+  * Wed Jun 07 — Lecture 17: Graduate student project presentations.
 * **Lab**:
   * Final project: Work on in lab session.
 
