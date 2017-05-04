@@ -182,7 +182,8 @@ Graduate students will have two additional components to their final project. Th
 
 * **Reading**:
   * Longley et al Chapter 8.
-  * Esri Training Matters — "Use the Five-Step GIS Analysis Process."
+  * Christian Kreibich, "How to ask for datasets."[https://medium.com/@ckreibich/how-to-ask-for-datasets-d5ef791cb38c](https://medium.com/@ckreibich/how-to-ask-for-datasets-d5ef791cb38c)
+  * Esri Training Matters, "Use the Five-Step GIS Analysis Process."
     * [https://blogs.esri.com/esri/esritrainingmatters/2009/10/08/use-the-five-step-gis-analysis-process/](https://blogs.esri.com/esri/esritrainingmatters/2009/10/08/use-the-five-step-gis-analysis-process/)
 * **Lecture**:
   * Mon May 15 — Lecture 12: Data collection—Where do I get data?
