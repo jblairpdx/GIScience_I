@@ -10,7 +10,7 @@ Listed here are ideas for GIScience class project topics, culled from both actua
 * Change the area of interest: instead of setting it in Eugene, maybe you can set it in Davis, CA.
 * Change the time span: do a historic look at the topic, rather than a current(ish) one.
 
-Topics, areas of interest, and time spans are **highly** dependent on what data you can find or create *in the time alotted to you*. Be careful about 
+Topics, areas of interest, and time spans are **highly** dependent on what data you can find or create *in the time alotted to you*. Be careful about trying to do too much or heading down rabbit holes of small details that keep you from finishing in a comfortable time frame, and prevent you from doing basic refinements before turning your project in.
 
 #### Tsunami impacts analysis
 
