@@ -32,6 +32,6 @@ Topics, areas of interest, and time spans are **highly** dependent on what data 
 
 > Crime data can help city managers make safer cities and better allocate their resources. Use spatial crime data to determine which neighborhoods in a city of your choice are the safest and which are the least safe based on at least two different types of crimes. Does less crime occur near police stations; on streets with lighting; in different types of zoning (e.g. residential, or commercial)?
 
-#### Comparison betwee Eugene and another city
+#### Comparison between Eugene and another city
 
 > Is there a difference between the quality of life in Eugene and another city, such as Springfield? Using the types of analysis described above, determine if the access to services, danger from landslides, walkability, bike-ability, or crime rate is different in Eugene and this other city. Make sure you have access to similar datasets in both cities.
