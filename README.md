@@ -80,6 +80,7 @@ If you prefer a more portable digital copy of any of the materials listed below,
   * [Buckley — "Make Maps People Want to Look At" in ArcUser, Winter 2012](https://www.esri.com/news/arcuser/0112/files/design-principles.pdf)
 * Week 07
   * Longley et al — Chapter 8
+  * [Esri Training Matters — "Use the Five-Step GIS Analysis Process."](https://blogs.esri.com/esri/esritrainingmatters/2009/10/08/use-the-five-step-gis-analysis-process/)
 * Week 08
   * No reading
 * Week 09
