@@ -6,7 +6,7 @@ title: GEOG 4/581 - Final Project Ideas
 
 Listed here are ideas for GIScience class project topics, culled from both actual class projects mentioned in other classes, as well as some hypothetical projects. The point here is not to merely pick a topic from the list (though you could), but to see possibilities that may fit your interest & needs with just a few changes. You could:
 
-* Change the topic slightly: find a suitable location for a new park instead of a coffee shop.
+* Change the topic/question slightly: find a suitable location for a new park instead of a coffee shop.
 * Change the area of interest: instead of setting it in Eugene, maybe you can set it in Davis, CA.
 * Change the time span: do a historic look at the topic, rather than a current(ish) one.
 
