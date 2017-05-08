@@ -39,7 +39,7 @@ If you prefer a more portable digital copy of any of the materials listed below,
   * Mon May 15 — [Lecture 12: Data collection—Where do I get data?](https://jblairpdx.github.io/GIScience_I/slides/lecture_12.html)
   * Wed May 17 — [Lecture 13: Final project—Introduction & worksheet peer review](https://jblairpdx.github.io/GIScience_I/slides/lecture_13.html)
 * Week 08
-  * Mon May 22 — [Lecture 14: Guest speaker—David Richey](https://jblairpdx.github.io/GIScience_I/slides/lecture_13.html)
+  * Mon May 22 — [Lecture 14: Guest speaker—David Richey](https://jblairpdx.github.io/GIScience_I/slides/lecture_14.html)
   * Wed May 24 — No lecture: Test 2 (covers lectures 7-12)
 * Week 09
   * Mon May 29 — No lecture: Memorial Day holiday.
