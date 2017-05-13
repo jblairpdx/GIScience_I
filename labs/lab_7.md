@@ -119,7 +119,7 @@ Tip: When reading ArcMap documentation pages, notice that there is a hierarchy o
 
 Tip: To remove a joined attribute table, ricght-click on the layer with the join, and look under `Joins and Relates -> Join -> Remove Join(s)` for the table in question.
 
-##### Read [*Dissolve*](https://desktop.arcgis.com/en/arcmap/latest/tools/analysis-toolbox/clip.htm) from the ArcMap documentation site.
+##### Read [*Dissolve*](https://desktop.arcgis.com/en/arcmap/latest/tools/data-management-toolbox/dissolve.htm) from the ArcMap documentation site.
 
 ##### Combine the vegetation features into new landscape type features.
 
