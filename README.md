@@ -12,7 +12,7 @@ If you prefer a more portable digital copy of any of the materials listed below,
 
 * [Proposal (PDF)](https://jblairpdx.github.io/GIScience_I/final_project/proposal.pdf)—[(DOCX)](https://jblairpdx.github.io/GIScience_I/final_project/proposal.docx)—[(ODT)](https://jblairpdx.github.io/GIScience_I/final_project/proposal.odt)—[(RTF)](https://jblairpdx.github.io/GIScience_I/final_project/proposal.rtf)
 * [Topic Ideas](https://jblairpdx.github.io/GIScience_I/final_project/topic_ideas.html)
-* [Worksheet](https://jblairpdx.github.io/GIScience_I/final_project/worksheet.pdf)
+* [Worksheet (PDF)](https://jblairpdx.github.io/GIScience_I/final_project/worksheet.pdf)—[(DOCX)](https://jblairpdx.github.io/GIScience_I/final_project/worksheet.docx)—[(ODT)](https://jblairpdx.github.io/GIScience_I/final_project/worksheet.odt)—[(RTF)](https://jblairpdx.github.io/GIScience_I/final_project/worksheet.rtf)
 * [Worksheet—Peer Feedback](https://jblairpdx.github.io/GIScience_I/final_project/worksheet_peer_feedback.pdf)
 
 ## Lecture Slides
