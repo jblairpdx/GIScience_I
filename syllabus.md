@@ -207,7 +207,7 @@ Graduate students will have two additional components to their final project. Th
   * *TBA*.
 * **Lecture**:
   * Mon May 29 — Memorial Day Holiday: No class.
-  * Wed May 31 — Lecture 15: The geographic citizen—GIScience in work and life.
+  * Wed May 31 — Lecture 15: Wrap-up.
 * **Lab**:
   * Final project: Work on in lab session.
 
