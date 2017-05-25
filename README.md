@@ -43,7 +43,7 @@ If you prefer a more portable digital copy of any of the materials listed below,
   * Wed May 24 — No lecture: Test 2 (covers lectures 7-12)
 * Week 09
   * Mon May 29 — No lecture: Memorial Day holiday.
-  * Wed May 31 — Lecture 15: The geographic citizen—GIScience in work and life<!--* Wed May 31 — [Lecture 15: The geographic citizen—GIScience in work and life](https://jblairpdx.github.io/GIScience_I/slides/lecture_15.html)-->
+  * Wed May 31 — Lecture 15: Wrap-up<!--* Wed May 31 — [Lecture 15: The geographic citizen—GIScience in work and life](https://jblairpdx.github.io/GIScience_I/slides/lecture_15.html)-->
 * Week 10
   * Mon Jun 05 — Lecture 16: Graduate student project presentations<!--* Wed Jun 07 — [Lecture 16: Graduate student project presentations](https://jblairpdx.github.io/GIScience_I/slides/lecture_16_17.html)-->
   * Wed Jun 07 — Lecture 17: Graduate student project presentations<!--* Wed Jun 07 — [Lecture 17: Graduate student project presentations](https://jblairpdx.github.io/GIScience_I/slides/lecture_16_17.html)-->
