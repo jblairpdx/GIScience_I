@@ -1,0 +1,68 @@
+VALUE ,CLASS_NAME,Landscape_Type
+0,Water,WATER
+32,Sitka Spruce-W. Hemlock Maritime Forest,FOREST AND WOODLAND
+33,Mountain Hemlock Montane Forest,FOREST AND WOODLAND
+34,True Fir-Hemlock Montane Forest,FOREST AND WOODLAND
+35,Montane Mixed Conifer Forest,FOREST AND WOODLAND
+37,Shasta Red Fir-Mountain Hemlock Forest,FOREST AND WOODLAND
+39,Whitebark-Lodgepole Pine Montane Forest,FOREST AND WOODLAND
+40,Ponderosa Pine Dominant Mixed Conifer Forest,FOREST AND WOODLAND
+41,Northeast Ore. Mixed Conifer Forest,FOREST AND WOODLAND
+42,Jeffery Pine Forest and Woodland,FOREST AND WOODLAND
+43,Serpentine Conifer Woodland,FOREST AND WOODLAND
+44,Lodgepole Pine Forest and Woodland,FOREST AND WOODLAND
+45,Subalpine Fir-Lodgepole Pine Montane Conifer,FOREST AND WOODLAND
+46,Coastal Lodgepole Forest,FOREST AND WOODLAND
+49,Douglas Fir-W. Hemlock-W. Red Cedar Forest,FOREST AND WOODLAND
+50,Douglas Fir-Port Orford Cedar Forest,FOREST AND WOODLAND
+51,Douglas Fir-Mixed Deciduous Forest,FOREST AND WOODLAND
+52,Douglas Fir-White Fir/Tanoak-Madrone Mixed Forest,FOREST AND WOODLAND
+53,Douglas Fir/White Oak Forest,FOREST AND WOODLAND
+54,Ponderosa Pine Forest and Woodland,FOREST AND WOODLAND
+56,Douglas Fir Dominant-Mixed Conifer Forest,FOREST AND WOODLAND
+57,Ponderosa Pine/White Oak Forest and Woodland,FOREST AND WOODLAND
+58,Ponderosa Pine-W. Juniper Woodland,FOREST AND WOODLAND
+59,Ponderosa-Lodgepole Pine on Pumice,FOREST AND WOODLAND
+61,Western Juniper Woodland,FOREST AND WOODLAND
+63,Red Alder Forest,FOREST AND WOODLAND
+64,Red Alder-Big Leaf Maple Forest,FOREST AND WOODLAND
+65,Alder/Cottonwood Riparian Gallery,FOREST AND WOODLAND
+66,Aspen Groves,FOREST AND WOODLAND
+67,Mixed Conifer/Mixed Deciduous Forest,FOREST AND WOODLAND
+68,Cottonwood Riparian Gallery,FOREST AND WOODLAND
+72,Siskiyou Mtns Mixed Deciduous Forest,FOREST AND WOODLAND
+75,Oregon White Oak Forest,FOREST AND WOODLAND
+77,South Coast Mixed Deciduous Forest,FOREST AND WOODLAND
+85,Siskiyou Mtns Serpentine Shrubland,SHRUBLAND AND GRASSLAND
+87,Hawthorn-Willow Shrubland,SHRUBLAND AND GRASSLAND
+89,Manzanita Dominant Shrubland,SHRUBLAND AND GRASSLAND
+90,Mountain Mahogany Shrubland,SHRUBLAND AND GRASSLAND
+91,Sagebrush Steppe,SHRUBLAND AND GRASSLAND
+93,Low-Dwarf Sagebrush,SHRUBLAND AND GRASSLAND
+95,Salt Desert Scrub Shrubland,SHRUBLAND AND GRASSLAND
+96,Big Sagebrush Shrubland,SHRUBLAND AND GRASSLAND
+97,Bitterbrush-Big Sagebrush Shrubland,SHRUBLAND AND GRASSLAND
+103,Northeast Ore. Canyon Grassland,SHRUBLAND AND GRASSLAND
+105,Subalpine Grassland,SHRUBLAND AND GRASSLAND
+106,Forest-Grassland Mosaic,SHRUBLAND AND GRASSLAND
+110,Subalpine Parkland,FOREST AND WOODLAND
+112,Modified Grassland,SHRUBLAND AND GRASSLAND
+113,Coastal Strand,SHRUBLAND AND GRASSLAND
+114,Wet Meadow,RIPARIAN AND HERBACEOUS WETLAND
+121,Grass-shrub-sapling or Regenerating young forest,SHRUBLAND AND GRASSLAND
+122,Alkali Playa,MINIMAL VEGETATIVE COVER
+124,Urban,URBAN
+125,Agriculture,AGRICULTURE
+126,Exposed Tidal Flat,MINIMAL VEGETATIVE COVER
+127,Lava Flow,MINIMAL VEGETATIVE COVER
+128,Coastal Dunes,DUNES
+129,Alpine Fell-Snowfields,MINIMAL VEGETATIVE COVER
+130,Open Water,WATER
+135,Palustrine Forest,RIPARIAN AND HERBACEOUS WETLAND
+136,Palustrine Shrubland,RIPARIAN AND HERBACEOUS WETLAND
+137,Estuarine Emergent,RIPARIAN AND HERBACEOUS WETLAND
+138,Palustrine Emergent,RIPARIAN AND HERBACEOUS WETLAND
+200,NWI Palustrine Forest,RIPARIAN AND HERBACEOUS WETLAND
+201,NWI Palustrine Shrubland,RIPARIAN AND HERBACEOUS WETLAND
+202,NWI Estuarine Emergent,RIPARIAN AND HERBACEOUS WETLAND
+203,NWI Palustrine Emergent,RIPARIAN AND HERBACEOUS WETLAND
